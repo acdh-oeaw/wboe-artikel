@@ -1,0 +1,3604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.8.1" ?>
+<?parser type="lioe" version="0.8.0" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Fahrt</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#PhS">Philipp Stöckle</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+          <name xml:id="MK">Markus Kunzmann</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2020-01-27" who="#PhS">Datensatz erstellt</change>
+        <change status="in progress" when="2021-02-08" who="#PhS">Etymologie erstellt</change>
+        <change status="in progress" when="2022-02-15" who="#PhS">WB bis einschließlich Ausfahrt</change>
+        <change status="in progress" when="2022-05-06" who="#PhS">WB fertig</change>
+        <change status="in progress" when="2022-05-12" who="#PZ">LK eingefügt</change>
+        <change status="peer correction" when="2022-06-07" who="#PhS">erste Version des Artikels fertig</change>
+        <change status="internal correction" when="2022-09-12" who="#PhS">Anmerkungen peer correction übernommen</change>
+        <change status="external correction" when="2022-11-07" who="#PhS">Anmerkungen internal correction übernommen</change>
+        <change status="finished" when="2022-11-24" who="#PhS">Anmerkungen external correction übernommen</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Fahrt">
+          <orth>Fahrt</orth>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Femininum</gram>
+        </gramGrp>
+        <form type="variant" subtype="diminutive" xml:id="Faehrtel">
+          <orth>Fährtel</orth>
+          <gramGrp></gramGrp>
+        </form>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p7">Bgl.</placeName>
+        </usg>
+        <note type="kommentar" resp="#PZ">Der auf mhd.
+          <c>a</c>zurückgehende Stammvokal wurde im gesamten Verbreitungsgebiet zu offenem
+          <c>o</c>verdumpft, mehrheitlich mit Länge und Gleitlaut
+          <xr>
+            <ref>fǭrt</ref>
+            <ref>fǫɒrt</ref>
+            <ref>fǭɒd</ref>
+            <ref>fǫrß̌t</ref>
+            <ref>fǫχt</ref>
+            <ref>fǭxd</ref>
+          </xr>. Im westlichen Südbairischen kann dieses
+          <c>o</c>auch geschlossen auftreten
+          <xr>
+            <ref>fọ̄rß̌t</ref>
+          </xr>, wobei gelegentlich auch Diphthongierung zu
+          <c>ou</c>belegt ist
+          <xr>
+            <ref>fǫurt</ref>
+            <ref>fǭušd</ref>
+          </xr>. Unverdumpfte
+          <c>a</c>treten nur sporadisch im bairisch-alemannischen Übergangsgebiet auf
+          <xr>
+            <ref>fārt</ref>
+          </xr>. Der postvokalische Liquid blieb im Südbairischen gelegentlich erhalten
+          <xr>
+            <ref>fǫrt</ref>
+            <ref>fǫɒrt</ref>
+            <ref>fǫurt</ref>
+            <ref>fǭrß̌t</ref>
+          </xr>. Daneben wurde er im Süd-, Südmittel- und äußerst selten im Ostmittelbairischen vor dem alveolaren Plosiv zum postalveolaren Sibilanten gewandelt
+          <xr>
+            <ref>fǫß̌t</ref>
+            <ref>fǭß̌t</ref>
+            <ref>fǭɒß̌t</ref>
+            <ref>fǭušd</ref>
+          </xr>bzw. wurde zwischen Liquid und Plosiv ein Sibilant eingeschoben
+          <xr>
+            <ref>fǫrß̌t</ref>
+            <ref>fǭršd</ref>
+          </xr>. Zum velaren Frikativ wurde der Liquid mitunter im Südmittel- und Mittelbairischen
+          <xr>
+            <ref>fǫrχt</ref>
+            <ref>fǫχt</ref>
+            <ref>fǭxd</ref>
+            <ref>fǭɒxd</ref>
+          </xr>. Die Vokalisierung des Liquids hat überall mit Ausnahme des westlichen Süd- und Südmittelbairischen stattgefunden
+          <xr>
+            <ref>fǫɒt</ref>
+            <ref>fǭɒd</ref>
+          </xr>. Im Mittelbairischen und gelegentlich auch im Südmittelbairischen findet sich die Lenisierung des bzw. der auslautenden Konsonanten
+          <xr>
+            <ref>fǭɒd</ref>
+            <ref>fǭušd</ref>
+            <ref>fǭxd</ref>
+            <ref>fǭušd</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-få̆rt</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.1a02">Mals</placeName>
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p1A.1a">nördl.obVinschg.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fǭrt</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.1d03">Schlanders</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fą̆rt</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p1A.1h">Umg.Meran</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fôrt</pron>
+          <pron xml:lang="bar-AT">-fǫrt</pron>
+          <pron xml:lang="bar-AT">-fą̂rt</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.2c04">Welschnofen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fârt</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.3b01">Sarntal</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-foᵘrt</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.3b01">Sarntal</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fǫrt</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.3g07">Villanders</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fǫr̭t</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1B.0a05">Sillian</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fǫrt</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m07">Pfunds</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fǭrt</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m10">Serfaus</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fārt</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1f02">Biberwier</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fọ̄ršt</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.2h02">Matrei am Brenner</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fą̂rt</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.2j04">Tux</placeName>
+          </usg>
+        </form>
+        <etym>
+          <cit type="etymon">
+            <lang>ahd.</lang>
+            <form>
+              <orth>fart</orth>
+            </form>
+            <def>Fahrt; Lauf; Reise; Flug; Spur; Gelegenheit</def>
+          </cit>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>vart</orth>
+            </form>
+            <def>Fahrt; Zug; Reise; Gang; Weg; Spur</def>
+          </cit>
+          <seg type="desc">; Ableitung von</seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref target="fahren.xml#fahren">fahren</ref>
+            </xr>
+          </cit>
+          <ref type="bibl" target="#Pfeifer2014">
+            <lbl>vgl.</lbl>Pfeifer 2014
+            <citedRange>318</citedRange>
+          </ref>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <def>das Fahren</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.2">MBgl.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">das lustöga is håöˡd (Khinəʳn) oömåöˡ dö Fårt (s' Fåʳn)</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">āf da Fårt hama ząmkhema</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23825"/>
+            </sense>
+            <sense>
+              <def>Reise; Ausflug</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Wohiⁿ gēd d' Făscht?</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3f02">Hopfgarten im Brixental</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">d'Fårt gę̄d bis zan Wiəʳtshaus (dö ǫan gęnd, dö ǫan fåʳnd), afn Bōg sitzt da Blåsəʳ (sitznd Blåsəʳ)</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">guət̨ė fåəʳt</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5r01">Gersthof</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">a misərablichė fåəʳt håᵇ məʳ ghåbt</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5r01">Gersthof</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23830"/>
+            </sense>
+            <sense>
+              <def>Beförderung (von Personen gegen Bezahlung)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">d' Fårt zåln</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2h28">Warth</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">ǫã fǫad khọßt</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4f18">Spannberg</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">wås zåiˡt məⁿ fiəʳ a fåəʳt fon ß̌tefȧnsplåz nåch Hiəziŋ (Hietzing)? frīəʳ amåiˡ zwā fleəʳln̥!
+                  <cit type="translation">
+                    <quote xml:lang="de">Flörel</quote>
+                  </cit>
+                </quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5r01">Gersthof</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23827"/>
+            </sense>
+            <sense>
+              <def>Bettelunternehmen; Diebstahlsunternehmen</def>
+              <usg>(gaunersprachlich)</usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23828"/>
+            </sense>
+          </sense>
+          <sense>
+            <sense>
+              <def>Fuhre; Ladung; für den Transport vorgesehene Menge</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p7">Bgl.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Mia hămm sögs Fāschtl ghāgg</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3i05">St. Johann in Tirol</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">a kloans Fattl Hai</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.5h07">Hartberg</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">fāʳschtl Hoilz</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.2c01">Fusch an der Großglocknerstraße</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">wir haben 30 fādl wǫɒts gekriegt</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1c07">Mühlheim am Inn</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">s wǫssə hǫd gwīs fiə fadl háė wėktrǫ'ŋ</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1c07">Mühlheim am Inn</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">sö hamd zönö Fartl Woatz (u[nd] dås koanö kloan) aiⁿgfiəʳt</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">a faʳdl mist</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4h06">Pabneukirchen</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">'s Fachtll Mist kost an Guiˡᵈn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4h09">Schwertberg</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">ɒ gro̩ßį fō̩ɒσ̌τ</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1i07">Ybbsitz</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">vərkāft wiəd nåch n Faᵈl</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1t01">St. Pölten</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">do gēd dė foath</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3a15">Kautzen</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">der mist wird nach fadln gemessen</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3b09">Raabs an der Thaya</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">a fẹßtß faʳdl misd</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4e06">Hollabrunn</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">a-gåᵘⁿz Fāʳddl Hē̇i åᵘᵐ Bugl drå̄gŋ</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5w06">Mauer</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23826"/>
+            </sense>
+            <sense>
+              <def>Hilfsgabe für eine durch einen Brand geschädigte Person</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23829"/>
+            </sense>
+            <sense>
+              <xr type="lemma" subtype="diminutive">
+                <lbl>nur</lbl>
+                <ref target="#Faehrtel">Fährtel</ref>
+              </xr>
+              <def>Blütenstaub, den eine Biene zum Bienenstock befördert</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Faschtl troŋ</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3b03">Thiersee</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23831"/>
+            </sense>
+          </sense>
+          <sense>
+            <xr type="lemma" subtype="diminutive">
+              <lbl>nur</lbl>
+              <ref target="#Faehrtel">Fährtel</ref>
+            </xr>
+            <def>Tragegestell, das zum Befördern von Waren zur Alm bzw. von der Alm dient</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">a Faschtl Holz</quote>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23834"/>
+          </sense>
+          <sense>
+            <sense>
+              <def>Weg; Fahrweg; Zufahrt</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">bǭe fāẹds wo ẽ̩n mǭr̄ẹ
+                  <cit type="translation">
+                    <quote xml:lang="de">March</quote>
+                  </cit>ũna bǭe bɒn ɒ fǫɒt
+                </quote>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">dǫ is kǫə fǫrt</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1c07">Mühlheim am Inn</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23833"/>
+            </sense>
+            <sense>
+              <def>Leiter, die in einem Schacht zum Ein- und Aussteigen angebracht ist</def>
+              <usg>(fachsprachlich)</usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23832"/>
+            </sense>
+          </sense>
+          <sense>
+            <sense>
+              <def>Wagenspur</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23835"/>
+            </sense>
+            <sense>
+              <def>Blutspur von angeschossenem Wild</def>
+              <usg>(jägersprachlich)</usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25630"/>
+            </sense>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Abfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Fahrtbeginn; Aufbruch</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Bei der Abfahrt zur Hochzeit wird fest gschoßn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.5d05">St. Gilgen</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">å-fårt um siᵇmö, - schauts dåss oölö då hats</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">wonn is' di Ofohrt?</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2h02">Aspang-Markt</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23879"/>
+            </sense>
+            <sense>
+              <sense>
+                <def>Talfahrt</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23880"/>
+              </sense>
+              <sense>
+                <def>Almabtrieb (des Viehs im Herbst)</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23882"/>
+              </sense>
+            </sense>
+            <sense>
+              <def>Weg, der bergab führt; Abhang</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23881"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Albenabfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Almabtrieb (des Viehs im Herbst)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16467"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Albenfahrt</orth>
+          </form>
+          <form subtype="compound" type="lemma">
+            <orth>Albfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def>Fahrt auf die Alm bzw. von der Alm ins Tal</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23891"/>
+              </sense>
+              <sense>
+                <def>Almauftrieb</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">Wo hăst deiⁿ ɒ̆öbfascht</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3f02">Hopfgarten im Brixental</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23892"/>
+              </sense>
+            </sense>
+            <sense>
+              <sense>
+                <def>Waren bzw. Habseligkeiten, die auf die Alm oder von der Alm ins Tal befördert werden</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">Die Habseligkeiten der Almerin werden rasch zu einem 'ɒlmfahrtl', das sie am Kopf nach Hause trägt, in ein weißes Tuch gebunden.</quote>
+                  <ref type="bibl" target="#Linzer_TP">
+                    <?comment noch prüfen ?>
+                    Linzer Tagespost
+                  
+                    <citedRange>24.10.1932</citedRange>
+                  </ref>
+                  <usg type="geo">
+                    <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23893"/>
+              </sense>
+              <sense>
+                <def>Fuhre, Fahrzeug oder Gerät, mit dem Utensilien auf die Alm befördert werden</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23890"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Anfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Fahrtbeginn; Losfahren</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Măch ma hă͡öd d' Uⁿfăscht!</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3i05">St. Johann in Tirol</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23887"/>
+            </sense>
+            <sense>
+              <def>Anstoßen an einen Gegenstand im Fahren</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c24835"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Auffahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Christi Himmelfahrt</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Weᵃr nia bė dr Mėttannåcht, Pålmwaich und Auffr gwödn ischt, kån går nöt in Himml kemmen</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.3b01">Sarntal</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23939"/>
+            </sense>
+            <sense>
+              <def>Almauftrieb</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Auffǫscht auf d Aᵘlm</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3b03">Thiersee</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23941"/>
+            </sense>
+            <sense>
+              <def>feierliches, festliches Vorfahren (z. B. zu einer Feier, vor dem Theater)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23938"/>
+            </sense>
+            <sense>
+              <sense>
+                <def>Besitznahme eines neuen Gutes</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23937"/>
+              </sense>
+              <sense>
+                <def>Zinsabgabe für die Besitznahme eines neuen Gutes</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c24836"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Ausfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Spazierfahrt</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Heunt habts a schöne Ausfahrt</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.5d05">St. Gilgen</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Des is mẹⁱ eəʳß̌té ɒ̊ᵘsfåəʳt sẹⁱt i gsund bin</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5r01">Gersthof</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23934"/>
+            </sense>
+            <sense>
+              <sense>
+                <def>Hinausfahren</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">dė Ausfoat is faboᵘdn</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3a15">Kautzen</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23935"/>
+              </sense>
+              <sense>
+                <def>Stelle, wo man aus einem bestimmten begrenzten Bereich hinausfährt</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.1">wSTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p7.3">SBgl.</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">gmånsåma In-, u[nd] Ausfårt</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m06">Nauders</placeName>
+                  </usg>
+                </cit>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">Ausfǭscht aus n Feˡᵈ</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3b03">Thiersee</placeName>
+                  </usg>
+                </cit>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">Dö zwä(n) håᵐ dösei Ausfoarchd</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1b03">Braunau am Inn</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16472"/>
+              </sense>
+            </sense>
+            <sense>
+              <def>Streifen am Rand des Ackers, wo der Pflug gewendet wird</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23936"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Bachfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def>Bachbett</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16538"/>
+              </sense>
+              <sense>
+                <def>Bachufer</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23933"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Balkonfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Einbruch über einen Balkon in die Wohnung</def>
+              <usg>(gaunersprachlich)</usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16539"/>
+            </sense>
+            <sense>
+              <def>Geschlechtsverkehr zwischen Frauenbrüsten</def>
+              <usg>(gaunersprachlich)</usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23984"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Bannfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Wallfahrt, um einen bösen Geist zu bannen</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16542"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Brautfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Fahrt vom Haus der Braut bis zum Wirt, wo die Hochzeitsfeier stattfindet und die Hochzeitsgäste warten</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16549"/>
+            </sense>
+            <sense>
+              <def>Brautfuhre</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23985"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Buckelfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Bürde Heu, die man auf dem Rücken trägt</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16551"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Christihimmelfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>kirchlicher Feiertag zum Gedenken an die Himmelfahrt Christi am 40. Tag nach Ostern</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.3">SBgl.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">i kim auf kristė-himėfǫrt</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1c07">Mühlheim am Inn</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">z' Christihimmöfåahʳt wiaʳds schą zan māhⁿ</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4h09">Schwertberg</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16524"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Durchfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <sense>
+                  <def>Durchfahren; Hindurchfahren</def>
+                  <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c24846"/>
+                </sense>
+                <sense>
+                  <def>Recht des Durchfahrens durch ein Grundstück</def>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+                  </usg>
+                  <cit type="example">
+                    <quote xml:lang="bar-AT">ər hǫt ə fraiə durχfǭrt</quote>
+                    <usg type="geo">
+                      <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1n01">Imst</placeName>
+                    </usg>
+                  </cit>
+                  <cit type="example">
+                    <quote xml:lang="bar-AT">da Kreita hot di Durchfǫscht durch n Drǫchna seiⁿ Feˡᵈ</quote>
+                    <usg type="geo">
+                      <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3b03">Thiersee</placeName>
+                    </usg>
+                  </cit>
+                  <cit type="example">
+                    <quote xml:lang="bar-AT">dö Durchfǫscht vawön</quote>
+                    <usg type="geo">
+                      <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e06">Kufstein</placeName>
+                    </usg>
+                  </cit>
+                  <cit type="example">
+                    <quote xml:lang="bar-AT">i hoᵇ do a Durᶜʰfohrt</quote>
+                    <usg type="geo">
+                      <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2h02">Aspang-Markt</placeName>
+                    </usg>
+                  </cit>
+                  <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c24848"/>
+                </sense>
+              </sense>
+              <sense>
+                <def>Stelle, wo man durch etwas hindurchfährt bzw. hindurchfahren darf</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.4">UKtn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">dǫ išt kχũə̃ durχfǭrt</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1n01">Imst</placeName>
+                  </usg>
+                </cit>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">In der Durfårt</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.2d02">Reichenau</placeName>
+                  </usg>
+                </cit>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">dǫ is kǫəⁿ durėfǫrt</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1c07">Mühlheim am Inn</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c24847"/>
+              </sense>
+            </sense>
+            <sense>
+              <def>Stuhlgang</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c24849"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Einfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <sense>
+                  <def>Stelle, wo in etwas (z. B. ein Grundstück, ein Feld, eine Scheune) hineingefahren wird</def>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.1">wSTir.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="bundesland" ref="/geodata-wboe.xml#p7">Bgl.</placeName>
+                  </usg>
+                  <cit type="example">
+                    <quote xml:lang="bar-AT">Die Infohrt in Stodl ischt viel z'stickl
+                      <cit type="translation">
+                        <quote xml:lang="de">steil</quote>
+                      </cit>
+                    </quote>
+                    <usg type="geo">
+                      <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m02">Fendels</placeName>
+                    </usg>
+                  </cit>
+                  <cit type="example">
+                    <quote xml:lang="bar-AT">da hoam übər d Eiⁿf'ǫscht eiⁿfǫʳn</quote>
+                    <usg type="geo">
+                      <placeName type="kleinregion" ref="/geodata-wboe.xml#p1C.3c">wUInnt.</placeName>
+                    </usg>
+                  </cit>
+                  <cit type="example">
+                    <quote xml:lang="bar-AT">dös Haus håd a grosse Eiⁿfoat</quote>
+                    <usg type="geo">
+                      <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2e01">Linz</placeName>
+                    </usg>
+                  </cit>
+                  <cit type="example">
+                    <quote xml:lang="bar-AT">In da Eiⁿfoaʳt ziagts</quote>
+                    <usg type="geo">
+                      <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3b09">Raabs an der Thaya</placeName>
+                    </usg>
+                  </cit>
+                  <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c24851"/>
+                </sense>
+                <sense>
+                  <def>Hausflur</def>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                  </usg>
+                  <cit type="example">
+                    <quote xml:lang="bar-AT">in dəʳ ə̣fåəʳt ß̌tẽ</quote>
+                    <usg type="geo">
+                      <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5r01">Gersthof</placeName>
+                    </usg>
+                  </cit>
+                  <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c24853"/>
+                </sense>
+              </sense>
+              <sense>
+                <def>Hineinfahren</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">dė ėifoat is faboᵘdn</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3a15">Kautzen</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c24850"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Enzfährtel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>sehr große Fuhre</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16479"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Feldeinfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Stelle, auf der ins Feld eingefahren wird</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16487"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Feldfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>breiterer Wiesenstreifen zwischen Feldern</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16488"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Fürfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def>Tätigkeit des Überholens beim Fahren</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c24855"/>
+              </sense>
+              <sense>
+                <def>Vorfahrt; Vorfahrtsrecht</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c24856"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Gegenfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Fahrt stromabwärts</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16492"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Grasfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Auftrieb auf die Weide</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16495"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Hallfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Fahrt bzw. Transport einer Schiffsladung Salz (auf Salzach oder Inn)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16496"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Heimfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>aus Naturalien bestehende Mitgabe für Handwerkerinnen und Handwerker (z. B. Näherinnen, Schneider), die ihre Betätigung im Haus der Auftraggeberin bzw. des Auftraggebers ausführen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25281"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Herfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Fahrt von einem Ort in Richtung der Sprecherin bzw. des Sprechers</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">ba da Herfohrt is ma wos passiert</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2h02">Aspang-Markt</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">bẹⁱ dəʳ Heəʳfåəʳt is 's uns khåiˡt gwesn̥</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5r01">Gersthof</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c24895"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Heufahrt</orth>
+          </form>
+          <form subtype="compound" type="lemma">
+            <orth>Heufährtel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Fuhre Heu</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">əm bsoffnə muəs ə haėfaʳdl aushǫᵇm</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3g05">Kremsmünster</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Kimt a Haifaᵈl daher?</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1c02">Neustadtl an der Donau</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16512"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Himmelfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def>Aufstieg Jesu Christi in den Himmel am 40. Tag nach Ostern sowie der daran erinnernde Feiertag</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p4.4">Tenneng.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p7.2">MBgl.</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">droi Tēg foʳ Kristi Himlfåʳscht</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.2c01">Fusch an der Großglocknerstraße</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23943"/>
+              </sense>
+              <sense>
+                <def>Ableben; Sterben</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23945"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Hinfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Fahrt auf ein bestimmtes Ziel zu</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Auf der Hinfohrt sein iᵃhm die Roß durch</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m02">Fendels</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">auf da Hiⁿfōscht is s schöⁿ Wöda gwösn, auf da Hęafōscht hǭts reŋa uⁿgfong</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3b03">Thiersee</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Auf da Hi(n)fahrt is nix passiert</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.5d05">St. Gilgen</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">āf da Hīfårt sama amåöˡ ausgšdiᵍŋ</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c24893"/>
+            </sense>
+            <sense>
+              <def>Ableben; Sterben</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c24894"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Hochfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <sense>
+                  <def>Hochmut; Arroganz; Eitelkeit</def>
+                  <usg type="geo">
+                    <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p7.2">MBgl.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p7.3">SBgl.</placeName>
+                  </usg>
+                  <cit type="example">
+                    <quote xml:lang="bar-AT">folɒ hōufǫɒt</quote>
+                    <usg type="geo">
+                      <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1c07">Mühlheim am Inn</placeName>
+                    </usg>
+                  </cit>
+                  <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c24902"/>
+                </sense>
+                <sense>
+                  <def>Prunk; Luxus; übertriebener Aufwand</def>
+                  <usg type="geo">
+                    <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+                  </usg>
+                  <cit type="example">
+                    <quote xml:lang="bar-AT">dëi hout an Houfoaʳt</quote>
+                    <usg type="geo">
+                      <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.4c14">Kirchbach-Zerlach</placeName>
+                    </usg>
+                  </cit>
+                  <cit type="example">
+                    <quote xml:lang="bar-AT">Dės is a glae ɒ Ho̩ggfǫɒd</quote>
+                    <usg type="geo">
+                      <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3s04">Langenlois</placeName>
+                    </usg>
+                  </cit>
+                  <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c24900"/>
+                </sense>
+              </sense>
+              <sense>
+                <def type="umschreibung">Bezeichnung für eine eitle Frau</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c24898"/>
+              </sense>
+            </sense>
+            <sense>
+              <sense>
+                <def>Gewöhnliche Waldrebe; Clematis vitalba</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c24899"/>
+              </sense>
+              <sense>
+                <def type="umschreibung">Bezeichnung für verschiedene Arten von Seide (Cuscuta L.)</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25121"/>
+              </sense>
+              <sense>
+                <def type="umschreibung">Bezeichnung für verschiedene Arten der Studentenblume (Tagetes L.)</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">stinkɛtɛ Hoffahrt</quote>
+                  <ref type="bibl" target="#TirolerWb">Tiroler Wb.
+                    <citedRange>605</citedRange>
+                  </ref>
+                  <usg type="geo">
+                    <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+                  </usg>
+                </cit>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">Stinkige Hoffahrt</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.3c08">Stainz</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25122"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Hochzeitfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Fahrt zur Hochzeit</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16509"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Hochzeitswallfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Wallfahrt des Braut- bzw. Ehepaares vor oder nach der Hochzeit</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.1">wSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16510"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Höllenfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Fahrt, Gang in das Reich der Toten</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Krišti Höllnfoart</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.1b04">Rangersdorf</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16498"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Kirchfahrt</orth>
+          </form>
+          <form subtype="compound" type="lemma">
+            <orth>Kirchenfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def>Wallfahrt</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">khiɒffɒd ɒf maria-haimsuχin (Ma.Heimsuchung)</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.5j04">Fehring</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25261"/>
+              </sense>
+              <sense>
+                <def>Hochzeitszug; Fahrt zur Trauung in der Kirche</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25262"/>
+              </sense>
+              <sense>
+                <xr type="variant" subtype="compound">
+                  <lbl>nur</lbl>
+                  <ref>Kirchfährtel</ref>
+                </xr>
+                <usg>(scherzhaft)</usg>
+                <def>Leichenzug</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">wąn oölö ban Bęten z'glai å-sötzn, gibts båöˡ a Khiərafartl</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25263"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Kopffahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Traglast, die auf dem Kopf getragen wird</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16522"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Kreuzfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Pilgergang; Bittgang</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16525"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Mariahimmelfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Mariä Himmelfahrt; am 15. August begangenes christliches Fest, an dem die leibliche Aufnahme von Jesu Mutter Maria in den Himmel gefeiert wird</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.1">wSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16533"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Mistfahrt</orth>
+          </form>
+          <form subtype="compound" type="lemma">
+            <orth>Mistfährtel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Mistfuhre</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16534"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Nachfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Erbe, das nichts wert ist</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16536"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Naufahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Fahrt eines Schiffes stromabwärts</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">alte Naufahrt</quote>
+                <ref type="bibl" target="#Pölzl1934">
+                  <?comment prüfen ?>
+                  Pölzl 1934
+                
+                  <citedRange>24</citedRange>
+                </ref>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3t04">Krems an der Donau</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16537"/>
+            </sense>
+            <sense>
+              <def>Fahrrinne; schmaler, schiffbarer Streifen eines Gewässers</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">d' Ufəʳschuz-Bautn hąmd füˡ Šdǫaⁿ u[nd] Šdök ö d' Naufårt bråcht</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25266"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Osterfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>die zur Osterweihe gebrachten Lebensmittel</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16594"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Palmeselfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Prozession am Palmsonntag mit einem hölzernen Esel und einer darauf sitzenden hölzernen Christusfigur</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.4">UKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.4">Tenneng.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.1">NBgl.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16540"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Porfahrt</orth>
+          </form>
+          <form subtype="compound" type="lemma">
+            <orth>Porenfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Himmelfahrt</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16545"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Postfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Transport von Postsendungen mit dem Postwagen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">dö Postfahrt geht im Winter nimmer</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.5d05">St. Gilgen</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16546"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Retourfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Fahrt, die vom Ziel zum Ausgangspunkt zurück führt</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">schrai a weⁿg zu-a ön zrukfåʳn (af da Ręduəʳfårt)</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16554"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Rückfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Fahrt, die vom Ziel zum Ausgangspunkt zurück führt</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">auf da Rukgfoath</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3a15">Kautzen</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16556"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Schifffahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Fahrt mit einem Schiff</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.2">MBgl.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Schiffoatt bedreiᵇm</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2e01">Linz</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16559"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Schlittenfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Fahrt mit einem Schlitten</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Bei der Schlittnfahrt habn̄s umgworfen</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.5d05">St. Gilgen</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">dös is a scheni Schlidnfårt</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2h28">Warth</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16562"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Schlittagefahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Fahrt mit einem Schlitten</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16563"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Schwarzfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Fahrt, die ein Angestellter bzw. Chauffeur mit dem Wagen des Besitzers macht, ohne dass dieser davon weiß</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Eine Schwuͦazfåhrt machen</quote>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16565"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Spazierfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Fahrt, die zur Erholung oder zum Vergnügen durchgeführt wird</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16566"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Spritzfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Fahrt, die zum Vergnügen durchgeführt wird</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16567"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Tagfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Termin, an dem man vor Gericht zu erscheinen hat</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">önan Munad hǫms ǫft dö Tǫgfǫscht</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3d01">Alpbach</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16570"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Talfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>abwärts führende Fahrt (durch ein Tal)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16571"/>
+            </sense>
+            <sense>
+              <def>Abstieg vom Hochgebirge</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25271"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Teufelsfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>waghalsige, gefährliche Fahrt</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16573"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Umfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>das Fahren um etwas herum (z. B. einen See)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25274"/>
+            </sense>
+            <sense>
+              <def>Irrfahrt; ungewöhnlich lang dauernde, schwierige Fahrt</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25273"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Von- und Zufahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Recht, ein Grundstück zu befahren</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16483"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Vorfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def>Vorrangsrecht im Straßenverkehr</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">der hot d' Vorfohrt</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2h02">Aspang-Markt</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16484"/>
+              </sense>
+              <sense>
+                <def>Tätigkeit des Überholens beim Fahren</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25275"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Wagenfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Fahrt mit einem Wagen bzw. Lastwagen</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25277"/>
+            </sense>
+            <sense>
+              <def>Wagenladung</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25278"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Wallfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def>aus religiösen Motiven unternommene Fahrt oder Wanderung an eine heilige Stätte, einen Wallfahrtsort</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p7.1">NBgl.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p7.2">MBgl.</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">Pyhra woar amoi a Woifort</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1q06">Pyhra</placeName>
+                  </usg>
+                </cit>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">af da Wouüfoacht</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3a15">Kautzen</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16581"/>
+              </sense>
+              <sense>
+                <def>Wallfahrtsort</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">ũə̃sigl (Einsiedeln in der Schweiz) išt ə grǫassə wǫlfǭrt</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1n01">Imst</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c30332"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Wasserfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Fahrt auf dem Wasser (z. B. mit einem Schiff)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16582"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Weihfahrt</orth>
+          </form>
+          <form subtype="compound" type="lemma">
+            <orth>Weihfährtel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>die für die (Oster-)Weihe vorgesehenen Lebensmittel</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16583"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Zellfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Wallfahrt nach Mariazell</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16592"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Zufahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Fahrweg, auf dem man an einen bestimmten Ort (z. B. einen Acker, ein Grundstück) gelangt</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.1">wSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Grod sovl a lötzi Zuᵃfohrt ischt, dös war der oᵃnzigi Todl</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m02">Fendels</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">dęr hǫt kxa tsuəfǫrt</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3f01">Feldkirchen in Kärnten</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">das is a schmale Zuefahrt</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.5d05">St. Gilgen</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">A schlechte Zuᵃfahrt</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2a39">Traun</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">is dė Zuəfåəʳt frẹⁱ?</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5r01">Gersthof</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16591"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Zurückfahrt</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Fahrt, die vom Ziel zum Ausgangspunkt zurück führt</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.1">wSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c16590"/>
+            </sense>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="lemma">
+            <ref target="#Fahrt">Fahrt</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>auf die Fahrt gehen</orth>
+          </form>
+          <sense>
+            <def>betteln gehen; stehlen gehen</def>
+            <usg>(gaunersprachlich)</usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">auf die Fohrt gehn</quote>
+              <ref type="bibl" target="#Burnadz1966">Burnadz 1966
+                <citedRange>13</citedRange>
+              </ref>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23874"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Auf zur letzten Fahrt!</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Aufforderung zu Beginn einer Bestattung</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">auf zr löztn Fo͜art</quote>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23875"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>etwas auf der Fahrt haben</orth>
+          </form>
+          <sense>
+            <def>mitten in der Arbeit sein</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">ëππs auf da Fascht håᵘm</quote>
+              <usg type="geo">
+                <placeName type="kleinregion" ref="/geodata-wboe.xml#p4.3d">Gr.Arlt.</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">I hõ s Schmá̊itßlëitan auf da Fascht</quote>
+              <usg type="geo">
+                <placeName type="kleinregion" ref="/geodata-wboe.xml#p4.3d">Gr.Arlt.</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23876"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Ist das eine Fahrt</orth>
+          </form>
+          <sense>
+            <def>Ist das ein Treiben (von Kindern oder von unordentlichen Leuten)</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">išt tōis ə fǭrt</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1n01">Imst</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23872"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Jetzt gehst du eine Fahrt mit mir eins tanzen!</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Aufforderung vom Bruder des Bräutigams an die Braut, mit ihm zu tanzen (um sie dann als Teil des Hochzeitsbrauchs zu „entführen“)</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Jetz geahsche a Få̄rt mit mier oans tånzn!</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1B.0j01">Obertilliach</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23878"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>unter einer Fahrt</orth>
+          </form>
+          <sense>
+            <def>auf einmal; zugleich; in einem Zug</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">unter oaner Fahrt</quote>
+              <ref type="bibl" target="#Bredenbrücker1901">STirId. 1901
+                <citedRange>286</citedRange>
+              </ref>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23877"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>wilde Fahrt</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">die wilde Jagd bzw. das wilde (Gespenster-)Heer aus der Volkssage</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">di wilde fą̆rt</quote>
+              <usg type="geo">
+                <placeName type="kleinregion" ref="/geodata-wboe.xml#p1A.1h">Umg.Meran</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">wilde fǭršt</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1B.0d03">St. Veit in Defereggen</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">dę wild fǭʀt</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1g01">Pettneu am Arlberg</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">die wildi Fohrt, wie der leidigi Teifl</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m02">Fendels</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">dö wuid Fascht</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3d02">Wildschönau</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23871"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="variant" subtype="compound">
+            <ref>Anfahrt</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>Anfahrt haben</orth>
+          </form>
+          <sense>
+            <def>eine Arbeitserlaubnis besitzen</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">õwfǫɒʀt hǭḇm</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.2i07">Villach</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23888"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="variant" subtype="compound">
+            <ref>Auffahrt</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>Du wirst eine dreckige Auffahrt haben</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">wird scherzhaft zu Personen gesagt, die zu viel Unfug treiben</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">du weᵃʳst a drökigₑ Auffo͜art håbm</quote>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23942"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="variant" subtype="compound">
+            <ref>Christihimmelfahrt</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>Ist Christi Himmelfahrt hell und rein, so wird auch der Herbst so sein</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Wetterregel</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">is Kristihimlfoaʳt höiˡ und rein, sou wiaʳd a da Hiaʳscht sou seiⁿ</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.5d20">Vorau</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25686"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Wenn es vor Christi Himmelfahrt donnert, gib es noch vier Wochen Winter</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Wetterregel</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Wãns fǫ Kχrįßtįhįmįfǭσ̌t dō̃št, gaits nǫ fįɒ Wouχn Wįntɒ</quote>
+              <usg type="geo">
+                <placeName type="kleinregion" ref="/geodata-wboe.xml#p4.3d">Gr.Arlt.</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25687"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Wie das Wetter zu Christi Himmelfahrt, der ganze Herbst hat auch die Art</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Wetterregel</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Wias 's Wöda zu Christöhim̄öfahrt, da ganzö Höwöß hat af dö Art</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4d13">St. Veit im Mühlkreis</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c24845"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="variant" subtype="compound">
+            <ref>Himmelfahrt</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>Dies wird eine dreckige Himmelfahrt</orth>
+          </form>
+          <sense>
+            <def>Diese Sache wird kein gutes Ende nehmen</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Dees wird a dreckiche Himuˡ·fåhrt</quote>
+              <ref type="bibl" target="#WrWb1951">
+                <?comment Seitenzahl ergänzen und Zitat prüfen ?>
+                WrWb. 1951
+              </ref>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23946"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="variant" subtype="compound">
+            <ref>Hinfahrt</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>auf der Hinfahrt sein</orth>
+          </form>
+          <sense>
+            <def>in sehr schlechtem gesundheitlichen Zustand sein; im Sterben liegen</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">af dr hinifârt seiñ</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.3b01">Sarntal</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">der isch af d(e)r hîn(e)fart</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.3i02">Kastelruth</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c26423"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="variant" subtype="compound">
+            <ref>Hochfahrt</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>Hochfahrt muss sich drücken lassen</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Ausspruch über die Mühen, die Eitelkeit und gutes Aussehen erfordern (ursprünglich bezogen auf Mieder bzw. enge Kleidung, die zusammengedrückt werden müssen)</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">dᵄ' hǫuffǫət muəˢ sė druckə lǫssn</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1a02">Eggelsberg</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">he̩o̩κφo̩xτ mųɒ σė τrukᵄ lo̩ßn̥</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2b44">Ungenach</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c26923"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Hochfahrt pflanzen</orth>
+          </form>
+          <sense>
+            <def>sich absichtlich stolz oder überheblich gebärden, um andere zu ärgern</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">håkxfåšt - pƒlan̥tsn</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.3d02">Großarl</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c26922"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="variant" subtype="compound">
+            <ref>Kirchfahrt</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>eine Kirchfahrt ins Bayerische tun</orth>
+          </form>
+          <sense>
+            <def>etwas über die Staatsgrenze nach Bayern schmuggeln</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">ɒ κhirɒφo̩xτ ė σ πo̩ɒrėß̌ė τå̃ɒ̃</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2b44">Ungenach</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25884"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>eine Kirchfahrt tun</orth>
+          </form>
+          <sense>
+            <def>ins Wirtshaus gehen</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">ɒ κhirɒφo̩xτ τå̃ɒ̃</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2b44">Ungenach</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25264"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="variant" subtype="compound">
+            <ref>Mariahimmelfahrt</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>Maria Himmelfahrt klar Sonnenschein / klar und rein, bringt viel und guten Wein</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Wetterregel</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Maria-Himmǫ̈fåhrt klǫr Sonscheiⁿ / Bring gean vü und guadn Weiⁿ</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e06">Kufstein</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Maria-Him̄elfahrt klǫr und rein / Bringg fü (viel) und guadn Weiⁿ</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e06">Kufstein</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c26425"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="variant" subtype="compound">
+            <ref>Nachfahrt</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>die Nachfahrt erben</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Antwort auf die Schwerzfrage, was man von jemandem erben könne (nämlich den Tod)</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Was vermåchst miar den̄, wan̄ du stirbst? - Die Nachfahrt kan̄st erba</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.3c08">Stainz</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Wås håd ăʳ e͡ană denn fămåcht (vererbt) ? - D' Nåchfo͡aʳt</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2j15">Pottendorf</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c26427"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="variant" subtype="compound">
+            <ref>Schlittenfahrt</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>eine schöne Schlittenfahrt</orth>
+          </form>
+          <sense>
+            <def>eine schöne Bescherung</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">dös is a scheni Schlidnfårt</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2h28">Warth</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25269"/>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

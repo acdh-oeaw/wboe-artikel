@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.8.1" ?>
+<?parser type="lioe" version="0.8.0" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>fünferln</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#EW">Eva Wahlmüller</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+          <name xml:id="MK">Markus Kunzmann</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2021-08-23" who="#EW">Datensatz erstellt</change>
+        <change status="in progress" when="2021-08-24" who="#EW">Belegauswahl + Simplexbedeutungen</change>
+        <change status="in progress" when="2021-08-25" who="#EW">Wortbildungen + Redewendungen</change>
+        <change status="peer correction" when="2021-08-25" who="#EW">fertig für int. Korrektur</change>
+        <change status="internal correction" when="2021-08-27" who="#EW">überarbeitet nach Anmerkungen AG</change>
+        <change status="internal correction" when="2021-09-07" who="#PZ">LK eingefügt</change>
+        <change status="external correction" when="2021-09-08" who="#EW">fertig für ext. Korr.</change>
+        <change status="finished" when="2021-09-15" who="#EW">keine Anmerkungen JE</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="fuenferln">
+          <orth>fünferln</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c20553"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Verb</gram>
+          <iType>schwach</iType>
+        </gramGrp>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <note type="kommentar" resp="#PZ">Der auf mhd.
+          <c>i</c>bzw.
+          <c>ü</c>zurückgehende Stammvokal wird im gesamten Verbreitungsgebiet als ungerundeter kurzer
+          <c>i</c>-Monophthong realisiert
+          <xr>
+            <ref>finfərln</ref>
+            <ref>fimfɒln</ref>
+            <ref>fimpfɒln</ref>
+          </xr>. Parallel treten überall außer im westlichen Südbairischen vermutlich sekundär restituierte gerundete
+          <c>ü</c>-Monophthonge auf
+          <xr>
+            <ref>fünfɒrln</ref>
+            <ref>fümfɒln</ref>
+          </xr>. Nur selten wird der inlautende Nasal alveolar artikuliert
+          <xr>
+            <ref>finfərln</ref>
+            <ref>fünfɒrln</ref>
+          </xr>, hingegen dominieren an den folgenden Frikativ assimilierte labiale Nasale, wobei häufig koartikulatorisch bedingte Plosive eingeschoben werden
+          <xr>
+            <ref>fimfɒln</ref>
+            <ref>fümfɒln</ref>
+            <ref>fimpfɒln</ref>
+          </xr>. Die Vokale der auslautenden Silben wurden überall reduziert. Während im Südbairischen das
+          <c>r</c>gelegentlich erhalten blieb
+          <xr>
+            <ref>finfərln</ref>
+            <ref>fünfɒrln</ref>
+          </xr>, wurde dieses ansonsten überall vokalisiert und verschmolz mit dem Vokal
+          <xr>
+            <ref>fimfɒln</ref>
+            <ref>fimpfɒln</ref>
+            <ref>fümfɒln</ref>
+          </xr>. Gelegentlich wurde im östlichen Südbairischen der Vokal getilgt, wodurch das
+          <c>r</c>silbisch wurde
+          <xr>
+            <ref>finfr̥ln</ref>
+            <ref>fimfr̥ln</ref>
+          </xr>. Gelegentlich blieb im westlichen Südbairischen der Vokal zwischen Liquid und Nasal erhalten
+          <xr>
+            <ref>finfərlən</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fimfɛrlɛn</pron>
+          <usg type="geo">
+            <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">finfɛrln</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p1B.0c">östl.OTir.Pustert.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">finfərlən</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.2a29">Weer</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">finfaln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e12">Schwoich</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fimbfəʳl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.1d03">Lobmingtal</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">finfrln</pron>
+          <pron xml:lang="bar-AT">fimfrln</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p2.2d">obstGurkt.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fünfarln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3c05">St. Georgen am Längsee</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fimfɒln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.4d01">Graz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fīmbfɒln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.5d20">Vorau</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φį̃mfɒɫ̥n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1e11">Suben</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fīmfaln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2e01">Linz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fimbfəʳln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fimbƒɒln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4b13">Ulrichsberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fĩm(b)fɒɫn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1d01">Allhartsberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fünfal</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2c02">Berndorf</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fimfaɫn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1d01">Allhartsberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">füaferln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4e04">Heldenberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fínferln</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fimfeʳln</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c21411"/>
+        </form>
+        <etym>
+          <seg type="desc">Ableitung von</seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref target="Fünfer.xml">Fünfer</ref>
+            </xr>
+          </cit>
+        </etym>
+        <sense>
+          <sense>
+            <def>„mit 5 Guldennoten befriedigen“</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21454"/>
+          </sense>
+          <sense>
+            <def>foppen; zum Besten/Narren halten</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">jₑm'ntn finfrln</quote>
+              <usg type="geo">
+                <placeName type="kleinregion" ref="/geodata-wboe.xml#p2.2d">obstGurkt.</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">einen fimfɒln</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.4d01">Graz</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">wem fimfȇȓln</quote>
+              <usg type="geo">
+                <placeName type="kleinregion" ref="/geodata-wboe.xml#p5.1b">nördl.obInnv.</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">mǫaⁿst laicht und i lås mö fąⁿ diəʳ fimbfəʳln</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">den hąms mę̄ gfimbfəʳlt</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">i låß mi von dir net fünferln</quote>
+              <ref type="bibl" target="#WrWb1929">WrWb. 1929
+                <citedRange>64</citedRange>
+              </ref>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21456"/>
+          </sense>
+          <sense>
+            <def type="umschreibung">jemanden oder etwas derb ablehnen</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">kuⁿst mi finfaln</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e12">Schwoich</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">I tui ehm wos fünfaln</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3a24">Waldkirchen an der Thaya</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">so konnst mi füaferln</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4e04">Heldenberg</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21461"/>
+          </sense>
+          <sense>
+            <xr type="lemma">
+              <lbl>nur</lbl>
+              <ref>Fünferln</ref>
+            </xr>
+            <usg>(nur Substantiv)</usg>
+            <def>Geschicklichkeitsspiel mit kleinen Steinen für Kinder</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21462"/>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>buckelfünferln</orth>
+          </form>
+          <sense>
+            <sense>
+              <def type="umschreibung">jemanden oder etwas derb ablehnen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21470"/>
+            </sense>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="lemma">
+            <ref>fünferln</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>Du kannst mich fünferln, nachher hast du um sechs Feierabend</orth>
+          </form>
+          <sense>
+            <def>du kannst mich gern haben (wird gesagt, wenn man etwas nicht tun will)</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">du kąnnsch mi finfɛrlɛn, nąr ąschɛ um sęgsɛ fairum</quote>
+              <ref type="bibl" target="#STir.Wb.">STir. WB. 1972
+                <citedRange>88</citedRange>
+              </ref>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">du kχũšt mi finfərlən, nǫχχər hǫst um söksi fairam</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.2a29">Weer</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21472"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="variant" subtype="compound">
+            <ref>buckelfünferln</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>der kann mich / du kannst mich buckelfünferln</orth>
+          </form>
+          <sense>
+            <def>der kann mich / du kannst mich gern haben; der kann mir / du kannst mir den Buckel runterrutschen (derbe Ablehnung)</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Du konst mi Pugglfimfrln!</quote>
+              <usg type="geo">
+                <placeName type="kleinregion" ref="/geodata-wboe.xml#p2.2d">obstGurkt.</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">du khā̃ọ̃sd mi buglfīmbfɒln</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.5d20">Vorau</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">deɒ khaum mi bugḷfí̈mfɒɫn</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1o01">Herzogenburg</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21471"/>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

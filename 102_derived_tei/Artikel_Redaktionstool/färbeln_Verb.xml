@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.6.6"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>färbeln</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#SW">Sabine Wahl</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="JD">Jan Braun</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Eva Wahlmüller</name>
+          <name>Susanna Muhr</name>
+          <name>Alexandra Grohe</name>
+          <name>Klemens Wagner</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="external correction" when="2019-01-20" who="#SW">Datensatz erstellt</change>
+        <change status="finished" when="2020-10-17" who="#SW">Artikeloptimierung durchgeführt</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="faerbeln">
+          <orth>färbeln</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c1252"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Verb</gram>
+          <iType>schwach</iType>
+        </gramGrp>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p7.1">NBgl.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p7.3">SBgl.</placeName>
+        </usg>
+        <note type="kommentar" resp="#FF">Im gesamten Untersuchungsgebiet dominieren (neben vereinzelten umgelauteten Formen im Mittelbairischen und Südmittelbairischen)
+          <c>a</c>-Monophthonge infolge von Umlautbeseitigung
+          <xr>
+            <ref>ƒarbl̥n</ref>
+          </xr>.  In weiten Teilen des Mittelbairischen und Südmittelbairischen liegen entweder Formen von
+          <c>r</c>-Schwund oder
+          <c>r</c>-Vokalisierung vor, die Unterscheidung ist aufgrund der Qualität des Stammvokals nicht möglich. Zusätzlich tritt Frikativierung von
+          <c>b</c>auf
+          <xr>
+            <ref>ƒāwl̥n</ref>
+          </xr>. Das Südbairische tendiert zum Erhalt des Liquids und des Plosivs
+          <xr>
+            <ref>ƒarbl̥n</ref>
+          </xr>. In Teilen des Mittelbairischen und Südmittelbairischen sind aufgrund der Konkurrenzsituation zwischen
+          <c>e</c>-Synkope und
+          <c>l</c>-Vokalisierung in der auslautenden Silbe komplementäre Varianten mit
+          <c>l</c>-Erhalt
+          <xr>
+            <ref>ƒāwl̥n</ref>
+          </xr>oder Vokalisierungsprodukten mit unterschiedlicher Qualität belegt
+          <xr>
+            <ref>ƒāwən</ref>
+          </xr>. Die vokalisierten Formen werden dabei im Ostmittelbairischen sowie im westlichen Südmittelbairischen oft gerundet
+          <xr>
+            <ref>fāwǫ̈n</ref>
+            <ref>fāwų̈n</ref>
+          </xr>. Mit Ausnahme des bairisch-alemannischen Übergangsgebiets im westlichen Nordtirol, wo vokalische Nebensilben belegt sind
+          <xr>
+            <ref>ƒarbl̥ə</ref>
+          </xr>, herrschen bairische
+          <c>n</c>-haltige silbische Endungen vor
+          <xr>
+            <ref>ƒarbl̥n</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">farwl̥</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p1A.4c">Lüsenert.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">farbln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.4c01">Lüsen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">farblə</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1n01">Imst</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">farbɫn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3b03">Thiersee</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fārwön</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e06">Kufstein</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">farbln</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">farwln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.1b04">Rangersdorf</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fė̄iwl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.1i01">Weißkirchen in Steiermark</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fāwln</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p3.2d">Lamingt.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fāwọ̈n</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p3.2i">Auss.Ld.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fawüˡn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.2p01">Admont</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fāwl</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p3.3e">Sulmt.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">‑faʳbln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.4b14">Hitzendorf</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">farwln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.5d20">Vorau</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fārbeln</pron>
+          <usg type="geo">
+            <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-farwön</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.2a01">Bramberg am Wildkogel</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">farʷin</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.3d01">Hüttschlag</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φarwėn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.3d02">Großarl</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fárbln</pron>
+          <usg type="geo">
+            <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fāwėn</pron>
+          <usg type="geo">
+            <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">faʳwėˡn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1c07">Mühlheim am Inn</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φāwön</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fawəˡn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2e01">Linz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fawöˡn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2e01">Linz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φārwön</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3a05">Bad Ischl</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">‑faböˡn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3g02">Bad Hall</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">farwön</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4b13">Ulrichsberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fāwų̈̃n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4e04">Gallneukirchen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φawǫ̈̃n</pron>
+          <usg type="geo">
+            <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fāwų̈̃n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1d01">Allhartsberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fawėˡn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1n02">Dunkelsteinerwald</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φāwų̈n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1s02">Judenau-Baumgarten</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fa(ʳ)wöˡn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1s06">Sitzenberg-Reidling</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">färwln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2h28">Warth</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">faweln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2h28">Warth</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φāwų̈n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3a18">Reingers</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fawüˡn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3b09">Raabs an der Thaya</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fāwẽn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3s06">Straß im Straßertale</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fāwön</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4c03">Mailberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φāwų̈n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4d03">Drasenhofen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fiawln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4d18">Poysdorf</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fawln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4d18">Poysdorf</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fa(r)beln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4f06">Ernstbrunn</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-φawln̥</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4f06">Ernstbrunn</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fabü̆ˡn</pron>
+          <usg type="geo">
+            <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fāwəln</pron>
+          <usg type="geo">
+            <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">faʳbl̥n̥</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5r01">Gersthof</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φawḙ̈n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5u02">Floridsdorf</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fāʳwˡⁿ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5w06">Mauer</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φāwų̈n</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p7.1">NBgl.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fāwλ̥n</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p7.1b">nSeew.</placeName>
+          </usg>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p7.1c">sSeew.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fabln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p7.3g07">Stegersbach</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c1253"/>
+        </form>
+        <etym>
+          <cit type="etymon">
+            <form>
+              <orth>farbeln</orth>
+            </form>
+            <form>
+              <orth>färbeln</orth>
+            </form>
+            <def>ein Kartenspiel spielen, bei dem nur zusammenpassende Farben gelten und kein Trumpf gemacht wird</def>
+          </cit>
+          <ref type="bibl" target="#DWB1862III">
+            <lbl>vgl.</lbl>DWB 1862 III
+            <citedRange>1325</citedRange>
+          </ref>
+          <seg type="desc">; Ableitung von</seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref target="färben.xml#faerben">färben</ref>
+            </xr>
+          </cit>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <def>(leicht) färben; etwas anstreichen; etwas anmalen; eine Wand, ein Zimmer färbig streichen, tünchen; etwas mit Farbe (dünn) bestreichen, bemalen</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.1">NBgl.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">er loᵃtt si Haus und Schtoᵃll farbln</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m02">Fendels</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">i hon gfarbl̥t (s haus, t wont, t štūwə, dən oufə)</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1n01">Imst</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">der Bue tuet gern farbln</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.5d05">St. Gilgen</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">seit Johr und Tog Ghört d'Schul scho'gfarblt</quote>
+                <ref type="bibl">Schmutz-Höbarthen 1952
+                  <citedRange>63</citedRange>
+                </ref>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c1254"/>
+            </sense>
+            <sense>
+              <def>die Küche weiß mit Kalkmilch anstreichen und danach durch Besprengen bunt färben</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c1255"/>
+            </sense>
+            <sense>
+              <def>mit Kalk, weiß anstreichen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c1256"/>
+            </sense>
+            <sense>
+              <def>malen</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.3">SBgl.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c1257"/>
+            </sense>
+          </sense>
+          <sense>
+            <def>schminken; sich schönmachen</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">dė Bappm fawėng wiaʳa Kåschba</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.5e01">Salzburg</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">a gfabids Weibsbüd</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1t01">St. Pölten</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">sī is gfawid</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3f03">Göpfritz an der Wild</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Di is gfabü̆ˡt</quote>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">D'Hausfrau is heund wieder kurios g'farbelt</quote>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c1258"/>
+          </sense>
+          <sense>
+            <sense>
+              <def>ein (verbotenes) Kartenspiel spielen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Dö hand bein Ferwön dawischt wårn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4h06">Pabneukirchen</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c1259"/>
+            </sense>
+            <sense>
+              <def>ein Kartenspiel, bei dem kein Trumpf gemacht wird, spielen</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c1260"/>
+            </sense>
+            <sense>
+              <def>mit Farbe stechen (nur im Kartenspiel)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c1261"/>
+            </sense>
+          </sense>
+          <sense>
+            <def>ärgern; in Zorn versetzen</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Farbelns mich nit!</quote>
+              <ref type="bibl" target="#Holzer1943">Holzer 1943
+                <citedRange>85</citedRange>
+              </ref>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c1262"/>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>abfärbeln</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>im Kartenspiel eine Farbe abwerfen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c1263"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>abherfärbeln</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>schminken</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">s'Gsicht å̄hafaröwöˡn</quote>
+                <usg type="geo">
+                  <placeName type="kleinregion" ref="/geodata-wboe.xml#p3.2i">Auss.Ld.</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c1264"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>anfärbeln</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>mit Farbe bestreichen, bemalen; (Ostereier) färben, anstreichen, einfärbig ausmalen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">di Post anfårbəln</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3c08">Kundl</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">dö håds wida ångəfaböˡd</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3g02">Bad Hall</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c1265"/>
+            </sense>
+            <sense>
+              <def>anmalen; tätowieren</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c1266"/>
+            </sense>
+            <sense>
+              <def>schminken</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c1267"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>ausfärbeln</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>einen Innenraum einfärbig streichen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">dös Zim̄ar is nētt āusgfarwöd</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e06">Kufstein</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c1268"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>ausherfärbeln</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>einen ganzen Raum ausmalen</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c1269"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>nachfärbeln</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def>nochmals einfärbig tünchen</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c1270"/>
+              </sense>
+            </sense>
+            <sense>
+              <sense>
+                <def>eine Mauer anstreichen, z. B. mit Streifen und Schablonen bei Ausbesserungen</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c1271"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>verfärbeln</orth>
+            <gramGrp></gramGrp>
+          </form>
+          <sense>
+            <sense>
+              <def>beginnen, gelb zu werden (nur von Getreide)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">vafawüˡt si</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.2p01">Admont</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c1272"/>
+            </sense>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

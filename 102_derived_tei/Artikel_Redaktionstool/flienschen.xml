@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.6.8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>flienschen</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#PZ">Patrick Zeitlhuber</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="finished" when="2020-05-04" who="#DG">Datensatz erstellt</change>
+        <change status="finished" when="2020-06-16" who="#DG">Etymologie bearbeitet</change>
+        <change status="finished" when="2020-10-08" who="#PZ">fertig für Release</change>
+        <change status="finished" when="2021-01-21" who="#PZ">Bedeutungen zusammengelegt</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="flienschen">
+          <orth>flienschen</orth>
+        </form>
+        <form type="lemma" xml:id="flenschen">
+          <orth>flenschen</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c5452"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Verb</gram>
+          <iType>schwach</iType>
+        </gramGrp>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p7.3">SBgl.</placeName>
+        </usg>
+        <note type="kommentar" resp="#FF">Während im Mittelbairischen  fallende Diphthonge mit gesenktem Onset vorliegen
+          <xr>
+            <ref>flęɒšn̥</ref>
+          </xr>, lassen sich im Südmittelbairisch und Südbairisch noch konservativere
+          <c>i</c>-haltige Formen finden
+          <xr>
+            <ref>ƒlįɒntšn̥</ref>
+          </xr>, aber auch
+          <c>e</c>-Monophthonge
+          <xr>
+            <ref>ƒlęntšn̥</ref>
+          </xr>. Steigende
+          <c>ei</c>-Diphthonge sind für das bairisch-alemannische Übergangsgebiet belegt
+          <xr>
+            <ref>ƒlęintšn̥</ref>
+          </xr>. Für das Südbairische sind übermarkierte Affrikaten im Anlaut belegt
+          <xr>
+            <ref>pflįəntšn̥</ref>
+          </xr>. Die im Mittelbairischen auftretende Vokalnasalierung kann zur totalen Assimilation von postvokalischem
+          <c>n</c>führen
+          <xr>
+            <ref>flę̃ɒšn̥</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flẽĩñtšn</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">pflį̄̃ə̃ntš̩n̥</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.1f01">Lesachtal</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flẽñtšn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.2i07">Villach</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flę̃ɒ̃tšn̥</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p2.3a">Metnitzt.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fleē̑šn</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p5.1b">nördl.obInnv.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-φlẽɒ̃ß̌n̥</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3c03">Steinbach am Ziehberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flę̃ɒ̃ß̌n̥</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4e04">Gallneukirchen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flę̄̃ɒ̃ß̌n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1d01">Allhartsberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φlę̄̃ɒ̃šn</pron>
+          <pron xml:lang="bar-AT">flę̃ɒ̃dšn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2e03">Puchberg am Schneeberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flẽɒ̃ß̌n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3a15">Kautzen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flę̃ãntß̌n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4e06">Hollabrunn</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φlę̃ɒ̃šn̥</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4f06">Ernstbrunn</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φlį̄ɒšn</pron>
+          <pron xml:lang="bar-AT">φlį̃ɒ̃ntß̌n</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p7.3e">Rechnitz.Hügelld.</placeName>
+          </usg>
+        </form>
+        <etym>
+          <seg type="desc">Ableitung von</seg>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>vlans</orth>
+            </form>
+            <def>Mund; Maul</def>
+          </cit>
+          <ref type="bibl" target="#KärntischesWb1862">Kärntisches Wb. 1862
+            <citedRange>98</citedRange>
+          </ref>
+          <ref type="bibl" target="#TirolischesId1866">Tirolisches Id. 1866
+            <citedRange>142</citedRange>
+          </ref>
+          <seg type="desc">; eventuell verwandt mit</seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref target="flennen.xml">flennen</ref>
+            </xr>
+          </cit>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <def>den Mund (spöttisch) verziehen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.3">SBgl.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5457"/>
+            </sense>
+            <sense>
+              <sense>
+                <def>die Zähne zeigen, fletschen</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">wiᵃ där mīᵈ di Zēnd flĕāndsch där flĕāndsch wīᵃʳ Būldŏg</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2e04">Rohr im Gebirge</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5462"/>
+              </sense>
+            </sense>
+            <sense>
+              <sense>
+                <def>(spöttisch) lachen</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5481"/>
+              </sense>
+              <sense>
+                <def>beim Lachen die Zähne zeigen</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5482"/>
+              </sense>
+            </sense>
+            <sense>
+              <sense>
+                <def>(spöttisch) lächeln; grinsen</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5484"/>
+              </sense>
+              <sense>
+                <def>breit und hässlich grinsen</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5489"/>
+              </sense>
+              <sense>
+                <def>beim Lächeln das Gesicht verziehen</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5485"/>
+              </sense>
+              <sense>
+                <def>schmunzeln</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5487"/>
+              </sense>
+            </sense>
+            <sense>
+              <sense>
+                <def>(mit verzogenem Gesicht) weinen</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">Sie tuet die gånze Zeit fliąntschn</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p1B.0j01">Obertilliach</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5490"/>
+              </sense>
+              <sense>
+                <def>mit starkem Mundspeichelfluss weinen (von Kindern)</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5494"/>
+              </sense>
+            </sense>
+          </sense>
+          <sense>
+            <sense>
+              <def>raufen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5496"/>
+            </sense>
+            <sense>
+              <def>eine Ohrfeige geben</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5497"/>
+            </sense>
+            <sense>
+              <def>verwunden</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5498"/>
+            </sense>
+            <sense>
+              <def>in Stücke zerreissen</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5499"/>
+            </sense>
+          </sense>
+          <sense>
+            <sense>
+              <def>spotten</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5500"/>
+            </sense>
+            <sense>
+              <def>jammern</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5501"/>
+            </sense>
+            <sense>
+              <def>lästig sein</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5502"/>
+            </sense>
+          </sense>
+          <sense>
+            <xr type="variant">
+              <lbl>nur</lbl>
+              <ref target="#flienschen">geflienscht</ref>
+            </xr>
+            <usg>(adjektivisches Partizip)</usg>
+            <def>hochnäsig; stolz; unnahbar</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5503"/>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>abflienschen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>abbetteln</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5505"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>anflienschen</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def>den Mund verziehen</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5506"/>
+              </sense>
+              <sense>
+                <sense>
+                  <def>Grimassen schneiden</def>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+                  </usg>
+                  <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5508"/>
+                </sense>
+                <sense>
+                  <def>jemanden "mit hämischer oder spöttischer Miene von der Seite länger betrachten"</def>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                  </usg>
+                  <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5511"/>
+                </sense>
+              </sense>
+              <sense>
+                <def>angrinsen</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5512"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>ausflienschen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>spöttisch auslachen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">oan ausfleanschen</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1i01">Göstling an der Ybbs</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5514"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>erflienschen</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def>verwunden</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5517"/>
+              </sense>
+              <sense>
+                <def>in Stücke zerreissen</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5519"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>zerflienschen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>zerreissen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5522"/>
+            </sense>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

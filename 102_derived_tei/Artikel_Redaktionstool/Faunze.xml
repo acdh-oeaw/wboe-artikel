@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.7.4" ?>
+<?parser type="lioe" version="0.7.3" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Faunze</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#EW">Eva Wahlmüller</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2021-10-06" who="#EW">Datensatz erstellt</change>
+        <change status="peer correction" when="2021-10-06" who="#EW">fertig für int. Korr.</change>
+        <change status="peer correction" when="2021-10-18" who="#EW">Anm. AG teilweise eingearbeitet. Überschneidungen mit Funse klären</change>
+        <change status="peer correction" when="2021-12-07" who="#PZ">LK eingefügt</change>
+        <change status="internal correction" when="2022-01-24" who="#EW">weiter zu Manzi</change>
+        <change status="external correction" when="2022-01-26" who="#EW">überarbeitet nach Korr. Manzi</change>
+        <change status="finished" when="2022-03-02" who="#EW">keine Anmerkungen JE</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Faunze">
+          <orth>Faunze</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c22589"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Femininum</gram>
+        </gramGrp>
+        <form type="variant" subtype="diminutive" xml:id="Faeunzel">
+          <orth>Fäunzel</orth>
+          <orth>Fäunzerl</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <note type="kommentar" resp="#PZ">Der auf mhd.
+          <c>ū</c>zurückgehnde Stammvokal wurde im ganzen Verbreitungsgebiet regelhaft zu
+          <c>au</c>diphthongiert (faųntßn̥, fãų̃tßn̥). Im östlichen Südmittelbairischen dominieren Formen mit inlautendem Nasal (faųntßn̥), im Süd- und westlichen Südmittelbairsichen mit getilgtem Nasal, der sich aber in der Nasalierung des Diphtongs fortsetzt (fãų̃tßn̥, fãų̃dsn̥). Im Westmittelbairischen finden sich Varianten mit und ohne Nasal nebeneinander. Die inlautende Affrikate ist zumeist eine Fortis (faųntßn̥, fãų̃tßn̥), kann im Westmittelbairischen jedoch auch als Lenis auftreten (faųndsn̥ fãų̃dsn̥). Im gesamten Verbreitungsgebiet finden sich im Auslaut silbische Nasale, die durch die Übernahme der obliquen Endungen und
+          <c>e</c>-Synkope entstanden sind.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fãũdsl</pron>
+          <usg>[Dim.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1c07">Mühlheim am Inn</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φāe̩dsɒɫ</pron>
+          <usg>[Dim.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2a29">Prambachkirchen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fãǫ̃dsn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1d01">Allhartsberg</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c22591"/>
+        </form>
+        <etym>
+          <seg type="desc">eine frühere Form von</seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref>Faust</ref>
+            </xr>
+          </cit>
+          <seg type="desc">mit Nasalerhalt</seg>
+          <seg type="desc">, vergleiche</seg>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>vûst</orth>
+            </form>
+            <form>
+              <orth>vûnst</orth>
+            </form>
+            <def>Faust</def>
+          </cit>
+          <seg type="desc">, im Alemannischen</seg>
+          <cit type="etymon">
+            <lang>nhd.</lang>
+            <form>
+              <orth>fust</orth>
+            </form>
+            <form>
+              <orth>funst</orth>
+            </form>
+            <def>Faust</def>
+          </cit>
+          <seg type="desc"></seg>
+          <ref type="bibl" target="#DWB1862III">DWB 1862 III
+            <citedRange>1378</citedRange>
+          </ref>
+          <ref type="bibl" target="#DWB1878IV/I/1">DWB 1878 IV/I/1
+            <citedRange>615</citedRange>
+          </ref>
+          <ref type="bibl" target="#SchweizerischesId1881I">Schweizerisches Id. 1881 I
+            <citedRange>1123</citedRange>
+          </ref>
+          <ref type="bibl" target="#Lexer1878III">Lexer 1878 III
+            <citedRange>619</citedRange>
+          </ref>
+        </etym>
+        <sense>
+          <sense>
+            <def>(Faust-)Schlag; Ohrfeige</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">sei still, sist gib i dier a Faunzn</quote>
+              <ref type="bibl" target="#KärntnerischesId1862">Kärntnerisches Id. 1862
+                <citedRange>93</citedRange>
+              </ref>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Gīb eărm ă bōar Fāunznă</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2e04">Rohr im Gebirge</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22592"/>
+          </sense>
+          <sense>
+            <sense>
+              <def>ein kleines Stück von etwas; Faser; Flocke (z.B. von einem Faden, Gewebe, Holz)</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">κhǫ̃ɒ̃ φãõτσɒl τe̩φ τrå σa ėŋ κwånd</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2b46">Weibern</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22593"/>
+            </sense>
+            <sense>
+              <def>fädige Trübung im Brunnenwasser</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22594"/>
+            </sense>
+          </sense>
+          <sense>
+            <sense>
+              <xr type="variant" subtype="diminutive">
+                <lbl>nur</lbl>
+                <ref>Fäunzerl</ref>
+              </xr>
+              <usg>(Diminutiv)</usg>
+              <def>einzelner Funke</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22595"/>
+            </sense>
+            <sense>
+              <xr type="variant" subtype="diminutive">
+                <lbl>nur</lbl>
+                <ref>Fäunzerl</ref>
+              </xr>
+              <usg>(Diminutiv)</usg>
+              <def>Dochtrest; kleines Licht</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22597"/>
+            </sense>
+          </sense>
+          <sense>
+            <xr type="variant" subtype="diminutive">
+              <lbl>nur</lbl>
+              <ref>Fäunzel, Fäunzerl</ref>
+            </xr>
+            <usg>(Diminutiv)</usg>
+            <def>Nichtigkeit</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22598"/>
+          </sense>
+          <sense>
+            <def type="umschreibung">abwertende Bezeichnung für eine Frau</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22599"/>
+          </sense>
+          <sense>
+            <def>Stirnfalte</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22600"/>
+          </sense>
+        </sense>
+      </entry>
+    </body>
+  </text>
+</TEI>

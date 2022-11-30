@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.7.4" ?>
+<?parser type="lioe" version="0.7.3" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Fischer</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#AG">Andreas Gellan</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="internal correction" when="2020-06-08" who="#StS">Datensatz erstellt</change>
+        <change status="internal correction" when="2020-06-08" who="#AG">Lautkommentar hinzugefügt</change>
+        <change status="external correction" when="2020-06-08" who="#AG">fertiggestellt</change>
+        <change status="finished" when="2020-10-14" who="#AG">finished</change>
+        <change status="finished" when="2022-01-24" who="#AG">Final Version</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Fischer">
+          <orth>Fischer</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c6805"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Maskulinum</gram>
+        </gramGrp>
+        <form type="variant" subtype="diminutive" xml:id="Fischerl">
+          <orth>Fischerl</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <form type="variant" subtype="movierung" xml:id="Fischerin">
+          <orth>Fischerin</orth>
+          <gramGrp>
+            <gram type="gender">Femininum</gram>
+          </gramGrp>
+        </form>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p7.1">NBgl.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p7.2">MBgl.</placeName>
+        </usg>
+        <note type="kommentar" resp="#FF">
+          <xr></xr>Regelhaft liegen im gesamten Untersuchungsgebiet für den Stammvokal aus mhd.
+          <c>i</c>entstandene
+          <c>i</c>-Monophthonge vor
+          <xr>
+            <ref>ƒįß̌ɒ</ref>
+          </xr>, im Ostmittelbairischen häufig geschlossener und mit schwankender Quantität
+          <xr>
+            <ref>fišɒ</ref>
+            <ref>fīšɒ</ref>
+          </xr>. Auch im Kärntner Südbairischen tritt die regional typische Vokaldehnung auf
+          <xr>
+            <ref>ƒīšə</ref>
+          </xr>. Die im Auslaut stehende Verbindung -
+          <c>ər</c>ist in den meisten Gegenden zu -
+          <c>ə</c>abgeschwächt worden. In einigen konservativen mittelbairischen Rückzugsgebieten Oberösterreichs ist dagegen das
+          <c>r</c>geschwunden
+          <xr>
+            <ref>fįšə</ref>
+          </xr>. Im Südbairischen sowie im bairisch-alemannischen Übergangsgebiet im westlichen Nordtirol ist das
+          <c>r</c>teilweise noch erhalten
+          <xr>
+            <ref>ƒįß̌ər</ref>
+            <ref>ƒįß̌ɒr</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fiššər</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1n01">Imst</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fīšɒr̭</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3f01">Feldkirchen in Kärnten</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fīša</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3f01">Feldkirchen in Kärnten</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fiššə</pron>
+          <pron xml:lang="bar-AT">fiššərėn</pron>
+          <pron xml:lang="bar-AT">‑fiššɒ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1c07">Mühlheim am Inn</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φí̩σ̌a̭</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2e01">Linz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">‑fišə</pron>
+          <pron xml:lang="bar-AT">‑fiššɒ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3g05">Kremsmünster</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fiß̌ɒ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1d01">Allhartsberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fiššɒ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1o01">Herzogenburg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fiß̌ɒ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3a04">Dobersberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fiß̌a</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4e06">Hollabrunn</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">‑fiß̌ər</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5r01">Gersthof</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c6806"/>
+        </form>
+        <etym>
+          <seg type="desc"></seg>
+          <cit type="etymon">
+            <lang>ahd.</lang>
+            <form>
+              <orth>fiscāri</orth>
+            </form>
+            <form>
+              <orth>fisgāri</orth>
+            </form>
+          </cit>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>vischære</orth>
+            </form>
+            <form>
+              <orth>vischer</orth>
+            </form>
+            <def>Fischer</def>
+          </cit>
+          <ref type="bibl" target="#Lexer1878III">
+            <lbl>vgl.</lbl>Lexer 1878 III
+            <citedRange>369</citedRange>
+          </ref>
+          <ref type="bibl" target="#Schützeichel2012">Schützeichel 2012
+            <citedRange>104</citedRange>
+          </ref>
+          <seg type="desc">; Ableitung von</seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref>Fisch</ref>
+            </xr>
+          </cit>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <def>Person, die Fischfang betreibt</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.2">MBgl.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Der Fischer hoᵃt geᵃrn noᵃß</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m02">Fendels</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">dpfischa san ban taichth</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3a15">Kautzen</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">dpfischa san umgwōdn
+                  <cit type="translation">
+                    <quote xml:lang="de">umhergewatet</quote>
+                  </cit>
+                </quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3a15">Kautzen</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6807"/>
+            </sense>
+            <sense>
+              <lbl>nur</lbl>
+              <xr type="variant" subtype="movierung">
+                <ref>Fischerin</ref>
+              </xr>
+              <def>Frau des Fischers</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6808"/>
+            </sense>
+            <sense>
+              <usg>nur</usg>
+              <xr type="variant" subtype="movierung">
+                <ref>Fischerin</ref>
+              </xr>
+              <def>Verkäuferin von gebratenen Fischen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6809"/>
+            </sense>
+            <sense>
+              <def>Arbeiter beim Wasserbau</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6810"/>
+            </sense>
+            <sense>
+              <lbl>nur</lbl>
+              <xr type="variant" subtype="movierung">
+                <ref>Fischerin</ref>
+              </xr>
+              <def>Diebin</def>
+              <usg>(gaunersprachlich)</usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6811"/>
+            </sense>
+            <sense>
+              <def>selbstloser, gütiger Geistlicher</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">an̄ årma Fischa</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e06">Kufstein</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6812"/>
+            </sense>
+          </sense>
+          <sense>
+            <sense>
+              <ref type="form"></ref>
+              <def>Europäischer Eisvogel; Alcedo atthis</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6813"/>
+            </sense>
+            <sense>
+              <lbl>nur</lbl>
+              <xr type="variant" subtype="diminutive">
+                <ref>Fischerl</ref>
+              </xr>
+              <usg>(Diminutiv)</usg>
+              <def>Fluss-Seeschwalbe, Sterna hirundo</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6814"/>
+            </sense>
+            <sense>
+              <def>Graureiher, Ardea cinera linnaeus</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6815"/>
+            </sense>
+            <sense>
+              <sense>
+                <def>Möwe</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6816"/>
+              </sense>
+              <sense>
+                <def>Fischmöwe</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6817"/>
+              </sense>
+              <sense>
+                <def>Lachmöwe</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6818"/>
+              </sense>
+            </sense>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Achenfischer</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Fischer mit dem Recht, in einer Ache zu fischen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+            </sense>
+          </sense>
+          <ptr type="collection" subtype="wortbildung" target="/collections-wboe.xml#c6819"/>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Gletfischer</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Fischer, der auf Vorrat fischt</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+            </sense>
+          </sense>
+          <ptr type="collection" subtype="wortbildung" target="/collections-wboe.xml#c6820"/>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Hoffischer</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Fischer eines Stiftes</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+            </sense>
+          </sense>
+          <ptr type="collection" subtype="wortbildung" target="/collections-wboe.xml#c6821"/>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Innfischer</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Fischer auf dem Inn</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+            </sense>
+          </sense>
+          <ptr type="collection" subtype="wortbildung" target="/collections-wboe.xml#c6822"/>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Landfischer</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Person, die sich bei einem Münzwechsel auf Kosten anderer bereichert</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+            </sense>
+          </sense>
+          <ptr type="collection" subtype="wortbildung" target="/collections-wboe.xml#c6823"/>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Marillenfischer</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>erfolgloser Fischer</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+            </sense>
+          </sense>
+          <ptr type="collection" subtype="wortbildung" target="/collections-wboe.xml#c6824"/>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Bachfischer</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Person, die in Bächen fischt</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+            </sense>
+          </sense>
+          <ptr type="collection" subtype="wortbildung" target="/collections-wboe.xml#c6825"/>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Perlfischer</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Person, die nach Perlmuscheln fischt</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+            </sense>
+          </sense>
+          <ptr type="collection" subtype="wortbildung" target="/collections-wboe.xml#c6826"/>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Seefischer</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Person, die mit Netzen im See fischt</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+            </sense>
+          </sense>
+          <ptr type="collection" subtype="wortbildung" target="/collections-wboe.xml#c6827"/>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Segenfischer</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Person, die mit einem großen Netz fischt</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+            </sense>
+          </sense>
+          <ptr type="collection" subtype="wortbildung" target="/collections-wboe.xml#c6828"/>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Sportfischer</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Person, die den Fischfang als Freizeitbeschäftigung ausübt</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+            </sense>
+          </sense>
+          <ptr type="collection" subtype="wortbildung" target="/collections-wboe.xml#c6829"/>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Teichfischer</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Person, die in einem Teich fischt</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+            </sense>
+          </sense>
+          <ptr type="collection" subtype="wortbildung" target="/collections-wboe.xml#c6830"/>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

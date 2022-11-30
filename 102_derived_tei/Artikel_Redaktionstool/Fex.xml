@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.6.6"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Fex</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#PZ">Patrick Zeitlhuber</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="JD">Jan Braun</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Eva Wahlmüller</name>
+          <name>Susanna Muhr</name>
+          <name>Alexandra Grohe</name>
+          <name>Klemens Wagner</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="external correction" when="2019-00-24" who="#PZ">Datensatz erstellt</change>
+        <change status="external correction" when="2020-04-23" who="#PhS">in Version 0.5.21 gespeichert</change>
+        <change status="external correction" when="2020-05-15" who="#EW">Korrekturen</change>
+        <change status="external correction" when="2020-05-20" who="#EW">Collections verknüpft</change>
+        <change status="external correction" when="2020-05-27" who="#EW">Lautkommentar eingegeben</change>
+        <change status="external correction" when="2020-07-16" who="#EW">Korrekturen</change>
+        <change status="finished" when="2020-10-08" who="#PZ">fertig für Release</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Fex">
+          <orth>Fex</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c6057"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Maskulinum</gram>
+        </gramGrp>
+        <form type="variant" subtype="movierung" xml:id="Fexin">
+          <orth>Fexin</orth>
+          <gramGrp>
+            <gram type="gender">Femininum</gram>
+          </gramGrp>
+        </form>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <note type="kommentar" resp="#FF">Auch wenn die historischen Verhältnisse nicht gänzlich geklärt zu sein scheinen, liegen im gesamten Untersuchungsgebiet im Stammvokal kurze
+          <c>e</c>-Monophthonge unterschiedlicher Qualität vor, die wohl der ursprünglichen Lautung nahestehen
+          <xr>
+            <ref>ƒęks</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fęks</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3f01">Feldkirchen in Kärnten</placeName>
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p2.3f">Ossiach.Geg.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">feəks</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p2.3g">Glant.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φękß</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p4.3d">Gr.Arlt.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fęks</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-feks</pron>
+          <usg type="geo">
+            <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c6063"/>
+        </form>
+        <etym>
+          <seg type="desc">Herkunft unsicher; eventuell eine Kürzung vom
+            <date>seit dem 15. Jh.</date>belegten Scherzwort
+          </seg>
+          <cit type="etymon">
+            <form>
+              <orth>Narrifex</orth>
+            </form>
+          </cit>
+          <seg type="desc">, das wie</seg>
+          <cit type="etymon">
+            <form>
+              <orth>Versifex</orth>
+            </form>
+            <def>Verseschmied</def>
+          </cit>
+          <seg type="desc">
+            <lang>lateinische</lang>Bildungen vom Typ
+          </seg>
+          <cit type="etymon">
+            <form>
+              <orth>Pontifex</orth>
+            </form>
+            <def>Oberpriester</def>
+          </cit>
+          <seg type="desc">nachahmt</seg>
+          <ref type="bibl" target="#Kluge2011">
+            <lbl>vgl.</lbl>Kluge 2011
+            <citedRange>292</citedRange>
+          </ref>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <def>närrische Person; Spaßmacher</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">ȇ (rehter) feggs</quote>
+                <usg type="geo">
+                  <placeName type="kleinregion" ref="/geodata-wboe.xml#p5.1b">nördl.obInnv.</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6070"/>
+            </sense>
+            <sense>
+              <def>nicht ernstzunehmende Person</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6073"/>
+            </sense>
+            <sense>
+              <def>läppische Person</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6076"/>
+            </sense>
+            <sense>
+              <def>waghalsige Person</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6078"/>
+            </sense>
+            <sense>
+              <def>auffällig gekleidete Person</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6080"/>
+            </sense>
+            <sense>
+              <def>eigenartige Person</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6082"/>
+            </sense>
+            <sense>
+              <def>auf etwas versessene Person</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6084"/>
+            </sense>
+            <sense>
+              <def>dumme, blödsinnige Person</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6087"/>
+            </sense>
+          </sense>
+          <sense>
+            <def>Hexe</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6089"/>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Aprilfex</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Person, die auf einen Aprilscherz hereinfällt</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.4">Tenneng.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6091"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Bartfex</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def>Mann mit übertriebener Bartpflege</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6092"/>
+              </sense>
+              <sense>
+                <def>jemand, der den Hut übermäßig mit Gamsbärten schmückt</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6093"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Bergfex</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Bergnarr; leidenschaftlicher Bergsteiger</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6097"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Bergsteigfex</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Bergnarr; leidenschaftlicher Bergsteiger</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6104"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Bienenfex</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>übereifriger Imker</def>
+              <usg>(scherzhaft)</usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6105"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Gewandfex</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Kleidernarr</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6106"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Gufex</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>jemand, der über etwas staunt</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6107"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Halbfex</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Halbnarr</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6108"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Jagdfex</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Jagdnarr</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6110"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Kräutelfex</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Botaniker</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">a Kräutlfex</quote>
+                <ref type="bibl" target="#Lamberg1879">Lamberg 1879
+                  <citedRange>60</citedRange>
+                </ref>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6114"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Modefex</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Modenarr</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6135"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Radelfex</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>jemand, der leidenschaftlich gern mit dem Rad fährt</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6274"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Ringfex</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Person mit vielen Ringen an Fingern und Händen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6275"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Schwammerlfex</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>jemand, der Pilze sammelt</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6276"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Spellefex</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>magerer Mensch</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6277"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Sportfex</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>auf den Sport versessene Person</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6278"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Uhrenfex</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Uhrenliebhaber</def>
+              <usg>(scherzhaft)</usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6279"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Weiberleutfex</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Weibernarr</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6280"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Zottfex, Zottelfex</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Kind in zerrissener Kleidung</def>
+              <usg>(Kosename bis hin zu milder Schimpfname)</usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6281"/>
+            </sense>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

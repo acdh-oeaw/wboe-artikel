@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.7.2" ?>
+<?parser type="lioe" version="0.7.0" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Frevel</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#EW">Eva Wahlmüller</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2021-01-14" who="#EW">Datensatz erstellt</change>
+        <change status="in progress" when="2021-01-15" who="#EW">Belegauswahl+Etymologie+Wortbildung</change>
+        <change status="peer correction" when="2021-01-18" who="#EW">Simplexbedeutung fertig</change>
+        <change status="internal correction" when="2021-02-22" who="#EW">überarbeitet nach int. Korr. AG</change>
+        <change status="external correction" when="2021-03-03" who="#EW">keine Überarbeitung nötig nach Korr. Manzi</change>
+        <change status="external correction" when="2021-04-27" who="#PZ">LK eingefügt</change>
+        <change status="finished" when="2021-05-11" who="#EW">keine Anmerkungen JE</change>
+        <change status="finished" when="2021-07-26" who="#EW">fehlende -en-Endung im LK hinzugefügt, nach Anm. ANL</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Frevel">
+          <orth>Frevel</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c13665"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Maskulinum</gram>
+        </gramGrp>
+        <form type="variant" subtype="diminutive" xml:id="Freverl">
+          <orth>Freverl</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p7.1">NBgl.</placeName>
+        </usg>
+        <note type="kommentar" resp="#PZ">Der auf den Primärumlaut
+          <c>e</c>zurückgehende Stammvokal wird ohne klare regionale Verteilung im gesamten Verbreitungsgebiet als geschlossener oder offener
+          <c>e</c>-Monophthong realisiert
+          <xr>
+            <ref>frēfl̥</ref>
+            <ref>frę̄fl̥</ref>
+            <ref>frēfǫ̈</ref>
+          </xr>. Daneben treten im Mittel- und Südmittelbairischen
+          <c>a</c>-Monophthonge auf
+          <xr>
+            <ref>frāfl̥</ref>
+            <ref>frāfẹ</ref>
+          </xr>. Der inlautende Frikativ tritt überall als Fortis auf. Im Südbairischen sowie teilweise im Südmittel- und Ostmittelbairischen wurde der Vokal der auslautenden Silbe getilgt und der Liquid erhalten
+          <xr>
+            <ref>frēfl̥</ref>
+            <ref>frāfl̥</ref>
+          </xr>. Vereinzelt im Süd- und Südmittelbairischen, aber im Mittelbairischen vorherrschend wurde der Liquid vokalisiert und verschmolz mit dem Vokal, der gerundet oder ungerundet auftreten kann
+          <xr>
+            <ref>frēfǫ̈</ref>
+            <ref>frāfǫ̈</ref>
+            <ref>frāfẹ</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frę̄fl̥</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p1A.4c">Lüsenert.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-frēfl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.4d02">Kiens</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frāfl̥</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p1C.1j">obPazn.</placeName>
+          </usg>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p1C.1k">uPazn.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-frefö</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e06">Kufstein</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frafa⁽ᵈ⁾l</pron>
+          <usg>[Dim.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.5k29">Straden</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frēfl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.2c01">Fusch an der Großglocknerstraße</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φraφė</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p4.3d">Gr.Arlt.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-frevl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.5d05">St. Gilgen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φrėfö</pron>
+          <pron xml:lang="bar-AT">φrāfö</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2b28">Pichl bei Wels</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frāfų̈</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1d01">Allhartsberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φrāφü</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1s02">Judenau-Baumgarten</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φrǫfü</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2e03">Puchberg am Schneeberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frafė</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3s04">Langenlois</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frāfü̩</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c13712"/>
+        </form>
+        <etym>
+          <cit type="etymon">
+            <lang>ahd.</lang>
+            <form>
+              <orth>frevil</orth>
+            </form>
+            <gramGrp>
+              <gram type="gender">Maskulinum</gram>
+            </gramGrp>
+          </cit>
+          <seg type="desc">
+            <date>(9. Jh.)</date>, auch
+          </seg>
+          <cit type="etymon">
+            <form>
+              <orth>fravalī</orth>
+            </form>
+            <gramGrp>
+              <gram type="gender">Femininum</gram>
+            </gramGrp>
+          </cit>
+          <seg type="desc">
+            <date>(um 800)</date>
+          </seg>
+          <cit type="etymon">
+            <def>Verwegenheit; Frechheit; Übeltat; Vergehen</def>
+          </cit>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>vrevel(e)</orth>
+            </form>
+            <gramGrp>
+              <gram type="gender">Maskulinum</gram>
+              <gram type="gender">Femininum</gram>
+            </gramGrp>
+            <def>Mut; Unerschrockenheit; Verwegenheit</def>
+          </cit>
+          <seg type="desc">, rechtssprachlich</seg>
+          <cit type="etymon">
+            <def>Vergehen; Geldstrafe</def>
+          </cit>
+          <cit type="etymon">
+            <lang>frnhd.</lang>
+            <form>
+              <orth>frefel</orth>
+            </form>
+            <gramGrp>
+              <gram type="gender">Maskulinum</gram>
+            </gramGrp>
+            <def>geringes Vergehen; Geldstrafe</def>
+          </cit>
+          <ref type="bibl" target="#Pfeifer2014">
+            <lbl>vgl.</lbl>Pfeifer 2014
+            <citedRange>375</citedRange>
+          </ref>
+        </etym>
+        <sense>
+          <sense>
+            <def>Vergehen; Spott</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c13747"/>
+          </sense>
+          <sense>
+            <xr type="variant" subtype="diminutive">
+              <lbl>nur</lbl>
+              <ref>Freverl</ref>
+            </xr>
+            <usg>(Diminutiv)</usg>
+            <def>Person, die fade oder affektiert ist</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Sou a frafa⁽ᵈ⁾l</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.5k29">Straden</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c13748"/>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Baumfrevel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>ein Vergehen gegen das Forstgesetz</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c13722"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Forstfrevel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>ein Vergehen in Bezug auf den Wald bzw. die Waldbewirtschaftung</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c13713"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Grenzfrevel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>unerlaubtes Versetzen von Mark- bzw. Grenzsteinen (verbunden mit dem Aberglauben, dass Personen, die Grenzen versetzen, verflucht sind)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.1">wSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.1">NBgl.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c13714"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <?comment Lemmatisierung Hell- oder Höll-? ?>
+            <orth>Hellfrevel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>ein großes Vergehen (zum Beispiel, wenn das Brot beim Backen auf der Oberseite liegt)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">des soⁱˡt nid seiⁿ, des is a Höiˡfrēfl</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.2c01">Fusch an der Großglocknerstraße</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c13719"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Jagdfrevel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>ein Vergehen in Bezug auf Jagdgepflogenheiten bzw. -reviere</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c13720"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Kirchenfrevel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>ein Vergehen gegen die Kirche</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">i hät an Kirchenfrefl u. an Kirchenraub begongen</quote>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c13721"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Waldfrevel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>boshafte Schädigung des Waldes; Vergehen gegen das Forstgesetz</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c13724"/>
+            </sense>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

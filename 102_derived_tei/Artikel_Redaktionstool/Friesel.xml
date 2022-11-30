@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.7.2" ?>
+<?parser type="lioe" version="0.7.0" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Friesel</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#SW">Sabine Wahl</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2020-11-13" who="#SW">Datensatz erstellt</change>
+        <change status="peer correction" when="2020-11-18" who="#SW">V1</change>
+        <change status="internal correction" when="2021-01-22" who="#SW">V2</change>
+        <change status="external correction" when="2021-01-29" who="#SW">V3</change>
+        <change status="external correction" when="2021-04-21" who="#PZ">LK eingefügt</change>
+        <change status="external correction" when="2021-06-14" who="#SW">V4</change>
+        <change status="finished" when="2021-10-18" who="#SW">V5</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Friesel">
+          <orth>Friesel</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c4374"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Maskulinum</gram>
+        </gramGrp>
+        <form type="variant" subtype="diminutive" xml:id="Frieserl">
+          <orth>Frieserl</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <form type="variant" subtype="diminutive" xml:id="Frieselein">
+          <orth>Frieselein</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p7.2">MBgl.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p7.3">SBgl.</placeName>
+        </usg>
+        <note type="kommentar" resp="#PZ">Der Stammvokal dieses erst spät in den Dialekt gekommenen Wortes wird im gesamten Untersuchungsgebiet analog zu mhd.
+          <c>i</c>in offener Silbe als langer
+          <c>i</c>-Monophthong
+          <xr>
+            <ref>frīsl̥</ref>
+          </xr>oder mit Ausnahme des bairisch-alemannischen Übergangsgebiets  analog zu mhd.
+          <c>ie</c>als fallender Diphthong realisiert
+          <xr>
+            <ref>friəsl̥</ref>
+            <ref>friɒsl̥</ref>
+          </xr>. Der Vokal der auslautenden Silbe wurde überall getilgt, wodurch der Liquid silbisch wurde
+          <xr>
+            <ref>frīsl̥</ref>
+            <ref>friɒsl̥</ref>
+          </xr>. Allein in Wien sind auch Varianten mit Liquidschwund belegt
+          <xr>
+            <ref>frīs</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frīsl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.1d03">Schlanders</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frīsl̥</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.3g07">Villanders</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">friẹsl̥</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.4d02">Kiens</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frīsl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m06">Nauders</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frīsel</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3d02">Wildschönau</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frisl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e06">Kufstein</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frīsl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.1b04">Rangersdorf</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frisl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3n01">Klagenfurt</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frīsl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.2b05">Wald am Schoberpaß</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">friɒsəlɒ</pron>
+          <gramGrp>
+            <usg>[Dim., Pl.]</usg>
+          </gramGrp>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">friasl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.4b28">Thal</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frīsln</pron>
+          <gramGrp>
+            <usg>[Pl.]</usg>
+          </gramGrp>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.2c01">Fusch an der Großglocknerstraße</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frisl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.5b10">Obertrum am See</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">friasln</pron>
+          <gramGrp>
+            <usg>[Pl.]</usg>
+          </gramGrp>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.5e01">Salzburg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">friəsl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1c07">Mühlheim am Inn</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">friasl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1c11">Senftenbach</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frīsel</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2a20">Michaelnbach</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frisl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2b18">Lambach</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-friesl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2a39">Traun</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frisl</pron>
+          <gramGrp>
+            <usg>[Pl.]</usg>
+          </gramGrp>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4b13">Ulrichsberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">friasl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4d13">St. Veit im Mühlkreis</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frīsl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2h13">Kirchberg am Wechsel</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frīsl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3i01">Altenburg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">froᵘėsaʳl</pron>
+          <gramGrp>
+            <usg>[Dim.]</usg>
+          </gramGrp>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3s04">Langenlois</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frīsl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5i02">Lichtental</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frīzɒl(n)</pron>
+          <gramGrp>
+            <usg>[Dim., Pl.]</usg>
+          </gramGrp>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p7.2b08">Pilgersdorf</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frí̄sɒʳl</pron>
+          <gramGrp>
+            <usg>[Dim.]</usg>
+          </gramGrp>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p7.2a08">Neckenmarkt</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frisəʳl</pron>
+          <gramGrp>
+            <usg>[Dim., Pl.]</usg>
+          </gramGrp>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p7.3g06">St. Michael im Burgenland</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c12373"/>
+        </form>
+        <etym>
+          <seg type="desc">seit dem
+            <date>17. Jh.</date>belegte Bezeichnung für mehrere, nicht eindeutig unterscheidbare Ausschlagkrankheiten
+            <ref type="bibl" subtype="online">
+              <lbl>vgl.</lbl>Pfeifer online
+              <xr type="lemma">
+                <ref>Friesel</ref>
+                <date type="accessed">16.11.2020</date>
+              </xr>
+            </ref>
+            <ref type="bibl" subtype="online">
+              <lbl>vgl.</lbl>DWB Neub. online A-F
+              <xr type="lemma">
+                <ref>Friesel</ref>
+                <date type="accessed">15.10.2021</date>
+              </xr>
+            </ref>; möglicherweise besteht ein etymologischer Zusammenhang mit
+          </seg>
+          <cit type="etymon">
+            <form>
+              <orth>friesen</orth>
+            </form>
+          </cit>
+          <seg type="desc">, einer Nebenform von</seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref target="frieren.xml#frieren">frieren</ref>
+            </xr>
+          </cit>
+          <seg type="desc">, oder mit</seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref>Riesel</ref>
+            </xr>
+          </cit>
+          <ref type="bibl" target="#Adelung1796II">
+            <lbl>vgl.</lbl>Adelung 1796 II
+            <citedRange>308</citedRange>
+          </ref>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <def>Hautausschlag; Bläschen; Miliaria</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12359"/>
+            </sense>
+            <sense>
+              <sense>
+                <def>Hautausschlag mit Fieber (und Frösteln)</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12328"/>
+              </sense>
+              <sense>
+                <def>Hautausschlag als Begleiterscheinung von fieberhaften Krankheiten (z. B. Masern, Scharlach) oder als Folge von Fieber; Schweißausschlag bei Erkrankungen</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12329"/>
+              </sense>
+            </sense>
+          </sense>
+          <sense>
+            <sense>
+              <sense>
+                <def type="umschreibung">Bezeichnung für eine Krankheit mit Hautausschlag</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p7.2">MBgl.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p7.3">SBgl.</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">dr Frīasl ist a gfohrliche Kronket. Kin̄bėttarin̄en kriagn ȯft amål in weißn Friasl und zelm påkt völle a niadė
+                    <cit type="translation">
+                      <quote xml:lang="de">Der Friesel ist eine gefährliche Krankheit. Wenn eine Kindbetterin den weißen Friesel bekommt, ist fast jede verloren.</quote>
+                    </cit>
+                  </quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.3b01">Sarntal</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12360"/>
+              </sense>
+              <sense>
+                <def>Krankheit Erwachsener, in deren Verlauf sich die Haut vom Körper schält</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.1">wSTir.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12267"/>
+              </sense>
+              <sense>
+                <def>meist eine Kinderkrankheit, die in einer Entzündung der Hautdecke besteht</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12272"/>
+              </sense>
+            </sense>
+            <sense>
+              <sense>
+                <def>Ausschlagkrankheit, Ausschlagkinderkrankheit, meist mit Fieber oder Frösteln</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.1">wSTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">dea r hōd in Friesl</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3a15">Kautzen</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12330"/>
+              </sense>
+              <sense>
+                <def>Masern</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12274"/>
+              </sense>
+              <sense>
+                <def type="umschreibung">Bezeichnung für eine Krankheit, meist bei Kindern, die mit Fieber beginnt, bei der die Person am ganzen Körper rot wird und fröstelt</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12271"/>
+              </sense>
+            </sense>
+            <sense>
+              <sense>
+                <def type="umschreibung">Bezeichnung für eine Fieberkrankheit</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12277"/>
+              </sense>
+              <sense>
+                <def>Fieber</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p7.2">MBgl.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12282"/>
+              </sense>
+            </sense>
+            <sense>
+              <sense>
+                <def type="umschreibung">Bezeichnung für eine Krankheit, die Frauen nach der Geburt im Wochenbett bekommen können</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12278"/>
+              </sense>
+              <sense>
+                <def>Milchfieber</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12264"/>
+              </sense>
+            </sense>
+          </sense>
+          <sense>
+            <xr type="lemma" subtype="diminutive">
+              <ref target="#Frieserl">Frieserl</ref>
+            </xr>
+            <usg>(Diminutiv)</usg>
+            <def>frierendes Kind</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12262"/>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Hitzfriesel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def type="umschreibung">Bezeichnung für die Krankheit „roter Friesel mit Fieber“</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12287"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Kindbettfriesel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Ausschlag, den Frauen nach der Geburt im Wochenbett bekommen können</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12289"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Kindlbettfriesel</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def type="umschreibung">Bezeichnung für eine (Ausschlag-)Krankheit, die Frauen nach der Geburt im Wochenbett bekommen können</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12290"/>
+              </sense>
+              <sense>
+                <def>Schweißfriesel</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12291"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Scharlachfrieseln</orth>
+            <gramGrp>
+              <usg>(Plural)</usg>
+            </gramGrp>
+          </form>
+          <sense>
+            <sense>
+              <def>rote Flecken des Hautausschlags bei Scharlach</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">d Schårlåchfrisln sen aufgworfn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3b03">Thiersee</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12292"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Typhusfriesel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>rotfleckiger Hautausschlag bei Typhus</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12293"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Wochenfriesel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Hautausschlag, den Frauen nach der Geburt im Wochenbett bekommen können</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12295"/>
+            </sense>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Frieselein fangen</orth>
+          </form>
+          <sense>
+            <def>frösteln</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">friɒsəlɒ fõungɒn</quote>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">eɒ duɒt friɒsəlɒ fångɒn</quote>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12297"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Bei jemandem ist ein Friesel angekommen.</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Ausdruck für einen kalten Schauer</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Hăd mi a Frisl uⁿkhemma</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3f02">Hopfgarten im Brixental</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12367"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>heißer Friesel</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Bezeichnung für eine Ausschlagkrankheit</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">hoaßa Friasl</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4d13">St. Veit im Mühlkreis</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12323"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>hitzige Friesel</orth>
+            <gramGrp></gramGrp>
+          </form>
+          <sense>
+            <def>mit Fieber verbundene Frieselkrankheit</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">hitzige Friesl</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.5d05">St. Gilgen</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12309"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>kalter Friesel</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Bezeichnung für eine (mit Frösteln verbundene) Ausschlagkrankheit</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">kăöta Frisl</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3f02">Hopfgarten im Brixental</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12305"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>roter Friesel</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Bezeichnung für eine Ausschlagkrankheit</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">rǫatr̥ Frīsl̥</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.3g07">Villanders</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">roater Frīsl</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.1b04">Rangersdorf</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Reata Friasl</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4d13">St. Veit im Mühlkreis</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">rōdă Frīsl</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2e04">Rohr im Gebirge</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">rǭda Frīsl</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3a07">Gastern</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">rōdă Frīsˡ</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5w06">Mauer</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12300"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>schwarze Frieseln</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Bezeichnung für gefährliche Frieseln</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">schwårzė Frisln</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3b03">Thiersee</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12299"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>weißer Friesel</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Bezeichnung für eine Ausschlagkrankheit</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">dr Frīasl ist a gfohrliche Kronket. Kin̄bėttarin̄en kriagn ȯft amål in weißn Friasl und zelm påkt völle a niadė
+                <cit type="translation">
+                  <quote xml:lang="de">Der Friesel ist eine gefährliche Krankheit. Wenn eine Kindbetterin den weißen Friesel bekommt, ist fast jede verloren.</quote>
+                </cit>
+              </quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.3b01">Sarntal</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">weisər Frīsl</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.1b04">Rangersdorf</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">wāissă Frīsl</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2e04">Rohr im Gebirge</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">waissa Frisl</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3h05">Zwettl-Niederösterreich</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12304"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>wilder Friesel</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Bezeichnung für eine Ausschlagkrankheit</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">wǖˡdă Frīsl</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2e04">Rohr im Gebirge</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12298"/>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

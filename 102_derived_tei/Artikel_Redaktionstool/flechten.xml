@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.7.4" ?>
+<?parser type="lioe" version="0.7.3" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>flechten</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#EW">Eva Wahlmüller</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2021-09-06" who="#EW">Datensatz erstellt</change>
+        <change status="peer correction" when="2021-09-07" who="#EW">fertig für int. Korr.</change>
+        <change status="peer correction" when="2021-09-29" who="#PZ">LK eingefügt</change>
+        <change status="internal correction" when="2021-10-18" who="#EW">überarbeitet nach int. Korr. AG</change>
+        <change status="external correction" when="2021-11-22" who="#EW">überarbeitet nach Korr. Manzi</change>
+        <change status="finished" when="2021-12-20" who="#EW">überarbeitet nach Korr. JE</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="flechten">
+          <orth>flechten</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c17585"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Verb</gram>
+          <iType>schwach</iType>
+          <iType>stark</iType>
+        </gramGrp>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p7">Bgl.</placeName>
+        </usg>
+        <note type="kommentar" resp="#PZ">Der auf mhd.
+          <c>ë</c>zurückgehende Stammvokal tritt im gesamten Untersuchungsgebiet ohne klare regionale Verteilung sowohl als offener als auch geschlossener kurzer
+          <c>e</c>-Monophthong auf
+          <xr>
+            <ref>flęχtn̥</ref>
+            <ref>flẹχtn̥</ref>
+            <ref>flẹχtə</ref>
+          </xr>, mitunter mit Vokaldehnung
+          <xr>
+            <ref>flę̄xdn̥</ref>
+            <ref>flẹ̄xdn̥</ref>
+          </xr>. Diphthongierung zu
+          <c>ei</c>findet sich vereinzelt im östlichen Südmittelbairischen sowie im Ostmittelbairischen
+          <xr>
+            <ref>fleįχtn̥</ref>
+            <ref>fleįxdn̥</ref>
+          </xr>. Der inlautende Konsonantencluster bestehend aus Frikativ und Plosiv wird überall als Fortis realisiert
+          <xr>
+            <ref>flęχtn̥</ref>
+            <ref>flẹχtn̥</ref>
+            <ref>fleįχtn̥</ref>
+          </xr>, wobei sich parallel im östlichen Südmittelbairischen und im Ostmittelbairischen ebenfalls Lenes finden
+          <xr>
+            <ref>flę̄xdn̥</ref>
+            <ref>flẹ̄xdn̥</ref>
+            <ref>fleįxdn̥</ref>
+          </xr>. Außerdem wurde im Ostmittelbairischen der inlautende Plosiv vereinzelt getilgt
+          <xr>
+            <ref>flęχn̥</ref>
+          </xr>. Im bairisch-alemannischen Übergangsgebiet trat Apokope des Nasals ein
+          <xr>
+            <ref>flẹχtə</ref>
+          </xr>. Ansonsten wurde der Vokal der auslautenden Silbe überall synkopiert, wodurch der Nasal im Süd- und Südmittelbairischen silbisch wurde
+          <xr>
+            <ref>flęχtn̥</ref>
+            <ref>flẹχtn̥</ref>
+            <ref>fleįχtn̥</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flöχtn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.2a02">Bozen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fleχtə</pron>
+          <pron xml:lang="bar-AT">flöχtə</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1n01">Imst</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flęxtn</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p1C.2i">unt.NTir.Wippt.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flęchtn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e09">Niederndorf</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flęxtn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3f01">Feldkirchen in Kärnten</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flēχtn</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p3.3e">Sulmt.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fleχtn</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p3.5d">nördl.steir.Lafnitzt.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fleiχdn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.5j04">Fehring</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flęchtn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.5a12">Wals-Siezenheim</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flęχtn</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p5.2b">mHausrv.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fle̩χ'n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4b13">Ulrichsberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φlɛ̩'xʾʾn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4g05">St. Leonhard bei Freistadt</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flē̩̆χtn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1d01">Allhartsberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φlęχtn̥</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1g08">St. Anton an der Jeßnitz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φlęχtn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2e03">Puchberg am Schneeberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flęχtn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3a04">Dobersberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φlé̩χτn̥</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3c03">Bad Großpertholz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flęxdn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4e06">Hollabrunn</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φleχtn̥</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4f06">Ernstbrunn</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flęχτn</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φle̩xtn̥</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5u06">Leopoldau</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flē̩xdn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p7.1e08">Mörbisch am See</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fleχtn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p7.2a08">Neckenmarkt</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φle̩χtn</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p7.3e">Rechnitz.Hügelld.</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c21623"/>
+        </form>
+        <etym>
+          <cit type="etymon">
+            <lang>ahd.</lang>
+            <form>
+              <orth>flehtan</orth>
+            </form>
+          </cit>
+          <seg type="desc">
+            <date>(9. Jh.);</date>
+          </seg>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>vlehten</orth>
+            </form>
+            <def>winden; ineinander verschlingen</def>
+          </cit>
+          <ref type="bibl" target="#Pfeifer2014">
+            <lbl>vgl.</lbl>Pfeifer 2014
+            <citedRange>352</citedRange>
+          </ref>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <def>mehrere Stränge (z. B. von Haaren, vom Bart oder Teig) ineinanderschlingen</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p7">Bgl.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">prǫat flöχtn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.2a02">Bozen</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">i hun gflęcht</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e09">Niederndorf</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">I tua ma d Hoa fle̩chtn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3f01">Feldkirchen in Kärnten</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Der Schmid z Doͧneysn der tuat siᶜʰ sein Schnurbart über d' Nåcht flechtn. Dafur is er so fesch.</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2a39">Traun</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">ti Zęipf flechtn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p7.3d04">Oberschützen</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21626"/>
+            </sense>
+            <sense>
+              <def>etwas (z. B. einen Korb) durch Ineinanderschlingen von Strängen herstellen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.1">NBgl.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.2">MBgl.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Koᵃrb flöchte</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m07">Pfunds</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Keab fleχtn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.2j08">Ramsau am Dachstein</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">gflechtă Zau˜n</quote>
+                <usg type="geo">
+                  <placeName type="kleinregion" ref="/geodata-wboe.xml#p6.4c">söUmg.Pulkaut.</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21631"/>
+            </sense>
+          </sense>
+          <sense>
+            <def>schlagen</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21632"/>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>aufflechten</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def>geflochtene Haare auflösen; einen Zopf auflösen</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">khãmpön ũnd ɒφφlexʾʾn̥</quote>
+                  <ref type="bibl" target="#Neuner1966">Neuner 1966
+                    <citedRange>356</citedRange>
+                  </ref>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2b44">Ungenach</placeName>
+                  </usg>
+                </cit>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">āfgflechtö Zöpf</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+                  </usg>
+                </cit>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">d' Hoar aufflechchtn</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4e06">Hollabrunn</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21635"/>
+              </sense>
+              <sense>
+                <def>einer Braut den Kranz in die Haare flechten</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">a Braud aufflęchtn</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1d01">Allhartsberg</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21634"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>auseinanderflechten</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>etwas Geflochtenes auflösen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21636"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>brämflechten</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>drei Haarsträhnen zu einem Zopf flechten</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21638"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>einflechten</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Haare zu einer ineinander verwobenen Frisur formen (z. B. mit Hilfe von Bändern und Haarnadeln)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">di Hå̄r aiⁿflęchtn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.2b05">Wald am Schoberpaß</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">a Schtrė̄l ė̄ⁿflechtn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3a07">Gastern</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21637"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>zusammenflechten</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>mehrere Stränge (z. B. von Haaren oder Seil) ineinanderschlingen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.1">NBgl.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">die Hår zsåmflęchtn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.2b05">Wald am Schoberpaß</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">d Hō zomflęchtn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.4b13">Heiligenkreuz am Waasen</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Zōbf zammflechtn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.5j05">Feldbach</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">I muas ma eascht meinė Håar zamflechtn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4h09">Schwertberg</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21633"/>
+            </sense>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="lemma">
+            <ref>flechten</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>geflochten gehen</orth>
+          </form>
+          <sense>
+            <def>weißgekleidet gehen (von Mädchen bei der Fronleichnamsprozession gesagt)</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Bist du gflochtn gånga?</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.3c08">Stainz</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21641"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Semmel flechten</orth>
+          </form>
+          <sense>
+            <def>einwärts gehen</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Semⁱ flechtn</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2c02">Berndorf</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21642"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="variant" subtype="compound">
+            <ref>zusammenflechten</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>Was du da wieder zusammenflechtest</orth>
+          </form>
+          <sense>
+            <def>ungeschickt flechten</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">wås Du då wīdaʳ zaumflękst</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2b20">Pfaffstätten</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21640"/>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

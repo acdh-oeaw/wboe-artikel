@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.8.1" ?>
+<?parser type="lioe" version="0.7.41" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Furkel</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#PZ">Patrick Zeitlhuber</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+          <name xml:id="MK">Markus Kunzmann</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2021-09-22" who="#PZ">Datensatz erstellt</change>
+        <change status="peer correction" when="2021-09-23" who="#PZ">peer correction</change>
+        <change status="internal correction" when="2021-12-07" who="#PZ">Komm. peer correction eingearbeitet</change>
+        <change status="internal correction" when="2022-05-09" who="#PZ">LK eingefügt</change>
+        <change status="external correction" when="2022-05-16" who="#PZ">Anm. Manzi eingearbeitet</change>
+        <change status="finished" when="2022-05-23" who="#PZ">finished</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Furkel">
+          <orth>Furkel</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c21931"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Femininum</gram>
+          <gram type="gender">Maskulinum</gram>
+        </gramGrp>
+        <form type="variant" subtype="diminutive" xml:id="Furkerl">
+          <orth>Furkerl</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p7.1">NBgl.</placeName>
+        </usg>
+        <note type="kommentar" resp="#DG">Während das mhd.
+          <c>u</c>der Stammsilbe im Großteil des Süd- und westlichen Südmittelbairischen ein kurzes
+          <c>u</c>bleibt
+          <xr>
+            <ref>fųrkl̥</ref>
+            <ref>fųrklɒ</ref>
+          </xr>, wird es im Mittel- und östlichen Südmittelbairischen vor
+          <c>r</c>durch Einschub eines Gleitlauts zu einem fallenden Diphthong
+          <xr>
+            <ref>fųɒrkl̥</ref>
+            <ref>fųɒgö</ref>
+          </xr>. Daneben finden sich Palatalisierung in der südbairischen Obersteiermark
+          <xr>
+            <ref>fų̈kl̥</ref>
+          </xr>, steigende Diphthongierung im Flachgau
+          <xr>
+            <ref>fųirįkl̥</ref>
+          </xr>sowie Senkung des Erstglieds im Nordburgenland
+          <xr>
+            <ref>foɒdl̥</ref>
+          </xr>. Der Liquid
+          <c>r</c>hat sich im Südbairischen sowie im westlichen Südmittelbairischen und vereinzelt im Ostmittelbairischen aufgrund der Position vor velarem Plosiv erhalten
+          <xr>
+            <ref>fųrkl̥</ref>
+            <ref>fųɒrkö</ref>
+          </xr>, im Flachgau auch intervokalisch vor Sprossvokal
+          <xr>
+            <ref>fųirįkl̥</ref>
+          </xr>. Geschwunden ist er dagegen im Mittel- und östlichen Südmittelbairischen nach fallendem Diphthong
+          <xr>
+            <ref>fųɒkl̥</ref>
+            <ref>fųɒgö</ref>
+          </xr>. In der südbairischen Obersteiermark zeigt sich sporadisch der Wandel zu
+          <c>l</c>
+          <xr>
+            <ref>fųlgl̥</ref>
+          </xr>oder der Ausfall nach
+          <c>ü</c>
+          <xr>
+            <ref>fų̈kl̥</ref>
+          </xr>. Der inlautende velare Plosiv dieses Lehnworts wird meist als Fortis fortgesetzt und nie affriziert bzw. aspiriert
+          <xr>
+            <ref>fųrkl̥</ref>
+            <ref>fųɒkö</ref>
+          </xr>. Lenisierung tritt im östlichen Süd- und östlichen Südmittelbairischen sowie im Ostmittelbairischen teilweise auf
+          <xr>
+            <ref>fųɒgl̥</ref>
+            <ref>fųɒgö</ref>
+          </xr>bis hin zur Frikativierung im Most- und Weinviertel
+          <xr>
+            <ref>fųɒxl̥</ref>
+          </xr>sowie zum Schwund im Nordburgenland
+          <xr>
+            <ref>fųɒl̥</ref>
+          </xr>. Hier findet sich zudem der Wandel zu
+          <c>d</c>
+          <xr>
+            <ref>fųɒdl̥</ref>
+            <ref>foɒdl̥</ref>
+          </xr>. Analog zu ererbten Endungen erscheint -
+          <c>el</c>im bairisch-alemannischen Übergangsgebiet als Liquid plus Reduktionsvokal
+          <xr>
+            <ref>fųrklɒ</ref>
+            <ref>fųrklə</ref>
+          </xr>. Im Rest des Süd- und östlichen Südmittelbairischen generell sowie im Mittel- und westlichen Südmittelbairischen nach velarem Plosiv wird der Liquid nicht vokalisiert, sondern bleibt nach Synkope silbisch erhalten
+          <xr>
+            <ref>fųrkl̥</ref>
+            <ref>fųɒgl̥</ref>
+          </xr>. Nur im Traun- und Mühlviertel ist diese Vokalisierung vereinzelt belegt
+          <xr>
+            <ref>fųɒkö</ref>
+            <ref>fųɒgö</ref>
+          </xr>. Der Anlaut kann im westlichen Süd- und westlichen Südmittelbairischen mit einem homorganen Plosiv gestärkt sein
+          <xr>
+            <ref>pfųrkl̥</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">furggl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.2a04">Kaltern an der Weinstraße</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">pfurkl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.4c01">Lüsen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">furkla</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1t03">Umhausen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">furggl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3b03">Thiersee</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">furggl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3a01">Friesach</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">furkl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3a02">Metnitz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fuaggl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.1j01">Judenburg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">furgl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.4a02">Deutschfeistritz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fúįrikl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.5d06">Strobl</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φurkl̥</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.3d01">Hüttschlag</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fuərkö̱ˡ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fuɒkl̥</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4e04">Gallneukirchen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φuɒχl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1k03">Haunoldstein</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-φuɒkʟ</pron>
+          <pron xml:lang="bar-AT">-φuų̈kų̈</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p6.1p">obTraisent.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φuɒkʟ̥</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2b17">Mödling</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fųɒᵍʟ̥</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p7.1a04">Kittsee</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-φuɒdl</pron>
+          <pron xml:lang="bar-AT">-φōɒdɫ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p7.1e07">Mattersburg</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c22178"/>
+        </form>
+        <etym>
+          <cit type="etymon">
+            <lang>ahd.</lang>
+            <form>
+              <orth>furkula</orth>
+            </form>
+          </cit>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>furkel</orth>
+            </form>
+          </cit>
+          <seg type="desc">;</seg>
+          <seg type="desc">Entlehnung von</seg>
+          <cit type="etymon">
+            <lang>lat.</lang>
+            <form>
+              <orth>furca</orth>
+            </form>
+            <def>Stützpfahl; Gabel; Mistgabel; Gabelholz; Halsblock</def>
+          </cit>
+          <cit type="etymon">
+            <form>
+              <orth>furcula</orth>
+            </form>
+            <def>Pfahl; (gabelförmige) Stütze; Engpass</def>
+          </cit>
+          <ref type="bibl" target="#AWB1985III">
+            <lbl>vgl.</lbl>AWB 1985 III
+            <citedRange>1405</citedRange>
+          </ref>
+          <ref type="bibl" target="#Lexer1878III">
+            <lbl>vgl.</lbl>Lexer 1878 III
+            <citedRange>602</citedRange>
+          </ref>
+          <ref type="bibl" target="#Stowasser1997">
+            <lbl>vgl.</lbl>Stowasser 1997
+            <citedRange>221</citedRange>
+          </ref>
+          <cit type="etymon"></cit>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <def>Zaun mit den Stangen auf gabeligen Stecken; Gabelzaun</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22153"/>
+            </sense>
+            <sense>
+              <sense>
+                <def>Gabel (mit zwei Zacken); Heugabel</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22154"/>
+              </sense>
+              <sense>
+                <def>(gabeliger) Stiel des Rechens</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22155"/>
+              </sense>
+              <sense>
+                <def>gabelartiges Gerät</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22156"/>
+              </sense>
+              <sense>
+                <def>gabelförmiges Tragegestell (für Heu, Futter etc.)</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22157"/>
+              </sense>
+              <sense>
+                <def>gabelförmige Vorrichtung zum Aufhängen von Heu</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22158"/>
+              </sense>
+            </sense>
+            <sense>
+              <def>Gabelung eines Baumes; Astgabel</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22159"/>
+            </sense>
+            <sense>
+              <def>gabelartige Zahnwurzel</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">dęə tsąnd hǫd fuəkln!</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1c07">Mühlheim am Inn</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22160"/>
+            </sense>
+          </sense>
+          <sense>
+            <def>dreieckiges Holz um den Hals von Schafen und Schweinen (zum Verhindern, dass diese durch den Zaun schlüpfen)</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22161"/>
+          </sense>
+          <sense>
+            <sense>
+              <def>gekreuzte Stecken, Stangen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22164"/>
+            </sense>
+            <sense>
+              <def>Vorrichtung zum Aufhängen von Werg; Spinnrocken</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">af dr furgglɒ fālt a Tsuəŋŋɒ</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m10">Serfaus</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c221466"/>
+            </sense>
+            <sense>
+              <def>Quirl zum Zerrühren der Käsemasse oder Sprudeln der sauren Milch</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22167"/>
+            </sense>
+            <sense>
+              <def>zweirädriger Holzwagen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22186"/>
+            </sense>
+            <sense>
+              <def>Pflug; umsetzbares Streichbrett am Pflug; Mollbrett</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22169"/>
+            </sense>
+            <sense>
+              <def>Hackmesser mit einem Haken</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22170"/>
+            </sense>
+            <sense>
+              <def>Vorrichtung zum Holzschleifen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22171"/>
+            </sense>
+            <sense>
+              <def>leichtes Rudergestell</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22177"/>
+            </sense>
+          </sense>
+          <sense>
+            <sense>
+              <def>gabelförmiger Gebirgsübergang im Pustertal</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22176"/>
+            </sense>
+            <sense>
+              <def>Gratjoch; Scharte</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22162"/>
+            </sense>
+            <sense>
+              <def>Bergwiese</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22163"/>
+            </sense>
+          </sense>
+          <sense>
+            <def>in einen Baum gemachtes Loch zum Absondern von Pech</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22172"/>
+          </sense>
+          <sense>
+            <sense>
+              <def>falsche, zweizüngige Person</def>
+              <usg>[pejorativ]</usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22173"/>
+            </sense>
+            <sense>
+              <def>zornige, aufbrausende Frau</def>
+              <usg>[pejorativ]</usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">dös is a rechtǫ̈ Furggl!</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e06">Kufstein</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22174"/>
+            </sense>
+            <sense>
+              <def type="umschreibung">Schimpfwort für eine Frau</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Is dös a dumme Furgl</quote>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22175"/>
+            </sense>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Endsfurkel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>gegabelte Zahnwurzel</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21935"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Rechenfurkel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>(gabeliger) Stiel des Rechens</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.1">NBgl.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21938"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Rockenfurkel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Garnstöckel am Spinnrad</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21937"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Zaunfurkel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Zaun mit den Stangen auf gabeligen Stecken; Gabelzaun</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21939"/>
+            </sense>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

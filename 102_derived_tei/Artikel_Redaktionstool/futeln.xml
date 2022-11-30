@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.7.4" ?>
+<?parser type="lioe" version="0.7.3" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>futeln</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#AG">Andreas Gellan</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2020-07-15" who="#AG">Datensatz erstellt</change>
+        <change status="in progress" when="2020-08-10" who="#AG">Wortb erstellt weitermachen bei Bederl</change>
+        <change status="peer correction" when="2020-08-11" who="#AG">fertiggestellt in Team-Korrektur verschoben</change>
+        <change status="internal correction" when="2021-01-29" who="#AG">an Manzi weitergeleitet</change>
+        <change status="external correction" when="2021-02-18" who="#AG">LK noch ausständig, Anm. von MG eingearbeitet</change>
+        <change status="external correction" when="2021-04-15" who="#PZ">LK eingefügt</change>
+        <change status="external correction" when="2021-04-16" who="#AG">weiter in externe</change>
+        <change status="finished" when="2021-06-04" who="#AG">finished</change>
+        <change status="finished" when="2022-01-07" who="#AG">Final Version</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="futeln">
+          <orth>futeln</orth>
+        </form>
+        <form type="lemma" xml:id="fueteln">
+          <orth>füteln</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c9305"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Verb</gram>
+          <iType>schwach</iType>
+        </gramGrp>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <note type="kommentar" resp="#PZ">Der auf mhd.
+          <c>u</c>zurückgehende Stammvokal wird mit Ausnahme des westlichen Südbairischen überall als kurzer
+          <c>u</c>-Monophthong realisiert
+          <xr>
+            <ref>futl̥n</ref>
+            <ref>fudl̥n</ref>
+            <ref>ful̥n</ref>
+          </xr>. Daneben finden sich im Traun-, Most- und Waldviertel sowie in Wien auch gedehnte Vokale
+          <xr>
+            <ref>fūdl̥n</ref>
+            <ref>fūl̥n</ref>
+          </xr>. Hingegen kommen im Südbairischen Süd-, Ost- und Nordtirols als auch im Waldviertel umgelautete, entrundete
+          <c>i</c>-Monophthonge vor
+          <xr>
+            <ref>fitl̥n</ref>
+            <ref>fil̥n</ref>
+          </xr>. Im Anlaut finden sich im gesamten Verbreitungsgebiet labiodentale Frikative, parallel in Mittelkärnten Affrikaten
+          <xr>
+            <ref>pfudl̥n</ref>
+          </xr>. Der Vokal in der auslautenden Silbe wurde überall getilgt, wodurch der Liquid silbisch wurde. Während im westlichen Südbairischen und im Innviertel nur inlautende alveolare Fortisplosive belegt sind
+          <xr>
+            <ref>futl̥n</ref>
+            <ref>fitl̥n</ref>
+          </xr>, trat im restlichen Verbreitungsgebiet Lenisierung ein
+          <xr>
+            <ref>fudl̥n</ref>
+            <ref>fūdl̥n</ref>
+          </xr>. Außerdem wurde im Mittelbairischen der Obersteiermark, Oberösterreichs sowie des Most- und Waldviertels der Plosiv getilgt
+          <xr>
+            <ref>ful̥n</ref>
+            <ref>fū̥ln</ref>
+            <ref>fil̥n</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fitln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.2c04">Welschnofen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fu'ln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.2f02">Kapfenberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fūdln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.4c39">Lebring-St. Margarethen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fū·ln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.5d20">Vorau</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φudln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2b46">Weibern</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fūᵈln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">ful̥n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4b13">Ulrichsberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fūɫ̥n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1d01">Allhartsberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fuᵈln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1q06">Pyhra</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φú̩̄ɫ̥n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3c03">Bad Großpertholz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φil̥n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3a18">Reingers</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φudln</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p6.4b">Pulkaut.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fūdln</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fúᵈˡⁿ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5w06">Mauer</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c9443"/>
+        </form>
+        <etym>
+          <seg type="desc">Ableitung von</seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref target="Fut.xml">Fut</ref>
+            </xr>
+          </cit>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <def>nach Vulva riechen</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9464"/>
+            </sense>
+            <sense>
+              <def>schwitzen (bei Frauen) bzw. nach Schweiß (von Frauen) riechen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">dös Mensch fudlt åwa!</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1b03">Braunau am Inn</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">In da Mē̇nᵈschăkhå̄umă duᵃds fudlⁿ</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5w06">Mauer</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9465"/>
+            </sense>
+          </sense>
+          <sense>
+            <def>Geschlechtsverkehr ausüben</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9475"/>
+          </sense>
+          <sense>
+            <sense>
+              <def>hastig und ohne sichtbaren Erfolg an etwas herumarbeiten</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9476"/>
+            </sense>
+            <sense>
+              <sense>
+                <def>Holzspäne mit einem Hobel schneiden</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9482"/>
+              </sense>
+              <sense>
+                <def>ungeschickt schneiden</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9481"/>
+              </sense>
+            </sense>
+            <sense>
+              <def>beim Einfädeln eines Fadens in ein Nadelöhr lange nicht zurechtkommen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9484"/>
+            </sense>
+            <sense>
+              <def>leichtsinnig mit brennenden Gegenständen hantieren; zündeln</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9485"/>
+            </sense>
+          </sense>
+          <sense>
+            <sense>
+              <def>jemanden ärgern, necken, zum Zorn reizen, zum Narren halten</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9486"/>
+            </sense>
+            <sense>
+              <def>trödeln</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9440"/>
+            </sense>
+            <sense>
+              <def>nervös agieren</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9477"/>
+            </sense>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>abfuteln</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>schlampig und schnell mit der Nähmaschine nähen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9444"/>
+            </sense>
+            <sense>
+              <def>Eigentum verwirtschaften</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9445"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>anfuteln</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>etwas durch Unachtsamkeit beim Gehen ausstreuen (z.B. Stroh, Erde)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9448"/>
+            </sense>
+            <sense>
+              <def>jemanden anstänkern, reizen, lästig anreden</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">i laß mi von dem Lāckl nöt lang anfudeln</quote>
+                <ref type="bibl" target="#SalzburgerWb1995">Salzburger Wb. 1995
+                  <citedRange>25</citedRange>
+                </ref>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9447"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>dahinfuteln</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>den Pflug beim Ackern zu wenig einsenken</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">ȇ so dahifuln</quote>
+                <usg type="geo">
+                  <placeName type="kleinregion" ref="/geodata-wboe.xml#p5.1b">nördl.obInnv.</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9446"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>hundsfuteln</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>jemanden ärgern, narren, zum Besten halten</def>
+              <usg>(derb)</usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">i laß mi von dir nöt hundsfudeln</quote>
+                <ref type="bibl" target="#SalzburgerWb1995">Salzburger Wb. 1995
+                  <citedRange>102</citedRange>
+                </ref>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9449"/>
+            </sense>
+            <sense>
+              <xr type="variant">
+                <lbl>nur</lbl>
+                <ref>Hundsfuteln</ref>
+              </xr>
+              <usg>(Substantiv)</usg>
+              <def type="umschreibung">Bezeichnung für ein sehr einfaches Kartenspiel wie etwa „Schwarzer Peter“</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9450"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>spanfuteln</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>sich über nichtige Angelegenheiten wichtig machen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9451"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>umfuteln</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>umständlich, ungeschickt, langsam an etwas herumarbeiten</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9452"/>
+            </sense>
+            <sense>
+              <def>sich wichtig machen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9453"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>umherfuteln</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>herumfuchteln</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">mit dö Špan umʳfudln</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3b05">Straßburg</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9454"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>umeinandfuteln</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def>herumfuchteln</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9456"/>
+              </sense>
+              <sense>
+                <def>herumrennen</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9457"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>umeinanderfuteln</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def>leichtsinnig mit brennenden Gegenständen hantieren; herumzündeln</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9458"/>
+              </sense>
+              <sense>
+                <def>langsam arbeiten</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">den gonzen Tog umeinonder-pfudeln</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.2d02">Reichenau</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9459"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>verfuteln</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>etwas in ganz kleine Stücke zerschneiden</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9441"/>
+            </sense>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

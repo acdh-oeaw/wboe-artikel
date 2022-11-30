@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.8.1" ?>
+<?parser type="lioe" version="0.8.0" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Fienkel</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#PZ">Patrick Zeitlhuber</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+          <name xml:id="MK">Markus Kunzmann</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2020-07-21" who="#AG">Datensatz erstellt</change>
+        <change status="external correction" when="2020-07-21" who="#AG">LK eingefügt und mit Collections verknüpft</change>
+        <change status="finished" when="2020-10-14" who="#PZ">fertig für Release</change>
+        <change status="finished" when="2022-09-15" who="#PZ">Genus ergänzt</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Fienkel">
+          <orth>Fienkel</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c8335"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Femininum</gram>
+        </gramGrp>
+        <form type="variant" subtype="diminutive" xml:id="Fienkerl">
+          <orth>Fienkerl</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+        </usg>
+        <note type="kommentar" resp="#FF">
+          <xr></xr>Im gesamten Untersuchungsgebiet liegen auf mhd.
+          <c>ie</c>zurückgehende
+          <c>eɒ</c>-Diphthonge vor, die vor Nasal gesenkt wurden
+          <xr>
+            <ref>ƒęɒŋkl̥</ref>
+          </xr>. In Teilen des Mittel- und Südmittelbairischen sind aufgrund der Konkurrenzsituation zwischen
+          <c>e</c>-Synkope und
+          <c>l</c>-Vokalisierung in der auslautenden Silbe komplementäre Varianten mit
+          <c>l</c>-Erhalt
+          <xr>
+            <ref>ƒęɒŋkl̥</ref>
+          </xr>oder Vokalisierungsprodukte mit unterschiedlicher Qualität belegt
+          <xr>
+            <ref>ƒęɒŋkə</ref>
+          </xr>. Die vokalisierten Formen werden dabei im Ostmittelbairischen sowie im westlichen Südmittelbairischen oft gerundet
+          <xr>
+            <ref>fęɒŋgö</ref>
+          </xr>. Es lassen sich in allen Regionen unterschiedliche Assimilationsprozesse finden. Die Velarisierung des Nasals tritt fast überall dort ein, wo der Nasal nicht geschwunden ist
+          <xr>
+            <ref>ƒęɒŋkl̥</ref>
+          </xr>. Im Mittelbairischen liegt neben Lenisierung des velaren Plosivs häufig Nasalschwund vor, meist geht damit Nasalierung des vorangehenden Vokals einher, die mitunter später wieder beseitigt wurde
+          <xr>
+            <ref>fęɒ̃gə</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fẽɒ̃kλ̥</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.1c09">Oberwölz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fęaⁿgl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.2f02">Kapfenberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">feaⁿkö</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.2o03">Landl</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fẽɒ̃kɒl</pron>
+          <usg>[Dim.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1d15">Ried im Innkreis</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c9176"/>
+        </form>
+        <etym>
+          <seg type="desc">Ableitung von</seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref target="fienkeln.xml">fienkeln</ref>
+            </xr>
+          </cit>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <def>schlecht schneidendes Messer</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c8337"/>
+            </sense>
+            <sense>
+              <def>schlecht schneidendes Taschenmesser</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c8338"/>
+            </sense>
+          </sense>
+          <sense>
+            <def>Geige</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c8339"/>
+          </sense>
+          <sense>
+            <xr type="variant" subtype="diminutive">
+              <lbl>nur</lbl>
+              <ref>Fienkerl</ref>
+            </xr>
+            <usg>(Diminutiv)</usg>
+            <def>schwächliche, untüchtige Magd</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c8336"/>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Bettelfienkel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>billiges Taschenmesser</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c8340"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Rasierfienkel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Rasiermesser</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c8341"/>
+            </sense>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

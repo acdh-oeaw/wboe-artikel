@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.8.1" ?>
+<?parser type="lioe" version="0.8.0" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Fälle</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#SW">Sabine Wahl</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+          <name xml:id="MK">Markus Kunzmann</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2021-09-21" who="#SW">Datensatz erstellt</change>
+        <change status="peer correction" when="2021-09-30" who="#SW">V1</change>
+        <change status="peer correction" when="2021-10-07" who="#PZ">LK eingefügt</change>
+        <change status="internal correction" when="2022-02-07" who="#SW">V2</change>
+        <change status="external correction" when="2022-02-10" who="#SW">V3</change>
+        <change status="finished" when="2022-06-30" who="#SW">online</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Faelle">
+          <orth>Fälle</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c15123"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Femininum</gram>
+        </gramGrp>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p2.4">UKtn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+        </usg>
+        <note type="kommentar" resp="#PZ">Der auf einen Primärmlaut zurückgehende Stammvokal wird im westlichen Südbairischen als geschlossener
+          <c>e</c>-Monophthong realisiert
+          <xr>
+            <ref>fẹlə</ref>
+            <ref>fẹl</ref>
+          </xr>. Ansonsten finden sich überall vor dem Liquid gerundete
+          <c>ö</c>-Monophthonge
+          <xr>
+            <ref>fọ̈lə</ref>
+            <ref>fọ̈l</ref>
+          </xr>. Darüber hinaus treten in der Weststeiermark zu
+          <c>ü</c>gehobene Vokale auf
+          <xr>
+            <ref>fų̈̄</ref>
+          </xr>. Der auslautende Vokal blieb im Südbairischen häufig in unterschiedlichen Qualitäten erhalten
+          <xr>
+            <ref>fẹlə</ref>
+            <ref>fọ̈lɒ</ref>
+          </xr>, ansonsten jedoch überall getilgt
+          <xr>
+            <ref>fẹl</ref>
+            <ref>fọ̈l</ref>
+          </xr>. Im Ostmittelbairischen treten im Auslaut silbische Nasale auf, die durch die Übernahme der obliquen Endungen und
+          <c>e</c>-Synkope entstanden sind
+          <xr>
+            <ref>fọ̈̄n</ref>
+          </xr>. Der postvokalische Liquid blieb im Südbairischen und östlichen Südmittelbairischen erhalten
+          <xr>
+            <ref>fẹl</ref>
+            <ref>fọ̈l</ref>
+          </xr>, wurde jedoch im westlichen Süd- Südmittel- und im gesamten Mittelbairischen vokalisiert
+          <xr>
+            <ref>(fọ̈ų̈</ref>
+            <ref>fọ̈į</ref>
+          </xr>, wobei dieser häufig mit dem Stammvokal verschmolz
+          <xr>
+            <ref>fų̈̄</ref>
+            <ref>fọ̈̄n</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fäll'</pron>
+          <pron xml:lang="bar-AT">föll'</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p1A.1d">westl.uVinschg.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fölle</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.1h05">Schenna</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fẹllɛ</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p1A.3f">obEisackt.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">föllöͤ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1B.0b01">Außervillgraten</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fölla</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m04">Fließ</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fälla</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m09">Ried im Oberinntal</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">föill</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.2a19">Schwaz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">föll</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3a01">Friesach</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fę̄la</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3c01">Althofen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fȫla</pron>
+          <pron xml:lang="bar-AT">fȫln̥</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3n01">Klagenfurt</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">föi</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.1b01">Neumarkt in der Steiermark</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">föll</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.1c10">St. Peter am Kammersberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">feü</pron>
+          <pron xml:lang="bar-AT">fų̈̄</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.3e12">St. Peter im Sulmtal</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">föᵘ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.1a01">Zederhaus</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φȫn̥</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2a10">St. Andrä-Wördern</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c22417"/>
+        </form>
+        <etym>
+          <cit type="etymon">
+            <lang>ahd.</lang>
+            <form>
+              <orth>fellī</orth>
+            </form>
+            <def>verfallenes Mauerwerk</def>
+          </cit>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>velle</orth>
+            </form>
+            <def>Gefälle; das Fallen; Fall; Sturz</def>
+          </cit>
+          <seg type="desc">; eine Vermischung mit</seg>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>valle</orth>
+            </form>
+            <def>Falle; einfallende Türklinke</def>
+          </cit>
+          <cit type="etymon">
+            <xr type="lemma">
+              <lbl>s. auch</lbl>
+              <ref target="Falle.xml#Falle">Falle</ref>
+            </xr>
+          </cit>
+          <seg type="desc">, und mit</seg>
+          <cit type="etymon">
+            <lang>cimbr.</lang>
+            <form>
+              <orth>schavöllo</orth>
+            </form>
+            <def>Zwiebel</def>
+          </cit>
+          <seg type="desc">scheint wahrscheinlich</seg>
+          <ref type="bibl" target="#AWB1985III">
+            <lbl>vgl.</lbl>AWB 1985 III
+            <citedRange>728</citedRange>
+          </ref>
+          <ref type="bibl" target="#BMZ1861III">
+            <lbl>vgl.</lbl>BMZ 1861 III
+            <citedRange>223b</citedRange>
+          </ref>
+          <ref type="bibl" target="#Lexer1878III">
+            <lbl>vgl.</lbl>Lexer 1878 III
+            <citedRange>11</citedRange>
+          </ref>
+          <ref type="bibl" target="#TirolerWb">
+            <lbl>vgl.</lbl>Tiroler Wb.
+            <citedRange>162</citedRange>
+          </ref>
+          <seg type="desc">; Ableitung von</seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref target="fallen.xml#fallen">fallen</ref>
+            </xr>
+          </cit>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <def>absteigender Weg am Bach</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22343"/>
+            </sense>
+            <sense>
+              <def>Wasserfall</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22341"/>
+            </sense>
+            <sense>
+              <def>Bretter, die zur Regulierung in einen Wassergraben eingesenkt werden</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22342"/>
+            </sense>
+          </sense>
+          <sense>
+            <sense>
+              <def>Falltür</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.1">wSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22337"/>
+            </sense>
+            <sense>
+              <def>Falltür im Bauernhaus (von der Stube aus in die Ober- bzw. Schlafkammer oder in den Keller) oder in der Scheune (in den Stall hinunter bzw. über dem Futterschlauch)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.1">wSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22336"/>
+            </sense>
+            <sense>
+              <sense>
+                <def>Fall- bzw. Klapptür im Schweinestall</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22347"/>
+              </sense>
+              <sense>
+                <def>Fall- bzw. Klapptür über dem Futtertrog der Schweine</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.1">wSTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.4">UKtn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22085"/>
+              </sense>
+            </sense>
+            <sense>
+              <sense>
+                <def>Deckel; Pultdeckel</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.1">wSTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22338"/>
+              </sense>
+              <sense>
+                <def>Ofengrubendeckel mit Scharnieren</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22339"/>
+              </sense>
+            </sense>
+            <sense>
+              <def>Fallbrett an der Vorderseite des Bienenstandes</def>
+              <usg>(fachsprachlich; Imkerei)</usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22340"/>
+            </sense>
+            <sense>
+              <def>Hosenschlitz</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22345"/>
+            </sense>
+          </sense>
+          <sense>
+            <def>Ortsname; Flurname</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22344"/>
+          </sense>
+          <sense>
+            <sense>
+              <def>Türklinke</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22330"/>
+            </sense>
+            <sense>
+              <def>(hölzerner) Türriegel; (hölzerne) Türschnalle, Schnalle am Gatter</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.1">wSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22331"/>
+            </sense>
+          </sense>
+          <sense>
+            <def>das Unreine beim Zerlassen der Butter</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.1">wSTir.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22335"/>
+          </sense>
+          <sense>
+            <sense>
+              <def>Zwiebel; Gartenzwiebel</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22327"/>
+            </sense>
+            <sense>
+              <def>Triebe der Schalotten, die mehrere Zwiebelknollen haben</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22328"/>
+            </sense>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Blindfälle</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Wandkästchen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22121"/>
+            </sense>
+            <sense>
+              <def>Blindfenster; vorgetäuschtes Fenster</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22122"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Hosenfälle</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Hosenschlitz (v. a. bei Lederkniehosen)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.1">wSTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22089"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Kellerfälle</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Falltür, die in den Keller führt</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22093"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Männleinfälle</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Wasserfall, bei dem das Wasser über eine Felsnase springt</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22097"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Meerfälle</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Meerzweibel (Heilpflanze)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22094"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Obenauffälle</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Falltür, die in den Überboden führt</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22119"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Ofenfälle</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Ofenklapptür</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22120"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Rauchfälle</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Falltür für den Rauchabzug</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22123"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Saufälle</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def>Falltür über dem Futtertrog der Schweine</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.4">UKtn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22141"/>
+              </sense>
+              <sense>
+                <def>Deckel auf dem Futtertrog der Schweine</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22298"/>
+              </sense>
+              <sense>
+                <def>Verschluss beim Futtertrog der Schweine</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22302"/>
+              </sense>
+              <sense>
+                <def>Fall- oder Klapptür im Schweinestall</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22300"/>
+              </sense>
+            </sense>
+            <sense>
+              <def>Schimpfwort für eine Falltür, über die man sich ärgert</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22299"/>
+            </sense>
+            <sense>
+              <def>Hosenschlitz</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Måch' daiⁿ Saufll zuə, dəß daiⁿ Pętzl net außəkimᵇ</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.3b12">Söding-St. Johann</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22301"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Tremmelfälle</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>mit Rundholz gedeckte Stelle, auf die das Mühlwasser fällt, damit das Fortspülen der Erde verhindert wird</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22139"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Türfälle</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>(hölzerne) Türklinke</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22142"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Wasserfälle</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Stelle des Wassergefälles</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22283"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Weibleinfälle</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Wasserfall, wo das Wasser durch einen kaminartigen Felsenspalt herabstürzt</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22284"/>
+            </sense>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

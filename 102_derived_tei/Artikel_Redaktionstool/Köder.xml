@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.8.1" ?>
+<?parser type="lioe" version="0.8.0" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Köder</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#EW">Eva Wahlmüller</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+          <name xml:id="MK">Markus Kunzmann</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2022-04-19" who="#EW">Datensatz erstellt</change>
+        <change status="in progress" when="2022-04-20" who="#EW">Wortbildungen</change>
+        <change status="peer correction" when="2022-04-21" who="#EW">Simplexbedeutungen; Redewendung</change>
+        <change status="peer correction" when="2022-05-02" who="#EW">Anm. PS eingearbeitet, warten auf LK</change>
+        <change status="internal correction" when="2022-06-28" who="#EW">LK eingefügt</change>
+        <change status="external correction" when="2022-07-13" who="#EW">überarbeitet nach Korrektur Manzi</change>
+        <change status="finished" when="2022-08-30" who="#EW">keine Anm. JE</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Koeder">
+          <orth>Köder</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c25842"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Maskulinum</gram>
+          <gram type="gender">Neutrum</gram>
+        </gramGrp>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p7.1">NBgl.</placeName>
+        </usg>
+        <note type="kommentar" resp="#DG">Im Stammvokal ist von Fortsetzern eines mhd.
+          <c>ë</c>oder
+          <c>ö</c>auszugehen, das nach Ausfall des nachfolgenden
+          <c>r</c>in der Lautfolge
+          <c>rder</c>gedehnt und im Falle eines gerundeten Vokals entrundet wurde. So lassen sich die fallenden
+          <c>ea</c>-Diphthonge im Großteil des Südbairischen
+          <xr>
+            <ref>kχęɒdər</ref>
+            <ref>khęɒdɒ</ref>
+          </xr>sowie die langen offenen
+          <c>e</c>-Monophthonge in Teilen des südbairischen Kärntens sowie im gesamten Südmittel- und Mittelbairischen
+          <xr>
+            <ref>khę̄dr̥</ref>
+            <ref>kχę̄dɒ</ref>
+            <ref>khę̄dɒ</ref>
+          </xr>erklären, die sich mit Ausnahme des westlichen Südmittelbairischen überall eindeutig wie mhd.
+          <c>ē</c>oder
+          <c>œ</c>verhalten. Hinweise auf Formen mit Stammsilben, die bereits im Mittelhochdeutschen kein
+          <c>r</c>mehr enthielten, deshalb offen waren und im Neuhochdeutschen erst gedehnt wurden, finden sich sporadisch über das Untersuchungsgebiet verteilt
+          <xr>
+            <ref>kχẹidər</ref>
+            <ref>khẹ̄dɒ</ref>
+          </xr>. Der anlautende velare Plosiv wird im Süd- und Südmittelbairischen meist als Affrikate realisiert
+          <xr>
+            <ref>kχęɒdər</ref>
+            <ref>kχę̄dɒ</ref>
+          </xr>, im südbairischen Kärnten und im gesamten Mittelbairischen als Aspirate
+          <xr>
+            <ref>khęɒdɒ</ref>
+            <ref>khę̄dr̥</ref>
+            <ref>khę̄dɒ</ref>
+          </xr>. Aufgrund ihrer intervokalischen Position ist die alveolare Lenis nirgends geschwunden, in der Weststeiermark und im Pongau aber vereinzelt zu einem
+          <c>r</c>gewandelt worden
+          <xr>
+            <ref>kxę̄rɒ</ref>
+          </xr>. Während im Südbairischen der auslautende Liquid meist noch mit einem Reduktionsvokal unterschiedlicher Qualität
+          <xr>
+            <ref>kχęɒdər</ref>
+            <ref>khę̄dɒr</ref>
+          </xr>oder ohne solchen und daher silbisch auftritt
+          <xr>
+            <ref>khę̄dr̥</ref>
+          </xr>, wurde er im restlichen Untersuchungsgebiet zu einem
+          <c>a</c>-Schwa
+          <xr>
+            <ref>khęɒdɒ</ref>
+            <ref>khę̄dɒ</ref>
+          </xr>sowie im östlichen Südtirol zu einem verdumpften Vokal vokalisiert
+          <xr>
+            <ref>kχęɒdǫ</ref>
+          </xr>.
+        </note>
+        <etym>
+          <cit type="etymon">
+            <lang>ahd.</lang>
+            <form>
+              <orth>querdar</orth>
+            </form>
+            <def>Köder</def>
+          </cit>
+          <seg type="desc">
+            <date>(10. Jh.);</date>
+          </seg>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>querder</orth>
+            </form>
+            <form>
+              <orth>korder</orth>
+            </form>
+            <form>
+              <orth>körder</orth>
+            </form>
+            <form>
+              <orth>kerder</orth>
+            </form>
+            <form>
+              <orth>keder</orth>
+            </form>
+            <form>
+              <orth>koder</orth>
+            </form>
+            <form>
+              <orth>köder</orth>
+            </form>
+            <def>Lockspeise; Flicklappen von Leder, Tuch</def>
+          </cit>
+          <ref type="bibl" subtype="online">Pfeifer online
+            <xr type="lemma">
+              <ref>Köder</ref>
+              <date type="accessed">19.04.2022</date>
+            </xr>
+          </ref>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <def>Lockspeise; Lockmittel (zum Fangen von Tieren)</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.1">NBgl.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">an Keᵃder anrichtn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m02">Fendels</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">håsch ęs kęadr scho aichn gitun?
+                  <cit type="translation">
+                    <quote xml:lang="de">hinein getan</quote>
+                  </cit>
+                </quote>
+                <usg type="geo">
+                  <placeName type="kleinregion" ref="/geodata-wboe.xml#p1C.2c">uStub.</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">nöt ubeißn auf n Kēda</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e06">Kufstein</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Kedr auslögn</quote>
+                <usg type="geo">
+                  <placeName type="kleinregion" ref="/geodata-wboe.xml#p2.2d">obstGurkt.</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Kēdą werfm</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.2c01">Fusch an der Großglocknerstraße</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">ə Kędə lė'ŋ</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1c07">Mühlheim am Inn</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">da Fuks is afs Khę̄dəʳ khema</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c26146"/>
+            </sense>
+            <sense>
+              <def>Brot</def>
+              <usg>(scherzhaft)</usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c26147"/>
+            </sense>
+            <sense>
+              <def type="umschreibung">abwertender Ausdruck für eine sexuell begierige Frau</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c26148"/>
+            </sense>
+          </sense>
+          <sense>
+            <def>Teil von Leder; Teil eines Lederschuhs</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c26149"/>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Aasköder</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Aas, Kadaver, der zum Anlocken von Raubwild verwendet wird; Luder</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c26093"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Absatzköder</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Fuß des Absatzes</def>
+              <usg>(fachsprachlich)</usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c26094"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Fischköder</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Lockspeise, die zum Fischfang verwendet wird (Würmer, Insekten, Schnecken, Teig, etc.)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Wirm, Köfer, Muggn, Fluign und noᵃketi Schneggn geit guᵃts Fischkeᵃder</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m02">Fendels</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c26113"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Fuchsköder</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Lockspeise, die zum Fuchsfang verwendet wird</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c26115"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Grundköder</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>die auf dem Grund aufliegende Lockspeise</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c26116"/>
+            </sense>
+            <sense>
+              <def>die zum Anfüttern dienende Futtermenge</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c26117"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Streichköder</orth>
+          </form>
+          <sense>
+            <sense>
+              <def type="umschreibung">Schusterwerkzeug</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c26118"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Vogelköder</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Lockspeise, die zum Vogelfang verwendet wird</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c26114"/>
+            </sense>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Das Dirndl hat gefischt beim Bach / hat nichts erwischt auf d'Nacht / ist ein schlechtes Köder dran / beißt keiner an</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Reim</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">S' Diandl håt gfischt ban Båch / håt nix da wischt auf t Nåcht / is a schlechts Köda drån / beißt kåana åⁿ</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.3c08">Stainz</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c26150"/>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

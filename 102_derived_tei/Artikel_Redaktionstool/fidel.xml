@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.7.2" ?>
+<?parser type="lioe" version="0.7.0" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>fidel</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#AB">Angela Bergermayer</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2021-03-18" who="#AB">Datensatz erstellt</change>
+        <change status="internal correction" when="2021-03-23" who="#AB">freigegeben f. int. Korr.</change>
+        <change status="internal correction" when="2021-03-25" who="#AB">freigegeben f. LK</change>
+        <change status="internal correction" when="2021-05-25" who="#DG">LK unformatiert eingefügt</change>
+        <change status="external correction" when="2021-05-25" who="#AB">LK korrekturgelesen, getaggt, formatiert; freigegeben f. ext. Korr.</change>
+        <change status="finished" when="2021-06-24" who="#AB">Abschlussredaktion</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="fidel">
+          <orth>fidel</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c11498"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Adjektiv</gram>
+        </gramGrp>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p2.4">UKtn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p7.3">SBgl.</placeName>
+        </usg>
+        <note type="kommentar" resp="#DG">Die Betonung auf der zweiten Silbe dieses lateinischen Lehnwortes wurde durchgängig beibehalten. Variation zeigt sich auch lediglich in dieser Silbe. Nur spontan tritt im Ostmittelbairischen der Lenisplosiv als Fortis auf
+          <xr>
+            <ref>fitǫ̈̄́</ref>
+          </xr>. Die betonte Lautverbindung -
+          <c>ēl</c>ist im Südbairischen und in Teilen des östlichen Südmittelbairischen als solche erhalten
+          <xr>
+            <ref>fidḗl</ref>
+          </xr>bzw. im östlichen Süd- und Südmittelbairischen vor
+          <c>l</c>auch gerundet
+          <xr>
+            <ref>fidȫ́l</ref>
+          </xr>. Zudem ist im Ostmittelbairischen der Liquid in diesem moderneren Lexem mitunter nicht geschwunden
+          <xr>
+            <ref>fidḗl</ref>
+          </xr>. In Teilen des östlichen Südmittelbairischen, im westlichen Südmittelbairischen sowie im Mittelbairischen, dem Vokalisierungsgebiet, wurde der Liquid dagegen größtenteils vokalisiert. Im Westmittelbairischen sind daher typisch steigende Diphthonge aus Vokal und Vokalisierungsprodukt belegt
+          <xr>
+            <ref>fidę́i</ref>
+          </xr>, zudem vereinzelt im Ostmittelbairischen mit optionaler Rundung
+          <xr>
+            <ref>fidę́i</ref>
+            <ref>fidǫ̈́ü</ref>
+          </xr>. Im restlichen Vokalisierungsgebiet sind diese Diphthonge zu einem Monophthong verschmolzen
+          <xr>
+            <ref>fidǫ̈̄́</ref>
+            <ref>fidȫ́</ref>
+          </xr>, der sekundär auch entrundet auftritt
+          <xr>
+            <ref>fidę̄́</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fidé̄l</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.2a19">Schwaz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fidölė</pron>
+          <usg>[flekt.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3n01">Klagenfurt</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fideˡˡs</pron>
+          <usg>[flekt.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.2a04">Leoben</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fidöˡ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.2f02">Kapfenberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fidä́</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.2o03">Landl</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fidell</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.4c29">St. Veit in der Südsteiermark</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φiδę́̄</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p4.3d">Gr.Arlt.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fideȋ</pron>
+          <pron xml:lang="bar-AT">fidé͡i</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p5.1b">nördl.obInnv.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fitǫ̈́</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2b46">Weibern</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fidǟė</pron>
+          <pron xml:lang="bar-AT">fidǫ̈üˡs</pron>
+          <usg>[flekt.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2e01">Linz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fidö̩</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4b13">Ulrichsberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fidȫ̩́</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1d01">Allhartsberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fidäi</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1p01">Annaberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fidǟ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1p12">Türnitz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fidȫiˡs</pron>
+          <usg>[flekt.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3a07">Gastern</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fidǫ̈ˡs</pron>
+          <usg>[flekt.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3i01">Altenburg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fidȫ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4d18">Poysdorf</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φįdö̩́</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4f06">Ernstbrunn</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fidö̱</pron>
+          <pron xml:lang="bar-AT">fidö̱ꭞ</pron>
+          <pron xml:lang="bar-AT">fitöⁱ</pron>
+          <pron xml:lang="bar-AT">-fidöɫ</pron>
+          <pron xml:lang="bar-AT">-fidöiɫ</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fidöl</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p7.3">SBgl.</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c15779"/>
+        </form>
+        <etym>
+          <seg type="desc">im
+            <date>17. Jh.</date>entlehnt aus
+            <lang>lat.</lang>
+          </seg>
+          <cit type="etymon">
+            <form>
+              <orth>fidēlis</orth>
+            </form>
+            <def>treu</def>
+          </cit>
+          <seg type="desc">(zu
+            <lang>lat.</lang>
+          </seg>
+          <cit type="etymon">
+            <form>
+              <orth>fidēs</orth>
+            </form>
+            <def>Treue; Vertrauen</def>
+          </cit>
+          <seg type="desc">); in der Studentensprache des
+            <date>18. Jh.s</date>erfolgte eine Bedeutungsentwicklung von
+          </seg>
+          <cit type="etymon">
+            <def>treu</def>
+          </cit>
+          <seg type="desc">zu</seg>
+          <cit type="etymon">
+            <def>vergnügt</def>
+          </cit>
+          <ref type="bibl" target="#Kluge2011">
+            <lbl>vgl.</lbl>Kluge 2011
+            <citedRange>293</citedRange>
+          </ref>
+          <cit type="etymon"></cit>
+          <seg type="desc">. Es ist gut möglich, dass die unten angeführte Bedeutung</seg>
+          <cit type="etymon">
+            <def>alles mitmachend</def>
+          </cit>
+          <seg type="desc">, wahrscheinlich im Sinne von</seg>
+          <cit type="etymon">
+            <def>jeden Spaß, jeden lustigen Streich u. ä. mitmachend</def>
+          </cit>
+          <seg type="desc">(ursprünglich wohl insbesondere unter Studenten), die Zwischenstufe in dieser semantischen Entwicklung darstellt, weil das „Alles-Mitmachen“ als Zeichen von Treue und Vertrauen gesehen werden kann.</seg>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <sense>
+                <def>„alles mitmachend“</def>
+                <def type="umschreibung">(wohl im Sinne von 'sich an jedem Spaß, jedem lustigen Streich, jeder vergnüglichen Unternehmung beteiligend')</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c15881"/>
+              </sense>
+              <sense>
+                <def>vergnügt; gut aufgelegt; fröhlich; lustig; heiter</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.4">UKtn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p7.3">SBgl.</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">fidölė Augŋ</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3n01">Klagenfurt</placeName>
+                  </usg>
+                </cit>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">ə̇i is ima fidell und aufglėig ols wann d Wėilt seiⁿ ghearat</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.4c29">St. Veit in der Südsteiermark</placeName>
+                  </usg>
+                </cit>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">ɒ fidę́ė gsoėšǫft</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1c07">Mühlheim am Inn</placeName>
+                  </usg>
+                </cit>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">a fidö̂̄́ˡs Gsĭcht</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3h05">Zwettl-Niederösterreich</placeName>
+                  </usg>
+                </cit>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">Nur ållaweiɫ fidöl!</quote>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c15882"/>
+              </sense>
+              <sense>
+                <def>gemütlich</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c15883"/>
+              </sense>
+            </sense>
+            <sense>
+              <def>freudig stimmend; Freude bereitend bzw. ermöglichend; tadellos</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">ɒ fidö̩lė bfaėƒm
+                  <cit type="translation">
+                    <quote xml:lang="de">eine Tabakpfeife, an der man seine Freude haben kann</quote>
+                  </cit>
+                </quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4b13">Ulrichsberg</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c15884"/>
+            </sense>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>kreuzfidel</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <sense>
+                  <def>sehr, höchst, überaus lustig; sehr vergnügt; fröhlich; gut gelaunt</def>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                  </usg>
+                  <cit type="example">
+                    <quote xml:lang="bar-AT">a kreizfidēls Gsicht</quote>
+                    <usg type="geo">
+                      <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2a39">Traun</placeName>
+                    </usg>
+                  </cit>
+                  <cit type="example">
+                    <quote xml:lang="bar-AT">Heit' is' er wieda kreizfidöⁱl!</quote>
+                    <usg type="geo">
+                      <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                    </usg>
+                  </cit>
+                  <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c15780"/>
+                </sense>
+                <sense>
+                  <def>sehr gemütlich</def>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                  </usg>
+                  <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c15957"/>
+                </sense>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>eine fidele Wätsche</orth>
+          </form>
+          <sense>
+            <def>eine kräftige Ohrfeige</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">a fidǫ̈lė Wādschn</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2e01">Linz</placeName>
+              </usg>
+            </cit>
+          </sense>
+          <ptr type="collection" subtype="MWE" target="/collections-wboe.xml#c15781"/>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>oh fidel!</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>hei!</def>
+              <def type="umschreibung">(Interjektion)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">o fideȋ!</quote>
+                <usg type="geo">
+                  <placeName type="kleinregion" ref="/geodata-wboe.xml#p5.1b">nördl.obInnv.</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c15782"/>
+            </sense>
+            <sense>
+              <def>ei der Tausend!</def>
+              <def type="umschreibung">(ein schwacher Fluch, der Überraschung, Empörung oder Ähnliches ausdrückt)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">ó fidé͡i!</quote>
+                <usg type="geo">
+                  <placeName type="kleinregion" ref="/geodata-wboe.xml#p5.1b">nördl.obInnv.</placeName>
+                </usg>
+              </cit>
+            </sense>
+          </sense>
+          <ptr type="collection" subtype="MWE" target="/collections-wboe.xml#c15783"/>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

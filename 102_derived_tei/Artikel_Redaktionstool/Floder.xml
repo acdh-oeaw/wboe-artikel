@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.7.4" ?>
+<?parser type="lioe" version="0.7.3" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Floder</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#AG">Andreas Gellan</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="">
+      <listChange>
+        <change status="in progress" when="2020-02-20" who="#AG">Datensatz erstellt</change>
+        <change status="internal correction" when="2020-07-06" who="#AG">Änderungen der 1. Korr. eingearbeitet</change>
+        <change status="external correction" when="2020-08-22" who="#AG">Anmerkungen von Manzi eingearbeitet, LK fehlt noch</change>
+        <change status="external correction" when="2021-04-12" who="#PZ">LK eingefügt</change>
+        <change status="external correction" when="2021-04-13" who="#AG">weiter an JE</change>
+        <change status="finished" when="2021-04-22" who="#AG">finished</change>
+        <change status="finished" when="2022-01-11" who="#AG">Final Version</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Floder">
+          <orth>Floder</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c2881"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Maskulinum</gram>
+          <gram type="gender">Femininum</gram>
+        </gramGrp>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+        </usg>
+        <note type="kommentar" resp="#PZ">Die im gesamten Verbreitungsgebiet vorkommenden langen
+          <c>o</c>-Monophthonge
+          <xr>
+            <ref>flōdər</ref>
+            <ref>flōdɒ</ref>
+          </xr>lassen darauf schließen, dass diesen eine mhd. Nebenform mit kurzem
+          <c>o</c>zugrunde liegt, das in offener Silbe regelhaft gedehnt wurde. Parallel sind im mittleren Nordtirol palatalisierte Monophthonge belegt
+          <xr>
+            <ref>flȫdr̥</ref>
+          </xr>. Außerdem finden sich in Mittelkärnten, Salzburg und im Mühlviertel steigende Diphthonge
+          <xr>
+            <ref>floųdɒ</ref>
+          </xr>, im mittleren Nordtirol auch Diphthonge mit palatalisiertem Erstglied
+          <xr>
+            <ref>flöųdɒ</ref>
+            <ref>flöųdr̥</ref>
+          </xr>. Während im Anlaut überall Frikative dominieren
+          <xr>
+            <ref>flōdər</ref>
+          </xr>, kann dieser im westlichen Nordtirol durch Affrizierung gestärkt auftreten
+          <xr>
+            <ref>pfloųdər</ref>
+          </xr>. Im Südbairischen wurde der auslautende Liquid bei gleichzeitiger Reduktion des Vokals erhalten
+          <xr>
+            <ref>flōdər</ref>
+            <ref>flōdɒr</ref>
+          </xr>, vereinzelt wurde im mittleren Nordtirol und Mittelkärnten der Vokal sogar gänzlich getilgt, wodurch das
+          <c>r</c>silbisch wurde
+          <xr>
+            <ref>flȫdr̥</ref>
+            <ref>flöųdr̥</ref>
+          </xr>. Im Südmittel- und Mittelbairischen wurde der Liquid vokalisiert und verschmolz mit dem gesenkten Vokal
+          <xr>
+            <ref>flōdɒ</ref>
+            <ref>floųdɒ</ref>
+          </xr>. In Salzburg finden sich verschiedene abweichende Varianten: Im Pongau ist Rhotazimus des Plosivs belegt
+          <xr>
+            <ref>flōrɒ</ref>
+          </xr>. In manchen Regionen wurde der inlautende Plosiv getilgt
+          <xr>
+            <ref>floųər</ref>
+          </xr>, in anderen wurde der Auslaut durch den Wechsel zur femininen Deklination um einen Nasal erweitert
+          <xr>
+            <ref>flōdɒn</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">pfloudər</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flȫᵘdr</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.2j04">Tux</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flod'r</pron>
+          <pron xml:lang="bar-AT">flȫdr</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.2k09">Zell am Ziller</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flōᵘdɒ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.2b01">Malta</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flōdɒr̭</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3f01">Feldkirchen in Kärnten</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flōdɒʀ̭</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.2i07">Villach</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flōdɒ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.1d08">Tamsweg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φlōdɒ</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flóda</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3b09">Raabs an der Thaya</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c3058"/>
+        </form>
+        <etym>
+          <seg type="desc">
+            <lang>mhd.</lang>
+          </seg>
+          <cit type="etymon">
+            <form>
+              <orth>vlôder</orth>
+            </form>
+          </cit>
+          <seg type="desc">,</seg>
+          <cit type="etymon">
+            <form>
+              <orth>vlûder</orth>
+            </form>
+            <def>das Fließen; Gerinne einer Mühle</def>
+          </cit>
+          <ref type="bibl" target="#Lexer1878III">Lexer 1878 III
+            <citedRange>396, 410</citedRange>
+          </ref>
+          <seg type="desc">; Hinsichtlich der historischen Lautungen scheint keine Einigkeit zu herrschen, da möglicherweise schon mehrere Parallelformen anzusetzen sind.
+            <xr type="lemma">
+              <lbl>s. auch</lbl>
+              <ref target="Fluder.xml"></ref>
+            </xr>
+          </seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref target="Fluder.xml">(Ge-)Fluder, Geflüder</ref>
+            </xr>
+          </cit>
+          <seg type="desc">bzw.</seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref target="flodern.xml">flodern, flödern</ref>
+            </xr>
+          </cit>
+          <seg type="desc">und</seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref target="fludern.xml">fludern, flaudern, (ge-)flüdern</ref>
+            </xr>
+          </cit>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <sense>
+                <def>Wasserlauf einer Mühle; Mühlgerinne</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c3095"/>
+              </sense>
+              <sense>
+                <def>Tümpel; tiefe Stelle in einem Bach</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c3104"/>
+              </sense>
+            </sense>
+            <sense>
+              <def>Zellen- oder Schaufelrad zum Antrieb einer Wassermühle</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">A Flodar richtn, de schean kleapparn kann</quote>
+                <usg type="geo">
+                  <placeName type="kleinregion" ref="/geodata-wboe.xml#p2.3g">Glant.</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c3096"/>
+            </sense>
+            <sense>
+              <def>Flügel eines Wasserrades</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c3101"/>
+            </sense>
+            <sense>
+              <def>Kopf der Mühle, der aus mehreren Lärchenbrettchen besteht, die in eine Holzwelle eingestemmt sind</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c3102"/>
+            </sense>
+          </sense>
+          <sense>
+            <def>das fallende Ausfließen des Wassers aus einem Brunnenrohr</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">untaŋ flȫdr hȫᵇm</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.2k09">Zell am Ziller</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c3103 "/>
+          </sense>
+          <sense>
+            <def>kleines Windrad; Windspiel</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c3105"/>
+          </sense>
+          <sense>
+            <def>Schlagbrett im Inneren des Butterfasses</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c3107"/>
+          </sense>
+          <sense>
+            <def>Flosse</def>
+            <usg>(jenisch)</usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c3107"/>
+          </sense>
+          <sense>
+            <sense>
+              <def>die natürliche Maserung im polierten Holz</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">der Låᵈn håt an schen Flóda</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3b09">Raabs an der Thaya</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c3111"/>
+            </sense>
+            <sense>
+              <def>Geschwulst an Baumstämmen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c3114"/>
+            </sense>
+          </sense>
+          <sense>
+            <def>Flugloch beim Bienenstock</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c3115"/>
+          </sense>
+          <sense>
+            <def>ein über ein gebogenes Holzstück gespanntes Stoffstück, das an der Sense befestigt wird, um dem Getreide die richtige Fallrichtung zu geben</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c3116"/>
+          </sense>
+          <sense>
+            <def>Ausschlag mit sich rasch ausbreitenden roten Flecken</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c22525"/>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Hosenfloder</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Hosenbein</def>
+            </sense>
+          </sense>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+          </usg>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+          </usg>
+          <cit type="example">
+            <quote xml:lang="bar-AT">Gråd ban Hǫs'nflodãr̃ñg unt'naús grunnėn ist m'r d'r Schwītz wia Suppe</quote>
+            <usg type="geo">
+              <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.2k09">Zell am Ziller</placeName>
+            </usg>
+          </cit>
+          <ptr type="collection" subtype="wortbildung" target="/collections-wboe.xml#c3091"/>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Joppenfloder</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>an der Taille angesetzter Teil an einer Trachtenjacke; Schößel</def>
+            </sense>
+          </sense>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+          </usg>
+          <ptr type="collection" subtype="wortbildung" target="/collections-wboe.xml#c3092"/>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Windfloder</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>kleines Windrad; Windspiel</def>
+            </sense>
+          </sense>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+          </usg>
+          <ptr type="collection" subtype="wortbildung" target="/collections-wboe.xml#c3093"/>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

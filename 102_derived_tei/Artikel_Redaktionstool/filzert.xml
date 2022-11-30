@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.6.5"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>filzert</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#PZ">Patrick Zeitlhuber</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2020-05-04" who="#EW">Artikel+Lautkommentar eingeben</change>
+        <change status="finished" when="2020-05-04" who="#EW">Collections erstellt und verknüpft</change>
+        <change status="finished" when="2020-06-02" who="#EW">Lautkommentar von JE abgesegnet</change>
+        <change status="finished" when="2020-10-08" who="#PZ">fertig für Release</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="filzert">
+          <orth>filzert</orth>
+        </form>
+        <form type="lemma" xml:id="gefilzert">
+          <orth>gefilzert</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c5454"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Adjektiv</gram>
+        </gramGrp>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+        </usg>
+        <note type="kommentar" resp="#FF">Während im Südbairischen für den Stammvokal konservative
+          <c>i</c>-Monophthonge mit Liquiderhalt vorliegen
+          <xr>
+            <ref>ƒįltsɒt</ref>
+          </xr>, kommt es im restlichen Teil des Untersuchungsgebiets zu verschiedenen Assimilationsprozessen. Im Südmittelbairischen ist die einfache Rundung vor Liquid belegt
+          <xr>
+            <ref>ƒų̈ltsɒt</ref>
+          </xr>. Diese Form liegt auch den ostmittelbairischen Lautungen zugrunde, die zusätzlich auch
+          <c>l</c>-Vokalisierung aufweisen
+          <xr>
+            <ref>fǖdsɒd</ref>
+          </xr>. Das auslautende Suffix
+          -
+          <c>echt</c>ist in den meisten Gegenden zu
+          -
+          <c>ɒt</c>abgeschwächt worden
+          <xr>
+            <ref>ƒų̈ltsɒt</ref>
+          </xr>. Konservativere Lautungen mit
+          <c>e</c>-Erhalt lassen sich vor allem im Südbairischen finden
+          <xr>
+            <ref>ƒįltsət</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">gfüldsɒdi</pron>
+          <usg>[flekt.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.5j04">Fehring</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c5455"/>
+        </form>
+        <etym>
+          <seg type="desc">Ableitung von</seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref target="Filz.xml">Filz</ref>
+            </xr>
+          </cit>
+        </etym>
+        <sense>
+          <sense>
+            <def>fast unentwirrbar ineinander verwickelt; verfilzt (von Haaren)</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">filzētər Pårt</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.1b04">Rangersdorf</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">gfüldsɒdi hoɒ</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.5j04">Fehring</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">meinė Håaʳ san füˡzat!</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4h09">Schwertberg</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9949"/>
+          </sense>
+        </sense>
+      </entry>
+    </body>
+  </text>
+</TEI>

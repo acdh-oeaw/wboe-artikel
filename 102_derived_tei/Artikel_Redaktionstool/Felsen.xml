@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.7.4" ?>
+<?parser type="lioe" version="0.7.3" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Felsen</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#AB">Angela Bergermayer</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2021-06-18" who="#AB">Datensatz erstellt</change>
+        <change status="in progress" when="2021-07-08" who="#DG">LK unformatiert eingefügt</change>
+        <change status="in progress" when="2021-07-09" who="#AB">LK korrekturgelesen, getaggt, formatiert</change>
+        <change status="internal correction" when="2021-07-19" who="#AB">freigegeben f. int. Korr.</change>
+        <change status="finished" when="2022-01-26" who="#AB">Abschlussredaktion</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Felsen">
+          <orth>Felsen</orth>
+        </form>
+        <form type="lemma" xml:id="Fels">
+          <orth>Fels</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c11356"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Maskulinum</gram>
+          <gram type="gender">Femininum</gram>
+          <gram type="gender">Neutrum</gram>
+        </gramGrp>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p7">Bgl.</placeName>
+        </usg>
+        <note type="kommentar" resp="#DG">Die meist geschlossenen Stammvokale verweisen auf einen mittelhochdeutschen Primärumlaut
+          <c>e</c>. Im Südbairischen und Teilen des östlichen Südmittelbairischen ist der Liquid erhalten, und es finden sich geschlossene
+          <c>e</c>-Monophthonge
+          <xr>
+            <ref>felsn̥</ref>
+          </xr>oder aufgrund des folgenden
+          <c>l</c>gerundete geschlossene
+          <c>ö</c>-Monophthonge
+          <xr>
+            <ref>fölsə</ref>
+            <ref>fölsn̥</ref>
+          </xr>. Daneben treten im östlichen Südmittelbairischen auch diphthongierte
+          <xr>
+            <ref>fǫ̈ülsn̥</ref>
+          </xr>oder gerundete offene Formen auf
+          <xr>
+            <ref>fǫ̈lsn̥</ref>
+          </xr>. Im westlichen und Teilen des östlichen Südmittelbairischen sowie im gesamten Mittelbairischen ist der Liquid dagegen vokalisiert worden, und es dominieren geschlossene
+          <c>ö</c>-Monophthonge aus Vokal und verschmolzenem Vokalisierungsprodukt
+          <xr>
+            <ref>fȫsn̥</ref>
+          </xr>. Im westlichen Südmittelbairischen und Westmittelbairischen erscheinen weiters ungerundete geschlossene
+          <c>e</c>-Monophthonge
+          <xr>
+            <ref>fēsn̥</ref>
+          </xr>oder auch
+          <c>oi</c>-Diphthonge
+          <xr>
+            <ref>foisn̥</ref>
+          </xr>, im Ostmittelbairischen Diphthonge mit unterschiedlicher Rundung der Glieder
+          <xr>
+            <ref>feüsn̥</ref>
+            <ref>föisn̥</ref>
+            <ref>föüsn̥</ref>
+          </xr>oder Öffnung des Erstglieds
+          <xr>
+            <ref>faüsn̥</ref>
+          </xr>. Zudem sind hier offene bis sehr offene gerundete Monophthonge belegt
+          <xr>
+            <ref>fǫ̈̄sn̥</ref>
+            <ref>fœ̄sn̥</ref>
+          </xr>. Bis auf wenige Ausnahmen finden sich durchgängig schwache oblique Endungen, die im bairisch-alemannischen Übergangsgebiet mit Nasalschwund
+          <xr>
+            <ref>fölsə</ref>
+          </xr>, im restlichen Untersuchungsgebiet mit Synkope auftreten
+          <xr>
+            <ref>felsn̥</ref>
+            <ref>fȫsn̥</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fẹlsn</pron>
+          <usg type="geo">
+            <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fẹlsn</pron>
+          <usg type="geo">
+            <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fẹlsn</pron>
+          <usg type="geo">
+            <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fölsə</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1n01">Imst</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">föˡsn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3b03">Thiersee</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">félse</pron>
+          <usg type="geo">
+            <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fëλsn</pron>
+          <pron xml:lang="bar-AT">föλssn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3f01">Feldkirchen in Kärnten</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fölsn</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p2.3g">Glant.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fölsen</pron>
+          <pron xml:lang="bar-AT">föülsdn</pron>
+          <usg type="geo">
+            <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fəl̥sn</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fėüsn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.3f11">Leutschach an der Weinstraße</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fǫ̈̄ɫsn̥</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.4a14">Semriach</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fȫ̩sn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.5g12">Ilztal</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φɛ̣̄σn</pron>
+          <pron xml:lang="bar-AT">φɔ̈ėσn</pron>
+          <usg type="geo">
+            <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φēsn</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p4.3d">Gr.Arlt.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fösn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.5a06">Eugendorf</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-foėsn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1c07">Mühlheim am Inn</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fö̱lsn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fȫ(į)sn̥</pron>
+          <pron xml:lang="bar-AT">-fö(į)sn̥</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4e04">Gallneukirchen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fǫ̈̄sn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1o01">Herzogenburg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fȫlsn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2e04">Rohr im Gebirge</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">b' fösn</pron>
+          <usg>[mit best. Art.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3s04">Langenlois</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fäˡsn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5i02">Lichtental</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fels'n</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φālzn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p7.1c02">Apetlon</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φɒ̄ų̈ˡzn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p7.1d14">Oggau am Neusiedler See</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fölzn</pron>
+          <pron xml:lang="bar-AT">fęⁱlzn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p7.2b08">Pilgersdorf</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φǫ̈λßn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p7.3m01">Minihof-Liebau</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c19478"/>
+        </form>
+        <etym>
+          <seg type="desc">seit dem 8. Jh. belegt
+            <ref type="bibl" target="#Kluge2011">
+              <lbl>vgl.</lbl>Kluge 2011
+              <citedRange>286</citedRange>
+            </ref>;
+            <lang>ahd.</lang>
+          </seg>
+          <cit type="etymon">
+            <form>
+              <orth>fel(i)s</orth>
+            </form>
+            <gramGrp>
+              <usg>(starkes Maskulinum)</usg>
+            </gramGrp>
+            <def>Felsen; Teil eines Berges; Felsspitze, -vorsprung; Felsabhang; Klippe; großer Stein; Felsbrocken, -block</def>
+          </cit>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>vels</orth>
+            </form>
+          </cit>
+          <cit type="etymon">
+            <lang>nhd.</lang>
+            <form>
+              <orth>Fels</orth>
+            </form>
+          </cit>
+          <seg type="desc">; daneben</seg>
+          <cit type="etymon">
+            <lang>ahd.</lang>
+            <form>
+              <orth>felisa</orth>
+            </form>
+            <gramGrp>
+              <usg>(starkes Femininum)</usg>
+            </gramGrp>
+            <def>Felsen; Teil eines Berges; Felsabhang; Klippe; Felsbrocken; großer Stein</def>
+          </cit>
+          <seg type="desc">und</seg>
+          <cit type="etymon">
+            <lang>ahd.</lang>
+            <form>
+              <orth>feliso</orth>
+            </form>
+            <gramGrp>
+              <usg>(schwaches Maskulinum)</usg>
+            </gramGrp>
+            <def>Felsen; Felsabhang; Felsvorsprung, -nase; Felsbrocken; Steinmasse</def>
+          </cit>
+          <seg type="desc">,</seg>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>velse</orth>
+            </form>
+          </cit>
+          <cit type="etymon">
+            <lang>nhd.</lang>
+            <form>
+              <orth>Felsen</orth>
+            </form>
+          </cit>
+          <ref type="bibl" target="#AWB1985III">
+            <lbl>vgl.</lbl>AWB 1985 III
+            <citedRange>723f.</citedRange>
+          </ref>
+          <seg type="desc">. Im Bearbeitungsgebiet dominiert klar die aus schwachen obliquen Endungen übernommene Form auf</seg>
+          <cit type="etymon">
+            <form>
+              <orth>-en</orth>
+            </form>
+          </cit>
+          <seg type="desc">, und hier wiederum überwiegt das maskuline Genus.</seg>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <def>fest in sich zusammenhängende Masse harten Gesteins; größere, steil bis senkrecht in die Höhe ragende, harte Gesteinsmasse; Gesteinswand; felsiger Abhang; großer Gesteinsbrocken</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.2">MBgl.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.3">SBgl.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Föüsn in Wossa</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3a15">Kautzen</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">do keman Stoaⁿ außa, stenᵍan Föˡsn außa</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3a22">Waidhofen an der Thaya</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Fäˡsn, aⁿschichticha</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5i02">Lichtental</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">ɒ klǫ̃ɒ̃ni fęⁱlzn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p7.2b08">Pilgersdorf</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c20572"/>
+            </sense>
+            <sense>
+              <def>Steinhalde; Steinbruch</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c20580"/>
+            </sense>
+            <sense>
+              <def>steile Wand; sehr steiler (Ab-)Hang; abfallender Boden</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c20582"/>
+            </sense>
+            <sense>
+              <def>festes Gestein in der Erde (nicht an der Erdoberfläche)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">məništ
+                  <cit type="translation">
+                    <quote xml:lang="de">sehr oft</quote>
+                  </cit>aufn fölsə grǭtə
+                </quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1n01">Imst</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c20583"/>
+            </sense>
+            <sense>
+              <def>Höhlung, in welche der Körper Jesu gelegt wird (bezogen auf das Heilige Grab, das in vielen katholischen Kirchen in der Karwoche aufgebaut wird)</def>
+              <def type="umschreibung">(Jesus wurde nach allgemeiner Meinung in einer aus dem Fels geschlagenen Grabhöhle beigesetzt)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c20584"/>
+            </sense>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Ackerfelsen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Steinmasse, Felsblock, -brocken im Ackerland</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c14893"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Kalkfelsen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>vorwiegend aus Kalkstein bestehende Steinmasse; Felsen, Felsblock aus Kalkstein</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c14894"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Opokfels</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Mergel</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c14895"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Steinbruchfelsen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Felsen, Felsblock, -brocken in einem Steinbruch</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c14897"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Steinfelsen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>fest in sich zusammenhängende Masse harten Gesteins; größere, steil bis senkrecht in die Höhe ragende, harte Gesteinsmasse; Gesteinswand; felsiger Abhang; großer Gesteinsbrocken</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c14896"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Teufel(s)felsen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def type="umschreibung">Name eines Felsen, mit dem in der Sage der Teufel in Verbindung gebracht wird</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c14898"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Wasserfelsen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>aus dem Wasser hervorragender Felsen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c14899"/>
+            </sense>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>ein Kerl wie ein Felsen</orth>
+          </form>
+          <sense>
+            <def>ein robuster Mann</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Das is a Kerl wiar a Fels'n</quote>
+              <ref type="bibl" target="#Hügel1873">Hügel 1873
+                <citedRange>58</citedRange>
+              </ref>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+            </cit>
+          </sense>
+          <ptr type="collection" subtype="MWE" target="/collections-wboe.xml#c20551"/>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

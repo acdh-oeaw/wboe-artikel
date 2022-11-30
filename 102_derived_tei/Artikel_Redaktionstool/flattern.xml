@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.8.1" ?>
+<?parser type="lioe" version="0.8.0" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>flattern</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#EW">Eva Wahlmüller</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+          <name xml:id="MK">Markus Kunzmann</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2020-06-29" who="#EW">Datensatz erstellt</change>
+        <change status="external correction" when="2020-06-30" who="#EW">Artikel eingegeben, Collections verknüpft</change>
+        <change status="external correction" when="2020-11-24" who="#DG">LK unformatiert eingefügt</change>
+        <change status="external correction" when="2020-11-24" who="#EW">LK formatiert</change>
+        <change status="external correction" when="2020-12-10" who="#EW">überarbeiten nach Anmerkungen IG</change>
+        <change status="finished" when="2020-12-16" who="#EW">Etymologie Anpassungen + Link</change>
+        <change status="finished" when="2021-02-12" who="#DG">LK leicht ausgebessert</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="flattern">
+          <orth>flattern</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c7774"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Verb</gram>
+          <iType>schwach</iType>
+        </gramGrp>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p7.1">NBgl.</placeName>
+        </usg>
+        <note type="kommentar" resp="#DG">Im gesamten Untersuchungsgebiet liegen im Stammvokal mit unterschiedlicher Quantität sowohl verdumpfte
+          <xr>
+            <ref>flǫtɒn</ref>
+            <ref>flǭdərn</ref>
+          </xr>als auch helle
+          <c>a</c>-Monophthonge vor
+          <xr>
+            <ref>flatɒn</ref>
+            <ref>flādɒn</ref>
+          </xr>. Teilweise finden sich auch
+          <c>o</c>-Monophthonge
+          <xr>
+            <ref>flotr̥n</ref>
+            <ref>flōtɒn</ref>
+          </xr>oder
+          <c>oɒ</c>-Diphthonge
+          <xr>
+            <ref>floɒtr̥n</ref>
+          </xr>, mitunter in Nebenformen
+          <xr>
+            <ref>flōdɒn</ref>
+          </xr>. Anlautendes
+          <c>f</c>erscheint vereinzelt im Süd- und Südmittelbairsichen STirs, OTirs. und NTirs. als übermarkierte Affrikate
+          <xr>
+            <ref>pflǫtərə</ref>
+            <ref>pflǫtərn</ref>
+          </xr>. Bedingt durch historische Parallelformen oder in Analogie zu ähnlichen, urverwandten Lexemen ist die Lenisierung des inlautenden Dentals unregelmäßig verbreitet. Im Süd- und Südmittelbairischen dominieren Fortis-
+          <xr>
+            <ref>flǫtɒn</ref>
+          </xr>, im Ostmittelbairischen Lenis-Formen
+          <xr>
+            <ref>flādɒn</ref>
+          </xr>, im öSTir. und wNTir. sind dagegen beide Formen parallel belegt
+          <xr>
+            <ref>flǫtǫŋ</ref>
+            <ref>flǫdǫŋ</ref>
+            <ref>pflǫtərə</ref>
+            <ref>pflǭdərə</ref>
+          </xr>. Die auslautende Verbindung
+          <c>-ern</c>ist in den meisten Gegenden zu
+          <c>-ɒn</c>geschwunden
+          <xr>
+            <ref>flǫtɒn</ref>
+          </xr>. Formen mit
+          <c>r</c>-Erhalt lassen sich im Südbairischen noch finden
+          <xr>
+            <ref>flǫtərn</ref>
+            <ref>flǫtr̥n</ref>
+          </xr>, im bairisch-alemannischen Übergangsgebiet im westlichen Nordtirol mitunter auch mit vokalischen Endungen
+          <xr>
+            <ref>flǫtərə</ref>
+          </xr>. Im öSTir. und dem Lung. ist der auslautende Nasal infolge von partieller Assimilation an ein zum Teil historisches uvulares
+          <c>r</c>velarisiert worden
+          <xr>
+            <ref>flǫtǫŋ</ref>
+            <ref>flǫtɒŋ</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fląttarn</pron>
+          <pron xml:lang="bar-AT">flâttrn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.3b01">Sarntal</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flǫdoŋ</pron>
+          <pron xml:lang="bar-AT">flottoŋ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.4a01">Ahrntal</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flǫtɔn</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p1A.4c">Lüsenert.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">pflattern</pron>
+          <pron xml:lang="bar-AT">floᵃttern</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m02">Fendels</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">pflǫttərə</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1n01">Imst</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flŏtrn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1r01">Sölden</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flodan</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e06">Kufstein</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flåttan</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e12">Schwoich</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flåtrn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3b05">Straßburg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flōtəʳn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.1d03">Lobmingtal</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flåta̮ʳn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.2c01">Fusch an der Großglocknerstraße</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fladan</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4e06">Hollabrunn</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flåtəʳn̥</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φlādɒn</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p7.1">NBgl.</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c7775"/>
+        </form>
+        <etym>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>vlederen</orth>
+            </form>
+            <form>
+              <orth>vledern</orth>
+            </form>
+          </cit>
+          <seg type="desc">und</seg>
+          <cit type="etymon">
+            <lang>frnhd.</lang>
+            <form>
+              <orth>fladern</orth>
+            </form>
+            <form>
+              <orth>flattern</orth>
+            </form>
+            <def>flattern; mit den Flügeln schlagen; vom Wind bewegt werden</def>
+          </cit>
+          <ref type="bibl" target="#Pfeifer2014">
+            <lbl>vgl.</lbl>Pfeifer 2014
+            <citedRange>351</citedRange>
+          </ref>
+          <ref type="bibl" target="#Kluge2011">Kluge 2011
+            <citedRange>300</citedRange>
+          </ref>
+          <seg type="desc">; vergleiche auch</seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref target="flodern.xml#flodern__floedern">flodern, flödern</ref>
+            </xr>
+          </cit>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <def>mit den Flügeln schlagen (von Hühnern)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c7782"/>
+            </sense>
+            <sense>
+              <def>mit zahlreichen Flügelschlägen geräuschvoll fliegen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c7783"/>
+            </sense>
+            <sense>
+              <def>fliegen von Fledermäusen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c7784"/>
+            </sense>
+          </sense>
+          <sense>
+            <sense>
+              <def>in der Luft hin- und herschwingen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c7785"/>
+            </sense>
+            <sense>
+              <def>schwingen wegstehender Rockschöße</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Då kimp'r heᵃr mit seine flåtrnde Scheßl!</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3b05">Straßburg</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c7806"/>
+            </sense>
+          </sense>
+          <sense>
+            <def>körperlich züchtigen</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c7807"/>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>beflattern</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>begatten (bei Vögeln)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c7778"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>hin-und-herflattern</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>hin- und herschwingen im Wind</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c7779"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>umeinanderflattern</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>hin- und herschwingen im Wind</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c7780"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>zerflattern</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>fliegend auseinanderstieben</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c7781"/>
+            </sense>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

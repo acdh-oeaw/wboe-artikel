@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.7.2" ?>
+<?parser type="lioe" version="0.7.0" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>fippern</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#AB">Angela Bergermayer</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2021-05-21" who="#AB">Datensatz erstellt</change>
+        <change status="internal correction" when="2021-06-17" who="#AB">freigegeben f. int. Korr.</change>
+        <change status="external correction" when="2021-06-25" who="#AB">freigegeben f. LK</change>
+        <change status="external correction" when="2021-07-07" who="#DG">LK unformatiert eingefügt</change>
+        <change status="external correction" when="2021-07-07" who="#AB">LK korrekturgelesen, getaggt, formatiert; freigegeben f. ext. Korr.</change>
+        <change status="finished" when="2021-07-14" who="#AB">Abschlussredaktion</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="fippern">
+          <orth>fippern</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c4477"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Verb</gram>
+          <iType>schwach</iType>
+        </gramGrp>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p7.1">NBgl.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p7.3">SBgl.</placeName>
+        </usg>
+        <note type="kommentar" resp="#DG">Kurze
+          <c>i</c>-Monophthonge mit Fortisplosiv finden sich in diesem wohl entlehnten Lexem tendenziell im Südbairischen
+          <xr>
+            <ref>fįpərn</ref>
+          </xr>, lange
+          <c>i</c>-Monophthonge mit Lenisplosiven dagegen eher im Mittelbairischen
+          <xr>
+            <ref>fībɒn</ref>
+          </xr>. Im Süd- und Südmittelbairischen können die Lenisplosive auch weiter zu einem Approximanten geschwächt worden sein
+          <xr>
+            <ref>fīwɒn</ref>
+          </xr>. Während der Liquid im Suffix
+          <c>-ern</c>im Südbairischen noch häufig erhalten ist
+          <xr>
+            <ref>fįpərn</ref>
+            <ref>fįpɒrn</ref>
+            <ref>fįpr̥n</ref>
+          </xr>, ist er im restlichen Untersuchungsgebiet zu einem Tiefschwa vokalisiert worden und mit dem vorhergehenden Vokal verschmolzen
+          <xr>
+            <ref>fįpɒn</ref>
+            <ref>fībɒn</ref>
+            <ref>fīwɒn</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fippɛrn</pron>
+          <usg type="geo">
+            <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fibbrn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.3b01">Sarntal</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fippɛrn</pron>
+          <usg type="geo">
+            <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fipərn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1f02">Biberwier</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fibaʳn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3b03">Thiersee</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fippan</pron>
+          <pron xml:lang="bar-AT">fiwan</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e06">Kufstein</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fipɒr̭n</pron>
+          <pron xml:lang="bar-AT">fipprn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3f01">Feldkirchen in Kärnten</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">viparn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3g05">St. Veit an der Glan</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fipəʳn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3n01">Klagenfurt</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fibaʳn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.1i01">Weißkirchen in Steiermark</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fippərn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.2b05">Wald am Schoberpaß</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fῑbɒn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.5d20">Vorau</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fippɒ</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p4.3d">Gr.Arlt.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φīwɒ̃n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.5b06">Lamprechtshausen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φǐwɒ̃n</pron>
+          <pron xml:lang="bar-AT">φǐwɒn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.5c03">Neumarkt am Wallersee</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fiwəʳn</pron>
+          <pron xml:lang="bar-AT">fīwɒn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1c07">Mühlheim am Inn</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">vīwɒ̃n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1f08">Kopfing im Innkreis</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fischbəʳn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fipɒ̃n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4b13">Ulrichsberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">bfīwɒ̃n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1d01">Allhartsberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fibbɒn</pron>
+          <pron xml:lang="bar-AT">fippɒn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1o01">Herzogenburg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">bfibaʳn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2e06">Schwarzau im Gebirge</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fibbern</pron>
+          <pron xml:lang="bar-AT">fippern</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fīwaʳn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5j01">Favoriten</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fīwăⁿ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5w06">Mauer</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fīwən</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p7.1c08">Wallern im Burgenland</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fį̄wɒn</pron>
+          <pron xml:lang="bar-AT">gfibbət</pron>
+          <usg>[Part. II]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p7.3e02">Rechnitz</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c18559"/>
+        </form>
+        <etym>
+          <seg type="desc">wohl entlehnt aus
+            <lang>lat.</lang>
+          </seg>
+          <cit type="etymon">
+            <form>
+              <orth>vibrare</orth>
+            </form>
+            <def>zittern; zucken; beben</def>
+          </cit>
+          <ref type="bibl" target="#Höfer1815">
+            <lbl>vgl.</lbl>Höfer 1815 I
+            <citedRange>218</citedRange>
+          </ref>
+          <ref type="bibl" target="#DWB1862III">
+            <lbl>vgl.</lbl>DWB 1862 III
+            <citedRange>1671</citedRange>
+          </ref>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <def>vibrieren; zittern (u. a. vor Zorn, Angst, Kälte, Verlangen); sich schnell hin- und herbewegen oder krampfhaft rasch bewegen; beben; schlottern</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">for zoᵘrn fippern</quote>
+                <usg type="geo">
+                  <placeName type="kleinregion" ref="/geodata-wboe.xml#p1A.1h">Umg.Meran</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">gråd gfippascht håd da gånze Mensch</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e12">Schwoich</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Dęr tuət mit dr Wåŋgən fipprn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3f01">Feldkirchen in Kärnten</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Ea fibbat fǫa Zǫa'n, fǫa Köültn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.2f02">Kapfenberg</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">d' Nōsnfligln fĭban</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.5g08">Großwilfersdorf</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">i kan d'Nadl nöt einfāma, i fiber z'viel</quote>
+                <ref type="bibl" target="#SalzburgerWb1995">Salzburger Wb. 1995
+                  <citedRange>57</citedRange>
+                </ref>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">i hǫᵇ gfiwəʳd</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1c07">Mühlheim am Inn</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">gfibbert håt a va lauta Gåll</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4h06">Pabneukirchen</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">oiˡls hod in miaʳ gfīwad</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2b20">Pfaffstätten</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">gfibbɒt voɒ Wūt</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3j04">Horn</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c18563"/>
+            </sense>
+            <sense>
+              <def>zwinkern; mit den Augenlidern zucken; blinzeln</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">fipprn mit n augŋ</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3f01">Feldkirchen in Kärnten</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c18564"/>
+            </sense>
+            <sense>
+              <def>(mit etwas) fuchtelnde Bewegungen ausführen; sich unruhig hin und her bewegen; unruhig sein; zappeln; alles recht schnell machen; nervöse bzw. verlegene Bewegungen machen; verlegen herumhantieren; aus Verlegenheit nervös zucken</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.3">SBgl.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c18614"/>
+            </sense>
+          </sense>
+          <sense>
+            <sense>
+              <def>flimmern</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">miᵃʳ fipᵃʳz fₒaʳ di Augn</quote>
+                <usg type="geo">
+                  <placeName type="kleinregion" ref="/geodata-wboe.xml#p2.3b">obGurkt.</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c18598"/>
+            </sense>
+          </sense>
+          <sense>
+            <def>lechzen; äußerst heftig nach/auf etwas (oft Speise oder Trank) begierig sein; (nach einer Sache oder Person) sehr lebhaft, begierig, heftig verlangen; sehnlichst begehren; sehnsüchtig erwarten</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">wã̄ũn-i īɒ s flaššɒɫ tsāg fippɒd-s jẹ̄dsmǭj</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1o01">Herzogenburg</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">ę̄ɒ hǭd gfibbɒd nōch dẹ̃n šdikkḷ brọ̄d</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1o01">Herzogenburg</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">I' fipper' auf an Krüᵃgl Bier</quote>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c18655"/>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>umfippern</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def>verlegene Bewegungen machen; verlegen herumhantieren; aus Verlegenheit nervös zucken</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c18561"/>
+              </sense>
+              <sense>
+                <def>aufgeregt hin und her laufen</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p7.3">SBgl.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c18562"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>verfippern</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>verzittern, im Sinne von: durch oder unter Zittern auf-/verbrauchen; so zittern, dass etwas (durch Verstreuen, Verschütten o. ä.) verloren geht</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Nå̱, du weᵃʳst mᵃʳ åls fᵃʳfipᵃʳn unt fᵃʳzötn!
+                  <cit type="translation">
+                    <quote xml:lang="de">verschütten</quote>
+                  </cit>
+                </quote>
+                <usg type="geo">
+                  <placeName type="kleinregion" ref="/geodata-wboe.xml#p2.3c">Krappfd.</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c18560"/>
+            </sense>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Da könnte man fippernd werden!</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Ausdruck nervöser Spannung</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">då kunt ma fībbarad wean!</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2e01">Linz</placeName>
+              </usg>
+            </cit>
+          </sense>
+          <ptr type="collection" subtype="MWE" target="/collections-wboe.xml#c18666"/>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Es fippert jemanden ganz</orth>
+          </form>
+          <sense>
+            <def>jemand ist ganz zittrig; jemand schlottert, bebt</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">mi tuɒts gants fipərn</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1f02">Biberwier</placeName>
+              </usg>
+            </cit>
+          </sense>
+          <ptr type="collection" subtype="MWE" target="/collections-wboe.xml#c18665"/>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>fippern wie ein Espenlaub</orth>
+          </form>
+          <sense>
+            <def>stark zittern</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">fiwəʳn wiərən ėšpəs laub</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1c07">Mühlheim am Inn</placeName>
+              </usg>
+            </cit>
+          </sense>
+          <ptr type="collection" subtype="MWE" target="/collections-wboe.xml#c18667"/>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Mein Dirndel/Dirndelein ist sauber / Im Sonntaggewändelein, / (Und) Vor lauter Liebe fippern / Die Fürtuchbändelein</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Vierzeiler</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Mei Diᵃrnlₑ is saubr / in Sunteggwantlan, / unt fo͜ar lautr Liᵃb fiprn / dö Firtachpantlan</quote>
+              <usg type="geo">
+                <placeName type="kleinregion" ref="/geodata-wboe.xml#p2.3c">Krappfd.</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Mei Dirndl is sauber / In Sunntagsgwandlan, / Vor lauter Liab fippern / Die Fürtuchbandlan.</quote>
+              <ref type="bibl" target="#ZÖV1897_3">ZÖV 1897, 3
+                <citedRange>50</citedRange>
+              </ref>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+            </cit>
+          </sense>
+          <ptr type="collection" subtype="MWE" target="/collections-wboe.xml#c18669"/>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Und die Gertraud hat gelost / Und hat gefippert schon lange</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Zweizeiler</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Und dö Gertraud hat g'lost
+                <cit type="translation">
+                  <quote xml:lang="de">(zu)gehört; gehorcht</quote>
+                </cit>/ Und hat g'fippert scho lang
+              </quote>
+              <ref type="bibl" target="#Grasberger (1885) Plodersam Geistl'n-G'schichten">Grasberger 1885
+                <citedRange>53</citedRange>
+              </ref>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+            </cit>
+          </sense>
+          <ptr type="collection" subtype="MWE" target="/collections-wboe.xml#c18690"/>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Wie es eine derfragt, / Dass der Nandel hinkäme, / So fippert sie: Na warte, / Der schöpfe ich den Rahm</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Gedicht</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Wias oani dafragg
+                <cit type="translation">
+                  <quote xml:lang="de">durch Fragen erfährt</quote>
+                </cit>, / Daß da Nandl hinkam, / So fippat's: na wart, / Dera schöpf i n' Rahm
+              </quote>
+              <ref type="bibl" target="#Lamberg1879">Lamberg 1879
+                <citedRange>17</citedRange>
+              </ref>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+            </cit>
+          </sense>
+          <ptr type="collection" subtype="MWE" target="/collections-wboe.xml#c18691"/>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

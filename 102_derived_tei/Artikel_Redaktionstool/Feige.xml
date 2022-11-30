@@ -1,0 +1,1464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.7.4" ?>
+<?parser type="lioe" version="0.7.3" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Feige</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#AG">Andreas Gellan</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2020-07-07" who="#AG">Etymologie erstellt</change>
+        <change status="in progress" when="2020-07-15" who="#AG">Wortbildung begonnen</change>
+        <change status="in progress" when="2020-07-30" who="#AG">Simplizia begonnen, Tagging fertiggemacht</change>
+        <change status="internal correction" when="2020-11-24" who="#AG">an Manzi weitergeleitet</change>
+        <change status="external correction" when="2021-01-21" who="#AG">Anm. eingearbeitet, an JE weitergeleitet</change>
+        <change status="external correction" when="2021-04-16" who="#AG">LK eingefügt und weiter an JE</change>
+        <change status="finished" when="2021-04-29" who="#AG">finished</change>
+        <change status="finished" when="2022-01-11" who="#AG">Final Version</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Feige">
+          <orth>Feige</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c4470"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Femininum</gram>
+        </gramGrp>
+        <form type="variant" subtype="diminutive" xml:id="Feigerl">
+          <orth>Feigerl</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p7">Bgl.</placeName>
+        </usg>
+        <note type="kommentar" resp="#DG">
+          <xr></xr>Regelhaft liegen im gesamten Untersuchungsgebiet für mhd.
+          <c>ī</c>im Stammvokal steigende
+          <c>ai</c>-Diphthonge vor
+          <xr>
+            <ref>faigə</ref>
+            <ref>faiŋ</ref>
+          </xr>, die im östlichen Südbairischen Kärntens und im Ostmittelbairischen mit gehobenem Erstglied
+          <xr>
+            <ref>fęign̥</ref>
+            <ref>fæiŋ</ref>
+          </xr>und schließlich im Ostmittelbairischen ausstrahlend von Wien auch monophthongiert auftreten
+          <xr>
+            <ref>fǣŋ</ref>
+          </xr>. Der Auslaut ist im bairisch-alemannischen Übergangsgebiet im westlichen Nordtirol sowie mitunter im Südbairischen noch vokalisch erhalten
+          <xr>
+            <ref>faigɒ</ref>
+            <ref>faigə</ref>
+          </xr>bzw. im westlichen Süd- und westlichen Südmittelbairischen teilweise apokopiert
+          <xr>
+            <ref>faig</ref>
+          </xr>. Im Großteil des Untersuchungsgebietes erscheint dagegen die nasalhaltige oblique Endung, die im Südbairischen infolge von
+          <c>e</c>-Synkope silbisch
+          <xr>
+            <ref>faign̥</ref>
+            <ref>fęign̥</ref>
+          </xr>sowie im Südmittel- und Mittelbairischen mit dem vorhergehenden Nasal verschmolzen ist
+          <xr>
+            <ref>faiŋ</ref>
+            <ref>fǣŋ</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-faign</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.1g02">Partschins</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-faig</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p1A.1h">Umg.Meran</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-faig</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.2a02">Bozen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-faigŋ̥</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.3g07">Villanders</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-faigə</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.4e03">Sand in Taufers</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-faigə</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1B.0d02">St. Jakob in Defereggen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">faigɒ</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p1C.1c">Außf.Lecht.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">faigə</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1n01">Imst</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">faign</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.2a08">Gnadenwald</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-faigə</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.2h02">Matrei am Brenner</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-faig</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3b03">Thiersee</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">faiign</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.1b06">Winklern</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fāigḙ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.1f01">Lesachtal</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">faign</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.1i01">Gitschtal</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">faign</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p2.3d">uGurkt.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">faign</pron>
+          <pron xml:lang="bar-AT">pfėigᷠn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.1i01">Weißkirchen in Steiermark</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fai'ŋ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.2f02">Kapfenberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">faign</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.3b12">Söding-St. Johann</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-faiŋ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.5g08">Großwilfersdorf</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fāė'ŋ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.4d01">Graz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">ƒå̄ŋ</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p3.5e">steir.Pinkat.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">feiᵍn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.2c01">Fusch an der Großglocknerstraße</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">faign</pron>
+          <pron xml:lang="bar-AT">faiga</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.3h06">Radstadt</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">faiŋ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.5b10">Obertrum am See</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-faín͡g</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p5.1b">nördl.obInnv.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fāė'ŋ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1e02">Eggerding</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-φāe̩ŋ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2a29">Prambachkirchen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-faigⁿ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2b09">Frankenburg am Hausruck</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">faiᵍŋ</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p5.3b">nöSkgt.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">faėŋ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4b13">Ulrichsberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-faign</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4b07">Oepping</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">faęŋ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1d01">Allhartsberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-faiᵍŋ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1d12">Seitenstetten</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fã̩ẽ̩ŋ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2h11">Hochwolkersdorf</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">faîŋ̈</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2j13">Natschbach-Loipersbach</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-faiᵍn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3c07">Weitra</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-φ­äįŋ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3e03">Waldenstein</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φāeŋ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3q03">St. Leonhard am Hornerwald</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">faiᵍŋ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4a01">Retz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fāiŋ</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p6.4j">nwMarchfd.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-φäŋ</pron>
+          <pron xml:lang="bar-AT">fäⁱŋ̨</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fāeŋ</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p7.1b">nSeew.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-faiŋ̈</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p7.2a08">Neckenmarkt</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">ƒå̄ŋ</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p7.3c">ob.bgl.Pinkat.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">faiŋ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p7.3d04">Oberschützen</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c9280"/>
+        </form>
+        <etym>
+          <seg type="desc">
+            <lang>ahd.</lang>
+          </seg>
+          <cit type="etymon">
+            <form>
+              <orth>fīga</orth>
+            </form>
+          </cit>
+          <seg type="desc">;
+            <lang>mhd.</lang>
+          </seg>
+          <cit type="etymon">
+            <form>
+              <orth>vīge</orth>
+            </form>
+            <def>Feige</def>
+          </cit>
+          <seg type="desc">; entlehnt aus
+            <lang>rom.-ital.</lang>
+          </seg>
+          <cit type="etymon">
+            <form>
+              <orth>fico</orth>
+            </form>
+          </cit>
+          <seg type="desc">,
+            <lang>lat.</lang>
+          </seg>
+          <cit type="etymon">
+            <form>
+              <orth>ficus</orth>
+            </form>
+          </cit>
+          <ref type="bibl" target="#AWB1985III">AWB 1985 III
+            <citedRange>806</citedRange>
+          </ref>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <def>Frucht eines v. a. in den (Sub-)Tropen vorkommenden immergrünen Laubbaumes</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p7">Bgl.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Siăd Fāign ĭn Mǖˡch ŭnd nĭm sĭ ēⁱftăs ĭns Mǟul</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2e04">Rohr im Gebirge</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9295"/>
+            </sense>
+            <sense>
+              <def>Rest der Apfelblüte</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9296"/>
+            </sense>
+          </sense>
+          <sense>
+            <sense>
+              <def type="umschreibung">abwertende Geste, bei der man den Daumen in der geballten Faust zwischen Zeige- und Mittelfinger steckt und so seinem Gegenüber Verachtung und Verhöhnung ausdrückt bzw. ein Anliegen oder eine Bitte mit Schadenfreude abweist</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.1">NBgl.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.3">SBgl.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">mãn tßāg sḙ̃n̄ dį fāigḙ</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.1f01">Lesachtal</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Mōgst ă Fāign?</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.1i01">Weißkirchen in Steiermark</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Wenn ma ön Daum mit sein vodan End zwisch easn u zwoatn Finga, dö oabagn, duröschau laßt, aft is dös a Feign</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4d13">St. Veit im Mühlkreis</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">dea mocht dpfaingn hintan Tisch</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3a15">Kautzen</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">jå, a Feign kriagst</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4e08">Ravelsbach</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">do host d' Feig͜n</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p7.3g06">St. Michael im Burgenland</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9297"/>
+            </sense>
+            <sense>
+              <def type="umschreibung">obszöne Geste, bei der man den Daumen in der geballten Faust zwischen Zeige- und Mittelfinger steckt</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">a wälische Feign</quote>
+                <ref type="bibl" target="#Jakob1929">Jakob 1929
+                  <citedRange>59</citedRange>
+                </ref>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9299"/>
+            </sense>
+          </sense>
+          <sense>
+            <sense>
+              <sense>
+                <sense>
+                  <sense>
+                    <def>Vulva; Scheide</def>
+                    <usg type="geo">
+                      <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+                    </usg>
+                    <usg type="geo">
+                      <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+                    </usg>
+                    <usg type="geo">
+                      <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+                    </usg>
+                    <usg type="geo">
+                      <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+                    </usg>
+                    <usg type="geo">
+                      <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+                    </usg>
+                    <usg type="geo">
+                      <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+                    </usg>
+                    <usg type="geo">
+                      <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+                    </usg>
+                    <usg type="geo">
+                      <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                    </usg>
+                    <usg type="geo">
+                      <placeName type="grossregion" ref="/geodata-wboe.xml#p7.1">NBgl.</placeName>
+                    </usg>
+                    <cit type="example">
+                      <quote xml:lang="bar-AT">die verbrunzte Feign</quote>
+                      <ref type="bibl" target="#Burnadz1966">Burnadz 1966
+                        <citedRange>114</citedRange>
+                      </ref>
+                      <usg type="geo">
+                        <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                      </usg>
+                    </cit>
+                    <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9306"/>
+                  </sense>
+                </sense>
+              </sense>
+              <sense>
+                <xr type="variant" subtype="diminutive">
+                  <lbl>nur</lbl>
+                  <ref>Feigerl</ref>
+                </xr>
+                <def>Kopf</def>
+                <usg>(gaunersprachlich)</usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9308"/>
+              </sense>
+              <sense>
+                <xr type="variant" subtype="diminutive">
+                  <lbl>nur</lbl>
+                  <ref>Feigerl</ref>
+                </xr>
+                <def>Beule am Kopf</def>
+                <usg>(gaunersprachlich)</usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9309"/>
+              </sense>
+              <sense>
+                <def>größere Warzenbildung (bei Kindern und Pferden)</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9310"/>
+              </sense>
+            </sense>
+            <sense>
+              <sense>
+                <def type="umschreibung">abwertende Bezeichnung für eine Frau</def>
+                <usg>(gaunersprachlich)</usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">die auszahte Feign</quote>
+                  <ref type="bibl" target="#Burnadz1966">Burnadz 1966
+                    <citedRange>16</citedRange>
+                  </ref>
+                </cit>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">die verbrunzte Feign</quote>
+                  <ref type="bibl" target="#Burnadz1966">Burnadz 1966
+                    <citedRange>114</citedRange>
+                  </ref>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9312"/>
+              </sense>
+              <sense>
+                <xr type="variant" subtype="diminutive">
+                  <lbl>nur</lbl>
+                  <ref>Feigerl</ref>
+                </xr>
+                <def>Dummkopf</def>
+                <usg>(gaunersprachlich)</usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9315"/>
+              </sense>
+              <sense>
+                <xr type="variant" subtype="diminutive">
+                  <lbl>nur</lbl>
+                  <ref>Feigerl</ref>
+                </xr>
+                <def>Verräter</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9316"/>
+              </sense>
+              <sense>
+                <xr type="variant" subtype="diminutive">
+                  <lbl>nur</lbl>
+                  <ref>Feigerl</ref>
+                </xr>
+                <def>tückischer Mensch</def>
+                <usg>(gaunersprachlich)</usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9317"/>
+              </sense>
+              <sense>
+                <xr type="lemma">
+                  <lbl>nur</lbl>
+                  <ref>Feigerl</ref>
+                </xr>
+                <def>anrüchige Angelegenheit</def>
+                <usg>(gaunersprachlich)</usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9318"/>
+              </sense>
+            </sense>
+          </sense>
+          <sense>
+            <sense>
+              <def>Faustschlag</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Wü(l)st etla Feign?</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3k01">Fieberbrunn</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9320"/>
+            </sense>
+            <sense>
+              <def>Schlag mit der flachen Hand auf die Wange bzw. auf das Ohr; Backenstreich</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Mågst a paͦr Feig'n?</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.2a10">Hall in Tirol</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9319"/>
+            </sense>
+          </sense>
+          <sense>
+            <sense>
+              <sense>
+                <def>erste Seilschlinge an einem Bindekeil, die den Strick festklemmt</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9322"/>
+              </sense>
+              <sense>
+                <def>schlecht geschlungener Knoten (beim Garbenbinden)</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p7.1">NBgl.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9324"/>
+              </sense>
+            </sense>
+            <sense>
+              <sense>
+                <def>Falte des weichen Hutes nach der Länge (von vorne nach hinten)</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">duɒ mɒr ɒ faė'ŋ aėn!</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1d15">Ried im Innkreis</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9325"/>
+              </sense>
+              <sense>
+                <def>falsche Falte in einem Kleid</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">ǫ mǫχts ɒ fāė'ŋ</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.4d01">Graz</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9321"/>
+              </sense>
+            </sense>
+          </sense>
+          <sense>
+            <def>Drüsengebilde mit fleischverderbendem Geruch in der Brunftzeit des Gamsbocks</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9327"/>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Arschfeige</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>„grünes Weibsbild“</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c8815"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Bauchfeige</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Vulva; Scheide</def>
+              <usg>(Spottbezeichnung)</usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c8870"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Beinfeige</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Vulva, Scheide einer Prostituierten bzw. verkommenen Frau</def>
+              <usg>(gaunersprachlich)</usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c8874"/>
+            </sense>
+            <sense>
+              <sense>
+                <def>Prostituierte</def>
+                <usg>(gaunersprachlich)</usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c8875"/>
+              </sense>
+              <sense>
+                <def>verkommene Frau</def>
+                <usg>(gaunersprachlich)</usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c8877"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Dutzendfeige</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>das letzte von zwölf Kindern, wenn es ein Mädchen ist</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c8817"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Fleischfeige</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Vulva; Scheide</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Gē, dăin Flāiⁱschfăign ĭs ē schŏn gōnz făbūdăd</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2e04">Rohr im Gebirge</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c8830"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Hundsfeige</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>locker gebundener Knoten</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c8827"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Kranzfeige</orth>
+          </form>
+          <sense>
+            <sense>
+              <usg>nur Plural</usg>
+              <def>zu einem Kranz aufgereihte Feigen</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c8828"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Letschfeige</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>zögerliche Person</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Du bist a rechdi Ledschfeign</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4d18">Poysdorf</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c8833"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Lettfeige</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def type="umschreibung">Bezeichnung für eine feige, schwächliche, fahrlässige, langweilige Person</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">Aber er is so a Led'feig'n</quote>
+                  <ref type="bibl" target="#Schadek 1893">
+                    <?comment noch in Klammern ?>
+                    Schadek 1893
+                  
+                    <citedRange>86</citedRange>
+                  </ref>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c8836"/>
+              </sense>
+              <sense>
+                <def>betrogener Ehemann, dem die Untreue seiner Frau gleichgültig ist</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c8839"/>
+              </sense>
+              <sense>
+                <def>Kleinkind</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c8840"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Letzfeige</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def>Feigling</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c8843"/>
+              </sense>
+              <sense>
+                <def>zorniger, böser Mensch</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c8844"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Lenfeige</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def>Bezeichnung für eine feige, empfindliche, verzagte Person</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">τu lẽ̩φae̩ŋ</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2b44">Ungenach</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c8855"/>
+              </sense>
+              <sense>
+                <def>süßliche, überzärtliche Person</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c8868"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Neidfeige</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Schutzamulett gegen den bösen Blick</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c8880"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Ohrfeige</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def>Schlag mit der flachen Hand auf die Wange bzw. auf das Ohr; Backenstreich</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p7">Bgl.</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">"Er hot ihr a pôr sauwari Ohrfeig̃ñ gebṃ</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3a24">Waldkirchen an der Thaya</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c8889"/>
+              </sense>
+              <sense>
+                <def>Faustschlag ins Gesicht</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c8892"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Rossfeige</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Pferdemist</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9242"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Sackfeige</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>minderwertige, in einen Jutesack gepresste Feige zum Füttern des Viehs</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9243"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Zuckerfeige</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Mittel bei einem Zahngeschwulst</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Zugafaigŋ aflėgŋ</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4c10">Niederwaldkirchen</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9244"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Verschreifeige</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Feige als Volksmedizin gegen das Verschreien</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c8814"/>
+            </sense>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="lemma">
+            <ref>Feige</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>da wachsen die Feigen</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Ausruf der Ablehnung, wenn man jemandem die Feige zeigt, indem man den Daumen in der geballten Faust zwischen Zeige- und Mittelfinger steckt</def>
+          </sense>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+          </usg>
+          <cit type="example">
+            <quote xml:lang="bar-AT">då wąxn d'feign</quote>
+            <usg type="geo">
+              <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3d02">Wildschönau</placeName>
+            </usg>
+          </cit>
+          <ptr type="collection" subtype="MWE" target="/collections-wboe.xml#c9335"/>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>der Schuh macht eine Feige</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">wird gesagt, wenn der Schuh zu groß ist</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Daʳ Schuach mȧcht a Feiᵍŋ</quote>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9333"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>die Feige ausschleimen</orth>
+          </form>
+          <sense>
+            <def>Geschlechtsverkehr ausüben</def>
+            <usg>(gaunersprachlich)</usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">die Veign ausschleima</quote>
+              <ref type="bibl" target="#Burnadz1966">Burnadz 1966
+                <citedRange>113</citedRange>
+              </ref>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9313"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Feige stehen</orth>
+          </form>
+          <sense>
+            <def>sich als Zielscheibe hinstellen</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.1">wSTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">faigɛ stehen</quote>
+              <ref type="bibl" target="#TirolerWb">Tiroler Wb.
+                <citedRange>160</citedRange>
+              </ref>
+              <usg type="geo">
+                <placeName type="kleinregion" ref="/geodata-wboe.xml#p1A.1i">Pass.</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9329"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>ja, Feigen!</orth>
+          </form>
+          <sense>
+            <sense>
+              <def type="umschreibung">Ausruf der Ablehnung, wenn man jemandem die Feige zeigt, indem man den Daumen in der geballten Faust zwischen Zeige- und Mittelfinger steckt</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Jå Feiᵍn!</quote>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9334"/>
+            </sense>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="lemma" subtype="compound">
+            <ref>Futschfeige</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>eine Futschfeige machen/schlagen</orth>
+          </form>
+          <sense>
+            <def>mit Finger und Daumen schnipsen</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c8822"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="lemma">
+            <ref>Ohrfeige</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>dem Dreck eine Ohrfeige geben</orth>
+          </form>
+          <sense>
+            <def>etwas umsonst, vergeblich tun</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">in drökχ ən ǫarfaigə göiwə</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1n01">Imst</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9330"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>gezuckerte Ohrfeige</orth>
+          </form>
+          <sense>
+            <def>grobe Moralpredigt</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+            </usg>
+          </sense>
+          <cit type="example">
+            <quote xml:lang="bar-AT">a zugati Urfeign</quote>
+            <usg type="geo">
+              <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.4c21">Ragnitz</placeName>
+            </usg>
+          </cit>
+          <ptr type="collection" subtype="MWE" target="/collections-wboe.xml#c9332"/>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Gustos und Ohrfeigen sind verschieden</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">wird gesagt, wenn es keinen objektiven Maßstab zur Bewertung von Dingen gibt</def>
+          </sense>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+          </usg>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+          </usg>
+          <cit type="example">
+            <quote xml:lang="bar-AT">Die Guschti und die Oᵃrfeign sein verschiedn</quote>
+            <usg type="geo">
+              <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m02">Fendels</placeName>
+            </usg>
+          </cit>
+          <cit type="example">
+            <quote xml:lang="bar-AT">Gustaʳ und Urfeiŋn san faschidⁿ</quote>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+            </usg>
+          </cit>
+          <ptr type="collection" subtype="MWE" target="/collections-wboe.xml#c9331"/>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

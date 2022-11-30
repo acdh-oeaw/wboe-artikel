@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.6.6"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Fahrnis</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#PhS">Philipp Stöckle</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="JD">Jan Braun</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Eva Wahlmüller</name>
+          <name>Susanna Muhr</name>
+          <name>Alexandra Grohe</name>
+          <name>Klemens Wagner</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2019-06-12" who="#PhS">Datensatz erstellt</change>
+        <change status="peer correction" when="2019-06-12" who="#PhS">Artikel fertiggestellt</change>
+        <change status="internal correction" when="2019-06-25" who="#PhS">Etymologie überarbeitet</change>
+        <change status="external correction" when="2020-05-14" who="#PhS">Collections hinzugefügt</change>
+        <change status="external correction" when="2020-05-28" who="#PhS">Lautkommentar hinzugefügt</change>
+        <change status="external correction" when="2020-07-01" who="#PhS">Formale Fehler in Etymologie und Bed. II.3 korrigiert</change>
+        <change status="finished" when="2020-10-13" who="#PhS">Lautung korrigiert</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Fahrnis">
+          <orth>Fahrnis</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c4676"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Femininum</gram>
+        </gramGrp>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+        </usg>
+        <note type="kommentar" resp="#FF">Die Verteilung unterschiedlicher Vokalqualitäten und -quantitäten spiegelt einerseits areale und soziale Variation wider, andererseits auch unterschiedliche phonologische Prozesse als Reflexe des postvokalischen Konsonantenclusters, das infolge von
+          <c>e</c>-Synkope allen Formen zugrunde liegt. Regelhaft liegt im gesamten Untersuchungsraum
+          <c>a</c>-Verdumpfung vor, sowohl in den langen monophthongischen Formen
+          <xr>
+            <ref>ƒǭrnįß</ref>
+          </xr>als auch bei den diphthongischen im Onset
+          <xr>
+            <ref>ƒǫɒnįß</ref>
+          </xr>. Sie bilden die Ausgangsbasis für steigende
+          <c>ou</c>-Diphthonge im Südbairischen, die auf eine ehemals weit verbreitete mittelgaumige Aussprache zurückzuführen sind, aber in Konkurrenz zu den inzwischen eher verkehrssprachlichen Monophthongen stehen
+          <xr>
+            <ref>ƒǫurnįß</ref>
+          </xr>. Im Südbairischen lassen sich auch die generell konservativeren Belege mit
+          <c>r</c>-Erhalt finden, seltener auch im Südmittelbairischen und Westmittelbairischen. Die uvulare Artikulation des Liquids
+          <c>r</c>führt im Südbairischen Südtirols mitunter zur Velarisierung des Nasals
+          <xr>
+            <ref>ƒǭŋįß</ref>
+          </xr>. Formen mit
+          <c>r</c>-Schwund lassen sich in einigen konservativen Rückzugsgebieten finden, etwa im Südbairischen der Obersteiermark oder in der sog. oberösterreichischen Beharrsamkeitsbrücke im westlichen Ostmittelbairischen
+          <xr>
+            <ref>fǭnįß</ref>
+          </xr>. Diese ursprünglich weiter verbreitete Lautung wird von der ebenfalls für das gesamte Mittelbairische und Südmittelbairische (und Nordbairische) typischen und von urbanen Zentren ausgehenden verkehrssprachlichen Form mit
+          <c>r</c>-Vokalisierung
+          <xr>
+            <ref>ƒǫɒnįß</ref>
+          </xr>verdrängt. Nur bei diesem Typ ist von
+          <c>r</c>-Vokalisierung im eigentlichen Sinne zu sprechen. Davon zu unterscheiden sind
+          <c>oa</c>-Diphthonge im Kärntner Südbairischen, die eine Diphthongierung des langen Monophthongs darstellen
+          <xr>
+            <ref>ƒǫɒrnįß</ref>
+          </xr>. Im Mittelbairischen sind im Anlaut vereinzelt übermarkierte Affrikaten belegt
+          <xr>
+            <ref>bfǭnįs</ref>
+          </xr>. Neben den überall vorherrschenden
+          <c>i</c>-haltigen Endungen kommen auch zu
+          <c>ə</c>abgeschwächte Formen vor, besonders im Südmittelbairischen
+          <xr>
+            <ref>ƒǭrnəß</ref>
+          </xr>. Im Osten Nordtirols liegen sie auch gerundet vor
+          <xr>
+            <ref>ƒǭrnǫ̈ß</ref>
+          </xr>. Die einst im gesamten hochdeutschen Sprachraum (und darüber hinaus im Niederländischen) verbreitete Nebenform mit
+          <c>u</c>ist im Westmittelbairischen noch belegt
+          <xr>
+            <ref>fǭrnųs</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fårnis</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p1A.1h">Umg.Meran</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fångis</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.4a01">Ahrntal</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">‑fournis</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.4f01">Rasen-Antholz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fārnis</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1f02">Biberwier</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fārnis</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1n01">Imst</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fâlnis</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p1C.1j">obPazn.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fą̂rnis</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p1C.2b">obStub.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fǭʳnis</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3b03">Thiersee</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">få̄hrnös</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e06">Kufstein</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">få̄ʳnis</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e12">Schwoich</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fårnis</pron>
+          <pron xml:lang="bar-AT">-foarnis</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.1b04">Rangersdorf</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fo͜arnᵃs</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3b05">Straßburg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fōnis</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.1i01">Weißkirchen in Steiermark</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φǫ́unè̇s</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.3d01">Hüttschlag</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fǫrnus</pron>
+          <pron xml:lang="bar-AT">fǫrnis</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1c07">Mühlheim am Inn</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φó̩ɒnis</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1e11">Suben</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fǫniß</pron>
+          <pron xml:lang="bar-AT">pfo̩niß</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2b46">Weibern</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fo͜anis</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1n02">Dunkelsteinerwald</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">‑fårnis</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2h28">Warth</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">foanißh</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3a15">Kautzen</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c6074"/>
+        </form>
+        <etym>
+          <cit type="etymon">
+            <def>fahrende Habe</def>
+          </cit>
+          <seg type="desc">(16. Jh.), Kollektivbildung für</seg>
+          <cit type="etymon">
+            <def>bewegliche Habe</def>
+          </cit>
+          <seg type="desc">; dem Sinn nach am ehesten Ableitung von</seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref target="fahren.xml#fahren">fahren</ref>
+            </xr>
+          </cit>
+          <ref type="bibl" target="#Kluge2011">
+            <lbl>vgl.</lbl>Kluge 2011
+            <citedRange>273</citedRange>
+          </ref>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <def>bewegliches Eigentum; Habseligkeit; Hausrat</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.1">wSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">'s Guᵃt ischt soᵃmt Vï̄ch u. Fahrnis verkoft woᵃrn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m02">Fendels</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">ea hăd 's Güₑdl mit da Fărnis wia's ligg und stēd fakhafft</quote>
+                <usg type="geo">
+                  <?comment müsste eigentlich "Brixent. u. Leukent." sein?>
+                  <placeName type="kleinregion" ref="/geodata-wboe.xml#p1C.3f">Brixent.</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">die ganz Fahrnis is nöt viel wert</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.5d05">St. Gilgen</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">s Haus zsamt Fårnussn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4h06">Pabneukirchen</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6062"/>
+            </sense>
+            <sense>
+              <def>Brautausstattung; Möbel, die die Braut in die Ehe Mitbringt</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6064"/>
+            </sense>
+          </sense>
+          <sense>
+            <sense>
+              <def>Fuhrwerk; Fahrzeug</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6066"/>
+            </sense>
+            <sense>
+              <def>Wagenpark</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6068"/>
+            </sense>
+            <sense>
+              <def>„komisch wirkendes Fahrzeug“</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6067"/>
+            </sense>
+          </sense>
+          <sense>
+            <def>Wirtschafts- und Ackergeräte; Maschinen auf einem Wirtschaftshof</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6069"/>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Erfahrnis</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Erfahrung</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">dərfǫrnis psitsɒ</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1f02">Biberwier</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">ea hăd weaⁿkh Afăʳnis</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3f02">Hopfgarten im Brixental</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <?comment hochgestelltes r muss unterstrichen sein?>
+                <quote xml:lang="bar-AT">dos is a eäfoanish</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3a15">Kautzen</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6071"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Hausfahrnis</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>häusliche Habe</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6072"/>
+            </sense>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,65 @@
+stages:          # List of stages for jobs, and their order of execution
+  - publish
+  
+filter-job:
+  stage: publish
+  image: bitnami/git
+  script: |
+    set -eo pipefail
+    apt-get update && apt-get install -y xmlstarlet
+    git config --global user.email "acdh-ch-filter-bot@oeaw.ac.at"
+    git config --global user.name "ACDH-CH filter bot"
+    git fetch --unshallow origin
+    git remote set-url origin https://${GITLAB_WRITE_USER}:${GITLAB_WRITE_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git
+    current_branch=$(git branch -a --contains $(git show-ref -s $CI_COMMIT_REF_NAME) | grep -v HEAD | sed 's~remotes/origin/~~')
+    tag=$(git describe --tags --abbrev=0)
+    msg=$(git tag -l --format='%(contents)' $tag)
+    git checkout $current_branch
+    
+    # -- private Dateien löschen ---
+    rm -f *.xml
+    rm -f *.txt
+    rm -rf 001_src
+    rm -rf 082_scripts_xsl
+    rm -rf Datenlisten
+    rm -rf 102_derived_tei/sample-TEI-ProtoArticles
+    rm -rf 102_derived_tei/retro/lieferung1?-*.xml
+    rm -rf 102_derived_tei/retro/lieferung9-*.xml
+    pushd 102_derived_tei/Artikel_Redaktionstool
+    rm -f $(xmlstarlet sel -T -N t=http://www.tei-c.org/ns/1.0 -t -m '//t:listChange/t:change[last()][not(@status="proofed" or @status="finished")]' -f *.xml 2>/dev/null | sed 's~.xml~.xml ~g')
+    popd
+    # --- Ende private Dateien löschen ---
+    
+    git commit -a -m "Filtering for release $1"
+    to_revert=$(git rev-parse HEAD)
+    git revert $to_revert --no-edit
+    git push
+    git checkout origin/main -B main
+    git merge --squash --allow-unrelated-histories $to_revert -s ort -X theirs
+    
+    # --- private Dateien löschen (nicht Teil von squash merge?) ---
+    rm -f *.xml
+    rm -f *.txt
+    rm -rf 001_src
+    rm -rf 082_scripts_xsl
+    rm -rf Datenlisten
+    rm -rf 102_derived_tei/sample-TEI-ProtoArticles
+    rm -rf 102_derived_tei/retro/lieferung1?-*.xml
+    rm -rf 102_derived_tei/retro/lieferung9-*.xml
+    pushd 102_derived_tei/Artikel_Redaktionstool
+    rm -f $(xmlstarlet sel -T -N t=http://www.tei-c.org/ns/1.0 -t -m '//t:listChange/t:change[last()][not(@status="proofed" or @status="finished")]' -f *.xml 2>/dev/null | sed 's~.xml~.xml ~g')
+    popd
+    # --- Ende private Dateien löschen ---
+    
+    git commit -a -m "$msg"
+    git tag "$tag-release" -m "$msg"
+    git push origin main
+    git push origin "$tag-release"
+    git remote add public https://filter:${GITHUB_WRITE_TOKEN}@github.com/acdh-oeaw/wboe-artikel.git    
+    git pull public main
+    git push public main
+    git push public "$tag-release"
+    git checkout $current_branch
+  rules:
+    # Runs only when a tag with '0000-00-00' pattern is created
+    - if: '$CI_COMMIT_TAG =~ /^\d{4,4}-\d{2,2}-\d{2,2}$/'

@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.8.1" ?>
+<?parser type="lioe" version="0.7.41" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Forelle</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#PZ">Patrick Zeitlhuber</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+          <name xml:id="MK">Markus Kunzmann</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="unfinished" when="2021-11-25" who="#PZ">Datensatz erstellt</change>
+        <change status="peer correction" when="2021-11-30" who="#PZ">Artikel geschrieben</change>
+        <change status="peer correction" when="2022-03-08" who="#PZ">Lemmaansatz geändert</change>
+        <change status="external correction" when="2022-05-05" who="#PZ">Anm. Manzi eingefügt</change>
+        <change status="finished" when="2022-05-23" who="#PZ">finished</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Forelle">
+          <orth>Forelle</orth>
+        </form>
+        <form type="lemma" xml:id="Forche">
+          <orth>Forche</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c23459"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Femininum</gram>
+        </gramGrp>
+        <form type="variant" subtype="diminutive" xml:id="Forellerl">
+          <orth>Forellerl</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <note type="kommentar" resp="#PZ">Im gesamten Verbreitungsgebiet dominieren auf mhd.
+          <c>forhel</c>,
+          <c>förhel</c>zurückgehende Formen. Offene
+          <c>o</c>-Monophthonge finden sich überall
+          <xr>
+            <ref>fǫrę́l</ref>
+            <ref>fǫɒrǫ̈́ln</ref>
+            <ref>fǫrǫ̈̄́n</ref>
+          </xr>. Gerundete Vokale treten vereinzelt als
+          <c>ö</c>im westlichen Südbairischen auf
+          <xr>
+            <ref>fǫ̈rǫ̈̄́n</ref>
+            <ref>fǫ̈rǫ̈́įn</ref>
+          </xr>. Darüber hinaus wurde der Vokal der ersten Silbe in der Weststeiermark und im Mostviertel zu
+          <c>a</c>gesenkt
+          <xr>
+            <ref>fɒrę́ln̥</ref>
+            <ref>fɒrǫ̈̄́n</ref>
+          </xr>sowie im östlichen Südmittelbairischen und im Mittelbairischen mitunter zu
+          <c>u</c>gehoben
+          <xr>
+            <ref>fųɒrǫ̈̄́n</ref>
+          </xr>. Daneben wurde der Vokal im Südbairischen sowie im Mittelbairischen häufig gänzlich getilgt
+          <xr>
+            <ref>fręlə</ref>
+            <ref>fręln̥</ref>
+            <ref>fręįn</ref>
+          </xr>. Der Vokal der zweiten Silbe, auf den die Hauptbetonung fällt, wird im Südbairischen und gelegentlich östlichen Südmittelbairischen als offenes
+          <c>e</c>realisiert
+          <xr>
+            <ref>fǫrę́l</ref>
+            <ref>fɒrę́ln̥</ref>
+            <ref>fręln̥</ref>
+          </xr>. Mit Ausnahme des westlichen Südbairischen finden sich jedoch überall vor dem, teils historischen, Liquid zu offenem
+          <c>ö</c>gerundete Monophthonge
+          <xr>
+            <ref>fǫɒrǫ̈́ln</ref>
+            <ref>fǫrǫ̈̄́n</ref>
+            <ref>fųɒrǫ̈̄́n</ref>
+          </xr>. Zu a geöffnete Monophthonge kommen nur im östlichen Nordtirol vor
+          <xr>
+            <ref>fǫráįn</ref>
+          </xr>. Das postvokalische
+          <c>l</c>blieb im Südbairischen und östlichen Südmittelbairischen erhalten
+          <xr>
+            <ref>fǫrę́l</ref>
+            <ref>fɒrę́ln</ref>
+            <ref>fręln</ref>
+          </xr>, wurde ansonsten jedoch überall sowie gelegentlich auch in Mittelkärnten vokalisiert
+          <xr>
+            <ref>fǫrǫ̈̄́n</ref>
+            <ref>fɒrǫ̈̄́n</ref>
+            <ref>fųɒrǫ̈̄́n</ref>
+            <ref>fręįn</ref>
+          </xr>. Im westlichen Südbairischen finden sich im Auslaut Vokale, die entweder auf ältere Formen zurückgehen oder durch Lautwandel in den Auslaut getreten sind
+          <xr>
+            <ref>fręlə</ref>
+            <ref>fǫrę́lɒ</ref>
+          </xr>, gelegentlich wurden diese gänzlich getilgt
+          <xr>
+            <ref>fǫrę́l</ref>
+          </xr>. Ansonsten wurden überall die nasalhaltigen Endungen der obliquen Kasus in den Nominativ übernommen
+          <xr>
+            <ref>fǫɒrǫ̈́ln̥</ref>
+            <ref>fǫrǫ̈̄́n</ref>
+            <ref>fręln̥</ref>
+            <ref>fręįn</ref>
+          </xr>.
+Reflexe des ursprünglicheren mhd.
+          <c>forhe(n)</c>finden sich mit
+          <c>o</c>im Südbairischen
+          <xr>
+            <ref>forχn̥</ref>
+          </xr>, palatalisiert zu
+          <c>ö</c>in westlichen Südbairischen
+          <xr>
+            <ref>fǫ̈rχn̥</ref>
+          </xr>sowie entrundet im gesamten Verbreitungsgebiet
+          <xr>
+            <ref>fęrχ</ref>
+            <ref>fęɒrəχ</ref>
+            <ref>fę̄rɒ</ref>
+          </xr>. Sprossvokale wurden im östlichen Südmittelbairischen und Ostmittelbairischen eingeschoben
+          <xr>
+            <ref>fęɒrəχ</ref>
+            <ref>fęɒrɒ</ref>
+          </xr>. Im mittleren Nordtirol wurden noch vokalische Auslaute erhalten
+          <xr>
+            <ref>fęrχə</ref>
+          </xr>, während diese ansonsten überall getilgt wurden
+          <xr>
+            <ref>fęrχ</ref>
+            <ref>fęɒrχ</ref>
+            <ref>fęɒrəχ</ref>
+          </xr>. Im östlichen Südmittelbairischen und Ostmittelbairischen ist weiters der Schwund des Frikativs belegt
+          <xr>
+            <ref>fę̄rɒ fęɒrɒ</ref>
+          </xr>. Aus den obliquen Kasus übernommene nasalhaltige Auslaute kommen darüber hinaus im westlichen Südbairischen vor
+          <xr>
+            <ref>fǫrχn̥</ref>
+            <ref>fǫ̈rχn̥</ref>
+            <ref>fęɒrχŋ̥</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">forelln</pron>
+          <pron xml:lang="bar-AT">feᵃrchn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m02">Fendels</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">ferĥe</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.2k09">Zell am Ziller</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">forai⁽ˡ⁾n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e03">Erl</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">freln</pron>
+          <pron xml:lang="bar-AT">fǫrhn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3g">Glant.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">forɔ̨̈̄n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.2b01">Malta</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">få̆rö́ln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.1d03">Lobmingtal</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">foɒrǫ̈́ḷn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.5c02">Rettenegg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frë̩̄dn̥</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.1d08">Tamsweg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">förɔ̨̈́̄n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.2a10">Wald im Pinzgau</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frę̈įn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.5d06">Strobl</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φorö̩n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2b46">Weibern</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fęara</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fo̩rö̩n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4b13">Ulrichsberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fuɒrǫ̈nn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1o01">Herzogenburg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fǫrǫ̈́̄n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3s06">Straß im Straßertale</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">foröˡn̥</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5r01">Gersthof</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c23775"/>
+        </form>
+        <etym>
+          <seg type="desc">Die
+            <lang>nhd.</lang>Form
+          </seg>
+          <cit type="etymon">
+            <form>
+              <orth>Forelle</orth>
+            </form>
+          </cit>
+          <seg type="desc">geht auf</seg>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>forhel,</orth>
+              <orth>förhel</orth>
+            </form>
+          </cit>
+          <seg type="desc">zurück, das eine Ableitung von</seg>
+          <cit type="etymon">
+            <lang>ahd.</lang>
+            <form>
+              <orth>for(a)hana</orth>
+            </form>
+          </cit>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>forhe(n)</orth>
+            </form>
+          </cit>
+          <seg type="desc">darstellt
+            <ref type="bibl" subtype="online">Pfeifer online
+              <xr type="lemma">
+                <ref>Forelle</ref>
+                <date type="accessed">2021-11-30</date>
+              </xr>
+            </ref>
+          </seg>
+        </etym>
+        <sense>
+          <sense>
+            <def>Flussfisch aus der Familie der Lachse</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23710"/>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Alsberbachforelle</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Ratte</def>
+              <usg>(scherzhaft)</usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23694"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Bachforelle</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Forellenart; Salmo trutta fario</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23701"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Beamtenforelle</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Salzstange</def>
+              <usg>(scherzhaft)</usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23695"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Etschforelle</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>nur in der Etsch vorkommende Forellenart</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23696"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Häuselforelle</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Unrat; Exkremente</def>
+              <usg>(scherzhaft)</usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23697"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Kanalforelle</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Ratte</def>
+              <usg>(scherzhaft)</usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23698"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Lachsforelle</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>große Forelle über 1,5 kg</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23699"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Maiforelle</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>kleine Forellenart</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23700"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Speiseforelle</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>ausgewachsene Forelle als Tafelfisch</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23702"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Seeforelle</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Forellenart; Salmo trutta lacustris</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23704"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Zahlforelle</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Forelle unter 250 g</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c23705"/>
+            </sense>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.6.8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>frank</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#EW">Eva Wahlmüller</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="">
+      <listChange>
+        <change status="in progress" when="2020-02-20" who="#EW">Datensatz erstellt</change>
+        <change status="peer correction" when="2020-02-27" who="#EW">interne Korrektur</change>
+        <change status="internal correction" when="2020-04-29" who="#EW">fertig für Korrektur Manzi - noch kein Lautkommentar vorhanden</change>
+        <change status="internal correction" when="2020-05-08" who="#EW">Korrekturen Manzi teilweise erledigt, aber noch Frage für Fabian wegen Lautkommentar</change>
+        <change status="external correction" when="2020-11-20" who="#EW">Collections angelegt, Literatur Belegsätze kontrolliert; fertig für LK</change>
+        <change status="external correction" when="2021-01-13" who="#EW">überarbeitet nach Anmerkungen DG; LK eingefügt</change>
+        <change status="finished" when="2021-01-25" who="#EW">keine Anmerkungen von JE</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="frank">
+          <orth>frank</orth>
+        </form>
+        <form type="lemma" xml:id="franko">
+          <orth>franko</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c1735"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">
+            <?comment und Adverb?>
+            Adjektiv
+          </gram>
+        </gramGrp>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <note type="kommentar" resp="#PZ">Die unterschiedlichen Quellsprachen dieses Lehnworts spiegeln sich in der Lautgestalt wider. In Süd-, Ost- und Nordtirol sowie in Wien dominieren verdumpfte Formen
+          <xr>
+            <ref>frǫŋk</ref>
+          </xr>. Im westlichen und mittleren Südtirol, östlichen Nordtirol und Wien kommen kurze
+          <c>a</c>-Monophthonge vor
+          <xr>
+            <ref>fraŋk</ref>
+          </xr>. Im Pinzgau ist die Hebung des Stammvokals belegt
+          <xr>
+            <ref>freŋ</ref>
+          </xr>. Der Auslaut unterliegt großer Variation. Vermutlich auf das französische Lehnwort zurückgehend sind die konsonantischen Varianten. Im westlichen und mittleren Südtirol sowie in Wien enden diese auf stimmlose, velare Plosive
+          <xr>
+            <ref>fraŋk</ref>
+            <ref>frǫŋk</ref>
+          </xr>, während dieser im Pinzgau getilgt wurde, wodurch lediglich der assimilierte Nasal erhalten blieb
+          <xr>
+            <ref>freŋ</ref>
+          </xr>. Im westlichen Südbairischen und Wien kann der Auslaut darüber hinaus vokalhaltig sein, was ein Reflex der italienischen Lautung ist. Im östlichen Nordtirol und in Wien treten auslautende
+          <c>o</c>-Monophthonge
+          <xr>
+            <ref>fraŋko</ref>
+          </xr>auf.  Im westlichen und mittleren Südtirol kommen auslautende
+          <c>a</c>-Monopthonge vor
+          <xr>
+            <ref>fraŋkɒ</ref>
+          </xr>, im mittleren Südtirol alternativ auch
+          <c>e</c>-Monophthonge
+          <xr>
+            <ref>fraŋkə</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frangka</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p1A.2a">nwBoz.Uld.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">franga</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.3i02">Kastelruth</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frånk</pron>
+          <pron xml:lang="bar-AT">fråŋk</pron>
+          <pron xml:lang="bar-AT">fráŋko</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c12492"/>
+        </form>
+        <etym>
+          <seg type="desc">Hier fallen zwei Fremdwörter, die zu unterschiedlichen Zeitpunkten entlehnt wurden, zusammen: Einerseits</seg>
+          <cit type="etymon">
+            <lang>spätmhd.</lang>
+            <form>
+              <orth>franc</orth>
+            </form>
+            <def>frei</def>
+          </cit>
+          <seg type="desc">entlehnt aus</seg>
+          <cit type="etymon">
+            <lang>afrz.</lang>
+            <form>
+              <orth>franc</orth>
+            </form>
+            <def>frei (als Gegensatz zu hörig, untergeben); von Lasten befreit; geistig frei; kühn; edel von Geburt</def>
+          </cit>
+          <ref type="bibl" target="#Pfeifer2014">
+            <lbl>vgl.</lbl>Pfeifer 2014
+            <citedRange>370</citedRange>
+          </ref>
+          <seg type="desc">und andererseits</seg>
+          <cit type="etymon">
+            <lang>ital.</lang>
+            <form>
+              <orth>franco</orth>
+            </form>
+            <def>aufrichtig; offen; ungezwungen; unbefangen</def>
+          </cit>
+          <ref type="bibl" subtype="online">Pons online
+            <xr type="lemma">
+              <ref>franco</ref>
+              <date type="accessed">13.01.2021</date>
+            </xr>
+          </ref>
+          <seg type="desc">. Beide können nicht mehr klar voneinander abgegrenzt werden.</seg>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <def>frei; unabhängig</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">a frånks Madl</quote>
+                <ref type="bibl" target="#WrWb1929">WrWb. 1929
+                  <citedRange>62</citedRange>
+                </ref>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12519"/>
+            </sense>
+            <sense>
+              <xr type="variant">
+                <lbl>nur</lbl>
+                <ref>franko</ref>
+              </xr>
+              <def>postfrei; mit erforderlichen Marken versehen (bei Postsendungen)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12520"/>
+            </sense>
+            <sense>
+              <def>aus dem Gefängnis entlassen sein</def>
+              <usg>(gaunersprachlich)</usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12521"/>
+            </sense>
+            <sense>
+              <def>ohne Geld</def>
+              <usg>(gaunersprachlich)</usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12522"/>
+            </sense>
+          </sense>
+          <sense>
+            <def>ehrlich; unbescholten</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12523"/>
+          </sense>
+          <sense>
+            <sense>
+              <def>in der Tat; wirklich; ganz und gar</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Er wert frangge nårret</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.3b01">Sarntal</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12524"/>
+            </sense>
+            <sense>
+              <def>trotz allem; erst recht</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">dės duɒr ė frå̃ŋκnėd</quote>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12525"/>
+            </sense>
+            <sense>
+              <def>schon; ohne Weiteres</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Sell wert frangge asoᵘ sein</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.3b01">Sarntal</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">des kann i dir frånk sagen</quote>
+                <ref type="bibl" target="#Wehle1974">Wehle 1974
+                  <citedRange>69</citedRange>
+                </ref>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12526"/>
+            </sense>
+            <sense>
+              <def>wenigstens; doch</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">wenn er a frangka käme</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.2b06">Neumarkt</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12527"/>
+            </sense>
+            <sense>
+              <def>vielleicht</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c12528"/>
+            </sense>
+          </sense>
+        </sense>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>frank und frei</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>ganz frei; unabhängig</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+            </sense>
+          </sense>
+          <cit type="example">
+            <quote xml:lang="bar-AT">frąnk und frai</quote>
+            <ref type="bibl" target="#TirolerWb">Tiroler Wb.
+              <citedRange>187</citedRange>
+            </ref>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+            </usg>
+          </cit>
+          <ptr type="collection" subtype="MWE" target="/collections-wboe.xml#c12529"/>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

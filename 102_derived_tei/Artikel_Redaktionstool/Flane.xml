@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.8.1" ?>
+<?parser type="lioe" version="0.8.0" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Flane</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#PhS">Philipp Stöckle</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+          <name xml:id="MK">Markus Kunzmann</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2021-07-08" who="#PhS">Datensatz erstellt</change>
+        <change status="in progress" when="2021-09-24" who="#PhS">Artikel bis auf Etymologie und LK geschrieben</change>
+        <change status="peer correction" when="2021-11-19" who="#PhS">erste Version des Artikels fertig</change>
+        <change status="internal correction" when="2022-04-09" who="#PhS">Anmerkungen peer correction übernommen und LK eingefügt</change>
+        <change status="external correction" when="2022-05-16" who="#PhS">Anmerkungen internal correction übernommen</change>
+        <change status="finished" when="2022-10-14" who="#PhS">Anmerkungen external correction übernommen</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Flane">
+          <orth>Flane</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c20234"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Femininum</gram>
+        </gramGrp>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+        </usg>
+        <note type="kommentar" resp="#DG">Der Stammvokal dieses nur im bairisch-alemannischen Übergangsgebiet belegten Lexems wurde gedehnt und zu einem
+          <c>o</c>-Monophthong verdumpft, der aufgrund seiner Stellung vor Nasal in unterschiedlichen Qualitäten auftritt
+          <xr>
+            <ref>flǭnɒ</ref>
+            <ref>flọ̄nɒ</ref>
+          </xr>. Daneben finden sich Formen mit steigendem Diphthong
+          <xr>
+            <ref>flǭunɒ</ref>
+            <ref>flọ̄unɒ</ref>
+          </xr>. Der Vokal der Nebentonsilbe wird als offener oder neutraler Reduktionsvokal realisiert
+          <xr>
+            <ref>flǭnɒ</ref>
+            <ref>flọ̄unə</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flọ̄na</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1j01">Galtür</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flõũnɒ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m10">Serfaus</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flouⁿ</pron>
+          <pron xml:lang="bar-AT">flõũnə</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1n01">Imst</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c20236"/>
+        </form>
+        <etym>
+          <seg type="desc">Das Wort lässt sich auf</seg>
+          <cit type="etymon">
+            <lang>rom.</lang>
+            <form>
+              <orth>*velánas</orth>
+            </form>
+          </cit>
+          <cit type="etymon">
+            <lang>vorrom.</lang>
+            <form>
+              <orth>*vílias</orth>
+            </form>
+            <def>Rückstände beim Einsieden von Butter</def>
+          </cit>
+          <seg type="desc"></seg>
+          <seg type="desc">zurückführen. Unter Beibehaltung des Akzents und mit synkopiertem</seg>
+          <cit type="etymon">
+            <form>
+              <orth>e</orth>
+            </form>
+          </cit>
+          <seg type="desc">entwickelte sich die Lautung im Bairischen zu</seg>
+          <cit type="etymon">
+            <form>
+              <orth>Flane</orth>
+            </form>
+          </cit>
+          <seg type="desc">, während für die im alemannischen Vorarlberg belegte Variante</seg>
+          <cit type="etymon">
+            <form>
+              <orth>Föle</orth>
+            </form>
+          </cit>
+          <seg type="desc">eine Verlagerung auf die erste Silbe vorauszusetzen ist.</seg>
+          <ref type="bibl" target="#KlausmannKrefeld1986">
+            <lbl>vgl.</lbl>Klausmann/Krefeld 1986
+            <citedRange>124f.</citedRange>
+          </ref>
+          <ref type="bibl" target="#HWBRator1994II">
+            <?comment Seitenzahl fehlt noch ?>
+            <lbl>vgl.</lbl>HWB Rätorom. 1994 II
+          </ref>
+        </etym>
+        <sense>
+          <sense>
+            <def>Rückstand, Schaum beim Zerlassen von Butter</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">t flounɒ tuə i int aufənūdlɒ</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m10">Serfaus</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c"/>
+          </sense>
+        </sense>
+      </entry>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,1046 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.7.2" ?>
+<?parser type="lioe" version="0.7.0" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>fluchen</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#DG">David Gschösser</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="">
+      <listChange>
+        <change status="peer correction" when="2020-02-24" who="#DG">Datensatz erstellt</change>
+        <change status="internal correction" when="2020-06-12" who="#DG">Vorschläge von PS eingearbeitet</change>
+        <change status="external correction" when="2020-07-09" who="#DG">Vorschläge von MG eingearbeitet</change>
+        <change status="external correction" when="2020-08-06" who="#DG">Redwendung "einem das Kreuz abherfluchen" ergänzt</change>
+        <change status="external correction" when="2021-02-09" who="#PZ">LK formatiert eingefügt</change>
+        <change status="finished" when="2021-06-14" who="#DG">Artikel fertig (Darstellung der Nebenformen noch nicht richtig)</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="fluchen">
+          <orth>fluchen</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c2637"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Verb</gram>
+          <iType>schwach</iType>
+        </gramGrp>
+        <form type="variant" subtype="nebenform" xml:id="flumaschen">
+          <orth>-flumaschen</orth>
+          <gramGrp>
+            <gram type="gender"></gram>
+          </gramGrp>
+        </form>
+        <form type="variant" subtype="nebenform" xml:id="flueschen">
+          <orth>-flüschen</orth>
+          <gramGrp>
+            <gram type="gender"></gram>
+          </gramGrp>
+        </form>
+        <form type="variant" subtype="nebenform" xml:id="suchen">
+          <orth>-suchen</orth>
+          <gramGrp>
+            <gram type="gender"></gram>
+          </gramGrp>
+        </form>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p7">Bgl.</placeName>
+        </usg>
+        <note type="kommentar" resp="#PZ">Der auf mhd.
+          <c>uo</c>zurückgehende Stammvokal wurde im gesamten Untersuchungsgebiet mit Ausnahme des Burgenlands als fallende
+          <c>ua</c>-Diphthonge beibehalten
+          <xr>
+            <ref>flųɒxŋ̥</ref>
+            <ref>flųɒxɒ</ref>
+            <ref>flųɒhɒ</ref>
+          </xr>. Dazu finden sich im östlichen Südtirol, im Waldviertel und Weinviertel parallel sowie im Nord- und Mittelburgenland ausschließlich
+          <c>ui</c>-Diphthonge
+          <xr>
+            <ref>flųįxŋ̥</ref>
+            <ref>flųįxɒ</ref>
+            <ref>flųįɒ</ref>
+          </xr>. Darüber hinaus sind gerundete Diphthonge mit palatalisiertem Erstglied im östlichen Südtirol und im mittleren Nordtirol belegt
+          <xr>
+            <ref>flų̈əxŋ̥</ref>
+            <ref>flų̈įxŋ̥</ref>
+          </xr>, im Mostviertel treten diese ungerundet auf
+          <xr>
+            <ref>flįɒxɒ</ref>
+          </xr>. Daneben sind im Wein- und Industrieviertel sowie in Wien wohl durch den Einfluss der Standardsprache monophthongierte Stammvokale belegt
+          <xr>
+            <ref>flūxŋ̥</ref>
+          </xr>. Der inlautende Konsonant wird überall als dorsaler Frikativ realisiert
+          <xr>
+            <ref>flųɒxŋ̥</ref>
+            <ref>flųɒxɒ</ref>
+          </xr>, im Mühlviertel, Mostviertel und Industrieviertel auch glottal
+          <xr>
+            <ref>flųɒhɒ</ref>
+          </xr>. Im Waldviertel, Weinviertel und Nordburgenland kann dieser zur Gänze entfallen
+          <xr>
+            <ref>flųįɒ</ref>
+          </xr>. Mit Ausnahme des Industrieviertels, des Nord- und Mittelburgenlands wurde der Auslaut im gesamten Untersuchungsgebiet durch
+          <c>e</c>-Synkope zu einem silbischen, velaren Nasal reduziert
+          <xr>
+            <ref>flųɒxŋ̥</ref>
+          </xr>. Parallel finden sich im Mittelbairischen sowie durch alemannischen Einfluss bedingt im westlichen Nordtirol auslautende Vokale
+          <xr>
+            <ref>flųɒxɒ</ref>
+            <ref>flųɒhɒ</ref>
+            <ref>flųįɒ</ref>
+          </xr>. Bemerkenswert ist bei diesem Lemma, dass in Mittelkärnten, in der Steiermark und im Industrieviertel partizipiale Varianten belegt sind, bei denen die Lautgestalt zur Euphemisierung vielfach abgewandelt wurde
+          <xr>
+            <ref>fɒflųɒšt</ref>
+            <ref>fɒflįšt</ref>
+            <ref>fɒsųɒxt</ref>
+            <ref>dɒsųɒxt</ref>
+            <ref>fɒflū̃mašt</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fluəχn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.2c04">Welschnofen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flû(e)chn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.3b01">Sarntal</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flüiχn̥</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.4a01">Ahrntal</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fluəχn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.4c01">Lüsen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fluiχn̥</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p1A.4c">Lüsenert.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fluᵃchn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m02">Fendels</placeName>
+          </usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m08">Prutz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fluəχɒ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m10">Serfaus</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fluəχə</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1n01">Imst</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fluachn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.2a19">Schwaz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fluəχn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.2a29">Weer</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fluəc̄h̄n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3b03">Thiersee</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fluachn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e06">Kufstein</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flu͡ech'n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.1b04">Rangersdorf</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fluᵃchn</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-flumaschen</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+          </usg>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fluachn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.1d03">Lobmingtal</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φlų̄ɒhɒ</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p3.2i">Auss.Ld.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φlųɒχn̥</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.2j08">Ramsau am Dachstein</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fluɒməschn</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fluachn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.3c08">Stainz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flūɒχɒ</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p3.5b">obFeistritzt.</placeName>
+          </usg>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p3.5c">obstFeistritzt.</placeName>
+          </usg>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p3.5d">nördl.steir.Lafnitzt.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fluachn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.5l03">Mureck</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fluachn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.2c01">Fusch an der Großglocknerstraße</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φluɒxɒ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.5b06">Lamprechtshausen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fluechn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.5d05">St. Gilgen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-flúɒχχɒ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1c07">Mühlheim am Inn</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φlú̩ɒxɒ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1e11">Suben</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fluacha</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2a39">Traun</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fluachn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2e01">Linz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flųɒhɒ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4b13">Ulrichsberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fluɒχɒ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4b13">Ulrichsberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φluɒhə</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4g05">St. Leonhard bei Freistadt</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fluacha</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4h02">Dimbach</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fluɒhɒ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1d01">Allhartsberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fliacha</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1f05">Purgstall an der Erlauf</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flūɒchŋ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1o01">Herzogenburg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flu͡achă</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2j13">Natschbach-Loipersbach</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flu͡ahn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2j15">Pottendorf</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flu͡ahă</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2j15">Pottendorf</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fluia</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3a15">Kautzen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flūɒxɒ(ŋ)</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fluiχa</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p6.4c">söUmg.Pulkaut.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flui·a</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p6.4c">söUmg.Pulkaut.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fluicha</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4d18">Poysdorf</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fluacha</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4d18">Poysdorf</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fluichn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4d18">Poysdorf</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φlųɒxŋ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5u06">Leopoldau</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flūchen</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">flu̩ɒχŋ</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fluach'n</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fɒflųį-ɒ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p7.1d16">Pöttsching</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fluicha</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p7.2b08">Pilgersdorf</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c3401"/>
+        </form>
+        <etym>
+          <seg type="desc">
+            <lang>ahd.</lang>
+          </seg>
+          <cit type="etymon">
+            <form>
+              <orth>fluohhōn</orth>
+            </form>
+            <def>schmähen; lästern; beschimpfen; verwünschen; verfluchen; schimpfen; fluchen</def>
+          </cit>
+          <seg type="desc">
+            <date>(um 800)</date>,
+            <lang>mhd.</lang>
+          </seg>
+          <cit type="etymon">
+            <form>
+              <orth>vluochen</orth>
+            </form>
+            <def>fluchen; verfluchen; verwünschen</def>
+          </cit>
+          <ref type="bibl" target="#Lexer1878III">Lexer 1878 III
+            <citedRange>421</citedRange>
+          </ref>
+          <ref type="bibl" target="#AWB1985III">AWB 1985 III
+            <citedRange>1006</citedRange>
+          </ref>
+          <ref type="bibl" target="#Pfeifer2014">Pfeifer 2014
+            <citedRange>359</citedRange>
+          </ref>
+          <cit type="etymon">
+            <form>
+              <orth>verflumaschen</orth>
+            </form>
+            <form>
+              <orth>verflüschen</orth>
+            </form>
+            <form>
+              <orth>ersuchen</orth>
+            </form>
+          </cit>
+          <seg type="desc">und</seg>
+          <cit type="etymon">
+            <form>
+              <orth>versuchen</orth>
+            </form>
+          </cit>
+          <seg type="desc">wohl euphemistische Entstellungen; siehe auch</seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref target="verflixt.xml">verflixt</ref>
+            </xr>
+          </cit>
+        </etym>
+        <sense>
+          <sense>
+            <def>im Zorn Kraftausdrücke gebrauchen; heftig schimpfen</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p7">Bgl.</placeName>
+            </usg>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>abfluchen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>verwünschen</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c3447"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>anfluchen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>beschimpfen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Einen ånfluch'n</quote>
+                <ref type="bibl" target="#Hügel1873">Hügel 1873
+                  <citedRange>205</citedRange>
+                </ref>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c3448"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>ersuchen</orth>
+            <gramGrp></gramGrp>
+          </form>
+          <sense>
+            <sense>
+              <xr type="variant">
+                <lbl>nur</lbl>
+                <ref>ersucht</ref>
+              </xr>
+              <usg>(adjektivisches Partizip)</usg>
+              <def>verdammt</def>
+              <def type="umschreibung">(Ausdruck des Ärgers, der Verwünschung)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c3450"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>gottverfluchen</orth>
+            <gramGrp></gramGrp>
+          </form>
+          <sense>
+            <sense>
+              <xr type="variant">
+                <lbl>nur</lbl>
+                <ref>gottverflucht</ref>
+              </xr>
+              <usg>(adjektivisches Partizip)</usg>
+              <def>verdammt</def>
+              <def type="umschreibung">(Ausdruck des Ärgers, der Verwünschung)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">godfăfluchtăʳ (-flu͡achtaʳ) Hund (Ke͡aʳl, Hådăʳlump usw.)</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2j15">Pottendorf</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c3451"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>verfluchen</orth>
+          </form>
+          <form subtype="compound" type="lemma">
+            <orth>verflumaschen</orth>
+          </form>
+          <form subtype="compound" type="lemma">
+            <orth>verflüschen</orth>
+          </form>
+          <form subtype="compound" type="lemma">
+            <orth>versuchen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>verwünschen; vermaledeien</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.1">NBgl.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">ǫɒn fəflúɒχχɒ</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1c07">Mühlheim am Inn</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c3502"/>
+            </sense>
+            <sense>
+              <xr type="variant">
+                <lbl>nur</lbl>
+                <ref>verflucht, verflumascht, verflüscht, versucht</ref>
+              </xr>
+              <usg>(adjektivisches Partizip)</usg>
+              <sense>
+                <sense>
+                  <def>verdammt</def>
+                  <def type="umschreibung">(Ausdruck des Ärgers, der Verwünschung)</def>
+                  <usg type="geo">
+                    <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                  </usg>
+                  <cit type="example">
+                    <quote xml:lang="bar-AT">φɒsūɒxd nā̩̃õ mūi</quote>
+                    <usg type="geo">
+                      <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2h11">Hochwolkersdorf</placeName>
+                    </usg>
+                  </cit>
+                  <cit type="example">
+                    <quote xml:lang="bar-AT">văfllu͡achdă húnt du öllaîndichă!</quote>
+                    <usg type="geo">
+                      <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2j13">Natschbach-Loipersbach</placeName>
+                    </usg>
+                  </cit>
+                  <cit type="example">
+                    <quote xml:lang="bar-AT">Mistbua fafluachta</quote>
+                    <usg type="geo">
+                      <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5i01">Alsergrund</placeName>
+                    </usg>
+                  </cit>
+                  <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c3504"/>
+                </sense>
+                <sense>
+                  <def>durchtrieben; schlecht</def>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                  </usg>
+                  <cit type="example">
+                    <quote xml:lang="bar-AT">a verfluachter Kerl</quote>
+                    <usg type="geo">
+                      <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                    </usg>
+                  </cit>
+                  <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c3505"/>
+                </sense>
+              </sense>
+              <sense>
+                <def>geschickt</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c3507"/>
+              </sense>
+            </sense>
+            <sense>
+              <xr type="variant">
+                <lbl>nur</lbl>
+                <ref>verflucht, verflumascht</ref>
+              </xr>
+              <usg>(adjektivisches Partizip)</usg>
+              <def>in hohem Maße; besonders; sehr</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Es is verfluamisch kålt</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.3c08">Stainz</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">verfluacht gscheit</quote>
+                <ref type="bibl" target="#WrWb1929">WrWb. 1929
+                  <citedRange>206</citedRange>
+                </ref>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c3506"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>zusammenfluchen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>häufig im Zorn Kraftausdrücke gebrauchen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Wås déa zaumfluacht, waun oös da Dåch laŭng is!</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4d18">Poysdorf</placeName>
+                </usg>
+              </cit>
+            </sense>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="lemma">
+            <ref>fluchen</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>Fluche ich nicht, flucht er nicht, ich weiß nicht, wo die Malefux-Teufelsfratzen
+              das Fluchen her haben</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">ironischer Ausspruch der Entrüsung einer Mutter über Kinder, die ein oft gehörtes Schimpfwort gebrauchen</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">"Fluᵃch i nit, fluᵃcht er nit, i waᵒß nit, wo dö Malefux-Teiflsfratzen 's Fluᵃchn heᵃr haᵒbe(n)</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m08">Prutz</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c3491"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Fluche nicht lang! / Tu nicht lang fluchen!</orth>
+          </form>
+          <sense>
+            <def>Nichts zu danken!</def>
+            <def type="umschreibung">(höfliche Ablehnung von Dank)</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Fluəχ nit loŋ</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.2c04">Welschnofen</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">tuə nit loŋ fluəχn</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.2c04">Welschnofen</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c3465"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>fluchen (und schwören) wie ein Heide/Husar/Türke</orth>
+            <gramGrp>
+              <usg>[pejorativ]</usg>
+            </gramGrp>
+          </form>
+          <sense>
+            <def>im Zorn sehr heftige Kraftausdrücke gebrauchen</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">fluəχn wiə a husār</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.2a29">Weer</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c3468"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="lemma">
+            <ref>abherfluchen</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>einem das Kreuz abherfluchen</orth>
+          </form>
+          <sense>
+            <def>jemanden durch Gebete oder Zauber verwünschen</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">oanem s Kreuz aherfloachen</quote>
+              <ref type="bibl" target="#Bredenbrücker1901">STirId. 1901
+                <citedRange>301</citedRange>
+              </ref>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c9408"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="lemma">
+            <ref>nachfluchen</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>ins Grab nachfluchen</orth>
+          </form>
+          <sense>
+            <def>einer verstorbenen (schlechten) Person übel nachreden</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">ins grōw nōχfluaχn</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.4c01">Lüsen</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c3452"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="lemma">
+            <ref>verfluchen</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>Und machen tust du mich bald recht verflucht / Hätte ich das gewusst, hätte ich
+              mir daheim einen Stecken gesucht</orth>
+          </form>
+          <sense>
+            <def>Brautstehlreim</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Und måchn tuest du mi bål röcht verfluacht / Hött i dös gewißt, hött i mier drhåam an Steckn g'suacht</quote>
+              <ref type="bibl" target="#Kohl1908b">Kohl 1908b
+                <citedRange>167</citedRange>
+              </ref>
+              <usg type="geo">
+                <placeName type="kleinregion" ref="/geodata-wboe.xml#p1A.3i">uEisackt.</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c3495"/>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

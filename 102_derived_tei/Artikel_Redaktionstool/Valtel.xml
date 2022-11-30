@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.6.6"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Valtel</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#AB">Angela Bergermayer</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="peer correction" when="2020-06-15" who="#StS">Datensatz erstellt</change>
+        <change status="external correction" when="2020-10-01" who="#AB">OTir. umgestellt; neues Tagging Bed. + Übersetzung</change>
+        <change status="external correction" when="2020-10-02" who="#AB">neues Tagging Personenverweis; Coll. korr.+verknüpft</change>
+        <change status="finished" when="2020-10-16" who="#AB">Abschlussredaktion</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Valtel">
+          <orth>Valtel</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c7076"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Maskulinum</gram>
+        </gramGrp>
+        <gramGrp>
+          <gram type="pos">vor allem Name</gram>
+        </gramGrp>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <note type="kommentar" resp="#FF">Wohl aufgrund des Zusammenhangs mit dem Eigennamen
+          <c>Valentin</c>und der formalen diminutiven Struktur liegen sowohl verdumpfte
+          <c>a</c>-Stammvokale mit unterschiedlicher Qualität
+          <xr>
+            <ref>ƒǫltl̥</ref>
+          </xr>als auch nicht verdumpfte helle
+          <c>a</c>-Laute vor
+          <xr>
+            <ref>ƒaltl̥</ref>
+          </xr>, wobei letztere vorwiegend im Südbairischen und im bairisch-alemannischen Übergangsgebiet im westlichen Nordtirol zu finden sind. Im Mittelbairischen und Südmittelbairischen sind durch
+          <c>l</c>-Vokalisierung steigende Diphthonge entstanden
+          <xr>
+            <ref>ƒǫetl̥</ref>
+          </xr>. Es stehen (mit wenigen Ausnahmen) südbairische und südmittelbairische
+          <c>t</c>-Fortisvarianten
+          <xr>
+            <ref>ƒǫltl̥</ref>
+          </xr>mittelbairischen
+          <c>d</c>-Lenisvarianten
+          <xr>
+            <ref>fǫedl̥</ref>
+          </xr>gegenüber. Im gesamten Untersuchungsgebiet dominieren einfache
+          <c>l</c>-Diminutivendungen.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">valtl</pron>
+          <usg type="geo">
+            <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">valtl</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p1B.0g">uIselt.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">faltl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1r01">Sölden</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">faltl</pron>
+          <pron xml:lang="bar-AT">faltəl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.2a29">Weer</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">vǫɫtl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3c02">Breitenbach am Inn</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fǫötl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e06">Kufstein</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fåltl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.1b04">Rangersdorf</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fåltl</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p2.2d">obstGurkt.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fåldl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3f04">Steindorf am Ossiacher See</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">våltl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.1a05">Stadl-Predlitz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fōe̯t·l</pron>
+          <pron xml:lang="bar-AT">folt·l</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p3.2f">uMürzt.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fol̥tl</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fǫidl</pron>
+          <pron xml:lang="bar-AT">foitl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.4d01">Graz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fåⁱtl̥</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.5d20">Vorau</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">voitl</pron>
+          <pron xml:lang="bar-AT">fǫitl</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fåidl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.3b07">Werfen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fǫėdl</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fåöˡdl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">våltl</pron>
+          <pron xml:lang="bar-AT">fåltl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3i08">Thalheim bei Wels</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">‑foëdl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4d18">Poysdorf</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">våltl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4j02">Bockfließ</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">‑fåltl</pron>
+          <pron xml:lang="bar-AT">‑foidl</pron>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c10410"/>
+        </form>
+        <etym>
+          <seg type="desc">Ableitung (Kurz- bzw. Koseform) vom männlichen Personennamen</seg>
+          <cit type="etymon">
+            <form>
+              <orth>Valentin</orth>
+            </form>
+          </cit>
+          <seg type="desc">aus</seg>
+          <cit type="etymon">
+            <lang>lat.</lang>
+            <form>
+              <orth>Valentinus</orth>
+            </form>
+          </cit>
+          <seg type="desc">, der selbst wiederum eine Erweiterung des
+            <lang>lateinischen</lang>Personennamens
+          </seg>
+          <cit type="etymon">
+            <form>
+              <orth>Valentius</orth>
+            </form>
+          </cit>
+          <seg type="desc">(zu</seg>
+          <cit type="etymon">
+            <form>
+              <orth>valens</orth>
+            </form>
+            <def>gesund; kräftig</def>
+          </cit>
+          <seg type="desc">) darstellt</seg>
+          <ref type="bibl" target="#Seibicke2003IV">
+            <lbl>vgl.</lbl>Seibicke 2003 IV
+            <citedRange>344f., 346</citedRange>
+          </ref>
+          <seg type="desc"></seg>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <def type="umschreibung">Ruf- bzw. Vorname</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c10407"/>
+            </sense>
+            <sense>
+              <def type="umschreibung">Hausname (namengebender Teil davon)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">ban Fåöˡdl</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c7391"/>
+            </sense>
+          </sense>
+          <sense>
+            <def>dummer, alberner Mann</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c7396"/>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Päppenvaltel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>dummer, einfältiger Mann</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Aus den sein Meu kimbt a koa gscheits Woad, is und bleibt a „Bapnfoëdl“</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4d18">Poysdorf</placeName>
+                </usg>
+              </cit>
+            </sense>
+          </sense>
+          <ptr type="collection" subtype="wortbildung" target="/collections-wboe.xml#c7401"/>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Plumpvaltel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>dummer Mann</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+            </sense>
+          </sense>
+          <ptr type="collection" subtype="wortbildung" target="/collections-wboe.xml#c7404"/>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Die hat auch schon der Valtel</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">wird über eine alte Frau mit Falten gesagt</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Dēi håd a scha da Foidl</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.5b04">Birkfeld</placeName>
+              </usg>
+            </cit>
+          </sense>
+          <ptr type="collection" subtype="MWE" target="/collections-wboe.xml#c7075"/>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Der Valtel hat jemandem schon den Leitkauf gegeben</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">wird in Bezug auf alte Leute gesagt, möglicherweise im Sinne von: Der Handel (seines Lebens) ist abgeschlossen, ein Ende naht</def>
+            <ref type="bibl" subtype="personal">
+              <persName>Auskunft Jakob Ebner</persName>
+              <date type="accessed">22.07.2019</date>
+            </ref>
+          </sense>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+          </usg>
+          <cit type="example">
+            <quote xml:lang="bar-AT">dem håt dər Voltl schə den Laihkauf
+              <cit type="translation">
+                <quote xml:lang="de">Drangeld; Anzahlung</quote>
+              </cit>gebn
+            </quote>
+            <usg type="geo">
+              <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.5d20">Vorau</placeName>
+            </usg>
+          </cit>
+          <ptr type="collection" subtype="MWE" target="/collections-wboe.xml#c7405"/>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

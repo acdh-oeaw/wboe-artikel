@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.6.6"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Fege</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#PhS">Philipp Stöckle</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="JD">Jan Braun</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Eva Wahlmüller</name>
+          <name>Susanna Muhr</name>
+          <name>Alexandra Grohe</name>
+          <name>Klemens Wagner</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2019-02-26" who="#PhS">Artikel eingefügt</change>
+        <change status="internal correction" when="2020-04-30" who="#PhS">Lautungskommentar eingefügt</change>
+        <change status="external correction" when="2020-05-14" who="#PhS">Collections hinzugefügt</change>
+        <change status="external correction" when="2020-07-24" who="#PhS">Hiwi-Anmerkung in Lautung übernommen</change>
+        <change status="external correction" when="2020-09-15" who="#PhS">Verlinkung in Etymologie korrigiert</change>
+        <change status="finished" when="2020-10-13" who="#PhS">Lautung korrigiert</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Fege">
+          <orth>Fege</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c3024"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Femininum</gram>
+        </gramGrp>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <note type="kommentar" resp="#FF">Das nur in Kärnten belegte Lexem weist neben langen
+          <c>e</c>-Monophthongen
+          <xr>
+            <ref>ƒēgŋ̥</ref>
+          </xr>im Stammvokal auch
+          <c>ea</c>-Diphthonge auf
+          <xr>
+            <ref>ƒęɒgŋ̥</ref>
+          </xr>, als würde mhd.
+          <c>ê</c>zugrunde liegen. Der Nasallaut der femininen bairischen Endung ist mitunter infolge von partieller Assimilation velarisiert worden
+          <xr>
+            <ref>ƒēgŋ̥</ref>
+          </xr>, teilweise liegt noch ein labiodentaler Nasal vor
+          <xr>
+            <ref>ƒēgn̥</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fegn</pron>
+          <usg>[Pl.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3b05">Straßburg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fęɒgŋ̥</pron>
+          <usg>[Pl.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3g02">Glanegg</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c6058"/>
+        </form>
+        <etym>
+          <seg type="desc">wohl Ableitung von</seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref target="fegen.xml#fegen">fegen</ref>
+            </xr>
+          </cit>
+          <ref type="bibl" target="#KärntnerischesId1862">
+            <lbl>vgl.</lbl>Kärntnerisches Id. 1862
+            <citedRange>93</citedRange>
+          </ref>
+        </etym>
+        <sense>
+          <sense>
+            <def>Krätze; Scabies; Hautausschlag</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">i glab, du håst die Fegn</quote>
+              <ref type="bibl" target="#KärntnerischesId1862">Kärntnerisches Id. 1862
+                <citedRange>93</citedRange>
+              </ref>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">dö Fegn teᵃʳf mᵃʳ nit åchᵃʳfegn</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3b05">Straßburg</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c6056"/>
+          </sense>
+        </sense>
+      </entry>
+    </body>
+  </text>
+</TEI>

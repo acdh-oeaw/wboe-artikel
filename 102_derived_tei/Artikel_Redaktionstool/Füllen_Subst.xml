@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.8.1" ?>
+<?parser type="lioe" version="0.8.0" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Füllen</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#AG">Andreas Gellan</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+          <name xml:id="MK">Markus Kunzmann</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2021-08-04" who="#AG">Datensatz erstellt</change>
+        <change status="peer correction" when="2021-08-11" who="#AG">peer correction</change>
+        <change status="internal correction" when="2021-08-18" who="#AG">internal correction</change>
+        <change status="external correction" when="2021-08-26" who="#AG">external correction, LK fehlt</change>
+        <change status="external correction" when="2021-09-03" who="#PZ">LK eingefügt</change>
+        <change status="external correction" when="2021-09-13" who="#AG">external correction</change>
+        <change status="finished" when="2021-10-25" who="#AG">finished</change>
+        <change status="finished" when="2022-01-24" who="#AG">Final Version</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Fuellen">
+          <orth>Füllen</orth>
+        </form>
+        <form type="lemma" xml:id="Ge__Fuell">
+          <orth>(Ge-)Füll</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c4447"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Neutrum</gram>
+        </gramGrp>
+        <form type="variant" subtype="diminutive" xml:id="Fuellel">
+          <orth>Füllel</orth>
+          <gramGrp>
+            <gram type="gender">Maskulinum</gram>
+          </gramGrp>
+        </form>
+        <form type="variant" subtype="diminutive" xml:id="Fuellerl">
+          <orth>Füllerl</orth>
+          <gramGrp></gramGrp>
+        </form>
+        <form type="variant" subtype="diminutive" xml:id="Fuellelein">
+          <orth>Füllelein</orth>
+          <gramGrp></gramGrp>
+        </form>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p7">Bgl.</placeName>
+        </usg>
+        <note type="kommentar" resp="#PZ">Der auf mhd.
+          <c>ü</c>zurückgehende Stammvokal wird im Süd- und westlichen Südmittelbairischen als entrundeter kurzer
+          <c>i</c>-Monophthong realisiert
+          <xr>
+            <ref>filə</ref>
+            <ref>filn</ref>
+          </xr>, vereinzelt auch als gedehnter Vokal
+          <xr>
+            <ref>fīlə</ref>
+            <ref>fīln</ref>
+          </xr>. Ansonsten treten überall vermutlich vor Liquid sekundär restituierte gerundete
+          <c>ü</c>-Monophthonge auf
+          <xr>
+            <ref>fülə</ref>
+            <ref>fülɒ</ref>
+            <ref>füln</ref>
+          </xr>, teilweise ebenfalls mit Länge
+          <xr>
+            <ref>fǖlɒ</ref>
+          </xr>. Vereinzelt treten im Nordburgenland
+          <c>ö</c>-Monophthonge auf
+          <xr>
+            <ref>fȫ</ref>
+          </xr>.  Im westlichen Südbairischen wurde der Vokal der auslautenden Silbe reduziert erhalten
+          <xr>
+            <ref>filən</ref>
+          </xr>, wobei häufig der Nasal getilgt wurde
+          <xr>
+            <ref>filə</ref>
+            <ref>fīlə</ref>
+            <ref>fülə</ref>
+            <ref>fǖlɒ</ref>
+          </xr>. Parallel trat überall Synkope oder gar die vollständige Tilgung der zweiten Silbe ein. Der postvokalische Liquid blieb im Süd- und östlichen Südmittelbairischen erhalten
+          <xr>
+            <ref>filn</ref>
+            <ref>fīln</ref>
+            <ref>füln</ref>
+          </xr>. Im westlichen Südmittelbairischen sowie Mittelbairischen wurde dieser vokalisiert
+          <xr>
+            <ref>füį</ref>
+            <ref>füi̯ę</ref>
+            <ref>fuẹ</ref>
+          </xr>und verschmolz häufig mit dem Stammvokal
+          <xr>
+            <ref>fǖn</ref>
+            <ref>fǖ</ref>
+            <ref>fȫ</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">füllə</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.2c02">Deutschnofen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">füllile</pron>
+          <usg>[Dim.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.4d01">Bruneck</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fĭl</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p1B.0g">uIselt.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fillə̨</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1f02">Biberwier</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">füllali</pron>
+          <usg>[Dim.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1k01">Kappl</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">füll</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.2a05">Baumkirchen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fǖl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.2c03">Trebesing</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fų̈ül̩</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.4e03">St. Georgen im Lavanttal</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">füllal</pron>
+          <usg>[Dim.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.1a05">Stadl-Predlitz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fülla</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.2m05">Trieben</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fǖλn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.5d22">Waldbach-Mönichwald</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <?comment deshalb der Lemmaansatz ?>
+          <pron xml:lang="bar-AT">gfüll</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.5a09">Passail</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">füllaį</pron>
+          <usg>[Dim.]</usg>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φǖn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3c03">Steinbach am Ziehberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fülaė</pron>
+          <usg>[Dim.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4b13">Ulrichsberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φǖ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1i07">Ybbsitz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">füllă</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2h15">Krumbach</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fǖjal</pron>
+          <usg>[Dim.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3a15">Kautzen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fuͤln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4e09">Röschitz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φų̈lɒɫ</pron>
+          <usg>[Dim.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5u06">Leopoldau</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">füˡ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p7.1f01">Eisenstadt</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">füllɒl</pron>
+          <usg>[Dim.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p7.2b08">Pilgersdorf</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">ƒüλɒn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p7.3l03">St. Martin an der Raab</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c21111"/>
+        </form>
+        <etym>
+          <cit type="etymon">
+            <lang>ahd.</lang>
+            <form>
+              <orth>fulin</orth>
+            </form>
+            <form>
+              <orth>fulī(n)</orth>
+            </form>
+          </cit>
+          <seg type="desc">;
+            <lang>mhd.</lang>
+          </seg>
+          <cit type="etymon">
+            <form>
+              <orth>vülī(n)</orth>
+            </form>
+            <form>
+              <orth>vüli</orth>
+            </form>
+            <form>
+              <orth>vüln</orth>
+            </form>
+            <def>junges Pferd; Fohlen; Pferdejunges</def>
+          </cit>
+          <seg type="desc">;</seg>
+          <cit type="etymon">
+            <form>
+              <orth>Füllen</orth>
+            </form>
+          </cit>
+          <seg type="desc">ist ein ursprüngliches Diminutiv zu</seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref target="Fohlen.xml">Fohlen</ref>
+            </xr>
+          </cit>
+          <seg type="desc">mit dem Suffix</seg>
+          <cit type="etymon">
+            <form>
+              <orth>īna</orth>
+            </form>
+          </cit>
+          <seg type="desc">.</seg>
+          <ref type="bibl" target="#DWB1878IV/I/1">
+            <lbl>vgl.</lbl>DWB 1878 IV/I/1
+            <citedRange>511</citedRange>
+          </ref>
+          <ref type="bibl" target="#BMZ1861III">BMZ 1861 III
+            <citedRange>367a</citedRange>
+          </ref>
+          <ref type="bibl" subtype="online">Pfeifer-online
+            <xr type="lemma">
+              <ref>Fohlen</ref>
+              <date type="accessed">11.08.2021</date>
+            </xr>
+          </ref>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <def>junges Pferd; Fohlen</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p7">Bgl.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">s fillɒlɒ wiərd gfiəttərt</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m10">Serfaus</placeName>
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">a Füll hätt si an Haxn verrenkt</quote>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">s Füllerl das därfet á drei, vier Monát ha'm g'habt</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2j13">Natschbach-Loipersbach</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21092"/>
+            </sense>
+            <sense>
+              <sense>
+                <xr type="lemma">
+                  <lbl>nur</lbl>
+                  <ref>Füll</ref>
+                </xr>
+                <def>einjähriges Pferd</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21093"/>
+              </sense>
+              <sense>
+                <xr type="lemma">
+                  <lbl>nur</lbl>
+                  <ref>Füllerl</ref>
+                </xr>
+                <usg>(Diminutiv)</usg>
+                <def>ein Pferd unter fünf Monaten</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21094"/>
+              </sense>
+            </sense>
+          </sense>
+          <sense>
+            <xr type="lemma">
+              <lbl>nur</lbl>
+              <ref>Füllel</ref>
+            </xr>
+            <usg>(Diminutiv)</usg>
+            <sense></sense>
+            <def type="umschreibung">Schimpfname für eine vermeintlich dumme Person</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21100"/>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Stutfüllen</orth>
+          </form>
+          <form subtype="compound" type="lemma">
+            <orth>Stutfüll</orth>
+          </form>
+          <form subtype="compound" type="lemma">
+            <orth>Gestutfüll</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>weibliches junges Pferd, Fohlen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c19851"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Hengstfüllen</orth>
+          </form>
+          <form subtype="compound" type="lemma">
+            <orth>Hengstfüll</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>männliches junges Pferd, Fohlen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c19823"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Waldfüllerl</orth>
+            <gramGrp>
+              <usg>(Diminutiv)</usg>
+            </gramGrp>
+          </form>
+          <sense>
+            <sense>
+              <def>Specht</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.3">SBgl.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c19852"/>
+            </sense>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>(frisch und) munter wie ein Füllen</orth>
+          </form>
+          <sense>
+            <def>besonders aufgeweckt, munter und agil sein</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">frisch und munta, wiara Fühn̨̄</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e06">Kufstein</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">muntr wiᵃ a Fi̱ln</quote>
+              <usg type="geo">
+                <placeName type="kleinregion" ref="/geodata-wboe.xml#p2.3c">Krappfd.</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21128"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Füllelein, zech, zech, zech!</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Lockruf für junge Pferde, Fohlen</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">füllile, zech, zech, zech!</quote>
+              <ref type="bibl" target="#TirolischesId1866">Tirolisches Id. 1866
+                <citedRange>394</citedRange>
+              </ref>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21097"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>hüpfen wie ein Füllelein</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Beschreibung lebhafter Bewegungen aus Freude</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Hupfn wi a Fĭlile</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1B.0i03">Dölsach</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21131"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>junge Füll und alle Alten</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Spruch über das Sterben</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">(es sterben:) juŋŋə fīl unt ǫltə n ǫll</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1n01">Imst</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21130"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>spielen, springen wie ein Füllerl</orth>
+          </form>
+          <sense>
+            <def>besonders aufgeweckt, munter und agil sein</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">spiel'n, springa wia'r an Füllerl</quote>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21129"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>vorne und hinten in die Höhe wie ein Füllelein</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Beschreibung lebhafter Bewegungen aus Freude</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Vöa unt hintn di Hėęchę wi a Filile</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1B.0i03">Dölsach</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c21132"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="lemma">
+            <ref>Judenfüllen</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>alle Untugenden wie ein Judenfüllen haben</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Spruch</def>
+            <usg>[pejorativ]</usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">A hoat alle Utugeda wia Judefühle</quote>
+              <ref type="bibl" target="#TirolerHeimatbl">Tiroler Heimatbl.
+                <citedRange>5; 25</citedRange>
+              </ref>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1b04">Tannheim</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c19850"/>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.7.4" ?>
+<?parser type="lioe" version="0.7.3" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Frigel</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#SW">Sabine Wahl</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2021-04-28" who="#SW">Datensatz erstellt</change>
+        <change status="peer correction" when="2021-04-29" who="#SW">V1</change>
+        <change status="internal correction" when="2021-06-14" who="#SW">V2</change>
+        <change status="internal correction" when="2021-07-09" who="#PZ">LK eingefügt</change>
+        <change status="external correction" when="2021-12-03" who="#SW">V3</change>
+        <change status="finished" when="2022-02-16" who="#SW">online</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Frigel">
+          <orth>Frigel</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c3726"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Maskulinum</gram>
+          <gram type="gender">Femininum</gram>
+          <gram type="gender">Neutrum</gram>
+        </gramGrp>
+        <form type="variant" subtype="diminutive" xml:id="Frigelein">
+          <orth>Frigelein</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <form type="variant" subtype="diminutive" xml:id="Frigili">
+          <orth>Frigili</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <note type="kommentar" resp="#PZ">Der Stammvokal dieses nur im Südbairischen belegten Lexems geht auf mhd.
+          <c>i</c>zurück und wurde regelhaft in offener Silbe gedehnt
+          <xr>
+            <ref>frīgl̥</ref>
+          </xr>. Während überall frikativische Anlaute belegt sind, wurde dieser vereinzelt durch Affrizierung gestärkt
+          <xr>
+            <ref>pfrīgl̥</ref>
+          </xr>. Der Vokal der zweiten Silbe wurde nahezu überall getilgt, wodurch der Liquid silbisch wurde
+          <xr>
+            <ref>frīgl̥</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frīgl̥</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.2c01">Aldein</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frîgɛl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.2c04">Welschnofen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">frîgl</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p1B.0d">Def.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">pfrigl'</pron>
+          <gramGrp>
+            <usg>[Pl.]</usg>
+          </gramGrp>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1B.0b01">Außervillgraten</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">pfrîgl</pron>
+          <pron xml:lang="bar-AT">frigele</pron>
+          <gramGrp>
+            <usg>[Dim.]</usg>
+          </gramGrp>
+          <usg type="geo">
+            <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c17231"/>
+        </form>
+        <etym>
+          <seg type="desc">Ableitung von</seg>
+          <cit type="etymon">
+            <form>
+              <orth>frigeln</orth>
+            </form>
+            <def>zerreiben</def>
+          </cit>
+          <seg type="desc">, das entlehnt ist aus</seg>
+          <cit type="etymon">
+            <lang>ital.</lang>
+            <form>
+              <orth>fregare</orth>
+            </form>
+            <def>reiben; scheuern</def>
+          </cit>
+          <ref type="bibl" subtype="online">
+            <lbl>vgl.</lbl>Pons online
+            <xr type="lemma">
+              <ref>fregare</ref>
+              <date type="accessed">28.04.2021</date>
+            </xr>
+          </ref>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <def>geriebener Teig; kleingeriebene Teigmasse</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c17197"/>
+            </sense>
+            <sense>
+              <def>Teigflocke</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c17199"/>
+            </sense>
+            <sense>
+              <def>Bröckelteig</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c17198"/>
+            </sense>
+            <sense>
+              <def>Mehlspeise aus geriebenem Teig, die als Suppeneinlage in Milch oder Wasser gekocht wird; Suppeneinlage</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c17209"/>
+            </sense>
+          </sense>
+          <sense>
+            <xr type="variant" subtype="diminutive">
+              <lbl>nur</lbl>
+              <ref>Frigelein</ref>
+            </xr>
+            <usg>(Diminutiv)</usg>
+            <def>geriebene Teigsuppe (Eiergerstl); Suppe</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c17211"/>
+          </sense>
+          <sense>
+            <sense>
+              <def>kurze Nudel</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c17213"/>
+            </sense>
+            <sense>
+              <def>kleiner runder (Mohn-)Krapfen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c17214"/>
+            </sense>
+          </sense>
+          <sense>
+            <xr type="variant" subtype="diminutive">
+              <lbl>nur</lbl>
+              <ref>Frigelein</ref>
+            </xr>
+            <usg>(Diminutiv)</usg>
+            <def>Stückchen</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c17215"/>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Gänsefrigel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Kälteschauer auf der Haut; Gänsehaut</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">die haut pikimp gẹnsefrĭgl</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.4d02">Kiens</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c17166"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Milchfrigel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Farferl (Mehl- bzw. Teigkügelchen) in Milch gekocht</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c17167"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Plentafrigelein</orth>
+            <gramGrp>
+              <usg>(Diminutiv; Plural)</usg>
+            </gramGrp>
+          </form>
+          <sense>
+            <sense>
+              <def>Suppeneinlage aus Maismehl</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c17168"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Wasserfrigel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Farferlsuppe</def>
+              <def type="umschreibung">(Suppe mit Mehl- bzw. Teigkügelchen)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c17169"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Zigerfrigelein</orth>
+            <gramGrp>
+              <usg>(Diminutiv, Plural)</usg>
+            </gramGrp>
+          </form>
+          <sense>
+            <sense>
+              <def type="umschreibung">Bezeichnung für eine aus Wasser, Gerstenmehl, Topfen und Zwiebel gekochte Speise</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c17170"/>
+            </sense>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="lemma">
+            <ref target="#Frigel">Frigel</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>ein roggener Frigel</orth>
+          </form>
+          <sense>
+            <def>eine Mehl- oder Milchsuppe aus Roggenmehl</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.1">wSTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">A roᵘgginer Frigəl</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.1n02">Proveis</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c17184"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="variant" subtype="compound">
+            <ref>Ohrfrigel</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>einen Ohrfrigel kochen</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Ausdruck, zu dem man beide Ohren mit der flachen Hand reibt</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">i koch der an Oarfrigela</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.2d01">Tiers</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c17182"/>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

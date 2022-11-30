@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.8.1" ?>
+<?parser type="lioe" version="0.8.0" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gän</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#PhS">Philipp Stöckle</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+          <name xml:id="MK">Markus Kunzmann</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="peer correction" when="2022-07-01" who="#PhS">erste Version des Artikels erstellt</change>
+        <change status="internal correction" when="2022-09-12" who="#PhS">Anmerkungen peer correction berücksichtigt</change>
+        <change status="internal correction" when="2022-10-10" who="#PhS">mit Gäne zusammengelegt</change>
+        <change status="internal correction" when="2022-10-27" who="#PZ">LK eingefügt</change>
+        <change status="internal correction" when="2022-10-27" who="#PhS">Etymologie überarbeitet</change>
+        <change status="external correction" when="2022-10-27" who="#PhS">Anmerkungen internal correction berücksichtigt</change>
+        <change status="finished" when="2022-11-13" who="#PhS">Anmerkungen external correction berücksichtigt</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Gaen">
+          <orth>Gän</orth>
+        </form>
+        <form type="lemma" xml:id="Gaene">
+          <orth>Gäne</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c27136"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Maskulinum</gram>
+          <gram type="gender">Femininum</gram>
+          <gram type="gender">Neutrum</gram>
+        </gramGrp>
+        <form type="variant" subtype="diminutive" xml:id="Gaenel">
+          <orth>Gänel</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <form type="variant" subtype="diminutive" xml:id="Gaenerl">
+          <orth>Gänerl</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+        </usg>
+        <note type="kommentar" resp="#PZ">Im Stammvokalismus finden sich Reflexe umgelautet als auch nichtumgelautete Formen. Auf mhd.
+          <c>ā</c>gehen die verdumpten Varianten mit offenem
+          <c>o</c>im östlichen Südtirol und der mittelbairischbeinflussten Obersteiermark
+          <xr>
+            <ref>gǭn</ref>
+            <ref>gǭ̃</ref>
+          </xr>sowie die stärker gehobenen Varianten mit
+          <c>u</c>im östlichen Nordtirol
+          <xr>
+            <ref>gūn</ref>
+            <ref>gū̃</ref>
+          </xr>. Auf mhd.
+          <c>æ</c>wiesen die Formen mit langem
+          <c>a</c>hin, die im gesamten Verbreitungsgebiet dominieren
+          <xr>
+            <ref>gānə</ref>
+            <ref>gānɒ</ref>
+            <ref>gānə</ref>
+            <ref>gān</ref>
+            <ref>gā̃</ref>
+          </xr>. Unabhängig vom Genus treten überall parallel unkontrahierte
+          <xr>
+            <ref>gānə</ref>
+            <ref>gānɒ</ref>
+          </xr>und kontrahierte
+          <xr>
+            <ref>gān</ref>
+            <ref>gā̃</ref>
+          </xr>Formen auf. Unregelhafte Varianten mit velarem Nasal im Auslaut treten in der südbairischen Obersteiermark auf
+          <xr>
+            <ref>gāŋ</ref>
+          </xr>.
+        </note>
+        <etym>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>ganeist</orth>
+            </form>
+            <form>
+              <orth>ganeiste</orth>
+            </form>
+            <def>Feuerfunken</def>
+          </cit>
+          <seg type="desc">, für welches wiederum eine ältere, zugrunde liegende Form</seg>
+          <cit type="etymon">
+            <form>
+              <orth>gan</orth>
+            </form>
+          </cit>
+          <seg type="desc">angenommen werden kann</seg>
+          <ref type="bibl" target="#BMZ1854I">
+            <lbl>vgl.</lbl>BMZ 1854 I
+            <citedRange>461b</citedRange>
+          </ref>
+          <ref type="bibl" target="#DWB1878IV/I/1">
+            <lbl>vgl.</lbl>DWB 1878 IV/I/1
+            <citedRange>1215</citedRange>
+          </ref>
+          <ref type="bibl" target="#Lexer1872I">
+            <lbl>vgl.</lbl>Lexer 1872 I
+            <citedRange>735</citedRange>
+          </ref>
+          <seg type="desc">; s. auch</seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref target="Gänster.xml#Gaenster">Gänster</ref>
+            </xr>
+          </cit>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <def>(einzelner) (Feuer-)Funken</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">da Stăᵈl hăd brunna, khrăd die Gūn send gflogn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3f02">Hopfgarten im Brixental</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Di Gān flia'ŋ umadum</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.2f02">Kapfenberg</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">di Gaⁿ fliaᵍn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.2c01">Fusch an der Großglocknerstraße</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Schauz wia bein Raufang d Ganln außafliag'n</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2d09">Oberwang</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">g' Gaⁿ flöoŋd</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">da floign aber d' Ga(n)</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4e05">Hagenberg im Mühlkreis</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c27553"/>
+            </sense>
+            <sense>
+              <def>kleine, kurz aufzüngelnde Flamme</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c27552"/>
+            </sense>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Feuergän</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>(einzelner) Feuerfunken</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c27555"/>
+            </sense>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>aus einem Gän ein Feuer machen</orth>
+          </form>
+          <sense>
+            <def>eine Kleinigkeit hochspielen, künstlich aufbauschen; einer Sache mehr Bedeutung zukommen lassen, als ihr zusteht</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">τu mo̩xστ ao̩s ɒ̃ŋ κá̃ ɒ φae̩r</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2b44">Ungenach</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c27559"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>ein Gänel</orth>
+          </form>
+          <sense>
+            <def>ein klein wenig</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">ã gândl</quote>
+              <ref type="bibl" target="#KärntischesWb1862">
+                <?comment noch prüfen ?>
+                Kärntisches Wb. 1862
+              
+                <citedRange>107</citedRange>
+              </ref>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c27556"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>ein Männlein/Weiblein wie Gän</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Bezeichnung für einen alten Mann / eine alte Frau, der/die noch lustig, frisch und munter ist</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">a Mandl wia Gān</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.2c03">Trebesing</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">a Weibl wia Gān</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.2c03">Trebesing</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c27557"/>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

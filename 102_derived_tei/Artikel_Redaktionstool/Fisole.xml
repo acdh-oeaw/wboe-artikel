@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.7.2" ?>
+<?parser type="lioe" version="0.7.0" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Fisole</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#AB">Angela Bergermayer</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2020-05-26" who="#StS">Datensatz erstellt</change>
+        <change status="external correction" when="2020-06-12" who="#AB">Statusanpassung</change>
+        <change status="external correction" when="2020-10-12" who="#AB">Adaptionen; Eingabekorr.; neues Tagging Bed. etc.; Versionsupdate</change>
+        <change status="finished" when="2020-10-13" who="#AB">Lautungen reduziert; einzelne Anpassungen; Coll. verknüpft</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Fisole">
+          <orth>Fisole</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c10600"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Femininum</gram>
+        </gramGrp>
+        <form type="variant" subtype="diminutive" xml:id="Fisoelerl">
+          <orth>Fisölerl</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <form type="variant" subtype="diminutive" xml:id="Fisolerl">
+          <orth>Fisolerl</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <form type="variant" subtype="diminutive" xml:id="Fisoelelein">
+          <orth>Fisölelein</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p7">Bgl.</placeName>
+        </usg>
+        <note type="kommentar" resp="#FF">Das Lexem weist hohe Variation im initialen Stammvokal auf, was nicht an den ursprünglichen Betonungsverhältnissen des lateinischen Lehnwortes liegt, sondern durch einen sekundär entstandenen präfigalen Charakter der gesamten Silbe bedingt ist. Darauf deuten auch die Abschwächung des Vokals
+          <xr>
+            <ref>ƒęsōln</ref>
+          </xr>und gelegentliche
+          <c>r</c>-Einschübe hin, wie sie für das westliche Südbairische und das bairisch-alemannische Übergangsgebiet im westlichen Nordtirol belegt sind
+          <xr>
+            <ref>ƒęrsaelə</ref>
+          </xr>. Es ist schwer zu sagen, ob die zahlreich belegten
+          <c>a</c>-Monophthonge an dieser Position auf diese Formen zurückgehen oder auf den ursprünglichen Vokal, wie er auch im Mittelhochdeutschen belegt ist
+          <xr>
+            <ref>ƒasōln</ref>
+          </xr>. Mitunter wurde die ganze Lautgruppe im Südbairischen Südtirols auch getilgt
+          <xr>
+            <ref>saelə</ref>
+          </xr>. Ansonsten dominieren im gesamten Untersuchungsgebiet die ebenfalls schon im Mittelhochdeutschen existenten
+          <c>i</c>-Monophthonge mit unterschiedlicher Qualität
+          <xr>
+            <ref>ƒįsōln</ref>
+          </xr>. Im westlichen Südbairischen und teilweise auch im westlichen Südmittelbairischen erfolgte mitunter eine Zentralisierung des zweiten Stammvokals
+          <xr>
+            <ref>ƒįsȫln</ref>
+          </xr>. In diesem Zusammenhang sind möglicherweise auch die im Kärntner Südbairischen belegten
+          <c>e</c>-Monophthonge zu sehen
+          <xr>
+            <ref>ƒįsēln</ref>
+          </xr>. Auch der Liquid des Auslauts hat großen Einfluss auf die Qualität des vorangehenden Vokals. Das betrifft zunächst die steigenden Diphthonge im Südbairischen
+          <xr>
+            <ref>ƒįsöeln</ref>
+            <ref>ƒįsaeln</ref>
+            <ref>ƒįsęiln</ref>
+          </xr>. Daneben sind zahlreiche Vokalisierungsprodukte für das Mittelbairische und Südmittelbairische belegt
+          <xr>
+            <ref>fįsǫen</ref>
+          </xr>. Bei unterbleibender Vokalisierung treten ebenfalls steigende Diphthonge auf
+          <xr>
+            <ref>ƒįsǫuln</ref>
+          </xr>. Neben den im östlichen Teil des Untersuchungsgebietes dominierenden nasalhaltigen apokopierten Endungen sind im westlichen Südbairischen und im bairisch-alemannischen Übergangsgebiet im westlichen Nordtirol auch Endungen mit Vokalerhalt unterschiedlicher Qualität belegt
+          <xr>
+            <ref>ƒįsȫlən</ref>
+            <ref>ƒįsȫlə</ref>
+            <ref>ƒįsȫlɒ</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fisöjlan</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.1a01">Graun im Vinschgau</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">sẹilɛ</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p1A.1i">Pass.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">f'rsöjl'n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.1m01">Ulten</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fisejln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.3c01">Ratschings</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">füsöjl'n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.3d01">Brenner</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fisöjl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.4d03">Mühlbach</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">füsöjl</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.4f01">Rasen-Antholz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fisé̄iln</pron>
+          <usg>[Pl.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1B.0i01">Lienz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fisö́ilə</pron>
+          <pron xml:lang="bar-AT">fisöilə</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1n01">Imst</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fisēilən</pron>
+          <usg>[Pl.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1o01">St. Leonhard im Pitztal</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fɛrsẹilɛ</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p1C.1r">obstÖtzt.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">faseȫln</pron>
+          <usg>[Pl.]</usg>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p1C.2j">obstZillert.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fisöˡ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3b03">Thiersee</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fisoin</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e12">Schwoich</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fisȏᵘln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.1b04">Rangersdorf</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fįs̩ē̩ⁱln̥</pron>
+          <usg>[Pl.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.1f01">Lesachtal</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fįs̩ó̄ln̥</pron>
+          <usg>[Pl.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.1f01">Lesachtal</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fi̭só̄ln̥</pron>
+          <usg>[Pl.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.1g01">Kötschach-Mauthen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fasōln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3h01">Maria Saal</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fįßó̄ɔ̣̈n</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p3.2i">Auss.Ld.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fisuln</pron>
+          <usg>[Pl.]</usg>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p3.4c">sMStmk.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fisūln</pron>
+          <usg>[Pl.]</usg>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p3.4c">sMStmk.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fisɔ̈̄́n</pron>
+          <usg>[Pl.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.2a09">Uttendorf</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fisǫin</pron>
+          <usg>[Pl.]</usg>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p4.3d">Gr.Arlt.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φiσȯin</pron>
+          <usg>[Pl.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.5b10">Obertrum am See</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fisōin</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2e01">Linz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fisoöˡn</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fisouln</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4b05">Kollerschlag</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">füsoln</pron>
+          <usg>[Pl.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4h06">Pabneukirchen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fisȯų̈n</pron>
+          <pron xml:lang="bar-AT">fisó̇ün</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1d01">Allhartsberg</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fisouün</pron>
+          <usg>[Pl.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3a15">Kautzen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φì̩σó̄ẹ̈n</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3c03">Bad Großpertholz</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">fisōǘn</pron>
+          <usg>[Pl.]</usg>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p6.4b">Pulkaut.</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φaßōün</pron>
+          <pron xml:lang="bar-AT">φeßōün</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4d03">Drasenhofen</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φį-sóen</pron>
+          <usg>[Pl.]</usg>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4f06">Ernstbrunn</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">φįσóen</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5u06">Leopoldau</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c10601"/>
+        </form>
+        <etym>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>visōl</orth>
+            </form>
+          </cit>
+          <seg type="desc">neben</seg>
+          <cit type="etymon">
+            <form>
+              <orth>fasōl</orth>
+              <orth>, phasōl</orth>
+            </form>
+            <def>Bohne</def>
+          </cit>
+          <ref type="bibl" target="#Lexer1878III">
+            <lbl>vgl.</lbl>Lexer 1878 III
+            <citedRange>375, 28</citedRange>
+          </ref>
+          <seg type="desc">; dieses aus</seg>
+          <cit type="etymon">
+            <lang>lat.</lang>
+            <form>
+              <orth>phaseolus</orth>
+            </form>
+          </cit>
+          <seg type="desc">, welches wiederum aus</seg>
+          <cit type="etymon">
+            <lang>griech.</lang>
+            <form>
+              <orth>phasḗolos</orth>
+            </form>
+          </cit>
+          <seg type="desc">entlehnt wurde
+            <ref type="bibl" subtype="online">
+              <lbl>vgl.</lbl>Duden online
+              <xr type="lemma">
+                <ref>Fisole</ref>
+                <date type="accessed">24.01.2019</date>
+              </xr>
+            </ref>
+          </seg>
+          <cit type="etymon">
+            <ref type="bibl" target="#Höfer1815I">
+              <lbl>s. auch</lbl>Höfer 1815 I
+              <citedRange>225</citedRange>
+            </ref>
+          </cit>
+          <seg type="desc">. Das bereits im Mittelhochdeutschen bezeugte</seg>
+          <cit type="etymon">
+            <form>
+              <orth>i</orth>
+            </form>
+          </cit>
+          <seg type="desc">ist wohl als Abschwächung vor dem betonten folgenden</seg>
+          <cit type="etymon">
+            <form>
+              <orth>o</orth>
+            </form>
+          </cit>
+          <seg type="desc">zu erklären
+            <ref type="bibl" subtype="personal">
+              <persName>Auskunft Peter Wiesinger</persName>
+              <date type="accessed">13.10.2020</date>
+            </ref>
+          </seg>
+          <seg type="desc">.</seg>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <def>Bohne; Phaseolus L.</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">d Fiasoln</quote>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c10602"/>
+            </sense>
+            <sense>
+              <def>Bohne mit einer gröberen Schote (nicht grüne Bohne)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c10603"/>
+            </sense>
+            <sense>
+              <def>Gartenbohne; Phaseolus vulgaris L.</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.2">MBgl.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c10604"/>
+            </sense>
+            <sense>
+              <def>Stangenbohne (nach ihrer Wuchsform so bezeichnete Gartenbohne)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c10605"/>
+            </sense>
+            <sense>
+              <def>weiße, große Essbohne</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">d' Fisōina</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2e01">Linz</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c10606"/>
+            </sense>
+            <sense>
+              <def>Zuckererbse</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c10607"/>
+            </sense>
+            <sense>
+              <def>grüne Bohnenschote</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c10608"/>
+            </sense>
+            <sense>
+              <def>Fisolensuppe</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c10609"/>
+            </sense>
+          </sense>
+          <sense>
+            <xr type="lemma">
+              <lbl>nur</lbl>
+              <ref>Fisolen</ref>
+            </xr>
+            <usg>(Plural)</usg>
+            <def>Patronen</def>
+            <usg>(soldatensprachlich)</usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p7">Bgl.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c10610"/>
+          </sense>
+          <sense>
+            <xr type="lemma">
+              <lbl>nur</lbl>
+              <ref>Fisolen</ref>
+            </xr>
+            <usg>(Plural)</usg>
+            <def>Füße</def>
+            <usg>(gaunersprachlich)</usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c10611"/>
+          </sense>
+          <sense>
+            <xr type="lemma">
+              <lbl>nur</lbl>
+              <ref>Fisolen</ref>
+            </xr>
+            <usg>(Plural)</usg>
+            <def>Prügel; Schläge</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Fisol'n krieg'n</quote>
+              <ref type="bibl" target="#Hügel1873">Hügel 1873
+                <citedRange>60</citedRange>
+              </ref>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c10612 "/>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Gartenfisole</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Gartenbohne; Schnittbohne</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+            </sense>
+          </sense>
+          <ptr type="collection" subtype="wortbildung" target="/collections-wboe.xml#c10613"/>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Monstranzfisole</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>eine Bohnenart, deren Aussehen und Färbung an eine Monstranz (ein kostbar verziertes liturgisches Gefäß zum Zeigen und Tragen der geweihten Hostie), um die zwei Engel schweben, erinnert</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+            </sense>
+          </sense>
+          <ptr type="collection" subtype="wortbildung" target="/collections-wboe.xml#c10614"/>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Spargelfisole</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>gelbliche Wachsbohne mit dünnen gelben Hülsen und großen Samenkernen, die für den Salat verwendet und daher auch als Speise- oder Salatbohne bezeichnet wird</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+            </sense>
+          </sense>
+          <ptr type="collection" subtype="wortbildung" target="/collections-wboe.xml#c10615"/>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Stängelfisole</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Stangenbohne</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+            </sense>
+          </sense>
+          <ptr type="collection" subtype="wortbildung" target="/collections-wboe.xml#c10616"/>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Zwergelfisole</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Zwerg- oder Buschbohne ; Phaseolus vulgaris var. nanus (L.) Aschers.</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+            </sense>
+          </sense>
+          <ptr type="collection" subtype="wortbildung" target="/collections-wboe.xml#c10617"/>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Auf jemandes Hals könnte man Fisolen setzen</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">wird abwertend über eine unreinliche Person gesagt</def>
+          </sense>
+          <usg type="geo">
+            <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+          </usg>
+          <cit type="example">
+            <quote xml:lang="bar-AT">Aff seiⁿ Hǫls kinnat me Frsélln sétzn</quote>
+            <usg type="geo">
+              <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.2j03">Mayrhofen</placeName>
+            </usg>
+          </cit>
+          <ptr type="collection" subtype="MWE" target="/collections-wboe.xml#c10618"/>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Ein Hund und ein Böhme fressen keine Fisolen</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Spruch</def>
+            <usg>[pejorativ]</usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+            </usg>
+          </sense>
+          <cit type="example">
+            <quote xml:lang="bar-AT">a Huⁿt unt a Bēm fressn koᵃni Fiᵃsoün</quote>
+            <usg type="geo">
+              <placeName type="kleinregion" ref="/geodata-wboe.xml#p6.4b">Pulkaut.</placeName>
+            </usg>
+          </cit>
+          <ptr type="collection" subtype="MWE" target="/collections-wboe.xml#c10619"/>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>jemandem von Bohnen und von Fisolen erzählen</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Scherzspruch, der in Hinblick darauf verwendet wird, dass sich der feine Unterschied zwischen zwei Sachverhalten nicht so leicht ausdrücken bzw. erklären lässt</def>
+            <ref type="bibl" subtype="personal">
+              <persName>Auskunft Br. Martin Bichler</persName>
+              <date type="accessed">15.02.2019</date>
+            </ref>
+          </sense>
+          <usg type="geo">
+            <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+          </usg>
+          <cit type="example">
+            <quote xml:lang="bar-AT">Jetz muᵃscht mir afórt
+              <cit type="translation">
+                <quote xml:lang="de">einmal</quote>
+              </cit>dazö́hln von Bǫ͡in und von Fasȫln
+            </quote>
+            <usg type="geo">
+              <placeName type="gemeinde" ref="/geodata-wboe.xml#p1B.0j01">Obertilliach</placeName>
+            </usg>
+          </cit>
+          <ptr type="collection" subtype="MWE" target="/collections-wboe.xml#c10620"/>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

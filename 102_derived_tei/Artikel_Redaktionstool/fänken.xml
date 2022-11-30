@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.6.6"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>fänken</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#PZ">Patrick Zeitlhuber</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="JD">Jan Braun</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Eva Wahlmüller</name>
+          <name>Susanna Muhr</name>
+          <name>Alexandra Grohe</name>
+          <name>Klemens Wagner</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="external correction" when="2019-01-07" who="#PZ">Datensatz erstellt</change>
+        <change status="external correction" when="2020-05-14" who="#PhS">TEI-Fehler korrigiert</change>
+        <change status="external correction" when="2020-05-20" who="#EW">Collections verknüpft</change>
+        <change status="finished" when="2020-10-08" who="#PZ">fertig für Release</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="faenken">
+          <orth>fänken</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c5804"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Verb</gram>
+          <iType>schwach</iType>
+        </gramGrp>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+        </usg>
+        <note type="kommentar" resp="#FF">Auch wenn die historischen Lautverhältnisse nicht gänzlich geklärt zu sein scheinen, liegen für das nur im Südbairischen und Südmittelbairischen belegte Lexem im Stammvokal helle
+          <c>a</c>-Monophthonge vor, die auf Beseitigung eines ehemaligen Sekundärumlauts hinweisen
+          <xr>
+            <ref>ƒaŋkən</ref>
+          </xr>. Im östlichen Südmittelbairischen liegt der inlautende Plosiv meist lenisiert vor
+          <xr>
+            <ref>ƒaŋgɒ</ref>
+          </xr>. In dieser Region wird das Endungssuffix -
+          <c>en</c>zu -
+          <c>ɒ</c>abgeschwächt und der auslautende Nasal getilgt
+          <xr>
+            <ref>faŋgɒ</ref>
+          </xr>, im Südbairischen sind dagegen noch nasalhaltige Endungen belegt
+          <xr>
+            <ref>ƒaŋkən</ref>
+          </xr>.
+        </note>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">faŋgɒ</pron>
+          <usg type="geo">
+            <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.5d20">Vorau</placeName>
+          </usg>
+        </form>
+        <form type="dialect">
+          <pron xml:lang="bar-AT">-fāŋgɒ</pron>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p3.5d">nördl.steir.Lafnitzt.</placeName>
+          </usg>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p3.5b">obFeistritzt.</placeName>
+          </usg>
+          <usg type="geo">
+            <placeName type="kleinregion" ref="/geodata-wboe.xml#p3.5c">obstFeistritzt.</placeName>
+          </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c5807"/>
+        </form>
+        <etym>
+          <seg type="desc">vermutlich zurückzuführen auf</seg>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>venken</orth>
+            </form>
+            <def>entzünden</def>
+          </cit>
+          <seg type="desc">,</seg>
+          <cit type="etymon">
+            <form>
+              <orth>vengen</orth>
+            </form>
+            <def>zünden</def>
+          </cit>
+          <seg type="desc">,</seg>
+          <cit type="etymon">
+            <form>
+              <orth>vanken</orth>
+            </form>
+            <def>funkeln; sprühen</def>
+          </cit>
+          <ref type="bibl">
+            <lbl>vgl.</lbl>Lexer 1878 III
+            <citedRange>19, 64f.</citedRange>
+          </ref>
+        </etym>
+        <sense>
+          <sense>
+            <def>funken; Funken sprühen</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5809"/>
+          </sense>
+          <sense>
+            <def>funkeln</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5813"/>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>abfanken</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Funken sprühen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5818"/>
+            </sense>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Fänken tut's im Kopf</orth>
+          </form>
+          <sense>
+            <def>der Kopf schmerzt</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">fanga tuats in Koupf</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.5h07">Hartberg</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c5820"/>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>
