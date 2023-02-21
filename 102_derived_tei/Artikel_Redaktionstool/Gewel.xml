@@ -2,7 +2,7 @@
     <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
     <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
 <?redaktionstool version="0.8.1" ?>
-<?parser type="lioe" version="0.8.0" ?>
+<?parser type="lioe" version="0.8.2" ?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
@@ -32,6 +32,9 @@
           <name xml:id="StS">Stefanie Schöberl</name>
           <name xml:id="FF">Fabian Fleißner</name>
           <name xml:id="MK">Markus Kunzmann</name>
+          <name xml:id="AK">Agnes Kim</name>
+          <name xml:id="IG">Ingeborg Geyer</name>
+          <name xml:id="MG">Manfred Glauninger</name>
         </respStmt>
         <respStmt>
           <resp>Student assistants</resp>
@@ -97,6 +100,9 @@
         </usg>
         <usg type="geo">
           <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
         </usg>
         <note type="kommentar" resp="#PZ">Der Stammvokal wird im gesamten Verbreitungsgebiet als offenes
           <c>e</c>, häufig mit Vokaldehnung, realisiert
@@ -166,21 +172,25 @@
               <ref target="gähnen.xml#gaehnen">gähnen</ref>
             </xr>
           </cit>
-          <seg type="desc">
-            <ref type="bibl" subtype="online">
-              <lbl>vgl.</lbl>DWB online
-              <xr type="lemma">
-                <ref>gäuen</ref>
-                <date type="accessed">28.06.2022</date>
-              </xr>
-            </ref>
-            <ref type="bibl" subtype="online">Lexer online
-              <xr type="lemma">
-                <ref>giwen; gewe</ref>
-                <date type="accessed">28.06.2022</date>
-              </xr>
-            </ref>
-          </seg>
+          <seg type="desc">; Überschneidungen gibt es auch mit</seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref target="Keppel.xml#Keppel">Keppel</ref>
+            </xr>
+          </cit>
+          <ref type="bibl" subtype="online">
+            <lbl>vgl.</lbl>DWB online
+            <xr type="lemma">
+              <ref>gäuen</ref>
+              <date type="accessed">28.06.2022</date>
+            </xr>
+          </ref>
+          <ref type="bibl" subtype="online">Lexer online
+            <xr type="lemma">
+              <ref>giwen; gewe</ref>
+              <date type="accessed">28.06.2022</date>
+            </xr>
+          </ref>
         </etym>
         <sense>
           <sense>
@@ -193,6 +203,9 @@
             </usg>
             <usg type="geo">
               <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
             </usg>
             <cit type="example">
               <quote xml:lang="bar-AT">s Gę́wöˡ auskėgln</quote>
