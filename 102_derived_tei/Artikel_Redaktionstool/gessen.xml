@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.8.2" ?>
+<?parser type="lioe" version="0.8.3" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>gessen</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#EW">Eva Wahlmüller</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+          <name xml:id="MK">Markus Kunzmann</name>
+          <name xml:id="AK">Agnes Kim</name>
+          <name xml:id="IG">Ingeborg Geyer</name>
+          <name xml:id="MG">Manfred Glauninger</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2022-11-04" who="#EW">Datensatz erstellt</change>
+        <change status="peer correction" when="2022-11-07" who="#EW">fertig für int. Korr.</change>
+        <change status="internal correction" when="2023-01-11" who="#EW">Anm. PZ eingearbeitet, warten auf LK</change>
+        <change status="internal correction" when="2023-03-07" who="#EW">LK eingegeben</change>
+        <change status="internal correction" when="2023-04-25" who="#EW">Anmerkungen Manzi einarbeiten, warten auf Rückmeldung wegen LK</change>
+        <change status="internal correction" when="2023-04-26" who="#PZ">Anm Lk eingearbeitet</change>
+        <change status="external correction" when="2023-05-09" who="#EW">in ext. Korr. abgelegt</change>
+        <change status="finished" when="2023-07-04" who="#EW">keine Anm. IG</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="gessen">
+          <orth>-gessen</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c28340"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Verb</gram>
+          <iType>stark</iType>
+        </gramGrp>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p7.1">NBgl.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p7.2">MBgl.</placeName>
+        </usg>
+        <note type="kommentar" resp="#DG">Der auf mhd.
+          <c>ë</c>zurückgehende Stammvokal liegt meist als kurzes offenes
+          <c>e</c>vor
+          <xr>
+            <ref>-gęßn̥</ref>
+          </xr>, in der südbairischen Obersteiermark auch gedehnt
+          <xr>
+            <ref>-gę̄sn̥</ref>
+          </xr>. Geschlossenes
+          <c>e</c>tritt dagegen vereinzelt im Südmittel- und Mittelbairischen auf
+          <xr>
+            <ref>-gẹßn̥</ref>
+          </xr>. Daneben sind im westlichen Südbairischen kurze
+          <c>
+            <?comment da gibt es Leerzeichen-Probleme ?>
+            ö
+          </c>
+          <xr>
+            <ref>-gößn̥</ref>
+          </xr>und im östlichen Südbairischen lange
+          <c>
+            <?comment da gibt es Leerzeichen-Probleme ?>
+            ö
+          </c>
+          <xr>
+            <ref>-gȫsn̥</ref>
+          </xr>sowie von der Weststeiermark bis zum Burgenland und dem angrenzenden Industrieviertel Diphthonge belegt
+          <xr>
+            <ref>-geißn̥</ref>
+            <ref>-göißn̥</ref>
+          </xr>. Während die Endung -
+          <c>en</c>überall synkopiert und der Nasal somit silbisch wurde
+          <xr>
+            <ref>-gęßn̥</ref>
+          </xr>, ist dieser im bairisch-alemannischen Übergangsgebiet abgefallen
+          <xr>
+            <ref>-geßɒ</ref>
+            <ref>-gößə</ref>
+          </xr>.
+        </note>
+        <etym>
+          <cit type="etymon">
+            <lang>ahd.</lang>
+            <form>
+              <orth>gezzan</orth>
+            </form>
+            <def>etwas erlangen</def>
+            <date>8. Jh.</date>
+          </cit>
+          <cit type="etymon">
+            <lang>ahd.</lang>
+            <form>
+              <orth>firgezzan</orth>
+            </form>
+            <date>9. Jh.</date>
+          </cit>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>vergezzen</orth>
+            </form>
+            <def>aus den Gedanken verlieren; vergessen</def>
+          </cit>
+          <seg type="desc">, reflexiv</seg>
+          <cit type="etymon">
+            <def>in Vergessenheit geraten</def>
+          </cit>
+          <seg type="desc">; vergleiche</seg>
+          <cit type="etymon">
+            <lang>engl.</lang>
+            <form>
+              <orth>to get</orth>
+            </form>
+            <def>erhalten bekommen</def>
+          </cit>
+          <seg type="desc">und</seg>
+          <cit type="etymon">
+            <lang>engl.</lang>
+            <form>
+              <orth>to forget</orth>
+            </form>
+            <def>vergessen</def>
+          </cit>
+          <ref type="bibl" subtype="online">Pfeifer online
+            <xr type="lemma">
+              <ref>vergessen</ref>
+              <date type="accessed">04.11.2022</date>
+            </xr>
+          </ref>
+          <ref type="bibl" subtype="online">Althochdeutsches Wörterbuch online
+            <xr type="lemma">
+              <ref>gezzan</ref>
+              <date type="accessed">04.11.2022</date>
+            </xr>
+          </ref>
+        </etym>
+        <sense>
+          <sense>
+            <usg>Dieses Lemma ist nur in Wortbildungen belegt.</usg>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>abgessen</orth>
+            <gramGrp>
+              <usg>(adjektivisches Partizip)</usg>
+            </gramGrp>
+          </form>
+          <sense>
+            <sense>
+              <def>vergesslich; verloren; schwachsinnig</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c30289"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>vergessen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>etwas oder jemanden aus dem Gedächtnis verlieren; sich an etwas oder jemanden nicht erinnern (können)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.1">NBgl.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.2">MBgl.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">ǫls fərgössn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.4c01">Lüsen</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">er tu͡et ålls fərgößn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.1b04">Rangersdorf</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">fɒgę́ßn sãĩ</quote>
+                <usg type="geo">
+                  <placeName type="kleinregion" ref="/geodata-wboe.xml#p4.3d">Gr.Arlt.</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">eȓ håd f­eȓgössn ghåbt</quote>
+                <usg type="geo">
+                  <placeName type="kleinregion" ref="/geodata-wboe.xml#p5.1b">nördl.obInnv.</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">i khã̄ū dẹs hǫjd nẹ̄d fɒgẹ́ssn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1o01">Herzogenburg</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">das e s ned fagis</quote>
+                <ref type="bibl" target="#Artmann1958">Artmann 1958
+                  <citedRange>30</citedRange>
+                </ref>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">oɫəs fəʳgeissn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p7.1e08">Mörbisch am See</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c30312"/>
+            </sense>
+            <sense>
+              <xr type="variant" subtype="compound">
+                <lbl>nur</lbl>
+                <ref>vergessen</ref>
+              </xr>
+              <usg>(adjektivisches Partizip)</usg>
+              <def>eitrig; schwärend (von Wunden)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c30314"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>gottvergessen</orth>
+            <gramGrp>
+              <usg>(adjektivisches Partizip)</usg>
+            </gramGrp>
+          </form>
+          <sense>
+            <sense>
+              <def>von Gott verlassen; nicht mehr an Gott denkend und ohne Moral</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">ɒ gódfɒgèssnɒ męnš</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1c07">Mühlheim am Inn</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c30291"/>
+            </sense>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="variant" subtype="MWE">
+            <ref>vergessen</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>das Maul / die Goschen / die Pappen offen vergessen</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">wird gesagt, wenn jemand den Mund offen stehen lässt</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Voa lauta lisnen håt as Maul oufn vagöisn</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.1b06">Winklern</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Die Papn ofn vergȫßn</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.1h02">Hermagor-Pressegger See</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Maul (Gouschn od. Pappm) oufn vəgēsn</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.3a01">Friesach</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">vagißt s Maul ofn</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.4a01">Hüttenberg</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c30315"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Der hat beim Fahren auf die hinteren Radeln vergessen</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">wird gesagt, wenn jemand verschwenderisch ist</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Der hot ban Fohrn auf d'hintern Radln vagejss'n</quote>
+              <ref type="bibl" target="#Hruschka1933">Hruschka 1933
+                <citedRange>168</citedRange>
+              </ref>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c30318"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Du vergisst alles, auch noch deinen Arsch!</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">wird gesagt, wenn jemand sehr vergesslich ist</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">du fəʳgisst oöˡs, - a no dan ɒ̊ʳsch!</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c30319"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Er hat das Maul vergessen, weil er es gar nicht aufmacht</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">wird gesagt, wenn jemand sehr still ist / nichts sagt</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">E håts Mäul vagössn, weil as gå nöt afmåcht</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2b42">St. Georgen bei Grieskirchen</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c30317"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Lass mich nicht vergessen</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Aufforderung, jemanden an etwas zu erinnern</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">los mö nöd fȇȓgössn</quote>
+              <usg type="geo">
+                <placeName type="kleinregion" ref="/geodata-wboe.xml#p5.1b">nördl.obInnv.</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c30316"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Vergiss dich nicht!</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">wird als Warnung gesagt, dass man nichts Ungehöriges tun soll</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Vergiß dich nicht!</quote>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c30320"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Was man Junger hart lernt, als Großes tut, vergisst man alt nicht</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Spruch</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">wo̩s mɒ i̯ũŋɒ ho̩ɒd le̩nd, o̩ö̩σ κre̩o̩σ τųɒd, fɒgiστ mɒ o̩öd nėd</quote>
+              <ref type="bibl" target="#Neuner1966">Neuner 1966
+                <citedRange>132</citedRange>
+              </ref>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2b44">Ungenach</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c30313"/>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

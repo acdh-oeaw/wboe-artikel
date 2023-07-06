@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.8.2" ?>
+<?parser type="lioe" version="0.8.3" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Kente</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#AK">Agnes Kim</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+          <name xml:id="MK">Markus Kunzmann</name>
+          <name xml:id="AK">Agnes Kim</name>
+          <name xml:id="IG">Ingeborg Geyer</name>
+          <name xml:id="MG">Manfred Glauninger</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="peer correction" when="2023-02-23" who="#AK">Datensatz erstellt</change>
+        <change status="peer correction" when="2023-03-03" who="#AK">Etymologie überarbeitet</change>
+        <change status="peer correction" when="2023-03-30" who="#AK">Überarbeitung nach lautlicher Durchsicht der Belege durch PZ und Einarbeitung der Kommentare von EW</change>
+        <change status="peer correction" when="2023-03-30" who="#PZ">LK eingefügt</change>
+        <change status="internal correction" when="2023-05-12" who="#AK">Anmerkungen von MG überprüft, keine Ändeurngen</change>
+        <change status="finished" when="2023-07-04" who="#AK">Anmerkungen von IG überprüft, keine Änderungen</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Kente">
+          <orth>Kente</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c33010 "/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Femininum</gram>
+          <gram type="gender">Neutrum</gram>
+        </gramGrp>
+        <form type="variant" subtype="diminutive" xml:id="Kentel">
+          <orth>Kentel</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+        </usg>
+        <note type="kommentar" resp="#PZ">Der auf mhd.
+          <c>e</c>hinweisende Stammvokal wird im gesamten Verbreitungsgebiet als offenes
+          <c>e</c>realisiert
+          <xr>
+            <ref>kχęnt</ref>
+            <ref>-khęnt</ref>
+          </xr>, im Westmittelbairischen gelegentlich auch geschlossen
+          <xr>
+            <ref>-khẹnt</ref>
+          </xr>. Im Anlaut stehen im östlichen Nordtirol Affrikaten
+          <xr>
+            <ref>kχęnt</ref>
+          </xr>, im Mittelbairischen Aspiraten
+          <xr>
+            <ref>-khęnt</ref>
+            <ref>-khẹnt</ref>
+          </xr>.
+        </note>
+        <etym>
+          <seg type="desc">Ableitung zu derselben Wurzel wie</seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref target="Kentel.xml#Kentel">Kentel</ref>
+            </xr>
+          </cit>
+        </etym>
+        <sense>
+          <sense>
+            <def>alte Form der Heizung</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c33028 "/>
+          </sense>
+          <sense>
+            <def>Feuer</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">a tichtögö
+                <cit type="translation">
+                  <quote xml:lang="de">tüchtiges</quote>
+                </cit>Kent einömachen
+              </quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e06">Kufstein</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c33029 "/>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Unterkente</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Material zum Unterzünden</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Haᵒst dęnad
+                  <cit type="translation">
+                    <quote xml:lang="de">doch</quote>
+                  </cit>a guadö Intakėnt
+                </quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1f06">Enzenkirchen</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c33030 "/>
+            </sense>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

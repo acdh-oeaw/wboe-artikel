@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.8.2" ?>
+<?parser type="lioe" version="0.8.3" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>kenten</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#AK">Agnes Kim</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+          <name xml:id="MK">Markus Kunzmann</name>
+          <name xml:id="AK">Agnes Kim</name>
+          <name xml:id="IG">Ingeborg Geyer</name>
+          <name xml:id="MG">Manfred Glauninger</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2023-02-20" who="#AK">Datensatz erstellt</change>
+        <change status="peer correction" when="2023-02-23" who="#AK">Weiterarbeit an Wortbildungen</change>
+        <change status="peer correction" when="2023-03-03" who="#AK">Etymologie überarbeitet</change>
+        <change status="peer correction" when="2023-03-30" who="#AK">Peer-Review von EW eingearbeitet</change>
+        <change status="peer correction" when="2023-03-30" who="#PZ">LK eingefügt</change>
+        <change status="internal correction" when="2023-05-12" who="#AK">Kommentare von MG eingefügt</change>
+        <change status="finished" when="2023-07-04" who="#AK">keine Änderungen von IG</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="kenten">
+          <orth>kenten</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c32837"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Verb</gram>
+          <iType>stark</iType>
+        </gramGrp>
+        <form type="variant" subtype="diminutive" xml:id="kenteln">
+          <orth>kenteln</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p2.3">MKtn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <note type="kommentar" resp="#PZ">Der auf mhd.
+          <c>e</c>hinweisende Stammvokal wird im gesamten Verbreitungsgebiet als offenes
+          <c>e</c>realisiert
+          <xr>
+            <ref>kχęntn̥</ref>
+            <ref>khęntn̥</ref>
+          </xr>, teilweise im östlichen Südbairischen auch mit Länge
+          <xr>
+            <ref>kχę̄ntn̥</ref>
+          </xr>. Diphthongierung zu
+          <c>ei</c>ist in der Weststeiermark und im Ostmittelbairischen
+          <xr>
+            <ref>khęintn̥</ref>
+          </xr>sowie zu
+          <c>ea</c>im Mostviertel belegt
+          <xr>
+            <ref>-khę̃ɒ̃tn̥</ref>
+          </xr>. Im Anlaut finden sich im westlichen Südbairischen sowie häufig Südmittelbairischen Affrikaten
+          <xr>
+            <ref>kχęntn̥</ref>
+            <ref>kχę̄ntn̥</ref>
+            <ref>kχęntə</ref>
+          </xr>, während im Mittelbairischen wie auch im Südmittelbairischen Aspiraten auftreten
+          <xr>
+            <ref>khęntn̥</ref>
+            <ref>khęintn̥</ref>
+            <ref>-khę̃ɒ̃tn̥</ref>
+            <ref>-khęmptn̥</ref>
+          </xr>. Im Inlaut dominieren überall alveolare Nasale
+          <xr>
+            <ref>kχęntn̥</ref>
+            <ref>khęntn̥</ref>
+            <ref>khęintn̥</ref>
+          </xr>, wobei im Ostmittelbairischen auch bilabiale Nasale
+          <xr>
+            <ref>-khęmtn̥</ref>
+          </xr>, teilweise mit eingeschobenem
+          <xr>
+            <ref>-khęmptn̥</ref>
+          </xr>oder assimiliertem Plosiv
+          <xr>
+            <ref>-khęmpn̥</ref>
+          </xr>, vorkommen. Der inlautende Nasal wurde im Mittelbairischen nach Nasalierung des Stammvokals selten gänzlich getilgt
+          <xr>
+            <ref>-khę̃'n̥</ref>
+            <ref>-khę̃ɒ̃tn̥</ref>
+          </xr>. Der inlautende Plosiv wurde gelegentlich im bairisch-alemannischen Übergangsgebiet sowie im Westmittelbairischen zum Glottisverschluss reduziert
+          <xr>
+            <ref>-kχęn'n̥</ref>
+            <ref>-khę̃'n̥</ref>
+          </xr>. Der Vokal der auslautenden Silbe wurde überall synkopiert
+          <xr>
+            <ref>kχęntn̥</ref>
+            <ref>khęintn̥</ref>
+            <ref>-khę̃ɒ̃tn̥</ref>
+            <ref>-kχęn'n̥</ref>
+          </xr>. Im bairisch-alemannischen Übergangsgebiet dominiert jedoch die Tilgung des auslautenden Nasals
+          <xr>
+            <ref>kχęntə</ref>
+            <ref>-kχęntɒ</ref>
+          </xr>.
+        </note>
+        <etym>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>künten</orth>
+            </form>
+            <def>heizen; zünden</def>
+          </cit>
+          <ref type="bibl" target="#Lexer1872I">
+            <lbl>vgl.</lbl>Lexer 1872 I
+            <citedRange>Sp. 1782</citedRange>
+          </ref>
+          <seg type="desc">, dies wahrscheinlich Ableitung zu älteren Formen von</seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref target="Kentel.xml#Kentel">Kentel</ref>
+            </xr>
+          </cit>
+        </etym>
+        <sense>
+          <sense>
+            <def>Feuer machen; anzünden; einheizen</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">i hon kχentət</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1n01">Imst</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c32838 "/>
+          </sense>
+          <sense>
+            <xr type="variant" subtype="diminutive">
+              <lbl>nur</lbl>
+              <ref>kenteln</ref>
+            </xr>
+            <def>zündeln; mit Feuer spielen</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Kinder tun gern kenteln.</quote>
+              <ref type="bibl" target="#SalzburgerWb1995">Salzburger Wb. 1995
+                <citedRange>107</citedRange>
+              </ref>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c32839 "/>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>ankenten</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Feuer machen; etwas anzünden; einheizen; einen Brand legen</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.3">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">waks
+                  <cit type="translation">
+                    <quote xml:lang="de">schnell</quote>
+                  </cit>ə liəχt ū̃kχentn
+                </quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.2c04">Welschnofen</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">ɒ fóė-ɒr
+                  <cit type="translation">
+                    <quote xml:lang="de">Feuer</quote>
+                  </cit>ą́ⁿkhęn''n
+                </quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1c07">Mühlheim am Inn</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">In Mittermoar haᵇns sein Bårt ankent</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2a39">Traun</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">ãkëndᵉn mit Schą̊ătᵉn
+                  <cit type="translation">
+                    <quote xml:lang="de">Scheiten</quote>
+                  </cit>
+                </quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4f16">Schenkenfelden</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">i hå 'n Băofa
+                  <cit type="translation">
+                    <quote xml:lang="de">Backofen</quote>
+                  </cit>schoⁿ ånkėnt
+                </quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4e08">Ravelsbach</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Kannt' dir d' Pfeifen an</quote>
+                <ref type="bibl" target="#Hügel1873">Hügel 1873
+                  <citedRange>21</citedRange>
+                </ref>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c32953 "/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>aufkenten</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Feuer machen; anfeuern</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.4">Tenneng.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c32957 "/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>einkenten</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>einheizen; einen Ofen anfeuern</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.4">Tenneng.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">muəšt nummə
+                  <cit type="translation">
+                    <quote xml:lang="de">nicht mehr</quote>
+                  </cit>iŋkχentɒ!
+                </quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m10">Serfaus</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Geh kent eii in Båofm
+                  <cit type="translation">
+                    <quote xml:lang="de">Backofen</quote>
+                  </cit>
+                </quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.4d01">Abtenau</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c32958 "/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>nachkenten</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Brennmaterial in den Ofen nachlegen; nachheizen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c32984 "/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>unterkenten</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>den Ofen anzünden; einheizen; unterzünden</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">intəkęntn, mid ərə šoətn odər ən špąⁿ</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1c07">Mühlheim am Inn</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">ge in Kuchl intakentn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2b39">Schlatt</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c32985 "/>
+            </sense>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>jemandem einkenten; jemandem unterkenten</orth>
+          </form>
+          <sense>
+            <def>jemandem zusetzen; jemanden in Verlegenheit bringen</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">einem einkent'n</quote>
+              <ref type="bibl" target="#TirolischesId1866">Tirolisches Id. 1866
+                <citedRange>311</citedRange>
+              </ref>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">dę̃n węrė ĩntɒκhẽ̩n''n̥</quote>
+              <ref type="bibl" target="#Neuner1966">Neuner 1966
+                <citedRange>360</citedRange>
+              </ref>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2b44">Ungenach</placeName>
+              </usg>
+            </cit>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>
