@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.8.2" ?>
+<?parser type="lioe" version="0.8.3" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gaufe</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#SW">Sabine Wahl</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+          <name xml:id="MK">Markus Kunzmann</name>
+          <name xml:id="AK">Agnes Kim</name>
+          <name xml:id="IG">Ingeborg Geyer</name>
+          <name xml:id="MG">Manfred Glauninger</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2022-05-16" who="#SW">Datensatz erstellt</change>
+        <change status="peer correction" when="2022-05-20" who="#SW">V1</change>
+        <change status="peer correction" when="2023-04-28" who="#PZ">LK eingefügt</change>
+        <change status="internal correction" when="2023-05-08" who="#SW">V2</change>
+        <change status="internal correction" when="2023-06-27" who="#PZ">LK korrigiert</change>
+        <change status="external correction" when="2023-06-27" who="#SW">V3</change>
+        <change status="finished" when="2023-07-10" who="#SW">online</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Gaufe">
+          <orth>Gaufe</orth>
+        </form>
+        <form type="lemma" xml:id="Gaufel">
+          <orth>Gaufel</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c26046"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Femininum</gram>
+          <gram type="gender">Maskulinum</gram>
+        </gramGrp>
+        <form type="variant" subtype="diminutive" xml:id="Gaeufel">
+          <orth>Gäufel</orth>
+          <orth>Gaufel</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <form type="variant" subtype="diminutive" xml:id="Gaeuferl">
+          <orth>Gäuferl</orth>
+          <orth>Gauferl</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <form type="variant" subtype="diminutive" xml:id="Gauflein">
+          <orth>Gauflein</orth>
+          <orth>Gaufelein</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <form type="variant" subtype="diminutive" xml:id="Gauferlein">
+          <orth>Gauferlein</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p7">Bgl.</placeName>
+        </usg>
+        <note type="kommentar" resp="#FF">Das Lexem kommt in zahlreichen lautlich und morphologisch heterogenen Formen vor, die regional nur schwer zu ordnen sind und auf starke Beeinflussung durch andere Lexeme hinweisen. Der auf mhd.
+          <c>ou</c>zurückgehende Stammvokal liegt im ganzen Verbreitungsgebiet überwiegend als
+          <c>au</c>-Diphthong vor
+          <xr>
+            <ref>gaųfn̥</ref>
+          </xr>. Die lautgesetzlich erwartbaren hellen
+          <c>a</c>-Monophthonge dagegen sind zumindest im Südbairischen noch erhalten
+          <xr>
+            <ref>gāfn̥</ref>
+            <ref>gaf</ref>
+          </xr>. Gelegentlich sind im Mittelbairischen und Südmittelbairischen diminuierte umgelautete Formen belegt
+          <xr>
+            <ref>gaifl̥</ref>
+          </xr>. Ohne klare areale Verteilung erscheinen vereinzelt Velarisierungen des inlautenden Frikativs, wie sie im westlichen Südbairischen und im östlichen Mittelbairischen vorkommen
+          <xr>
+            <ref>gaχt</ref>
+            <ref>gaχən</ref>
+          </xr>. Plosiveinschub lässt sich nicht nur im westlichen Südbairischen finden, sondern auch im östlichen Südmittelbairischen
+          <xr>
+            <ref>gāftn̥</ref>
+            <ref>gaft</ref>
+          </xr>. Vereinzelt kam es im Mittelbairischen zu Konsonantentilgung vor dem Nasal
+          <xr>
+            <ref>gām</ref>
+          </xr>. Überall lassen sich zahlreiche diminuierte und nicht diminuierte Endungen finden, die lautlich regionale Spezifika aufweisen. Es dominieren synkopierte feminine nasalhaltige Formen
+          <xr>
+            <ref>gaųfn̥</ref>
+            <ref>gaųfm̥</ref>
+          </xr>, daneben gibt es maskuline Endungen ohne Nasal
+          <xr>
+            <ref>gaf</ref>
+          </xr>. Vokalerhalt im Auslaut ist zum Teil im Südbairischen belegt
+          <xr>
+            <ref>gaųfə</ref>
+          </xr>. Bei den diminuierten Formen wurde das
+          <c>e</c>der Nebensilbe häufig synkopiert und der Liquid somit silbisch
+          <xr>
+            <ref>gafl̥</ref>
+          </xr>. Im Mittelbairischen wurde der Liquid oft vokalisiert und verschmolz mit dem Vokal, der gerundet oder ungerundet auftreten kann
+          <xr>
+            <ref>gaųfų̈</ref>
+            <ref>gaųfə</ref>
+            <ref>gaųfɒ</ref>
+          </xr>. Im Südbairischen und Südmittelbairischen sind häufiger Endungen mit Vokal- und Liquiderhalt belegt
+          <xr>
+            <ref>gaųfəl</ref>
+          </xr>.
+        </note>
+        <etym>
+          <cit type="etymon">
+            <lang>ahd.</lang>
+            <form>
+              <orth>goufana</orth>
+            </form>
+            <form>
+              <orth>goufa</orth>
+            </form>
+            <def>Höhlung, die durch das Zusammenlegen der gekrümmten Hände entsteht; eine Handvoll;</def>
+          </cit>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>goufe</orth>
+            </form>
+            <def>die hohle Hand</def>
+          </cit>
+          <ref type="bibl" subtype="online">
+            <lbl>vgl.</lbl>AWB online
+            <xr type="lemma">
+              <ref>goufana, goufa</ref>
+              <date type="accessed">20.05.2022</date>
+            </xr>
+          </ref>
+          <ref type="bibl" subtype="online">
+            <lbl>vgl.</lbl>Lexer online
+            <xr type="lemma">
+              <ref>goufe</ref>
+              <date type="accessed">20.05.2022</date>
+            </xr>
+          </ref>
+          <ref type="bibl" subtype="online">
+            <lbl>vgl.</lbl>Pfeifer online
+            <xr type="lemma">
+              <ref>Gaufe(l)</ref>
+              <date type="accessed">20.05.2022</date>
+            </xr>
+          </ref>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <def>hohle Hand; die hohlen Hände; Öffnung/Höhlung einer oder beider Hände</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p7">Bgl.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">hǫėˡd daėⁿ gaufm hęəʳ!</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1c07">Mühlheim am Inn</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c26714"/>
+            </sense>
+            <sense>
+              <xr type="lemma" subtype="diminutive">
+                <lbl>nur</lbl>
+                <ref target="#Gaufel">Gaufel</ref>
+              </xr>
+              <usg>(Diminutiv)</usg>
+              <def>Handfläche</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c26712"/>
+            </sense>
+            <sense>
+              <def>Inhalt einer hohlen Hand / beider hohlen Hände zusammen; eine Hand voll (auch als Maßeinheit)</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p7">Bgl.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Gib miər a Gaufe Meal</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.1c05">Stilfs</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">a Gaff Hăwan aufschittn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3f02">Hopfgarten im Brixental</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">a Gavü voü Trǫad</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1d10">Neuhofen an der Ybbs</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c26703"/>
+            </sense>
+            <sense>
+              <def>kleinere Last, die man mit beiden Armen umfassen kann</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c26711"/>
+            </sense>
+          </sense>
+          <sense>
+            <sense>
+              <def>kleine (hölzerne) Schaufel (z. B. für Mehl, Getreide, Kartoffeln, Futter, Sand); größerer hölzerner Löffel</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c26708"/>
+            </sense>
+            <sense>
+              <def>kleines Gefäß; ein Gefäß, das einer hohlen Hand ähnlich ist</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c26707"/>
+            </sense>
+            <sense>
+              <def>kleines Rindenstück</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c26706"/>
+            </sense>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Zuckergauferl</orth>
+            <gramGrp>
+              <usg>(Diminutiv)</usg>
+            </gramGrp>
+          </form>
+          <sense>
+            <sense>
+              <def>kleine Schaufel, mit der man Staubzucker nimmt, reicht</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c26704"/>
+            </sense>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>
