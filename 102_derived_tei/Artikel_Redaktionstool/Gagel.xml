@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.8.2" ?>
+<?parser type="lioe" version="0.8.3" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gagel</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#SW">Sabine Wahl</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+          <name xml:id="MK">Markus Kunzmann</name>
+          <name xml:id="AK">Agnes Kim</name>
+          <name xml:id="IG">Ingeborg Geyer</name>
+          <name xml:id="KK">Katharina Korecky-Kröll</name>
+          <name xml:id="MG">Manfred Glauninger</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2022-03-07" who="#SW">Datensatz erstellt</change>
+        <change status="peer correction" when="2022-03-11" who="#SW">V1</change>
+        <change status="internal correction" when="2023-07-11" who="#SW">V2</change>
+        <change status="external correction" when="2023-10-11" who="#SW">V3</change>
+        <change status="finished" when="2023-10-17" who="#SW">V4</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Gagel">
+          <orth>Gagel</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c24870"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Maskulinum</gram>
+          <gram type="gender">Femininum</gram>
+          <gram type="gender">Neutrum</gram>
+        </gramGrp>
+        <form type="variant" subtype="diminutive" xml:id="Gagel">
+          <orth>Gagel</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <form type="variant" subtype="diminutive" xml:id="Gagerl">
+          <orth>Gagerl</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <form type="variant" subtype="diminutive" xml:id="Gagelein">
+          <orth>Gagelein</orth>
+          <orth>Gagilein</orth>
+          <orth>Gaglein</orth>
+          <orth>Gagilen</orth>
+          <orth>Gaglin</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <form type="variant" subtype="diminutive" xml:id="Gagerlein">
+          <orth>Gagerlein</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <form type="variant" subtype="diminutive" xml:id="Gagerli">
+          <orth>Gagerli</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+        </usg>
+        <note type="kommentar" resp="#DG">Der Stammvokal tritt im gesamten Verbreitungsgebiet aufgrund der Dehnung in offener Tonsilbe und Verdumpfung als langes offenes
+          <c>o</c>auf
+          <xr>
+            <ref>gǭgl̥</ref>
+            <ref>gǭglə</ref>
+            <ref>gǭgö</ref>
+          </xr>, in manchen Gebieten auch etwas geschlossener
+          <xr>
+            <ref>gōgl̥</ref>
+          </xr>sowie im östlichen Süd- und angrenzenden Osttirol mitunter kurz
+          <xr>
+            <ref>gǫgl̥</ref>
+          </xr>. Der Vokal der Nebensilbe wurde überall synkopiert und der Liquid somit silbisch
+          <xr>
+            <ref>gǭgl̥</ref>
+          </xr>. Daneben wurde im bairisch-alemannischen Übergangsgebiet ein historischer Vokal als auslautender Reduktionsvokal erhalten
+          <xr>
+            <ref>gǭglə</ref>
+            <ref>gǭglɒ</ref>
+          </xr>sowie der Liquid im westlichen Südmittelbairischen auch nach velarem Plosiv mitunter vokalisiert
+          <xr>
+            <ref>gǭgö</ref>
+          </xr>. Vereinzelt im Kompositum
+          <c>Rossgagel</c>
+          <xr>
+            <ref>-gurgl̥</ref>
+            <ref>-gǭɒgl̥</ref>
+          </xr>und vielfach in
+          <c>Purzigagel</c>
+          <xr>
+            <ref>-gǫkl̥</ref>
+            <ref>-gāgl̥</ref>
+            <ref>-gādl̥</ref>
+            <ref>-gā̃dl̥</ref>
+            <ref>-gaŋgl̥</ref>
+            <ref>-giŋgl̥</ref>
+            <ref>-gebl̥</ref>
+          </xr>ist das Grundwort verballhornt, was in letzterem Fall wohl auch auf den Einfluss ähnlicher Lexeme zurückzuführen ist.
+        </note>
+        <etym>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>gagel</orth>
+            </form>
+            <def>mirtum</def>
+          </cit>
+          <seg type="desc">, verzeichnet sind außerdem die Wortbildungen</seg>
+          <cit type="etymon">
+            <form>
+              <orth>geizegagel</orth>
+            </form>
+            <form>
+              <orth>schāfgagel</orth>
+            </form>
+            <def>Pflanzennamen</def>
+          </cit>
+          <cit type="etymon">
+            <lang>frnhd.</lang>
+            <form>
+              <orth>Gagel</orth>
+            </form>
+            <def>ein Strauch (myrica gale, myrtus brabantica, pors), Myrtenheide, Ölmyrte, Heidelbeermyrte; schweizerdeutsch: Kotknollen von Ziegen, Schafen, Hunden u. a.</def>
+          </cit>
+          <seg type="desc">; beim Kompositum</seg>
+          <cit type="etymon">
+            <form>
+              <orth>Lämmergageln</orth>
+            </form>
+            <def>Beeren (medizinisch gebraucht)</def>
+          </cit>
+          <seg type="desc">scheinen die beiden Bedeutungen zusammenzutreffen</seg>
+          <ref type="bibl" subtype="online">
+            <lbl>vgl.</lbl>Lexer online
+            <xr type="lemma">
+              <ref>gagel, geiʒegagel, schâfgagel</ref>
+              <date type="accessed">11.03.2022</date>
+            </xr>
+          </ref>
+          <ref type="bibl" subtype="online">
+            <lbl>vgl.</lbl>DWB online
+            <xr type="lemma">
+              <ref>Gagel</ref>
+              <date type="accessed">11.03.2022</date>
+            </xr>
+          </ref>
+        </etym>
+        <sense>
+          <sense>
+            <def>(meist) kugelförmiges Exkrement von (kleinen) Tieren und von Kindern; Kotkügelchen; Mistkugel; Mistballen; Rossapfel</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25163"/>
+          </sense>
+          <sense>
+            <sense>
+              <def>kleines (rundes/rundliches) Ding</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25284"/>
+            </sense>
+            <sense>
+              <def>kleine Kartoffel</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.1">wSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Kod
+                  <cit type="translation">
+                    <quote xml:lang="de">gerade</quote>
+                  </cit>söˡər
+                  <cit type="translation">
+                    <quote xml:lang="de">solche</quote>
+                  </cit>Gageˡ
+                </quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3b03">Thiersee</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25258"/>
+            </sense>
+            <sense>
+              <def>kleines Obst; kleiner Apfel</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.1">wSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25256"/>
+            </sense>
+            <sense>
+              <xr type="lemma" subtype="diminutive">
+                <lbl>nur</lbl>
+                <ref target="#Gagilein">Gagilein</ref>
+              </xr>
+              <usg>(Diminutiv, Plural)</usg>
+              <def>Tränen</def>
+              <usg>(kindersprachlich)</usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25255"/>
+            </sense>
+          </sense>
+          <sense>
+            <sense>
+              <def>kleine Figur</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25253"/>
+            </sense>
+            <sense>
+              <def>kleiner (zwergartiger) Mensch; Knirps</def>
+              <usg>[pejorativ]</usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25205"/>
+            </sense>
+            <sense>
+              <sense>
+                <xr type="lemma" subtype="diminutive">
+                  <lbl>nur</lbl>
+                  <ref target="#Gagerl">Gagerl</ref>
+                </xr>
+                <usg>(Diminutiv)</usg>
+                <def>kleines Mädchen</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25202"/>
+              </sense>
+              <sense>
+                <xr type="lemma">
+                  <lbl>nur</lbl>
+                  <ref target="#Gagel">Gagel</ref>
+                </xr>
+                <usg>(Plural)</usg>
+                <def>kleine Kinder</def>
+                <usg>(schimpfend; scherzhaft)</usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25201"/>
+              </sense>
+              <sense>
+                <def type="umschreibung">„Kosewort für ein zierliches, feingliedriges, übermütiges Kind“</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25197"/>
+              </sense>
+              <sense>
+                <def type="umschreibung">Anrede an ein Kind</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25195"/>
+              </sense>
+            </sense>
+          </sense>
+          <sense>
+            <def>Mensch, der dummes Zeug spricht und vorgibt, mehr zu wissen, als er weiß</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25170"/>
+          </sense>
+          <sense>
+            <xr type="lemma">
+              <lbl>nur</lbl>
+              <ref>Gagelein</ref>
+            </xr>
+            <usg>(Diminutiv, Plural)</usg>
+            <def>Kinderfrisur für die Frohnleichnamsprozession</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25169"/>
+          </sense>
+          <sense>
+            <def>Holz, nach dem beim Gageln (Kinderspiel) geschlagen wird</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25167"/>
+          </sense>
+          <sense>
+            <def>Frühlingszeitlose</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25168"/>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Angergagelein</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Art kleiner Birnen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25349"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Fefelgagel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def type="umschreibung">Bezeichnung für ein naives Kind</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25350"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Gänsegagel</orth>
+            <gramGrp>
+              <usg>(Plural)</usg>
+            </gramGrp>
+          </form>
+          <sense>
+            <sense>
+              <def>Nudeln mit Mangold</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25351"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Geißgagel</orth>
+          </form>
+          <form subtype="compound" type="lemma">
+            <orth>Geißegagel</orth>
+          </form>
+          <form subtype="compound" type="lemma">
+            <orth>Geißengagel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Ziegenkot</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25285"/>
+            </sense>
+            <sense>
+              <xr type="variant" subtype="compound">
+                <lbl>nur</lbl>
+                <ref>Geißgagler</ref>
+              </xr>
+              <usg>(Plural)</usg>
+              <def>kleine weiße, längliche Traubenart</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25328"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Hasengageln</orth>
+            <gramGrp>
+              <usg>(Plural)</usg>
+            </gramGrp>
+          </form>
+          <form subtype="compound" type="lemma">
+            <orth>Hasengagerlein</orth>
+            <gramGrp>
+              <usg>(Diminitiv, Plural)</usg>
+            </gramGrp>
+          </form>
+          <sense>
+            <sense>
+              <def type="umschreibung">Schimpfwort für unreife Burschen, die noch keinen Tabak rauchen sollten, oder auch für einen, der einen stinkenden Tabak raucht</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25353"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Hüterpurzigagel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Purzelbaum mit gekreuzten, von den Händen gehaltenen Beinen; Hüterbub-Purzelbaum</def>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Hundsgagel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Hundekot</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25286"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Kerschgagelein</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def>Haus- oder Zaungrasmücke; Sylvia curruca (Vogelart)</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25287"/>
+              </sense>
+              <sense>
+                <def>Gartengrasmücke; Sylvia hortensis (Vogelart)</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25345"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Märzengageln</orth>
+            <gramGrp>
+              <usg>(Plural)</usg>
+            </gramGrp>
+          </form>
+          <sense>
+            <sense>
+              <def>Sommersprossen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25355"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Mausgagel</orth>
+          </form>
+          <form subtype="compound" type="lemma">
+            <orth>Mausegagel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Mäusekot</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25288"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Pfitschegagel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Vulva</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25356"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Purzigagel</orth>
+          </form>
+          <form subtype="compound" type="lemma">
+            <orth>Purzegagel</orth>
+          </form>
+          <form subtype="compound" type="lemma">
+            <orth>Purzelgagel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Purzelbaum</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25289"/>
+            </sense>
+            <sense>
+              <sense>
+                <def>Frühlingskrokus; Crocus vernus; Crocus albiflorus</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25333"/>
+              </sense>
+              <sense>
+                <def>Frühlingssafran</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25334"/>
+              </sense>
+              <sense>
+                <def>Frühlings- und Herbstzeitlose</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25336"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Ratzengagel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Rattenkot</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25290"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Rossgagel</orth>
+          </form>
+          <form subtype="compound" type="lemma">
+            <orth>Rossegagel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Pferdekot; Pferdeapfel</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25292"/>
+            </sense>
+            <sense>
+              <sense>
+                <def>essbare Beerenfrucht auf niederen Sträuchern; Rossschwarze</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25326"/>
+              </sense>
+              <sense>
+                <def>Krähenbeere; Empetum nigrum</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25327"/>
+              </sense>
+            </sense>
+            <sense>
+              <def>Mehlprimel; Primula farinosa</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25325"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Schafgagel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Schafskot</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25293"/>
+            </sense>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="lemma">
+            <ref target="#Gagel">Gagel</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>die Gageln nicht wegbringen</orth>
+          </form>
+          <sense>
+            <def>an Verstopfung leiden</def>
+            <usg>(derb)</usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">di gǫ̆gl öt wökχpriŋ</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.4c01">Lüsen</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25166"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="variant" subtype="compound">
+            <ref>Geißgagel</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>Wo gehst du denn hin? - Abhin zum Inn, zwischen den Stauden Geißgagel zusammenklauben!</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Ausdruck, mit dem neugierige Kinder abgefertigt werden, wenn sie ältere fragen</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Wo geᵃhscht denn hin? -- O-i zun In, zwischn die Schtaudn Goᵃsgagl zoᵃm̄klaubn!</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m02">Fendels</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25329"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="variant" subtype="compound">
+            <ref>Purzigagel</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>(einen) Purzigagel/Purzigag(e)lein/Purzigagerl machen</orth>
+          </form>
+          <sense>
+            <def>einen Purzelbaum schlagen</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">ə purtsəgǭglə mǫχχə</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1n01">Imst</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Purzigagl måchn</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e06">Kufstein</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25335"/>
+          </sense>
+          <sense>
+            <xr type="variant" subtype="compound">
+              <lbl>nur</lbl>
+              <ref>einen Purzigagerl machen</ref>
+            </xr>
+            <def>Kopf stehen</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">a Pu̇schzigagei måchn</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3i03">Kitzbühel</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25338"/>
+          </sense>
+          <sense>
+            <def>sich überstürzen</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">purzigâgl machen</quote>
+              <ref type="bibl" target="#TirolerWb">Tiroler Wb.
+                <citedRange>122</citedRange>
+              </ref>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25337"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>In den Hachsen keine Flachsen / in den Schuhen kein Nagel / Darum der Purzigagel</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Spruch auf einem Marterl</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">In die Haxn
+                <cit type="translation">
+                  <quote xml:lang="de">Beinen</quote>
+                </cit>/ koᵃni Flaxn
+                <cit type="translation">
+                  <quote xml:lang="de">Sehnen</quote>
+                </cit>, / in die Schuᵃch koᵃn Nogl; / Drum der Purzigogl
+              </quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m02">Fendels</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25339"/>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>
