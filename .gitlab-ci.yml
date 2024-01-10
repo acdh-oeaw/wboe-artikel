@@ -23,7 +23,7 @@ filter-job:
     rm -rf 082_scripts_xsl
     rm -rf Datenlisten
     rm -rf 102_derived_tei/sample-TEI-ProtoArticles
-    rm -rf 102_derived_tei/retro/lieferung2[23456789]-*.xml
+    rm -rf 102_derived_tei/retro/lieferung2[3456789]-*.xml
     pushd 102_derived_tei/Artikel_Redaktionstool
     rm -f $(xmlstarlet sel -T -N t=http://www.tei-c.org/ns/1.0 -t -m '//t:listChange/t:change[last()][not(@status="proofed" or @status="finished")]' -f *.xml 2>/dev/null | sed 's~.xml~.xml ~g')
     popd
@@ -43,7 +43,7 @@ filter-job:
     rm -rf 082_scripts_xsl
     rm -rf Datenlisten
     rm -rf 102_derived_tei/sample-TEI-ProtoArticles
-    rm -rf 102_derived_tei/retro/lieferung2[23456789]-*.xml
+    rm -rf 102_derived_tei/retro/lieferung2[3456789]-*.xml
     pushd 102_derived_tei/Artikel_Redaktionstool
     rm -f $(xmlstarlet sel -T -N t=http://www.tei-c.org/ns/1.0 -t -m '//t:listChange/t:change[last()][not(@status="proofed" or @status="finished")]' -f *.xml 2>/dev/null | sed 's~.xml~.xml ~g')
     popd
