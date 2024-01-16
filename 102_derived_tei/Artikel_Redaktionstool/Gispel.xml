@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.8.3" ?>
+<?parser type="lioe" version="0.8.3" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gispel</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#PhS">Philipp Stöckle</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+          <name xml:id="MK">Markus Kunzmann</name>
+          <name xml:id="AK">Agnes Kim</name>
+          <name xml:id="IG">Ingeborg Geyer</name>
+          <name xml:id="MG">Manfred Glauninger</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2023-05-15" who="#PhS">Datensatz erstellt</change>
+        <change status="peer correction" when="2023-05-17" who="#PhS">Bedeutungen fertig</change>
+        <change status="internal correction" when="2023-06-19" who="#PhS">peer correction berücksichtigt</change>
+        <change status="internal correction" when="2023-12-01" who="#AG">LK eingefügt und formatiert</change>
+        <change status="external correction" when="2023-12-01" who="#PhS">internal correction berücksichtigt</change>
+        <change status="finished" when="2024-01-16" who="#PhS">external correction berücksichtigt</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Gispel">
+          <orth>Gispel</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c29274"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Maskulinum</gram>
+          <gram type="gender">Femininum</gram>
+        </gramGrp>
+        <form type="variant" subtype="diminutive" xml:id="Gispel">
+          <orth>Gispel</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <form type="variant" subtype="diminutive" xml:id="Gisperl">
+          <orth>Gisperl</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <note type="kommentar" resp="#AG">
+          <xr></xr>Der Stammvokal tritt im gesamten Verbreitungsgebiet als kurzes
+          <c>i</c>auf
+          <xr>
+            <ref>gįß̌pl̥</ref>
+            <ref>gįšbẹ</ref>
+          </xr>, in der Weststeiermark und im Pinzgau erscheint dieser auch mit Länge
+          <xr>
+            <ref>gīß̌pl̥</ref>
+            <ref>gīšbl̥</ref>
+          </xr>. Der anlautende Plosiv wird ebenfalls überall als Lenis realisiert
+          <xr>
+            <ref>gīß̌pl̥</ref>
+            <ref>gįšbų̈</ref>
+          </xr>. Regelhaft liegt im Untersuchungsgebiet inlautendes post-alveolares
+          <c>s</c>vor, im Südbairischen mit Fortis
+          <xr>
+            <ref>gįß̌pl̥</ref>
+          </xr>, im Mittelbairischen meist mit Lenis
+          <xr>
+            <ref>gīšbl̥</ref>
+            <ref>gišbų̈</ref>
+          </xr>, im Südmittelbairischen kommen beide Formen vor
+          <xr>
+            <ref>gįšbẹ</ref>
+            <ref>gįß̌pų̈</ref>
+          </xr>. Damit gehen beim Wort
+          <c>Gispel</c>die post-alveolaren
+          <c>s</c>-Formen vor Plosiv im Inlaut weit über die übliche Oberkärnten-Pinzgau-Grenze hinaus Richtung Osten. Der Vokal der Nebensilbe wurde ebenfalls synkopiert, wobei das
+          <c>l</c>im Südbairischen und auch teilweise im östlichen Nordtirol silbisch wurde
+          <xr>
+            <ref>gįß̌pl̥</ref>
+          </xr>. Ansonsten weist das Südmittel- und Mittelbairische Vokalisierung des Liquids auf. Der dadurch entstandene vokalische Auslaut hat jedoch unterschiedliche Qualitäten angenommen: geschlossene bzw. halbgeschlossene
+          <c>e</c>-Laute im Pinzgau und Pongau sowie im Innviertel
+          <xr>
+            <ref>gįšbė</ref>
+            <ref>gįšbẹ</ref>
+          </xr>,
+          <c>e</c>-Schwa in Wien
+          <xr>
+            <ref>gįšbə</ref>
+          </xr>, gerundete Mittelzungenvokale im Flachgau, im Hausruckviertel und im Mühlviertel
+          <xr>
+            <ref>gįšbǫ̈</ref>
+          </xr>sowie gerundete Hochzungenvokale in der mittelbairischen Obersteiermark, im Most- und Weinviertel
+          <xr>
+            <ref>gįß̌pų̈</ref>
+            <ref>gįšbų̈</ref>
+          </xr>. Diphthongische Formen sind vereinzelt im Industrieviertel
+          <xr></xr>belegt
+          <xr>
+            <ref>gįšbųį</ref>
+          </xr>.
+        </note>
+        <etym>
+          <seg type="desc">Die Herkunft des Wortes ist nicht eindeutig geklärt, vermutet wird eine Verwandtschaft mit</seg>
+          <cit type="etymon">
+            <form>
+              <orth>Gaspel</orth>
+            </form>
+            <def>Unruhe; Aufregung</def>
+          </cit>
+          <seg type="desc">sowie</seg>
+          <cit type="etymon">
+            <def>flüchtiger, oberflächlicher Mensch</def>
+          </cit>
+          <seg type="desc">bzw.</seg>
+          <cit type="etymon">
+            <def>unbesonnener, gedankenloser Mensch</def>
+          </cit>
+          <ref type="bibl" target="#SchweizerischesId1885II">
+            <lbl>vgl.</lbl>Schweizerisches Id. 1885 II
+            <citedRange>482</citedRange>
+          </ref>
+          <ref type="bibl" target="#KärntischesWb1862">
+            <lbl>vgl.</lbl>Kärntisches Wb. 1862
+            <citedRange>114</citedRange>
+          </ref>
+          <seg type="desc">. Das bedeutungsähnliche</seg>
+          <cit type="etymon">
+            <form>
+              <orth>Hispel</orth>
+            </form>
+            <form>
+              <orth>Haspel</orth>
+            </form>
+            <def>alberner Mensch</def>
+          </cit>
+          <seg type="desc">
+            <ref type="bibl" target="#Schmeller1872I">
+              <lbl>vgl.</lbl>Schmeller 1872 I
+              <citedRange>1185</citedRange>
+            </ref>legt zudem die Möglichkeit einer lautmalerischen Umgestaltung nahe
+          </seg>
+          <seg type="desc">
+            <ref type="bibl" subtype="online">
+              <lbl>vgl.</lbl>DWB online
+              <xr type="lemma">
+                <ref>Gispel</ref>
+                <date type="accessed">17.05.2023</date>
+              </xr>
+            </ref>
+          </seg>
+          <seg type="desc">.</seg>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <def>einfältige, dumme Person</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">ɒ rechtɒ gīšpl</quote>
+                <ref type="bibl" target="#WeststeirischesWb1987">
+                  <?comment Seitenzahl prüfen ?>
+                  Weststeirisches Wb. 1987
+                
+                  <citedRange>159</citedRange>
+                </ref>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c36154"/>
+            </sense>
+            <sense>
+              <def>unbesonnene, unbedachte, unachtsame Person</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Na, so a Gispl</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.1h04">Meran</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c36151"/>
+            </sense>
+            <sense>
+              <def>unvernünftige, alberne, närrische, freche Person</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">dös is a rechts Gischbei</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.3c02">Bad Gastein</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c36152"/>
+            </sense>
+            <sense>
+              <def type="umschreibung">Scheltwort für eine unachtsame, tölpelhafte oder einfältige Person</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">du bist a rechter Gischperl so was tuat ma do nöt!</quote>
+                <ref type="bibl" target="#SalzburgerWb1995">
+                  <?comment Seitenzahl prüfen ?>
+                  Salzburger Wb. 1995
+                
+                  <citedRange>69</citedRange>
+                </ref>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c36153"/>
+            </sense>
+          </sense>
+          <sense>
+            <lbl>nur</lbl>
+            <xr type="lemma" subtype="diminutive">
+              <ref target="#Gisperl">Gisperl</ref>
+            </xr>
+            <usg>(Diminutiv)</usg>
+            <def>feine Zugluft, die sogar durch kleine Öffnungen wie Schlüssellöcher noch zu spüren ist</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">S' gischperl heisst die feine Zugluft, die selbst durch Schlüssellöcher pfeift und anbläst</quote>
+              <ref type="bibl" target="#TirolischesId1866">Tirolisches Id. 1866
+                <citedRange>191</citedRange>
+              </ref>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c36157"/>
+          </sense>
+        </sense>
+      </entry>
+    </body>
+  </text>
+</TEI>
