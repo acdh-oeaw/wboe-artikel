@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.8.3" ?>
+<?parser type="lioe" version="0.8.3" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gerte</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#PZ">Patrick Zeitlhuber</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+          <name xml:id="MK">Markus Kunzmann</name>
+          <name xml:id="AK">Agnes Kim</name>
+          <name xml:id="IG">Ingeborg Geyer</name>
+          <name xml:id="MG">Manfred Glauninger</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2022-06-28" who="#PZ">Etymologie eingegeben</change>
+        <change status="in progress" when="2022-06-30" who="#PZ">Wortbildungen eingegeben</change>
+        <change status="in progress" when="2022-07-01" who="#PZ">Simplizia eingegeben</change>
+        <change status="peer correction" when="2022-07-04" who="#PZ">Dim. ergänzt</change>
+        <change status="peer correction" when="2022-11-17" who="#PZ">Anm. EW eingearbeitet</change>
+        <change status="internal correction" when="2023-01-31" who="#PZ">LK eingefügt</change>
+        <change status="internal correction" when="2023-05-22" who="#PZ">'Taschentuch'-Belege zu Gate</change>
+        <change status="external correction" when="2023-05-22" who="#PZ">Anm MMG eingearbeitet</change>
+        <change status="external correction" when="2023-12-14" who="#AK">exportiert und in externe Korrektur gelegt</change>
+        <change status="finished" when="2024-01-18" who="#AK">keine Anmerkungen von JE</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Gerte">
+          <orth>Gerte</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c27160"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Femininum</gram>
+        </gramGrp>
+        <form type="variant" subtype="diminutive" xml:id="Gertel">
+          <orth>Gertel</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p7">Bgl.</placeName>
+        </usg>
+        <note type="kommentar" resp="#DG">Dieses Lexem setzt zwei historische Parallelformen fort. Im Süd- und Südmittelbairischen finden sich eher, aber nicht nur, Stammvokale, die auf den Primärumlaut mhd.
+          <c>e</c>zurückgehen. Hier sind kurze geschlossene
+          <c>e</c>belegt
+          <xr>
+            <ref>gẹrtə</ref>
+            <ref>gẹrß̌tə</ref>
+          </xr>, die mitunter gedehnt
+          <xr>
+            <ref>gẹ̄šdn̥</ref>
+            <ref>gẹ̄xdn̥</ref>
+          </xr>, im westlichen Südbairischen zu
+          <c>ei</c>diphthongiert
+          <xr>
+            <ref>gẹirtə</ref>
+            <ref>gẹiß̌tə</ref>
+          </xr>und vor
+          <c>r</c>zu
+          <c>ö</c>bzw.
+          <c>öi</c>gerundet worden sein können
+          <xr>
+            <ref>görtə</ref>
+            <ref>gȫšdn̥</ref>
+            <ref>göirtə</ref>
+          </xr>. Daneben finden sich aufgrund des folgenden, teils historischen,
+          <c>r</c>zu
+          <c>i</c>gehobene
+          <xr>
+            <ref>girtn̥</ref>
+            <ref>giɒß̌tn̥</ref>
+          </xr>bzw. mit Einschub eines Gleitlautes zu offenem
+          <c>e</c>gesenkte Monophthonge
+          <xr>
+            <ref>gęɒß̌tn̥</ref>
+          </xr>. Im Mittelbairischen herrschen dagegen Stammvokale vor, die aus dem mhd. Sekundärumlaut
+          <c>ä</c>hervorgegangen sind und zu kurzen hellen
+          <c>a</c>geöffnet wurden
+          <xr>
+            <ref>gartə</ref>
+            <ref>gaß̌tn̥</ref>
+            <ref>gaχtn̥</ref>
+            <ref>gatn̥</ref>
+          </xr>. Auch sie können gedehnt worden sein
+          <xr>
+            <ref>gāšdn̥</ref>
+            <ref>gāxdn̥</ref>
+            <ref>gādn̥</ref>
+          </xr>. Die Entwicklung des Liquids
+          <c>r</c>vor
+          <c>t</c>ist sehr vielfältig. Als solcher erhalten ist er teilweise im Südbairischen
+          <xr>
+            <ref>gẹrtə</ref>
+            <ref>girtə</ref>
+            <ref>gartə</ref>
+          </xr>. Je nach historischer Qualität des Liquids wurde über große Teile des Untersuchungsgebiet hinweg ein postalveolarer Sibilant oder ein velarer Frikativ eingeschoben, wobei der Liquid selbst meist geschwunden ist
+          <xr>
+            <ref>gẹrß̌tə</ref>
+            <ref>gaß̌tn̥</ref>
+            <ref>gaχtn̥</ref>
+          </xr>. Schwund ohne Einschub ist meist im Mittelbairischen belegt
+          <xr>
+            <ref>gatn̥</ref>
+            <ref>gan̥</ref>
+          </xr>. Hier ist zudem der Plosiv
+          <c>t</c>vor
+          <c>n</c>häufiger ausgefallen
+          <xr>
+            <ref>gaß̌n̥</ref>
+            <ref>gan̥</ref>
+          </xr>. Ein auslautender Vokal ist noch im Südbairischen mitunter bewahrt
+          <xr>
+            <ref>gẹrtə</ref>
+            <ref>gẹß̌tə</ref>
+            <ref>gaχtə</ref>
+          </xr>, im Süd- und Südmittelbairischen aber öfter apokopiert worden
+          <xr>
+            <ref>gẹrt</ref>
+            <ref>gaß̌t</ref>
+          </xr>. Selten im Südbairischen, aber meist im Süd- und Südmittelbairischen ist die
+          <c>n</c>-haltige Endung aus den obliquen Kasus übernommen worden
+          <xr>
+            <ref>gẹrtn̥</ref>
+            <ref>gaß̌tn̥</ref>
+            <ref>gaχtn̥</ref>
+            <ref>gatn̥</ref>
+            <ref>gan̥</ref>
+          </xr>.
+        </note>
+        <etym>
+          <cit type="etymon">
+            <lang>ahd.</lang>
+            <form>
+              <orth>gerta</orth>
+            </form>
+          </cit>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>gerte</orth>
+            </form>
+          </cit>
+          <seg type="desc">; feminine Ableitung zu</seg>
+          <cit type="etymon">
+            <lang>ahd., mhd.</lang>
+            <form>
+              <orth>gart</orth>
+            </form>
+            <def>Stachel, Treibstecken</def>
+          </cit>
+          <ref type="bibl" subtype="online">Pfeifer online
+            <xr type="lemma">
+              <ref>Gerte</ref>
+              <date type="accessed">28.06.2022</date>
+            </xr>
+          </ref>
+        </etym>
+        <sense>
+          <sense>
+            <def>Zweig; Stecken; Rute; gerader Schössling (von der Weide, Hasel, Birke usw.)</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p4.4">Tenneng.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p7.1">NBgl.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p7.3">SBgl.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">a hăslanö Gaschd</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3f02">Hopfgarten im Brixental</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">ɒ̱us Ga̱tn miᵈ an Grănz iwᵃflåchtn is da Kårė̄b
+                <cit type="translation">
+                  <quote xml:lang="de">Aus Gerten mit einem Kranz überflochten ist der Korb.</quote>
+                </cit>
+              </quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3a01">Ebensee</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c27517"/>
+            <sense>
+              <usg>nur Plural</usg>
+              <def>Zweige zum Dachdecken mit Stroh</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c27519"/>
+            </sense>
+            <sense>
+              <def>Zweig oder Brett als Querstück bei einem Zaun</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Zauⁿbam, foⁿ den måchns dö Giaschtn . Dö Giaschtn̄ weʳn zåmkloᵇm un nåcha̯ weʳn di Zauⁿstekʰn gmåcht dąfoⁿ. Dö gråossn Giaschtn oᵇm driwą.</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.2c01">Fusch an der Großglocknerstraße</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c27520"/>
+            </sense>
+            <sense>
+              <def>Stab zum Fortschleudern der brennenden Harzscheibe beim Scheibenschlagen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.1">wSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c27521"/>
+            </sense>
+            <sense>
+              <def>Angelrute</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c27522"/>
+            </sense>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Bandgerte</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Getreidestroh zum Binden (z. B. von Weinreben)</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.1">NBgl.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.2">MBgl.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c27471"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Bindgerte</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def>langer Zweig, der beim Decken eines Strohdachs verwendet wird, um First und Ecken zu befestigen</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c27493 "/>
+              </sense>
+              <sense>
+                <def>Zweig oder Brett als Querstück bei einem Zaun</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c27494"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Dorngerte</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Ranke von einem wilden Rosenstrauch</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">dén sö⁽ˡ⁾t maⁿ a mit oana Doʳngattn d'Hitz ausdrei(b)m</quote>
+                <cit type="translation">
+                  <quote xml:lang="de">Dem sollte man auch mit einer Dorngerte die Hitze (= sexuelle Erregung) austreiben</quote>
+                </cit>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4d18">Poysdorf</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c27466"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Ettergerte</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Zweig oder Brett zum Verbinden der Zaunstecken</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c27486"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Fischgerte</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Angelrute</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">a Fis̄ch-Gartn, dö sö laicht böogt!</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c27459"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Geiselgerte</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Peitschenstiel</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c27468"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Leimgerte</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def>Leimspindel</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c27491"/>
+              </sense>
+              <sense>
+                <def>Rute, die zum Fangen von Vögeln mit Leim bestrichen wird</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c27469 "/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Reißgerte</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Holzstab, der das Korn am Mühlstein zerteilt</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c27472"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Rebgerte</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>(getrocknete) Rebe</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c27473"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Rotgerte</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>roter Hartriegel; Cornus sanguinea</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c27474"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Schlinggerte</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def>Hartriegel</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c27481 "/>
+              </sense>
+              <sense>
+                <def>Weide</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c27490"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Wünschelgerte</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Wünschelrute</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c27484"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Zaungerte</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Zweig oder Brett zum Verbinden der Zaunstecken (aus Fichte)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c27485"/>
+            </sense>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>
