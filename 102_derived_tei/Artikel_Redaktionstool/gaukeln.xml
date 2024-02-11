@@ -1,0 +1,882 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.8.3" ?>
+<?parser type="lioe" version="0.8.3" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>gaukeln</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#SW">Sabine Wahl</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+          <name xml:id="MK">Markus Kunzmann</name>
+          <name xml:id="AK">Agnes Kim</name>
+          <name xml:id="IG">Ingeborg Geyer</name>
+          <name xml:id="MG">Manfred Glauninger</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2023-04-26" who="#SW">Datensatz erstellt</change>
+        <change status="peer correction" when="2023-04-26" who="#SW">V1</change>
+        <change status="internal correction" when="2023-10-19" who="#SW">V2</change>
+        <change status="internal correction" when="2023-12-21" who="#AG">LK eingefügt und formatiert</change>
+        <change status="internal correction" when="2024-01-22" who="#AG">LK-Anmerkungen MG eingearbeitet</change>
+        <change status="external correction" when="2024-01-23" who="#SW">V3</change>
+        <change status="finished" when="2024-02-09" who="#SW">online</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="gaukeln">
+          <orth>gaukeln</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c26171"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Verb</gram>
+          <iType>schwach</iType>
+        </gramGrp>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p7.1">NBgl.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p7.2">MBgl.</placeName>
+        </usg>
+        <note type="kommentar" resp="#IG">
+          <xr></xr>Der auf mhd. -
+          <c>ou</c>zurückgehende Stammvokal wird in Verbindung mit dem nachfolgenden velaren Plosiv lautgesetzlich im Südbairischen als Diphthong
+          <c>au</c>
+          <xr>
+            <ref>gaųkl̥n</ref>
+            <ref>gaųglen</ref>
+            <ref>kaųŋkl̥n</ref>
+          </xr>, im westlichen Nordtirol als
+          <c>ou</c>
+          <xr>
+            <ref>gǫųklən</ref>
+            <ref>gǫųklə</ref>
+          </xr>und im Mittelbairischen mit weiter geöffnetem Zweitglied als
+          <c>ao</c>
+          <xr>
+            <ref>gaǫkl̥n</ref>
+            <ref>gaǫgl̥n</ref>
+            <ref>kaǫgl̥n</ref>
+          </xr>realisiert. Vereinzelt sind umgelautete Formen im westlichen Nordtirol als
+          <c>öi</c>
+          <xr>
+            <ref>gǫ̈įgəlɒ</ref>
+            <ref>gǫ̈įkələ</ref>
+          </xr>, im Lechtal als
+          <c>ai</c>und im Mittelbairischen weiter geöffnet und gedehnt als
+          <c>āe</c>belegt
+          <xr>
+            <ref>gaįkələ</ref>
+            <ref>gāękl̥n</ref>
+            <ref>gāęgl̥n</ref>
+          </xr>, die in Wien und Umgebung zu einer offeneren, monophthongischen Aussprache tendieren
+          <xr>
+            <ref>gǟęgl̥n</ref>
+          </xr>. Im Südtiroler Pustertal wird der Stammvokal als gelängter Monophthong
+          <c>ā</c>
+          <xr>
+            <ref>kākl̥</ref>
+          </xr>realisiert. Der anlautende velare Plosiv tritt überall als Lenis auf
+          <xr>
+            <ref>gaųkl̥n</ref>
+            <ref>gaųglen</ref>
+            <ref>gǫųklən</ref>
+            <ref>gǫųklə</ref>
+            <ref>gaǫkl̥n</ref>
+            <ref>gǫ̈įgəlɒ</ref>
+            <ref>gǫ̈įkələ</ref>
+            <ref>gāękl̥n</ref>
+            <ref>gaįkələ</ref>
+            <ref>gāęgl̥n</ref>
+            <ref>gǟęgl̥n</ref>
+            <ref>gaǫkön</ref>
+          </xr>, kommt im Südtiroler Pustertal und im westlichen Nordtirol aber selten auch als unaspirierte Fortis vor
+          <xr>
+            <ref>kākl̥, kaųŋkl̥n, kaųŋkl̥ə</ref>
+            <ref>kaųŋkl̥n</ref>
+            <ref>kaųŋkl̥ə</ref>
+          </xr>. Der inlautende Plosiv ist meist als eine unaffrizierte Fortis
+          <xr>
+            <ref>gaųkl̥n</ref>
+            <ref>gǫųklən</ref>
+            <ref>gǫųklə</ref>
+            <ref>kaųŋkl̥n</ref>
+            <ref>gaǫkl̥n</ref>
+            <ref>gaįkələ</ref>
+            <ref>gǫ̈įkələ</ref>
+            <ref>kākl̥</ref>
+          </xr>belegt, im westlichen Südbairisch und in Wien auch als unaspirierte Lenis
+          <xr>
+            <ref>gǫ̈įgəlɒ</ref>
+            <ref>gaųglen</ref>
+            <ref>gǟęgl̥n</ref>
+          </xr>. Im westlichen Nordtirol finden sich mitunter Formen mit Nasaleinschub
+          <xr>
+            <ref>kaųŋkl̥n</ref>
+            <ref>kaųŋkl̥ə</ref>
+          </xr>. Beim Suffix -
+          <c>elen</c>wurde der Vokal der zweiten Silbe meist getilgt, wodurch der Liquid silbisch wurde
+          <xr>
+            <ref>gaųkl̥n</ref>
+            <ref>kaųŋkl̥n</ref>
+            <ref>gaǫkl̥n</ref>
+            <ref>gāęgl̥n</ref>
+            <ref>gǟęgl̥n</ref>
+            <ref>gāękl̥n</ref>
+          </xr>. In der mittelbairischen Obersteiermark, im nördlichen oberen Innviertel, Mühlviertel, Hausruckviertel, Traunviertel, Mostviertel und im nördlichen Waldviertel konnte der Liquid weiters vokalisiert werden
+          <xr>
+            <ref>gaǫkǫ̈n</ref>
+          </xr>. Daneben finden sich im westlichen Südbairischen Formen mit Tilgung des ersten Vokals und Erhalt des auslautenden -
+          <c>len</c>
+          <xr>
+            <ref>gaų̨glən</ref>
+            <ref>gǫųklən</ref>
+          </xr>neben Abfall des -n
+          <xr>
+            <ref>gǫųklə</ref>
+            <ref>kaųŋkl̥ə</ref>
+          </xr>. Im Oberinntal sind außerdem noch dreisilbige Formen belegt, wobei der auslautende Nasal ebenfalls abfiel
+          <xr>
+            <ref>gǫ̈įgəlɒ</ref>
+            <ref>gǫ̈įkələ</ref>
+            <ref>gaįkələ</ref>
+          </xr>. Im Südtiroler Pustertal wurde das Suffix weiter apokopiert und auslautendes
+          <c>l</c>silbisch
+          <xr>
+            <ref>kākl̥</ref>
+          </xr>.
+        </note>
+        <etym>
+          <cit type="etymon">
+            <lang>ahd.</lang>
+            <form>
+              <orth>gougalōn</orth>
+            </form>
+            <def>wahrsagen; weissagen</def>
+          </cit>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>goukeln</orth>
+            </form>
+            <form>
+              <orth>gougeln</orth>
+            </form>
+            <def>Zauberei, Gaukelpossen oder Taschenspielerei treiben</def>
+          </cit>
+          <seg type="desc">; wahrscheinlich verwandte Formen sind</seg>
+          <cit type="etymon">
+            <lang>ahd.</lang>
+            <form>
+              <orth>gougarōn</orth>
+            </form>
+            <def>umherziehen, -streifen, -schweifen; sich (müßig) herumtreiben; Müßiggang treiben; Muße haben; keine Beschäftigung haben</def>
+          </cit>
+          <seg type="desc">, in Wendungen auch</seg>
+          <cit type="etymon">
+            <form>
+              <orth>rahhôm, sprâhhom gougarôn</orth>
+            </form>
+            <def>geschwätzig daherreden; schwätzen</def>
+          </cit>
+          <seg type="desc">, sowie</seg>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>gougern</orth>
+            </form>
+            <def>umherschweifen</def>
+          </cit>
+          <seg type="desc">und</seg>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>gogern</orth>
+            </form>
+            <form>
+              <orth>gogelen</orth>
+            </form>
+            <def>sich ausgelassen gebärden; hin und her gaukeln; flattern</def>
+          </cit>
+          <ref type="bibl" subtype="online">
+            <lbl>vgl.</lbl>AWB online
+            <xr type="lemma">
+              <ref>gougalōn, gougarōn</ref>
+              <date type="accessed">26.04.2023</date>
+            </xr>
+          </ref>
+          <ref type="bibl" subtype="online">
+            <lbl>vgl.</lbl>Lexer online
+            <xr type="lemma">
+              <ref>gougeln, goukeln, gougern, gogern, gogelen</ref>
+              <date type="accessed">26.04.2023</date>
+            </xr>
+          </ref>
+          <ref type="bibl" subtype="online">
+            <lbl>vgl.</lbl>Pfeifer online
+            <xr type="lemma">
+              <ref>gaukeln</ref>
+              <date type="accessed">26.04.2023</date>
+            </xr>
+          </ref>
+          <seg type="desc">; siehe auch</seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref target="gageln.xml#gageln">gageln</ref>
+            </xr>
+          </cit>
+          <seg type="desc">und</seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref target="geigeln.xml#geigeln">geigeln</ref>
+            </xr>
+          </cit>
+        </etym>
+        <sense>
+          <sense>
+            <def>zaubern; Possen vorspielen; Taschenspielerkunststücke vorführen; „ein Teufelswerk vorspiegeln“</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35374"/>
+          </sense>
+          <sense>
+            <sense>
+              <def>herumschlendern</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35384"/>
+            </sense>
+            <sense>
+              <def>Zeit vertrödeln; (bei der Arbeit) trödeln; sich zwecklos beschäftigen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35377"/>
+            </sense>
+          </sense>
+          <sense>
+            <sense>
+              <def>herumtollen; (unvorsichtig, lebhaft) herumspringen, herumlaufen; sich zu lebhaft bewegen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35392"/>
+            </sense>
+            <sense>
+              <def>hin- und herbewegen; schwanken; wiegen; wackeln; taumeln; torkeln; straucheln; stolpern</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.1">NBgl.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">der Kasten tut gauggeln</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.2d02">Reichenau</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Schauts, wiara gauglt!</quote>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35351"/>
+            </sense>
+            <sense>
+              <def>fallen; sich beim Fallen überschlagen; herumpurzeln</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35386"/>
+            </sense>
+            <sense>
+              <def>Arme/Beine (unkontrolliert, zwecklos) bewegen, baumeln; strampeln</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.1">wSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">di fiəss gauggln lassn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.1h04">Meran</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35383"/>
+            </sense>
+            <sense>
+              <def>(unter viel Geschwätz) gestikulieren; herumfuchteln</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">vor die Augn gauköln</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2b18">Lambach</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35380"/>
+            </sense>
+            <sense>
+              <def>sich unruhig bewegend arbeiten</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35390"/>
+            </sense>
+            <sense>
+              <def>sich lebhaft mühen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35391"/>
+            </sense>
+            <sense>
+              <def>ziel- und planlos den Pferdezügel handhaben</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35379"/>
+            </sense>
+            <sense>
+              <def>mit schlechter Säge oder stumpfem Messer mühsam sägen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35382"/>
+            </sense>
+          </sense>
+          <sense>
+            <def>unruhig sein</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35381"/>
+          </sense>
+          <sense>
+            <def>erschrecken</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">du ho̩sb mė o̩wɒ gaǫgʟd!</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1i06">Waidhofen an der Ybbs</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35373"/>
+          </sense>
+          <sense>
+            <def>ein bestimmtes Kartenspiel spielen</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35372"/>
+          </sense>
+          <sense>
+            <def>betteln</def>
+            <usg>(gaunersprachlich)</usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35375"/>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>abgaukeln</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>einen Drachen zum Hin- und Herschwanken und Abstürzen bringen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Kummt's, tan ma eahm 'n Rafflr
+                  <cit type="translation">
+                    <quote xml:lang="de">Räffler</quote>
+                  </cit>åᵇ-geigln!
+                </quote>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35352"/>
+            </sense>
+            <sense>
+              <def>abwetzen der Kleidung (z. B. beim Radfahren)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35369"/>
+            </sense>
+            <sense>
+              <def>stehlen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Dės- Bissl- wås- mă gwå̄gsⁿ- is- håums- mă- nåuⁿ- å̄gęigld</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5w06">Mauer</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35370"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>begaukeln</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>betrügen; etwas vorlügen</def>
+              <usg>(gaunersprachlich)</usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35353"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>buttergaukeln</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>sich wälzen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35354"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>fortgaukeln</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>wegtorkeln</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">fortgauklt is a mid san Schwüˡ
+                  <cit type="translation">
+                    <quote xml:lang="de">kleiner Rausch</quote>
+                  </cit>
+                </quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35355"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>umeinandgaukeln</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>(schnell) hin- und herbewegen; torkeln; schwanken</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">da Bliz gauklt umanąⁿd</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">dę̄ gauklt oöwaö ö da Fremd [...] uməranąⁿd</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35358"/>
+            </sense>
+            <sense>
+              <def>unruhige Bewegungen mit den Armen machen, die eine andere Person stören</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35360"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>umgaukeln</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>(ausgelassen, übermütig, unvorsichtig) herumspringen, herumlaufen, herumtollen; herumtorkeln</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">miəʳ hąm umgaiggld</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1c07">Mühlheim am Inn</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">dö Buəm gaukölnd daust um</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35356"/>
+            </sense>
+            <sense>
+              <def>unruhige Bewegungen mit den Armen machen, die eine andere Person stören</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35357"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>umhergaukeln</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Arme/Beine hin- und herbewegen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35361"/>
+            </sense>
+            <sense>
+              <def>herumspielen; sich nutzlos beschäftigen; Zeit vertun</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">sou umχəgöigɒlɒ</quote>
+                <ref type="bibl" target="#Insam1954">Insam 1954
+                  <citedRange>83</citedRange>
+                </ref>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m10">Serfaus</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35362"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>vergaukeln</orth>
+          </form>
+          <sense>
+            <sense>
+              <xr type="variant" subtype="compound">
+                <lbl>nur</lbl>
+                <ref>sich vergaukeln</ref>
+              </xr>
+              <usg>(reflexiv)</usg>
+              <def>sich durch Übereilung Schaden zufügen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35363"/>
+            </sense>
+            <sense>
+              <def>irren</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35364"/>
+            </sense>
+            <sense>
+              <def>verzaubern</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">A Kind fagaukln</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.5h07">Hartberg</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35365"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>vorgaukeln</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>jemandem etwas vormachen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">wem wås fuəʳgåᵘkl̥n̥</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5r01">Gersthof</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35367"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>zusammengaukeln</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>etwas durch Hin- und Herbewegen verderben</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">wǫs dsåmgœg͜ln</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4f18">Spannberg</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35368"/>
+            </sense>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Falltag gaukeln</orth>
+          </form>
+          <sense>
+            <def>Dummheiten machen</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Fålltåg gauggl</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.3c08">Stainz</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35371"/>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.8.3" ?>
+<?parser type="lioe" version="0.8.3" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>gaustern</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#SW">Sabine Wahl</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+          <name xml:id="MK">Markus Kunzmann</name>
+          <name xml:id="AK">Agnes Kim</name>
+          <name xml:id="IG">Ingeborg Geyer</name>
+          <name xml:id="MG">Manfred Glauninger</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2023-03-08" who="#SW">Datensatz erstellt</change>
+        <change status="peer correction" when="2023-03-10" who="#SW">V1</change>
+        <change status="peer correction" when="2023-09-21" who="#PZ">LK eingefügt</change>
+        <change status="internal correction" when="2023-10-11" who="#SW">V2</change>
+        <change status="internal correction" when="2024-01-24" who="#AG">LK-Anmerkungen eingearbeitet</change>
+        <change status="external correction" when="2024-01-24" who="#SW">V3</change>
+        <change status="finished" when="2024-02-09" who="#SW">online</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="gaustern">
+          <orth>gaustern</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c25984"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Verb</gram>
+          <iType>schwach</iType>
+        </gramGrp>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <note type="kommentar" resp="#IG">Der etymologisch unklare Diphthong kommt im Verbreitungsgebiet als
+          <c>au</c>mit weiter geöffnetem Zweitglied vor
+          <xr>
+            <ref>gaǫßtɒrn</ref>
+            <ref>kaǫßtɒrn</ref>
+            <ref>gaǫsdɒn</ref>
+          </xr>, ostmittelbairisch und in der Oststeiermark auch mit gedehntem Erstglied
+          <xr>
+            <ref>gāǫsdɒn</ref>
+          </xr>. Im Zillertal ist er umgelautet
+          <xr>
+            <ref>-gaiß̌tɒŋ</ref>
+          </xr>und in Mittelkärnten als offener Monophthong
+          <c>å</c>vor postalveolarem stimmlosem Frikativ
+          <xr>
+            <ref>gåšdɒrn</ref>
+          </xr>belegt. Der anlautende Plosiv ist überall als Lenis
+          <xr>
+            <ref>gāǫsdɒrn</ref>
+            <ref>gaosdɒn</ref>
+          </xr>, ostmittelbairisch vereinzelt auch als nicht aspirierter velarer Plosiv dokumentiert
+          <xr>
+            <ref>kāǫkāǫsdɒn</ref>
+          </xr>. Der inlautende Sibilant wird im gesamten Verbreitungsgebiet alveolar realisiert
+          <xr>
+            <ref>gaǫßtɒrn</ref>
+            <ref>kaoßtɒrn</ref>
+            <ref>gāǫsdɒrn</ref>
+          </xr>, im oberen Mühlviertel, dem Hausruckviertel und Mostviertel vereinzelt lenisiert
+          <xr>
+            <ref>gaǫsdɒn</ref>
+          </xr>, in Mittelkärnten und im Zillertal aber als postalveolarer stimmloser Frikativ ausgesprochen
+          <xr>
+            <ref>gåštɒrn</ref>
+            <ref>-gaiß̌tɒŋ</ref>
+          </xr>.
+Beim Suffix -
+          <c>eren</c>ist im gesamten Verbreitungsgebiet der Vokal der letzen Silbe geschwunden, der erste wurde zu
+          <c>a</c>-Schwa abgeschwächt. Im Südbairischen sowie im westlichen Südmittelbairischen blieb der postvokalische Liquid häufig erhalten
+          <xr>
+            <ref>gaǫßtɒrn</ref>
+            <ref>kaoßtɒrn</ref>
+            <ref>gāoßtɒrn</ref>
+            <ref>gåštɒrn</ref>
+          </xr>, im Mittelbairischen wurde er getilgt
+          <xr>
+            <ref>gaǫsdɒn</ref>
+            <ref>kāǫßtɒn</ref>
+          </xr>und infolge von partieller Assimilation an ein historisches uvulares
+          <c>r</c>wurde im Zillertal der auslautende Nasal velarisiert
+          <xr>
+            <ref>-gaiß̌tɒŋ</ref>
+          </xr>.
+        </note>
+        <etym>
+          <cit type="etymon">
+            <form>
+              <orth>gaustern</orth>
+            </form>
+          </cit>
+          <seg type="desc">wird mit verschiedenen Wörtern in Verbindung gebracht: mit</seg>
+          <cit type="etymon">
+            <form>
+              <orth>jausten</orth>
+            </form>
+            <def>von überstürzender Eile bei der Arbeit sein; besonders andere unablässig zur Arbeit antreiben; hastig, gierig drauf los, den anderen vorweg essen</def>
+          </cit>
+          <seg type="desc">, mit</seg>
+          <cit type="etymon">
+            <form>
+              <orth>galstern</orth>
+            </form>
+            <def>zaubern; grell schallen, schreien</def>
+          </cit>
+          <seg type="desc">, mit</seg>
+          <cit type="etymon">
+            <form>
+              <orth>gausen</orth>
+            </form>
+            <def>ungereimt schwatzen, besonders zum Nachteil einer anderen Person</def>
+          </cit>
+          <seg type="desc">und mit</seg>
+          <cit type="etymon">
+            <form>
+              <orth>zaustern</orth>
+            </form>
+            <def>viel und laut, aber undeutlich reden; durcheinander sprechen; miteinander streiten</def>
+          </cit>
+          <seg type="desc">; möglicherweise besteht auch eine Verbindung zu</seg>
+          <cit type="etymon">
+            <lang>nndl.</lang>
+            <form>
+              <orth>gauw</orth>
+            </form>
+            <def>schnell</def>
+          </cit>
+          <ref type="bibl" subtype="online">
+            <lbl>vgl.</lbl>DWB online
+            <xr type="lemma">
+              <ref>galstern; gausen; zaustern</ref>
+              <date type="accessed">10.03.2023</date>
+            </xr>
+          </ref>
+          <ref type="bibl" subtype="online">
+            <lbl>vgl.</lbl>Schweizerisches Idiotikon online
+            <xr type="lemma">
+              <ref>jausten</ref>
+              <date type="accessed">10.03.2023</date>
+            </xr>
+          </ref>
+          <ref type="bibl" subtype="online">
+            <?comment https://etymologiebank.nl/trefwoord/gauw1 ?>
+            <lbl>vgl.</lbl>Etymologiebank.nl
+            <xr type="lemma">
+              <ref>gauw1</ref>
+              <date type="accessed">10.03.2023</date>
+            </xr>
+          </ref>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <def>unachtsam und überstürzt handeln/arbeiten; hasten; eilen; übereilen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">gauster nöt so, laß dir derweil!</quote>
+                <ref type="bibl" target="#SalzburgerWb1995">Salzburger Wb. 1995
+                  <citedRange>71</citedRange>
+                </ref>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c33444"/>
+            </sense>
+            <sense>
+              <def>unruhig sein; sich nervös bewegen; unentschlossen hin- und herlaufen</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c33507"/>
+            </sense>
+            <sense>
+              <def>fuchteln; mit Händen und Füßen herumschlagen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c33508"/>
+            </sense>
+            <sense>
+              <def>herumtollen; toben; herumspringen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c33509"/>
+            </sense>
+          </sense>
+          <sense>
+            <sense>
+              <def>schnell und undeutlich sprechen/lesen; aufgeregt sprechen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c33506"/>
+            </sense>
+            <sense>
+              <def>über eine Sache viel Überflüssiges/Bedeutungsloses reden</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c33505"/>
+            </sense>
+            <sense>
+              <def>mit Händen und Füßen sowie einem beträchtlichen Stimmaufwand sprechen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c33504"/>
+            </sense>
+          </sense>
+          <sense>
+            <def>schneien; schneewehen; stöbern (von Schnee und Regen); stürmen; schnauben (z. B. von Wind, Dampfmaschinen)</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c33503"/>
+          </sense>
+          <sense>
+            <def>gähnen</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c33502"/>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>strohgaustern</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>ausgedroschenes Stroh auf den Stock legen und niedertreten</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c33461"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>umeinandgaustern</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>herumrennen; herumhasten</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c33464"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>umgaustern</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>herumtollen; herumhasten; balgen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">dɒ buɒ gaustɒd um</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.1c07">Mühlheim am Inn</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c33465"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>umhergaustern</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def>herumtollen</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c33462"/>
+              </sense>
+              <sense>
+                <def>herumfuchteln</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">wás gåschterst du mit di Hent (Füas) uma</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.1h03">Kirchbach</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c33463"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>übergaustern</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>durch Übereilung verderben</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c33465"/>
+            </sense>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>
