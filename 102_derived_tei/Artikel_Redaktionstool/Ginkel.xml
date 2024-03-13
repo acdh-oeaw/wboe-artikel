@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.8.1" ?>
+<?parser type="lioe" version="0.8.2" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Ginkel</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#PhS">Philipp Stöckle</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+          <name xml:id="MK">Markus Kunzmann</name>
+          <name xml:id="AK">Agnes Kim</name>
+          <name xml:id="IG">Ingeborg Geyer</name>
+          <name xml:id="MG">Manfred Glauninger</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2023-01-31" who="#PhS">Simplex-Bed. erstellt</change>
+        <change status="peer correction" when="2023-02-14" who="#PhS">erste Version des Artikels erstellt</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Ginkel">
+          <orth>Ginkel</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c28244"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Maskulinum</gram>
+        </gramGrp>
+        <form type="variant" subtype="diminutive" xml:id="Ginkerl">
+          <orth>Ginkerl</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <form type="variant" subtype="diminutive" xml:id="Ginkerlein">
+          <orth>Ginkerlein</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <note type="kommentar">in Arbeit</note>
+        <etym>
+          <seg type="desc">Die genaue Herkunft ist unklar. Vermutlich besteht ein Zusammenhang mit dem in verschiedenen deutschen Mundarten belegten Verb</seg>
+          <cit type="etymon">
+            <form>
+              <orth>gankeln</orth>
+            </form>
+            <form>
+              <orth>kankeln</orth>
+            </form>
+            <def>baumeln; wackeln; schaukeln</def>
+          </cit>
+          <seg type="desc">sowie mit</seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref target="Gänker.xml#Gaenker">Gänker</ref>
+            </xr>
+          </cit>
+          <seg type="desc">(bzw. dem Diminutiv</seg>
+          <xr type="lemma" subtype="diminutive">
+            <ref target="Gänker.xml#Gaenkerl">Gänkerl</ref>
+          </xr>
+          <seg type="desc">)</seg>
+          <seg type="desc">, das u. a. die Bedeutungen</seg>
+          <cit type="etymon">
+            <def>Teufel; Satan</def>
+          </cit>
+          <seg type="desc">sowie</seg>
+          <cit type="etymon">
+            <def>leichtsinniger Mensch; Narr; Spinner</def>
+          </cit>
+          <seg type="desc">umfasst.</seg>
+          <cit type="etymon">
+            <ref type="bibl" target="#DWB1878IV/I/1">
+              <lbl>vgl.</lbl>DWB 1878 IV/I/1
+              <citedRange>1254</citedRange>
+            </ref>
+          </cit>
+          <seg type="desc">Bezüglich der Hebung des Stammvokals zu
+            <c>i</c>kann eine lautliche Assimilation mit dem Bestimmungswort in dem weit verbreiteten Kompositum
+            <xr type="variant" subtype="compound">
+              <ref>Springginkel</ref>
+            </xr>angenommen werden; vgl. auch
+          </seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref target="Glänkel.xml#Glaenkel">Glänkel</ref>
+            </xr>
+          </cit>
+          <seg type="desc">und</seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref target="glänkeln.xml#glaenkeln">glänkeln</ref>
+            </xr>
+          </cit>
+        </etym>
+        <sense>
+          <sense>
+            <lbl>nur</lbl>
+            <xr type="lemma" subtype="diminutive">
+              <ref target="fachen.xml#Ginkerl">Ginkerlein</ref>
+            </xr>
+            <usg>(Diminutiv, Plural)</usg>
+            <def type="umschreibung">bestimmte Art der weiblichen Haartracht</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c32214"/>
+          </sense>
+          <sense>
+            <def>Eisenstift mit Ring zum Holzziehen</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c32212"/>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Prinzginkerl</orth>
+            <gramGrp>
+              <usg>(Diminutiv)</usg>
+            </gramGrp>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def type="umschreibung">scherzhafte Bezeichnungen für einen angeberischen Bub</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c32714"/>
+              </sense>
+              <sense>
+                <def type="umschreibung">Kosename für den erstgeborenen Sohn</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c32725"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Springginkel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>lebhafter, fröhlicher, unbekümmerter junger Mensch; Springinsfeld</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.1">wSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">dę Buə, dá̊s īs a Šbriŋgiŋkəʳl</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">der is a rechta (rechter) Springinkal</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4h06">Pabneukirchen</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c32726"/>
+            </sense>
+            <sense>
+              <def>Springkraut; Impatiens noli-tangere</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c32727"/>
+            </sense>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

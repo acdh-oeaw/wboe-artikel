@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.8.3" ?>
+<?parser type="lioe" version="0.8.3" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Kabeß</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#AK">Agnes Kim</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+          <name xml:id="MK">Markus Kunzmann</name>
+          <name xml:id="AK">Agnes Kim</name>
+          <name xml:id="IG">Ingeborg Geyer</name>
+          <name xml:id="KK">Katharina Korecky-Kröll</name>
+          <name xml:id="MG">Manfred Glauninger</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2023-10-12" who="#AK">Datensatz erstellt</change>
+        <change status="peer correction" when="2023-11-09" who="#AK">Weiterarbeit an Simplexbedeutungen</change>
+        <change status="peer correction" when="2023-11-28" who="#AG">LK eingefügt und formatiert</change>
+        <change status="internal correction" when="2024-01-30" who="#AK">keine Anmerkungen von EW -> interne Korrektur</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Kabess">
+          <orth>Kabeß</orth>
+        </form>
+        <form type="lemma" xml:id="Kabis">
+          <orth>Kabis</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c39195 "/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Maskulinum</gram>
+        </gramGrp>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+        </usg>
+        <note type="kommentar" resp="#AG">
+          <xr></xr>Das romanische Lehnwort zeigt bereits im Mittelhochdeutschen eine starke Formenvielfalt, die sich auch in den rezenten Dialekten widerspiegelt. Im gesamten Verbreitungsgebiet dominiert der kurze verdumpfte Stammvokal
+          <c>a</c>
+          <xr>
+            <ref>kǫbəs</ref>
+            <ref>kχǫwɒs</ref>
+            <ref>gǫwɒß</ref>
+          </xr>, der in Osttirol, im westlichen Nordtirol und in Ober- und Mittelkärnten auch mit Länge erscheint
+          <xr>
+            <ref>khǭbəs</ref>
+            <ref>kχǭwəs</ref>
+          </xr>. Daneben gibt es im Verbreitungsgebiet seltener auch kurze geschlossene
+          <c>o</c>-Laute
+          <xr>
+            <ref>kọbəs</ref>
+            <ref>gọbɒs</ref>
+          </xr>, die in Osttirol und im mittleren Nordtirol ebenfalls mit Länge auftreten
+          <xr>
+            <ref>kχōwəs</ref>
+            <ref>kōbįs</ref>
+          </xr>. Ursprüngliches helles
+          <c>a</c>ist nur im östlichen Südtirol und in Ober- und Mittelkärnten belegt
+          <xr>
+            <ref>kabəs</ref>
+            <ref>kabįs</ref>
+            <ref>kapųs</ref>
+          </xr>, in Letzterem auch mit Langvokal
+          <xr>
+            <ref>kāpəs</ref>
+          </xr>. Formen mit steigendem
+          <c>ou</c>-Diphthong sind vereinzelt in Südtirol und Oberkärnten zu finden
+          <xr>
+            <ref>khǫųbəs</ref>
+            <ref>kǫųwįs</ref>
+          </xr>, mit fallendem
+          <c>oa</c>-Diphthong im westlichen Nordtirol und in Mittelkärnten
+          <xr>
+            <ref>kǫɒbɒs</ref>
+            <ref>kōɒwǫs</ref>
+          </xr>. Der anlautende Plosiv tritt nur im Lungau und Pongau mit der Lenis auf
+          <xr>
+            <ref>gọbɒs</ref>
+            <ref>gǫwɒß</ref>
+          </xr>, in Mittelkärnten in aspirierter Form
+          <xr>
+            <ref>ghǭwɒs</ref>
+          </xr>. Ansonsten kommen überall Fortis-Formen vor
+          <xr>
+            <ref>kǫbəs</ref>
+            <ref>kǫwįs</ref>
+          </xr>, die im westlichen Südbairischen auch als Affrikate erscheinen
+          <xr>
+            <ref>kχǫwįß</ref>
+            <ref>kχǫwɒs</ref>
+            <ref>kχōwəs</ref>
+          </xr>, in Osttirol, im westlichen Nordtirol und in Mittelkärnten auch mit Aspiration
+          <xr>
+            <ref>khǭbəs</ref>
+            <ref>khǭwəs</ref>
+          </xr>. Der inlautende labiale Plosiv wird überall realisiert
+          <xr>
+            <ref>kǫbəs</ref>
+            <ref>kǫɒbɒs</ref>
+            <ref>khǭųbəs</ref>
+          </xr>, daneben existieren Formen mit labialem Frikativ
+          <xr>
+            <ref>kǭwəs</ref>
+            <ref>kχǭwəs</ref>
+            <ref>khǭwəs</ref>
+          </xr>. Eine ursprüngliche Fortis liegt nur in Mittelkärnten vor
+          <xr>
+            <ref>kāpəs</ref>
+            <ref>kapųs</ref>
+          </xr>. In der Nebensilbe herrschen im gesamten Verbreitungsgebiet Formen mit
+          <c>e</c>-Schwa vor
+          <xr>
+            <ref>khǭwəs</ref>
+            <ref>khǭbəs</ref>
+            <ref>kǫųwəs</ref>
+          </xr>, nur im östlichen Nordtirol wird dieser auch gerundet
+          <xr>
+            <ref>kǫwǫ̈ß</ref>
+          </xr>. In Teilen des westlichen Südbairischen, in Osttirol und im östlichen Nordtirol sind
+          <c>i</c>-Formen zu finden
+          <xr>
+            <ref>kǫųwįs</ref>
+            <ref>kōbįs</ref>
+            <ref>kobįs</ref>
+          </xr>. Eine Diphthongierung gibt es nur im westlichen Südtirol
+          <xr>
+            <ref>kọbəįs</ref>
+          </xr>. Ansonsten zeigen sich Belege mit
+          <c>a</c>-Schwa im westlichen Südtirol, im westlichen bzw. mittleren Nordtirol und in Ober- und Mittelkärnten sowie im Pongau
+          <xr>
+            <ref>kǫubɒs</ref>
+            <ref>kǫbɒsß</ref>
+            <ref>khǭwɒs</ref>
+            <ref>gǫwɒß</ref>
+          </xr>. Eine Form mit
+          <c>u</c>ist nur in Mittelkärnten belegt
+          <xr>
+            <ref>kapųs</ref>
+          </xr>. Verdumpftes
+          <c>a</c>in der Nebensilbe weisen nur das westliche Südtirol und Mittelkärnten auf
+          <xr>
+            <ref>kǫųwǫs</ref>
+            <ref>kōɒwǫs</ref>
+          </xr>. Der auslautende Frikativ erscheint nur im östliche Südtirol und im östlichen Nordtirol als Fortis
+          <xr>
+            <ref>kχǫwįß</ref>
+            <ref>kǫwǫ̈ß</ref>
+            <ref>gǫwɒß</ref>
+          </xr>und wird sonst immer als Lenis realisiert
+          <xr>
+            <ref>kχǭwəs</ref>
+            <ref>kǫbəs</ref>
+            <ref>kǫwįs</ref>
+          </xr>.
+        </note>
+        <etym>
+          <cit type="etymon">
+            <lang>ahd.</lang>
+            <form>
+              <orth>kabuz</orth>
+            </form>
+          </cit>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>kabez</orth>
+            </form>
+            <form>
+              <orth>kap(pū)s</orth>
+            </form>
+            <form>
+              <orth>kappiz</orth>
+            </form>
+            <form>
+              <orth>kappuz</orth>
+            </form>
+            <def>Kohl</def>
+          </cit>
+          <seg type="desc">; seit dem
+            <date>11. Jahrhundert</date>belegte Entlehnung aus
+          </seg>
+          <cit type="etymon">
+            <lang>frühromanisch</lang>
+            <form>
+              <orth>*caputia</orth>
+            </form>
+          </cit>
+          <seg type="desc">, das eine Weiterbildung zu</seg>
+          <cit type="etymon">
+            <lang>lat.</lang>
+            <form>
+              <orth>caput</orth>
+            </form>
+            <def>Haupt; Kopf</def>
+          </cit>
+          <seg type="desc">darstellt</seg>
+          <ref type="bibl" target="#Kluge2011">
+            <lbl>vgl.</lbl>Kluge 2011
+            <citedRange>473</citedRange>
+          </ref>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <sense>
+                <def>kopfbildender Kohl; kopfbildendes Kraut; Weiß- oder Rotkohl; Weiß- oder Rotkraut; Brassica oleracea convar. capitata</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c39592 "/>
+              </sense>
+              <sense>
+                <def>Kohlkopf; Krautkopf im Rohzustand</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c39593 "/>
+              </sense>
+              <sense>
+                <def>Sauerkraut</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c39594 "/>
+              </sense>
+              <sense>
+                <def>Kohl- bzw. Krautacker; Kohl- bzw. Krautgarten</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">Sie ist in den Kowas gegangen</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.2d02">Reichenau</placeName>
+                  </usg>
+                </cit>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">Sie ist in Kowas</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.2d02">Reichenau</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c39595 "/>
+              </sense>
+            </sense>
+            <sense>
+              <sense>
+                <def>Gemüse</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c39598 "/>
+              </sense>
+              <sense>
+                <def>Gemüsegarten; Gemüsefeld</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c39599 "/>
+              </sense>
+              <sense>
+                <def>Gemüsesamen</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c39602 "/>
+              </sense>
+            </sense>
+            <sense>
+              <def>Blätterwerk der Kohl- oder Futterrübe</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c39600 "/>
+            </sense>
+            <sense>
+              <def>Ackerunkraut</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c39601 "/>
+            </sense>
+          </sense>
+          <sense>
+            <sense>
+              <def>Kopf</def>
+              <usg>(scherzhaft, abwertend)</usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c39603 "/>
+            </sense>
+            <sense>
+              <def>Dummkopf</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c39604 "/>
+            </sense>
+            <sense>
+              <def type="umschreibung">Spottname für Personen aus Truden</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c39605 "/>
+            </sense>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Fackenkabis</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>nicht kopfbildender Gemüsekohl; Brassica oleracea var. acephala (als Schweinefutter)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.1">wSTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c39311 "/>
+            </sense>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>bei dir könnte man Kabeß/Kabis anbauen</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">wird zu Personen mit schmutziger Haut gesagt</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">ba dia kånt mar a Gåwas a͡ubau͡n</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2a18">Leonding</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c39318 "/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Der Kabeß/Kabis zum Kraut, wird erst morgen gebaut</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Teil eines Hochzeitsspruches</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Der Kåbis zin Kraut / Wersch ersch morg'n gibaut</quote>
+              <usg type="geo">
+                <placeName type="kleinregion" ref="/geodata-wboe.xml#p1A.4b">obAhrnt.</placeName>
+              </usg>
+            </cit>
+            <ref type="bibl" target="#Kohl1908b">Kohl 1908b
+              <citedRange>125</citedRange>
+            </ref>
+          </sense>
+          <ptr type="collection" subtype="MWE" target="/collections-wboe.xml#c39313 "/>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Kabeß/Kabis hauen</orth>
+          </form>
+          <sense>
+            <def>Unkraut im Gemüsebeet bzw. auf dem Feld durch Umgraben des Erdreichs mit einer Hacke entfernen</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Gobas haun</quote>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c39315 "/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Ora pro nobis, die Geiß/Kuh geht in den Kabeß/Kabis</orth>
+          </form>
+          <sense>
+            <def>Bete für uns, die Geiß/Kuh geht im Krautacker zu Schaden</def>
+            <def type="umschreibung">Teil eines Kinderreims; Scherzruf</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Ora pro nobis di Kui gat in Kobis dr Knecht gat zö wörn dr Diarn tit körn di Muitr tit kochn di Kindr tint rearn dr Våtr tit pochn</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1B.0b01">Außervillgraten</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Ora pro nobis! / Die Goaß giᵃn in Kaᵒbis!</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m08">Prutz</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c39317 "/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>wenn der Kabeß/Kabis gerät, gerät das Heu nicht</orth>
+          </form>
+          <sense>
+            <def>wenn es eine gute Kohlernte gibt, fällt die Heuernte schlecht aus</def>
+            <def type="umschreibung">Bauernregel</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Bǫö da Kǭwöß krǫdt, krǫdts Hei nöd</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e06">Kufstein</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c39314 "/>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

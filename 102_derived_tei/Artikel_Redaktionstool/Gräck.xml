@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.8.3" ?>
+<?parser type="lioe" version="0.8.3" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gräck</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#EW">Eva Wahlmüller</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+          <name xml:id="MK">Markus Kunzmann</name>
+          <name xml:id="AK">Agnes Kim</name>
+          <name xml:id="IG">Ingeborg Geyer</name>
+          <name xml:id="KK">Katharina Korecky-Kröll</name>
+          <name xml:id="MG">Manfred Glauninger</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2023-09-28" who="#EW">Datensatz erstellt</change>
+        <change status="peer correction" when="2023-10-02" who="#EW">fertig für int. Korr.</change>
+        <change status="internal correction" when="2024-02-04" who="#EW">Anm. AK eingearbeitet, wartet auf LK</change>
+        <change status="internal correction" when="2024-02-05" who="#EW">ohne LK weiter zu Manzi</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Graeck">
+          <orth>Gräck</orth>
+        </form>
+        <form type="lemma" xml:id="Graecke_">
+          <orth>Gräcke²</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c38719"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Maskulinum</gram>
+          <gram type="gender">Femininum</gram>
+        </gramGrp>
+        <form type="variant" subtype="diminutive" xml:id="Graeckel">
+          <orth>Gräckel</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+        </usg>
+        <note type="kommentar"></note>
+        <etym>
+          <seg type="desc">lautnachahmende Bildung, die auf Erweiterungen der Schallwurzel</seg>
+          <cit type="etymon">
+            <lang>ie.</lang>
+            <form>
+              <orth>*ger-</orth>
+            </form>
+          </cit>
+          <seg type="desc">bzw.</seg>
+          <cit type="etymon">
+            <form>
+              <orth>*grā-</orth>
+            </form>
+            <def>heiser schreien</def>
+          </cit>
+          <seg type="desc">zurückgeht; vergleiche</seg>
+          <cit type="etymon">
+            <lang>ahd.</lang>
+            <form>
+              <orth>krah</orth>
+            </form>
+            <form>
+              <orth>krac</orth>
+            </form>
+            <date>10. Jh.</date>
+            <def>Lärm; Getöse; polternder Schlag</def>
+          </cit>
+          <seg type="desc">und auch</seg>
+          <cit type="etymon">
+            <lang>engl.</lang>
+            <form>
+              <orth>to crack</orth>
+            </form>
+            <def>ein lautes Geräusch machen; brechen</def>
+          </cit>
+          <ref type="bibl" target="#Kluge2011">
+            <lbl>vgl.</lbl>Kluge 2011
+            <citedRange>535</citedRange>
+          </ref>
+          <ref type="bibl" subtype="online">
+            <lbl>vgl.</lbl>Pfeifer online
+            <xr type="lemma">
+              <ref>Krach, krachen</ref>
+              <date type="accessed">02.10.2023</date>
+            </xr>
+          </ref>
+          <ref type="bibl" subtype="online">Pons online
+            <xr type="lemma">
+              <ref>crack</ref>
+              <date type="accessed">02.10.2023</date>
+            </xr>
+          </ref>
+        </etym>
+        <sense>
+          <sense>
+            <def type="umschreibung">Bezeichnung für einen Vogel (z. B. eine Art Häher, einen Zaunkönig)</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c39000"/>
+          </sense>
+          <sense>
+            <xr type="variant" subtype="diminutive">
+              <lbl>nur</lbl>
+              <ref target="#Graecke_">Gräckel</ref>
+            </xr>
+            <usg>(Diminutiv)</usg>
+            <def>Frosch; Kröte; Unke</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c39089"/>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Bohngräckel</orth>
+          </form>
+          <sense>
+            <sense>
+              <def type="umschreibung">Bezeichnung für einen Vogel, der sich häufig in Bohnenfelder aufhält</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c39002"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Nussgräck</orth>
+          </form>
+          <form subtype="compound" type="lemma">
+            <orth>Nussgräcke</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def>Tannen-, Nusshäher</def>
+                <usg>(Vogelart)</usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c39001"/>
+              </sense>
+              <sense>
+                <xr type="variant" subtype="diminutive">
+                  <lbl>nur</lbl>
+                  <ref>Nussgräckel</ref>
+                </xr>
+                <usg>(Diminutiv)</usg>
+                <def>Eichelhäher</def>
+                <usg>(Vogelart)</usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c39090"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

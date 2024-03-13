@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.8.3" ?>
+<?parser type="lioe" version="0.8.3" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Krampus</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#AG">Andreas Gellan</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+          <name xml:id="MK">Markus Kunzmann</name>
+          <name xml:id="AK">Agnes Kim</name>
+          <name xml:id="IG">Ingeborg Geyer</name>
+          <name xml:id="MG">Manfred Glauninger</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2023-04-06" who="#AG">Datensatz erstellt</change>
+        <change status="peer correction" when="2023-04-11" who="#AG">peer correction</change>
+        <change status="internal correction" when="2023-08-24" who="#AG">internal correction</change>
+        <change status="internal correction" when="2023-11-28" who="#AG">LK eingefügt</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Krampus">
+          <orth>Krampus</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c33953"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Maskulinum</gram>
+        </gramGrp>
+        <form type="variant" subtype="diminutive" xml:id="Krampel">
+          <orth>Krampel</orth>
+          <gramGrp>
+            <gram type="gender">Maskulinum</gram>
+          </gramGrp>
+        </form>
+        <form type="variant" subtype="diminutive" xml:id="Kramperl">
+          <orth>Kramperl</orth>
+          <gramGrp>
+            <gram type="gender">Maskulinum</gram>
+          </gramGrp>
+        </form>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p7">Bgl.</placeName>
+        </usg>
+        <note type="kommentar" resp="#PZ">
+          <xr></xr>Der Vokal der ersten Silbe wird im gesamten Verbreitungsgebiet als kurzes offenes
+          <c>a</c>realisiert
+          <xr>
+            <ref>krampuß</ref>
+            <ref>grampuß</ref>
+            <ref>krampeß</ref>
+            <ref>grampoß</ref>
+          </xr>. In der zweiten Silbe kommen überall kurze
+          <c>u</c>-Monophthonge vor
+          <xr>
+            <ref>krampuß</ref>
+            <ref>grampuß</ref>
+          </xr>. Parallel tritt nur im Ostmittelbairischen kurzes a auf
+          <xr>
+            <ref>grampaß</ref>
+          </xr>sowie in Oberkärnten
+          <c>e</c>und
+          <c>o</c>
+          <xr>
+            <ref>krampeß</ref>
+            <ref>grampoß</ref>
+          </xr>. Im Anlaut überwiegen im Südbairischen unaspirierte velare Fortisplosive
+          <xr>
+            <ref>krampuß</ref>
+            <ref>krampeß</ref>
+          </xr>, im Südmittel- und insbsondere im Mittelbairischen hingegen Lenes
+          <xr>
+            <ref>grampuß</ref>
+            <ref>grampoß</ref>
+            <ref>grampaß</ref>
+          </xr>. Der Diminutiv wird überall mit -
+          <c>al</c>gebildet
+          <xr>
+            <ref>grampal</ref>
+            <ref>grampāl</ref>
+          </xr>, im Innviertel auch mit vokalisiertem Liquid auf -
+          <c>ai</c>
+          <xr>
+            <ref>krampai</ref>
+          </xr>.
+        </note>
+        <etym>
+          <cit type="etymon"></cit>
+          <seg type="desc">vermutlich eine Ableitung von</seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref target="Krampen.xml">Krampen</ref>
+            </xr>
+            <def>Kralle</def>
+          </cit>
+          <seg type="desc">in Verbindung mit dem</seg>
+          <cit type="etymon">
+            <lang>lateinischen</lang>
+          </cit>
+          <seg type="desc">Suffix</seg>
+          <cit type="etymon">
+            <form>
+              <orth>-us</orth>
+            </form>
+          </cit>
+          <seg type="desc">; angenommen wurde auch eine Verballhornung des Names</seg>
+          <cit type="etymon">
+            <form>
+              <orth>Hieronymus</orth>
+            </form>
+          </cit>
+          <ref type="bibl" target="#Schmeller1872I">
+            <lbl>vgl.</lbl>Schmeller 1872 I
+            <citedRange>997-998</citedRange>
+          </ref>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <def>teufelsähnliche Schreckgestalt für Kinder; Begleiter des Heiligen Nikolaus am 5. Dezember</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p7">Bgl.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">n Krampus kemma låssn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e06">Kufstein</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">S̆trampus kimt</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3k02">Hofkirchen im Traunkreis</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">da Grambass boggd di mid</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2e03">Puchberg am Schneeberg</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">hoȋˡd di dă Grāmpăs</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2j15">Pottendorf</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
+                <quote xml:lang="bar-AT">i wę̄ᵃʳ glei iⁿ Grambbass ruᵃᶠᶠᵐ</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5w06">Mauer</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c34604"/>
+            </sense>
+            <sense>
+              <def>in der Gestalt eines Krampus geformter Weizenteig</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">an Grampus, dę an Buəm gråd zuəwafąŋd ȃus Waisbråd und Waiⁿböə</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c34603"/>
+            </sense>
+          </sense>
+          <sense>
+            <sense>
+              <def>mürrische Person</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c34608"/>
+            </sense>
+            <sense>
+              <def>scheltende Ehefrau</def>
+              <usg>(abwertend)</usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c34609"/>
+            </sense>
+          </sense>
+          <sense>
+            <sense>
+              <def>Wadenkrampf</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c34606"/>
+            </sense>
+            <sense>
+              <def>Rausch; Trunkenheit</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c34607"/>
+            </sense>
+          </sense>
+          <sense>
+            <sense>
+              <def>rohes, unhandliches Ding</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c34605"/>
+            </sense>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Beinelkrampus</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def>dünne, abgemagerte Person</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c34611"/>
+              </sense>
+              <sense>
+                <def type="umschreibung">Bezeichnung für das Lehrskelett, das im Schulunterricht verwendet wird</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c34668"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Zwetschkenkrampus</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def>aus gedörrten Pflaumen gebildeter Krampus</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c34615"/>
+              </sense>
+              <sense>
+                <def>Pflaumenmus; Powidl</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c34612"/>
+              </sense>
+            </sense>
+            <sense>
+              <sense>
+                <def>dünne, abgemagerte, hässliche Person</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">za͡udi͡ară Zwėschbegrampas</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2j15">Pottendorf</placeName>
+                  </usg>
+                </cit>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">Aber sauber is er ret, dös is ja a auschiacher Kerl, schaut aus als wia a Zwetschpenkrampas.</quote>
+                  <ref type="bibl" target="#Klauser1986">Klauser 1986
+                    <citedRange>182</citedRange>
+                  </ref>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                  </usg>
+                </cit>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">Du schaust já wiaʳ an Zwetschkenkrampus aus!</quote>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c34614"/>
+              </sense>
+              <sense>
+                <def type="umschreibung">Bezeichnung für das Lehrskelett, das im Schulunterricht verwendet wird</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c34613"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>eine Zunge wie ein Krampus haben</orth>
+          </form>
+          <sense>
+            <def>eine sehr lange Zunge haben</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">hå̄d a Zungan wiara Krambus</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2b20">Pfaffstätten</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c34681"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Krampus, Krampus Besenstiel, beten kann ich auch nicht viel. Wenn ich auch nicht beten kann, geht's den Krampus gar nichts an</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Kinderspruch</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Krampus, Krampus Besenstiel,/ beten kån̄ i a nött viel./ Wån̄ i a nix betn kan̄,/ gehts dem Krampus gåaʳ nix åⁿ</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.3c08">Stainz</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c34683"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Vater unser, der du bist, der die alten Weiber frisst, Vater unser der du bist, ich weiß wohl wer der Krampus ist, der Krampus ist ein schwarzer Mann, der die Kindern locken kann, der die großen Knödel frisst, Vater unser Hackenstiel, beten kann ich auch nicht viel, Vater unser Zwirnknäuel, morgen habe ich schon derweil</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Kinderspruch</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Våta unsa, der du bist,/ der die åltn Weiba frißt,/ Våta unsa, dear du bist,/ i wåas wol wear då Krampus is,/ der Krampus is a schwårza Måⁿ,/ dear die Kinda lockn kåⁿ,/ dear die großn Knödl frißt,/ Våta unsa, Håcknstiel,/ beten kåⁿ i a nöt viel,/ Våta unsa Zwirnknal, morgn håñ i schen derweil</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.3c08">Stainz</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c34679"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Vater unser, der du bist, weißt wohl, wer der Krampus ist; der Krampus ist ein schlimmer Mann, der die Kinder schrecken/wichsen kann</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Kinderspruch</def>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Vater unser, der du bist/ wo͡as woll, wear der Krampus is;/ der Krampus is a schlim̄a Må,/ dear die Kinder schrökn kå.</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.3c08">Stainz</placeName>
+              </usg>
+            </cit>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Vaterunser, der du bist/ Ich waß schõñ, wer da Krampus is/ Da Krampus is a schlimma Månn,/ der die Kinder wichsen kann</quote>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c34678"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Was ist der Krampus? Der Krampus ist ein schlimmer Mann, der die Kinder packen kann; er packt sie bei den Haxen, und schmeißt sie in die Kraxen, macht den Deckel zu und wirft sie in die Mur</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">Gedicht</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Was ist der Krampus? Der Krampus ist ein schlimmer Man̄,/ der die Kinder packen kan̄;/ er pakt sie bei den Haxn,/ und schmeißt sie in die Kraxn;/ macht den Däkl zua/ u. wirft sie in die Mua</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.3c08">Stainz</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c34667"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>weißer Krampus</orth>
+            <gramGrp></gramGrp>
+          </form>
+          <sense>
+            <def>Heiliger Nikolaus</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Weißer Krampus</quote>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c34680"/>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

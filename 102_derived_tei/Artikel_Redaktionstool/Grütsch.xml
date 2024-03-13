@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.8.3" ?>
+<?parser type="lioe" version="0.8.3" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Grütsch</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#EW">Eva Wahlmüller</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+          <name xml:id="MK">Markus Kunzmann</name>
+          <name xml:id="AK">Agnes Kim</name>
+          <name xml:id="IG">Ingeborg Geyer</name>
+          <name xml:id="MG">Manfred Glauninger</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2023-04-25" who="#EW">Datensatz erstellt</change>
+        <change status="peer correction" when="2023-05-02" who="#EW">fertig für int. Korr.</change>
+        <change status="internal correction" when="2023-06-07" who="#EW">Anm. AG eingearbeitet, wegen Etymologie noch bei Steinhauser nachschauen - Agnes fragen!</change>
+        <change status="internal correction" when="2023-06-27" who="#EW">Belege Grütsch eingearbeitet</change>
+        <change status="internal correction" when="2023-12-13" who="#AG">LK eingefügt</change>
+        <change status="internal correction" when="2023-12-14" who="#EW">Anm. IG (bei LK-Bearbeitung) einarbeiten, Lemmatisierung geändert von Gritsch in Grütsch, Grutsch</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Gruetsch">
+          <orth>Grütsch</orth>
+        </form>
+        <form type="lemma" xml:id="Grutsch">
+          <orth>Grutsch</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c31814"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Maskulinum</gram>
+          <gram type="gender">Neutrum</gram>
+        </gramGrp>
+        <form type="variant" subtype="diminutive" xml:id="Gruetscherl">
+          <orth>Grütscherl</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p7.3">SBgl.</placeName>
+        </usg>
+        <note type="kommentar" resp="#IG">
+          <xr></xr>Der Stammvokal
+          <c>ü</c>ist als Umlautergebnis von mhd.
+          <c>u</c>zumeist entrundet als ein kurzes
+          <c>i</c>realisiert worden
+          <xr>
+            <ref>gritß̌</ref>
+          </xr>, im östlichen Südmittelbairischen aber auch noch in der etymologischen Ausgangsform
+          <xr>
+            <ref>grutß̌</ref>
+          </xr>belegt. Vereinzelte Belege im östlichen Südmittelbairischen und im Ostmittelbairischen zeigen Langvokal und Lenis-Affrikate
+          <xr>
+            <ref>grīdš</ref>
+          </xr>, sonst sind postalveolare Fortis-Affrikate
+          <xr>
+            <ref>gritß̌̌</ref>
+            <ref>grutß̌</ref>
+          </xr>ausgewiesen.
+        </note>
+        <etym>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>grutsch</orth>
+            </form>
+            <def>Hamster</def>
+          </cit>
+          <seg type="desc">, die Nebenform</seg>
+          <cit type="etymon">
+            <form>
+              <orth>Gritsch</orth>
+            </form>
+          </cit>
+          <seg type="desc">ist aus der
+            <lang>mittelhochdeutschen</lang>Mehrzahl
+          </seg>
+          <cit type="etymon">
+            <form>
+              <orth>Grütsche</orth>
+            </form>
+          </cit>
+          <seg type="desc">entstanden, begünstigt durch</seg>
+          <cit type="etymon">
+            <form>
+              <orth>Gritsch</orth>
+            </form>
+            <def>Grille</def>
+          </cit>
+          <seg type="desc">. Eine Entlehnung aus dem
+            <lang>Slawischen</lang>, zum Beispiel
+          </seg>
+          <cit type="etymon">
+            <lang>tschech.</lang>
+            <form>
+              <orth>křeček</orth>
+            </form>
+          </cit>
+          <seg type="desc">ist unrealistisch. Beides ist aber wohl einem lautmalerischen Ursprung geschuldet.
+            <ref type="bibl" target="#Steinhauser1978">
+              <lbl>vgl.</lbl>Steinhauser 1978
+              <citedRange>41f.</citedRange>
+            </ref>
+            <ref type="bibl" subtype="online">Lexer online
+              <xr type="lemma">
+                <ref>grutsch</ref>
+                <date type="accessed">27.06.2023</date>
+              </xr>
+            </ref>
+          </seg>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <def type="umschreibung">Bezeichnung für ein kleines Tier</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35600"/>
+            </sense>
+            <sense>
+              <sense>
+                <def>Hamster</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p7">Bgl.</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">Waŋa wiara Kritsch</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2i27">Hainburg an der Donau</placeName>
+                  </usg>
+                </cit>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">de hot jo Boggan wia a Gritsch</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4a01">Retz</placeName>
+                  </usg>
+                </cit>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">dęaʳ håd waŋᵍa wia-r-a gridsch</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4c01">Großharras</placeName>
+                  </usg>
+                </cit>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">d' Wångan hängn eam owa wia an Gritsch</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4e08">Ravelsbach</placeName>
+                  </usg>
+                </cit>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">dear tragt ei˜n wia r ă Gritsch</quote>
+                  <usg type="geo">
+                    <placeName type="kleinregion" ref="/geodata-wboe.xml#p6.4c">söUmg.Pulkaut.</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35601"/>
+              </sense>
+              <sense>
+                <xr type="variant" subtype="diminutive">
+                  <lbl>nur</lbl>
+                  <ref>Grütscherl</ref>
+                </xr>
+                <usg>(Diminutiv)</usg>
+                <def>Wühlmaus; Schermaus</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35603"/>
+              </sense>
+            </sense>
+            <sense>
+              <sense>
+                <def>Zaunkönig</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35604"/>
+              </sense>
+              <sense>
+                <xr type="variant" subtype="diminutive">
+                  <lbl>nur</lbl>
+                  <ref>Grütscherl</ref>
+                </xr>
+                <usg>(Diminutiv)</usg>
+                <def>Grünling; Grünfink</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35605"/>
+              </sense>
+            </sense>
+            <sense>
+              <def>Grille</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.3">SBgl.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35606"/>
+            </sense>
+            <sense>
+              <def>halbwüchsiges, kleines Schwein; zu kleines, schwaches Ferkel; Ferkelkümmerer</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.3">SBgl.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35607"/>
+            </sense>
+          </sense>
+          <sense>
+            <sense>
+              <def>unansehnlicher Mensch</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35608"/>
+            </sense>
+            <sense>
+              <sense>
+                <def type="umschreibung">abwertende Bezeichnung für eine sehr kleine Person oder ein Kind</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">Dös is a liab'ʳ Gritsch</quote>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35609"/>
+              </sense>
+              <sense>
+                <xr type="variant" subtype="diminutive">
+                  <lbl>nur</lbl>
+                  <ref>Grütscherl</ref>
+                </xr>
+                <usg>(Diminutiv)</usg>
+                <def>zartes Mädchen, Wesen</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35610"/>
+              </sense>
+              <sense>
+                <def type="umschreibung">abwertende Bezeichnung für ein eingebildetes Mädchen</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35611"/>
+              </sense>
+              <sense>
+                <def>dickes Kind</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35612"/>
+              </sense>
+            </sense>
+            <sense>
+              <def type="umschreibung">abwertende Bezeichnung für einen schwächlich gebauten Menschen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35613"/>
+            </sense>
+          </sense>
+          <sense>
+            <def>ein Berggeist</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35614"/>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Schneegrütsch</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Zaunkönig; Troglodytes troglodytes (Vogelart)</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35472"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Zaungrütsch</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Zaunkönig; Troglodytes troglodytes (Vogelart)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35473"/>
+            </sense>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Der trägt ein wie ein Grütsch</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">wird über eine habgierige Person gesagt</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">dear tragt ei˜n wia r ă Gritsch</quote>
+              <usg type="geo">
+                <placeName type="kleinregion" ref="/geodata-wboe.xml#p6.4c">söUmg.Pulkaut.</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35616"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>Der Grütsch und der Grill fahren miteinander auf die Mühl, der Grütsch fragt den Grill, ob er aufsitzen will</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">wird scherzhaft gesagt, wenn jemand eine Grille hört</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">da Gritsch u. da Grüll / fåaʳn mitanånd aff die Mühl; / da Gritsch frågt'n Grüll, / ob a aufsitzn wüll</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.3c08">Stainz</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35617"/>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

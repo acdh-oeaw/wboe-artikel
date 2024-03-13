@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.8.2" ?>
+<?parser type="lioe" version="0.8.2" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Knödel</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#SW">Sabine Wahl</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+          <name xml:id="MK">Markus Kunzmann</name>
+          <name xml:id="AK">Agnes Kim</name>
+          <name xml:id="IG">Ingeborg Geyer</name>
+          <name xml:id="MG">Manfred Glauninger</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="in progress" when="2023-06-14" who="#SW">Datensatz erstellt</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="Knoedel">
+          <orth>Knödel</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c36916"/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Substantiv</gram>
+          <gram type="gender">Maskulinum</gram>
+        </gramGrp>
+        <form type="variant" subtype="diminutive" xml:id="Knoederl">
+          <orth>Knöderl</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <form type="variant" subtype="diminutive" xml:id="Knoedelein">
+          <orth>Knödelein</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <form type="variant" subtype="diminutive" xml:id="Knoedile">
+          <?comment + Gnėdala ?>
+          <orth>Knödile</orth>
+          <orth>Knödili</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <form type="variant" subtype="diminutive" xml:id="Knoelli">
+          <?comment Hnē̇lli ?>
+          <orth>Knölli</orth>
+          <gramGrp>
+            <gram type="gender">Neutrum</gram>
+          </gramGrp>
+        </form>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p7">Bgl.</placeName>
+        </usg>
+        <note type="kommentar"></note>
+        <etym>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>knödel</orth>
+            </form>
+            <def>Fruchtknoten; Kloß als Speise</def>
+          </cit>
+          <cit type="etymon">
+            <lang>frnhd.</lang>
+            <form>
+              <orth>knödel</orth>
+            </form>
+            <def>Kloß als Speise; Mehlkloß; Knoten; Kot von Menschen; Kot des Pferdes (bair.); kleine wilde Birne; Kartoffel (in der Niederlausitz)</def>
+          </cit>
+          <seg type="desc">; Diminutivform zu den unter</seg>
+          <cit type="etymon">
+            <xr type="lemma">
+              <ref target="Knoten.xml#Knoten">Knoten</ref>
+            </xr>
+          </cit>
+          <seg type="desc">aufgeführten Varianten mit
+            <c>d</c>im Inlaut
+            <ref type="bibl" subtype="online">
+              <lbl>vgl.</lbl>Lexer online
+              <xr type="lemma">
+                <ref>knödel</ref>
+                <date type="accessed">14.06.2023</date>
+              </xr>
+            </ref>
+            <ref type="bibl" subtype="online">
+              <lbl>vgl.</lbl>FWB online
+              <xr type="lemma">
+                <ref>knödel</ref>
+                <date type="accessed">14.06.2023</date>
+              </xr>
+            </ref>
+            <ref type="bibl" subtype="online">
+              <lbl>vgl.</lbl>DWB online
+              <xr type="lemma">
+                <ref>knödel</ref>
+                <date type="accessed">14.06.2023</date>
+              </xr>
+            </ref>
+            <ref type="bibl" subtype="online">
+              <lbl>vgl.</lbl>Pfeifer online
+              <xr type="lemma">
+                <ref>Knödel</ref>
+                <date type="accessed">14.06.2023</date>
+              </xr>
+            </ref>
+          </seg>
+        </etym>
+        <sense>
+          <sense></sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Apfelknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Arschknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Bachenknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Bauernknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Baumfleischknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Bettlerknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <?comment check Ansatz ?>
+            <orth>Bießknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Blutknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Bohnenbrühknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Brautknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Bratknödel</orth>
+          </form>
+          <form subtype="compound" type="lemma">
+            <orth>Brätknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Brennknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Bröselknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Brosenknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Brotknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Butterknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Dreckknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Eierknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Einfüllknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Erbsenknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Erdapfelknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Fastenknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Feiertagknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Fisolenknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Fleischknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Füllknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Gebrätknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Gehackknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <?comment (Gërben)knödel ?>
+            <orth>Germknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Grammelknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Graupenknödel</orth>
+          </form>
+          <form subtype="compound" type="lemma">
+            <orth>Gräupenknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Greubelknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Greukenknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Griebenknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Griekenknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Grießknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Grundbirnknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Grünfleischknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Haarknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Hackerknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Halmknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Hausenknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Heidenknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Heuknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Hochzeitknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Kaiserknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Kasknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Katzenknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Kirschknödel</orth>
+          </form>
+          <form subtype="compound" type="lemma">
+            <orth>Kirschenknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Kleubenknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Kopfknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Krautknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Kretzenknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Kropfknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Kropfrübenknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Kuhknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Leberknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Magenknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Marillenknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Markknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Mausknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Mehlknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Milchknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Mockknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Musknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Nasenknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Ofenknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Paunzenknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Pfingstknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Plentenknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Powidelknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>(Präunling)knödel, Brenlinggnödl</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Pressknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Reiberknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Riesenknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Rossknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>(Sag-schēiten)knödel, Sagschattenknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Sauknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Scharrknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Schmalzknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Schmiedknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Schneiderknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Schottknödel</orth>
+          </form>
+          <form subtype="compound" type="lemma">
+            <orth>Schottenknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Schweißknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Schwemmknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Seeknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Semmelknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Speckknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Taschenknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>(Tāufed)knödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Tirolerknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>(Tomȧ̇tisch)knödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Topfenknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Vorschussknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Weizknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Werktagknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Wermutknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Wollknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Wurstknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Zellerknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Zitterknödel</orth>
+          </form>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Zwetschkenknödel</orth>
+          </form>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
+<?redaktionstool version="0.8.3" ?>
+<?parser type="lioe" version="0.8.3" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>klingen</title>
+        <respStmt>
+          <resp>Editor</resp>
+          <name ref="#AK">Agnes Kim</name>
+        </respStmt>
+        <respStmt>
+          <resp>Encoding Scheme</resp>
+          <name>Jack Bowers</name>
+          <name>Daniel Schopper</name>
+          <name>Omar Siam</name>
+        </respStmt>
+        <respStmt>
+          <resp>DBOE Team</resp>
+          <name xml:id="AL">Alexandra N. Lenz</name>
+          <name xml:id="PhS">Philipp Stöckle</name>
+          <name xml:id="AG">Andreas Gellan</name>
+          <name xml:id="PZ">Patrick Zeitlhuber</name>
+          <name xml:id="SW">Sabine Wahl</name>
+          <name xml:id="SS">Sonja Schwaiger</name>
+          <name xml:id="AB">Angela Bergermayer</name>
+          <name xml:id="EW">Eva Wahlmüller</name>
+          <name xml:id="DG">David Gschösser</name>
+          <name xml:id="StS">Stefanie Schöberl</name>
+          <name xml:id="FF">Fabian Fleißner</name>
+          <name xml:id="MK">Markus Kunzmann</name>
+          <name xml:id="AK">Agnes Kim</name>
+          <name xml:id="IG">Ingeborg Geyer</name>
+          <name xml:id="MG">Manfred Glauninger</name>
+        </respStmt>
+        <respStmt>
+          <resp>Student assistants</resp>
+          <name>Susanna Muhr</name>
+          <name>Manuela Stütz</name>
+          <name>Christina Hemetsberger</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p></p>
+      </publicationStmt>
+      <sourceDesc>
+        <list>
+          <item>
+            <label>Geo-data</label>
+            <ptr xml:id="geo-inventory-WBOE" target="../geodata-wboe.xml"/>
+          </item>
+          <item>
+            <label>Bibliography</label>
+            <ptr xml:id="bibliography-WBOE" target="../bibl-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Slips</label>
+            <ptr xml:id="slips-WBOE" target="../slips-wboe.xml"/>
+          </item>
+          <item>
+            <label>WBOE-Collections</label>
+            <ptr xml:id="collections-WBOE" target="../collections-wboe.xml"/>
+          </item>
+        </list>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <listChange>
+        <change status="peer correction" when="2023-04-21" who="#AK">Datensatz erstellt</change>
+        <change status="peer correction" when="2023-06-17" who="#AK">Kommentare von EW eingearbeitet + LK folgt</change>
+        <change status="peer correction" when="2023-08-10" who="#AK">Abkürzungen in Etymologie angepasst</change>
+        <change status="peer correction" when="2023-09-21" who="#PZ">LK eingefügt</change>
+        <change status="internal correction" when="2023-09-21" who="#AK">für interne Korrektur freigegeben</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry>
+        <form type="lemma" xml:id="klingen">
+          <orth>klingen</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c34991 "/>
+        </form>
+        <gramGrp>
+          <gram type="pos">Verb</gram>
+          <iType>stark</iType>
+        </gramGrp>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p7">Bgl.</placeName>
+        </usg>
+        <note type="kommentar" resp="#IG">Für mhd.
+          <c>i</c>im Stammvokal liegt im gesamten Untersuchungsgebiet kurzer
+          <c>i</c>-Monophthong vor
+          <xr>
+            <ref>kχliŋgə</ref>
+            <ref>kχliŋ</ref>
+            <ref>kxliŋɒ</ref>
+            <ref>khliŋgən</ref>
+            <ref>kliŋɒ</ref>
+            <ref>kliŋ</ref>
+            <ref>gliŋɒ</ref>
+          </xr>.
+Im Anlaut werden im südbairischen Verbreitungsgebiet die Affrikaten als Fortis
+          <xr>
+            <ref>kχliŋgə</ref>
+            <ref>kχliŋ</ref>
+            <ref>kxliŋɒ</ref>
+          </xr>bzw. aspiriert
+          <xr>
+            <ref>khliŋgən</ref>
+          </xr>realisiert. Im Südmittelbairischen sind gelegentlich nicht aspirierte velare Plosive
+          <xr>
+            <ref>kliŋɒ</ref>
+            <ref>kliŋ</ref>
+          </xr>belegt, die sonst wie im Mittelbairischen lenisiert werden
+          <xr>
+            <ref>gliŋɒ</ref>
+          </xr>. Im Inlaut sind im Südbairischen velare Nasale samt Plosive belegt
+          <xr>
+            <ref>kχliŋgə</ref>
+            <ref>khliŋgən</ref>
+          </xr>, überall sonst finden sich dagegen nur velare Nasale
+          <xr>
+            <ref>kliŋɒ</ref>
+            <ref>gliŋɒ</ref>
+          </xr>.
+Das Suffix -
+          <c>en</c>wurde verbreitet zu
+          <c>e</c>- bzw.
+          <c>a</c>-Schwa abgeschwächt
+          <xr>
+            <ref>kχliŋgə</ref>
+            <ref>kxliŋɒ</ref>
+            <ref>kliŋɒ</ref>
+            <ref>gliŋɒ</ref>
+          </xr>, im Südtiroler Pustertal und Ahrntal sowie vereinzelt in Mittelkärnten synkopiert
+          <xr>
+            <ref>kχliŋ</ref>
+            <ref>kxliŋ</ref>
+            <ref>kliŋ</ref>
+          </xr>. Auslautendes
+          <c>n</c>ist für das Glantal belegt
+          <xr>
+            <ref>khliŋgən</ref>
+          </xr>.
+        </note>
+        <etym>
+          <cit type="etymon">
+            <lang>ahd.</lang>
+            <form>
+              <orth>klingan</orth>
+            </form>
+            <def>(er-)tönen, gellen</def>
+          </cit>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>klingen</orth>
+            </form>
+            <def>tönen</def>
+          </cit>
+          <cit type="etymon">
+            <lang>fnhd.</lang>
+            <form>
+              <orth>klingen</orth>
+            </form>
+            <def>Klang, Töne, Worte von sich geben</def>
+          </cit>
+          <ref type="bibl" subtype="online">
+            <lbl>vgl.</lbl>AWB online
+            <xr type="lemma">
+              <ref>klingan¹</ref>
+              <date type="accessed">21.04.2023</date>
+            </xr>
+          </ref>
+          <ref type="bibl" subtype="online">Lexer online
+            <xr type="lemma">
+              <ref>klingen</ref>
+              <date type="accessed">21.04.2023</date>
+            </xr>
+          </ref>
+          <ref type="bibl" subtype="online">Frühnhd. Wb. online
+            <xr type="lemma">
+              <ref>¹klingen</ref>
+              <date type="accessed">21.04.2023</date>
+            </xr>
+          </ref>
+          <seg type="desc">; geht auf</seg>
+          <cit type="etymon">
+            <lang>ie.</lang>
+            <form>
+              <orth>*glengh-</orth>
+            </form>
+          </cit>
+          <seg type="desc">zur Wurzel</seg>
+          <cit type="etymon">
+            <lang>ie.</lang>
+            <form>
+              <orth>*gal-</orth>
+            </form>
+            <def>rufen; schreien</def>
+          </cit>
+          <seg type="desc">zurück
+            <ref type="bibl" subtype="online">
+              <lbl>vgl.</lbl>Lexer online
+              <xr type="lemma">
+                <ref>klingen</ref>
+                <date type="accessed">21.04.2023</date>
+              </xr>
+            </ref>
+          </seg>
+        </etym>
+        <sense>
+          <sense>
+            <sense>
+              <def>einen Ton oder ein Geräusch von sich geben; (er-)tönen; klirren</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p7.3">SBgl.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">σ̌τǟ ãm bā̃m åfį, ho̩k ɒ̃n nō̩sd ō̩wɒ mittɒ hǟgō̩bö , daß gʟĩ̌ŋκ!
+                  <cit type="translation">
+                    <quote xml:lang="de">Steig auf den Baum hinauf, hacke einen Ast herunter, mit der Heugabel, daß es klingt!</quote>
+                  </cit>
+                </quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2e03">Puchberg am Schneeberg</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35162 "/>
+            </sense>
+            <sense>
+              <sense>
+                <def>ein Geräusch in den Ohren vernehmen</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.4">UKtn.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p7.1">NBgl.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p7.2">MBgl.</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">miaʳ klingts ręchti ɔ̨r, i wiaʳ haint nouch wos liabs heᵈn
+                    <cit type="translation">
+                      <quote xml:lang="de">hören</quote>
+                    </cit>
+                  </quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.4c01">Frantschach-St. Gertraud</placeName>
+                  </usg>
+                </cit>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">in maini ɔ̨awaschl klin̨gs</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.5g08">Großwilfersdorf</placeName>
+                  </usg>
+                </cit>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">Wån ans Oaʳ glingd, so denkt wer ån an</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2e01">Linz</placeName>
+                  </usg>
+                </cit>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">s wėˡcha Eaʳl kliŋᵍt dan?</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.4h09">Schwertberg</placeName>
+                  </usg>
+                </cit>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">Wöichas Uarn tuat miaʳ klinga?</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2b20">Pfaffstätten</placeName>
+                  </usg>
+                </cit>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">wǫ̈χės ǫawaß̌l glĩŋd ma?</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4e06">Hollabrunn</placeName>
+                  </usg>
+                </cit>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">Was für a Urn klingt maʳ?</quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.5r03">Währing</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35173 "/>
+              </sense>
+              <sense>
+                <def>Kopfschmerzen haben</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+                </usg>
+                <cit type="example">
+                  <quote xml:lang="bar-AT">Haiⁿt kliŋt maʳ schąⁿ daʳ Schęᵈl
+                    <cit type="translation">
+                      <quote xml:lang="de">Kopf</quote>
+                    </cit>
+                  </quote>
+                  <usg type="geo">
+                    <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3l02">Enns</placeName>
+                  </usg>
+                </cit>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35163 "/>
+              </sense>
+            </sense>
+          </sense>
+        </sense>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>ohrenklingen</orth>
+          </form>
+          <sense>
+            <sense>
+              <xr type="lemma">
+                <lbl>nur</lbl>
+                <ref>Ohrenklingen</ref>
+              </xr>
+              <usg>(Substantiv)</usg>
+              <def>Geräusch im Ohr; Ohrensausen</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.4">MStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35152 "/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>öhrleinklingen</orth>
+          </form>
+          <sense>
+            <sense>
+              <xr type="lemma">
+                <lbl>nur</lbl>
+                <ref>Öhrleinklingen</ref>
+              </xr>
+              <usg>(Substantiv)</usg>
+              <def>Geräusch im Ohr; Ohrensausen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35158 "/>
+            </sense>
+          </sense>
+        </re>
+      </entry>
+    </body>
+  </text>
+</TEI>
