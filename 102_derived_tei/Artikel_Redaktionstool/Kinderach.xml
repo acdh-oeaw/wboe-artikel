@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
     <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
-<?redaktionstool version="0.8.2" ?>
-<?parser type="lioe" version="0.8.2" ?>
+<?redaktionstool version="0.8.3" ?>
+<?parser type="lioe" version="0.8.3" ?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
@@ -71,6 +71,7 @@
       <listChange>
         <change status="peer correction" when="2023-04-18" who="#AK">Datensatz erstellt</change>
         <change status="internal correction" when="2023-06-17" who="#AK">LK folgt</change>
+        <change status="finished" when="2024-07-15" who="#AK">Etymologie auf Anregung von JE um Aspekte der Wortbildung ausgebaut</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -100,7 +101,7 @@
         <usg type="geo">
           <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
         </usg>
-        <note type="kommentar">folgt</note>
+        <note type="kommentar"></note>
         <etym>
           <seg type="desc">Ableitung von</seg>
           <cit type="etymon">
@@ -108,6 +109,26 @@
               <ref target="Kind.xml#Kind">Kind</ref>
             </xr>
           </cit>
+          <seg type="desc">; Das Kollektivsuffix
+            <c>-ach</c>, das in den jüngeren bairischen Dialekten meist als
+            <c>-ɒd</c>ausgesprochen wird, geht auf ein
+            <lang>althochdeutsches</lang>Wortbildungssuffix
+            <c>-ahi</c>mit derselben Funktion zurück
+          </seg>
+          <ref type="bibl" subtype="online">
+            <lbl>vgl.</lbl>BDO
+            <xr type="lemma">
+              <ref>-ach</ref>
+              <date type="accessed">15.07.2024</date>
+            </xr>
+          </ref>
+          <ref type="bibl" subtype="online">EWA online
+            <xr type="lemma">
+              <ref>-ahi</ref>
+              <date type="accessed">15.07.2024</date>
+            </xr>
+          </ref>
+          <cit type="etymon"></cit>
         </etym>
         <sense>
           <sense>
@@ -138,7 +159,7 @@
               <cit type="example">
                 <quote xml:lang="bar-AT">Hots da lacht a Kindrach gmaust?
                   <cit type="translation">
-                    <quote xml:lang="de">Hat es vielleicht ein Kind gestohlen?</quote>
+                    <quote xml:lang="de">Hat es dir vielleicht ein Kind gestohlen?</quote>
                   </cit>
                 </quote>
                 <ref type="bibl" target="#GrazerVolksblatt">Grazer Volksblatt
