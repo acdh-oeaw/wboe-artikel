@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
     <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
-<?redaktionstool version="0.8.2" ?>
-<?parser type="lioe" version="0.8.2" ?>
+<?redaktionstool version="0.8.3" ?>
+<?parser type="lioe" version="0.8.3" ?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
@@ -71,6 +71,9 @@
       <listChange>
         <change status="in progress" when="2023-05-16" who="#SW">Datensatz erstellt</change>
         <change status="peer correction" when="2023-05-22" who="#SW">V1</change>
+        <change status="internal correction" when="2024-07-25" who="#SW">V2</change>
+        <change status="external correction" when="2024-07-30" who="#SW">V3</change>
+        <change status="finished" when="2024-08-22" who="#SW">online</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -122,15 +125,18 @@
         <usg type="geo">
           <placeName type="grossregion" ref="/geodata-wboe.xml#p7.3">SBgl.</placeName>
         </usg>
-        <note type="kommentar"></note>
         <etym>
           <cit type="etymon">
             <lang>frnhd.</lang>
             <usg>(regional)</usg>
             <form>
-              <orth>gätsch</orth>
-              <orth>getsch</orth>
               <orth>gatsch</orth>
+            </form>
+            <form>
+              <orth>gätsch</orth>
+            </form>
+            <form>
+              <orth>getsch</orth>
             </form>
             <def>Kot; Unrat; schmutzige Masse; dicker Brei; gestockte Milch</def>
           </cit>
@@ -204,7 +210,7 @@
           </sense>
           <sense>
             <sense>
-              <def>Brei; alles Breiige; weiche Masse</def>
+              <def>Brei; breiige, weiche Masse</def>
               <usg type="geo">
                 <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
               </usg>
@@ -227,12 +233,6 @@
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
               </usg>
               <cit type="example">
-                <quote xml:lang="bar-AT">ɒ̃ sọ ɒ̃n gādš frí̄s-i nẹ̄d</quote>
-                <usg type="geo">
-                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1o01">Herzogenburg</placeName>
-                </usg>
-              </cit>
-              <cit type="example">
                 <quote xml:lang="bar-AT">la͡utăʳ Gādsch</quote>
                 <usg type="geo">
                   <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2j15">Pottendorf</placeName>
@@ -247,7 +247,7 @@
               <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c36279"/>
             </sense>
             <sense>
-              <def>Zerdrücktes; Mus; eine Art Apfelkompott</def>
+              <def>Mus; Kompott</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
               </usg>
@@ -378,7 +378,7 @@
           </form>
           <sense>
             <sense>
-              <def>Milchgrieß; Milchkoch</def>
+              <def>Milchgrieß; Milchbrei</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
               </usg>
