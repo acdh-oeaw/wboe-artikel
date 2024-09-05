@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
     <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
-<?redaktionstool version="0.8.2" ?>
-<?parser type="lioe" version="0.8.2" ?>
+<?redaktionstool version="0.8.3" ?>
+<?parser type="lioe" version="0.8.3" ?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
@@ -72,6 +72,8 @@
         <change status="in progress" when="2023-06-01" who="#AK">Datensatz erstellt</change>
         <change status="peer correction" when="2023-06-02" who="#AK">v1</change>
         <change status="internal correction" when="2023-06-17" who="#AK">Kommentare von EW eingearbeitet + LK folgt</change>
+        <change status="external correction" when="2024-07-16" who="#AK">Kommentare von MG eingearbeitet</change>
+        <change status="finished" when="2024-08-29" who="#AK">keine Kommentare JE</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -139,7 +141,7 @@
         <usg type="geo">
           <placeName type="bundesland" ref="/geodata-wboe.xml#p7">Bgl.</placeName>
         </usg>
-        <note type="kommentar">folgt</note>
+        <note type="kommentar"></note>
         <etym>
           <cit type="etymon">
             <lang>mhd.</lang>
@@ -246,7 +248,7 @@
               <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c36778 "/>
             </sense>
             <sense>
-              <def>frei von Trubstoffen; lauter (von Getränken)</def>
+              <def>frei von Trübstoffen; lauter (von Getränken)</def>
               <usg type="geo">
                 <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
               </usg>
@@ -285,16 +287,6 @@
                 <quote xml:lang="bar-AT">da Waiⁿ wiad kloaʳ</quote>
                 <usg type="geo">
                   <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.4d18">Poysdorf</placeName>
-                </usg>
-              </cit>
-              <cit type="example">
-                <quote xml:lang="bar-AT">κlo̮a moχə
-                  <cit type="translation">
-                    <quote xml:lang="de">klären</quote>
-                  </cit>
-                </quote>
-                <usg type="geo">
-                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p7.1f01">Eisenstadt</placeName>
                 </usg>
               </cit>
               <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c36727 "/>
@@ -587,6 +579,27 @@
               </usg>
             </cit>
             <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c36719 "/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>klar machen</orth>
+          </form>
+          <sense>
+            <def>ein Getränk (besonders Wein) von Trübstoffen reinigen; klären</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p7.1">NBgl.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">κlo̮a moχə</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p7.1f01">Eisenstadt</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c43246 "/>
           </sense>
         </re>
       </entry>

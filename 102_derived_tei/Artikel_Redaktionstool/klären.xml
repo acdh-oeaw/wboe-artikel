@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
     <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
-<?redaktionstool version="0.8.2" ?>
-<?parser type="lioe" version="0.8.2" ?>
+<?redaktionstool version="0.8.3" ?>
+<?parser type="lioe" version="0.8.3" ?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
@@ -71,6 +71,8 @@
       <listChange>
         <change status="peer correction" when="2023-06-03" who="#AK">v1</change>
         <change status="internal correction" when="2023-06-17" who="#AK">LK folgt</change>
+        <change status="external correction" when="2024-07-16" who="#AK">Kommentare von MG eingearbeitet</change>
+        <change status="finished" when="2024-08-29" who="#AK">keine Kommentare JE</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -101,7 +103,10 @@
           <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
         </usg>
         <usg type="geo">
-          <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
         </usg>
         <usg type="geo">
           <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
@@ -118,7 +123,7 @@
         <usg type="geo">
           <placeName type="bundesland" ref="/geodata-wboe.xml#p7">Bgl.</placeName>
         </usg>
-        <note type="kommentar">folgt</note>
+        <note type="kommentar"></note>
         <etym>
           <seg type="desc">Ableitung von</seg>
           <cit type="etymon">
@@ -129,7 +134,7 @@
         </etym>
         <sense>
           <sense>
-            <def>schönen; von Trubstoffen reinigen (von Getränken wie Wein oder Most)</def>
+            <def>schönen; von Trübstoffen reinigen (von Getränken wie Wein oder Most)</def>
             <usg type="geo">
               <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
             </usg>
@@ -182,7 +187,7 @@
           </form>
           <sense>
             <sense>
-              <def>etwas verständlich machen; explizieren; auseinandersetzen (besonders in Bezug auf Sexualität)</def>
+              <def>etwas verständlich machen; explizieren; auseinandersetzen (besonders in Bezug auf die Sexualität)</def>
               <usg type="geo">
                 <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
               </usg>
@@ -212,17 +217,8 @@
             <sense>
               <def>aufheitern; scheinen (von der Sonne)</def>
               <usg type="geo">
-                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.3">Traunv.</placeName>
-              </usg>
-              <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
               </usg>
-              <cit type="example">
-                <quote xml:lang="bar-AT">d' Sun̄ dglaⁿd Schnę u. Ais āf</quote>
-                <usg type="geo">
-                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
-                </usg>
-              </cit>
               <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c36784 "/>
             </sense>
           </sense>
@@ -292,6 +288,11 @@
               <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c36788 "/>
             </sense>
             <sense>
+              <xr type="variant" subtype="compound">
+                <lbl>nur</lbl>
+                <ref>sich erklären</ref>
+              </xr>
+              <usg>(reflexiv)</usg>
               <def>sich bekennen</def>
               <usg type="geo">
                 <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
