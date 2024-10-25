@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
     <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
-<?redaktionstool version="0.8.2" ?>
-<?parser type="lioe" version="0.8.2" ?>
+<?redaktionstool version="0.8.3" ?>
+<?parser type="lioe" version="0.8.3" ?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
@@ -70,6 +70,9 @@
     <revisionDesc>
       <listChange>
         <change status="peer correction" when="2023-07-03" who="#EW">Datensatz erstellt</change>
+        <change status="internal correction" when="2024-03-18" who="#EW">keine Anm. AG, ohne LK weiter zu Manzi</change>
+        <change status="external correction" when="2024-09-05" who="#AK">Anmerkungen MG eingearbeitet</change>
+        <change status="finished" when="2024-10-24" who="#AK">keine Anm. JE</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -104,17 +107,17 @@
         </usg>
         <note type="kommentar"></note>
         <etym>
-          <seg type="desc">Nebenform zu</seg>
+          <seg type="desc">
+            <lang>ostmitteldeutsche</lang>Nebenform zu
+          </seg>
           <cit type="etymon">
             <xr type="lemma">
               <?comment verknüpfen, sobald verfügbar ?>
               <ref>kriechen</ref>
             </xr>
           </cit>
+          <seg type="desc">mit der Bedeutung</seg>
           <cit type="etymon">
-            <form>
-              <orth>krauchen</orth>
-            </form>
             <def>sich ducken; sich schmiegen; kriechen</def>
           </cit>
           <seg type="desc">, vergleiche auch</seg>
@@ -125,7 +128,8 @@
             </form>
             <def>sich kauern; hocken</def>
           </cit>
-          <ref type="bibl" subtype="online">DWB online
+          <ref type="bibl" subtype="online">
+            <lbl>vgl.</lbl>DWB online
             <xr type="lemma">
               <ref>krauchen</ref>
               <date type="accessed">03.07.2023</date>
@@ -134,6 +138,12 @@
           <ref type="bibl" subtype="online">pons online
             <xr type="lemma">
               <ref>crouch</ref>
+              <date type="accessed">03.07.2023</date>
+            </xr>
+          </ref>
+          <ref type="bibl" subtype="online">Pfeifer online
+            <xr type="lemma">
+              <ref>kriechen</ref>
               <date type="accessed">03.07.2023</date>
             </xr>
           </ref>
@@ -250,7 +260,7 @@
           </form>
           <sense>
             <sense>
-              <def>umherkriechen; herumkrabbeln</def>
+              <def>umherkriechen; herumrutschen (von einem Kleinkind)</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
               </usg>
