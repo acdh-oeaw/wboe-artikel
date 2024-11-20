@@ -3,7 +3,7 @@ stages:          # List of stages for jobs, and their order of execution
   
 filter-job:
   stage: publish
-  image: bitnami/git
+  image: bitnami/git:2.46.2
   script: |
     set -eo pipefail
     apt-get update && apt-get install -y xmlstarlet
