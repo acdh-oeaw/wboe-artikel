@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
     <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
-<?redaktionstool version="0.8.2" ?>
-<?parser type="lioe" version="0.8.3" ?>
+<?redaktionstool version="0.8.3" ?>
+<?parser type="lioe" version="0.8.4" ?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
@@ -72,6 +72,8 @@
         <change status="in progress" when="2023-05-24" who="#SW">Datensatz erstellt</change>
         <change status="peer correction" when="2023-06-01" who="#SW">V1</change>
         <change status="internal correction" when="2023-10-11" who="#SW">V2 ohne LK</change>
+        <change status="external correction" when="2024-11-15" who="#SW">V3</change>
+        <change status="finished" when="2024-11-28" who="#SW">online</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -154,7 +156,6 @@
         <usg type="geo">
           <placeName type="bundesland" ref="/geodata-wboe.xml#p7">Bgl.</placeName>
         </usg>
-        <note type="kommentar"></note>
         <etym>
           <cit type="etymon">
             <lang>ahd.</lang>
@@ -317,6 +318,7 @@
                 <lbl>nur</lbl>
                 <ref target="#Kacherl">Kacherl</ref>
               </xr>
+              <usg>(Diminutiv)</usg>
               <def>Ölkännchen</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
@@ -425,6 +427,7 @@
               <lbl>nur</lbl>
               <ref target="#Kacherl">Kacherl</ref>
             </xr>
+            <usg>(Diminutiv)</usg>
             <def>Aufsatz des Rührfasses</def>
             <usg type="geo">
               <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
@@ -440,6 +443,7 @@
               <lbl>nur</lbl>
               <ref target="#Kachilein">Kachilein</ref>
             </xr>
+            <usg>(Diminutiv)</usg>
             <def>Zelle; Honigzelle</def>
             <usg type="geo">
               <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
@@ -480,7 +484,7 @@
               <lbl>nur</lbl>
               <ref target="#Kachelein">Kachelein</ref>
             </xr>
-            <usg>(Plural)</usg>
+            <usg>(Diminutiv, Plural)</usg>
             <def>Handratschen</def>
             <usg type="geo">
               <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
@@ -503,8 +507,7 @@
               <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c36620"/>
             </sense>
             <sense>
-              <def>Trottel</def>
-              <def type="umschreibung">Schimpfwort (für eine Frau) generell</def>
+              <def>Trottel; Schimpfwort (für eine Frau)</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
               </usg>
@@ -516,6 +519,11 @@
           </sense>
           <sense>
             <sense>
+              <xr type="lemma">
+                <lbl>nur</lbl>
+                <ref>Kacheln</ref>
+              </xr>
+              <usg>(Plural)</usg>
               <def>Mohnköpfe</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
@@ -528,7 +536,7 @@
                 <ref>Kacheln</ref>
               </xr>
               <usg>(Plural)</usg>
-              <def>Russula, Täublinge (Pilzart)</def>
+              <def>Täublinge; Russula (Pilzart)</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
               </usg>
@@ -556,7 +564,7 @@
               <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c36412"/>
             </sense>
             <sense>
-              <def type="umschreibung">abwertender Ausdruck für Bett</def>
+              <def type="umschreibung">abwertender Ausdruck für ein Bett</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
               </usg>
@@ -584,7 +592,7 @@
           </form>
           <sense>
             <sense>
-              <def>aus Birkenrinde mehr oder minder kunstvoll angefertigte Gefäße</def>
+              <def>aus Birkenrinde mehr oder minder kunstvoll angefertigtes Gefäß</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
               </usg>
@@ -683,7 +691,7 @@
           </form>
           <sense>
             <sense>
-              <def type="umschreibung">sehr abwertender Ausdruck für Frau</def>
+              <def type="umschreibung">sehr abwertender Ausdruck für eine Frau</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
               </usg>
@@ -773,6 +781,9 @@
         <re>
           <form subtype="compound" type="lemma">
             <orth>Leinölkacherl</orth>
+            <gramGrp>
+              <usg>(Diminutiv)</usg>
+            </gramGrp>
           </form>
           <sense>
             <sense>
@@ -818,6 +829,9 @@
         <re>
           <form subtype="compound" type="lemma">
             <orth>Ölkacherl</orth>
+            <gramGrp>
+              <usg>(Diminutiv)</usg>
+            </gramGrp>
           </form>
           <sense>
             <sense>
@@ -981,6 +995,7 @@
                   <lbl>nur</lbl>
                   <ref>Schmalzkachelein</ref>
                 </xr>
+                <usg>(Diminutiv)</usg>
                 <def>Sumpfdotterblume; Caltha palustris</def>
                 <usg type="geo">
                   <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
@@ -1048,7 +1063,7 @@
           </form>
           <sense>
             <sense>
-              <def>Person, der Speichel aus Mund fließt</def>
+              <def>Person, der Speichel aus dem Mund fließt</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
               </usg>
@@ -1087,7 +1102,7 @@
               <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c36706"/>
             </sense>
             <sense>
-              <def>Person, die sich immer ankleckert</def>
+              <def>Person, die sich immer anpatzt</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p6.2">Industriev.</placeName>
               </usg>
@@ -1112,6 +1127,9 @@
         <re>
           <form subtype="compound" type="lemma">
             <orth>Weihkacherl</orth>
+            <gramGrp>
+              <usg>(Diminutiv)</usg>
+            </gramGrp>
           </form>
           <sense>
             <sense>
@@ -1126,6 +1144,9 @@
         <re>
           <form subtype="compound" type="lemma">
             <orth>Weihwasserkacherl</orth>
+            <gramGrp>
+              <usg>(Diminutiv)</usg>
+            </gramGrp>
           </form>
           <sense>
             <sense>
@@ -1165,7 +1186,7 @@
             <orth>alter Kachel</orth>
           </form>
           <sense>
-            <def>altes Weib</def>
+            <def>alte Frau</def>
             <usg type="geo">
               <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
             </usg>
@@ -1349,7 +1370,7 @@
             <orth>Was kostet so ein Kacherl mit zwei Handhaben?</orth>
           </form>
           <sense>
-            <def type="umschreibung">Ausdruck, wenn eine Person/Frau dasteht und die Hände in die Seiten stemmt</def>
+            <def type="umschreibung">Ausdruck, wenn eine Person dasteht und die Hände in die Seiten stemmt</def>
             <usg type="geo">
               <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
             </usg>
@@ -1376,7 +1397,7 @@
             <orth>eine Nachtkachel mit zwei Handhaben</orth>
           </form>
           <sense>
-            <def type="umschreibung">Ausdruck, wenn eine Person dasteht und die Hände in die Seiten stemmt</def>
+            <def type="umschreibung">spöttischer Ausdruck, wenn eine Person dasteht und die Hände in die Seiten stemmt</def>
             <usg type="geo">
               <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.1">wSTir.</placeName>
             </usg>
@@ -1451,10 +1472,10 @@
             <ref>Seichkachel</ref>
           </xr>
           <form subtype="MWE" type="lemma">
-            <orth>bäuerische Seichkachel</orth>
+            <orth>bayerische Seichkachel</orth>
           </form>
           <sense>
-            <def type="umschreibung">abwertender Ausdruck für eine dicke Frau</def>
+            <def type="umschreibung">abwertender Ausdruck für eine korpulente Frau</def>
             <usg type="geo">
               <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
             </usg>
@@ -1472,7 +1493,7 @@
             <orth>Seichkacheln machen</orth>
           </form>
           <sense>
-            <def type="umschreibung">Ausdruck, wenn eine Person dasteht und die Hände in die Seiten stemmt</def>
+            <def type="umschreibung">verächtlicher Ausdruck, wenn eine Person dasteht und die Hände in die Seiten stemmt</def>
             <usg type="geo">
               <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
             </usg>
