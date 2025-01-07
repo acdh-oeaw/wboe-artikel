@@ -2,7 +2,7 @@
     <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
     <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
 <?redaktionstool version="0.8.3" ?>
-<?parser type="lioe" version="0.8.3" ?>
+<?parser type="lioe" version="0.8.4" ?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
@@ -71,6 +71,9 @@
     <revisionDesc>
       <listChange>
         <change status="peer correction" when="2024-01-24" who="#KK">Datensatz erstellt</change>
+        <change status="internal correction" when="2024-03-21" who="#KK"></change>
+        <change status="external correction" when="2024-12-10" who="#KK"></change>
+        <change status="finished" when="2025-01-07" who="#KK"></change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -148,7 +151,7 @@
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
               </usg>
-              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c41074 "/>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c41074"/>
             </sense>
             <sense>
               <def>Junggeselle</def>
@@ -172,9 +175,7 @@
           <sense>
             <sense>
               <def>Person, die Kraftfahrzeuge aufbricht, um daraus Gegenstände zu stehlen</def>
-              <ref type="bibl" target="#Burnadz1966">Burnadz 1966
-                <citedRange>16</citedRange>
-              </ref>
+              <usg>(gaunersprachlich)</usg>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
               </usg>
@@ -202,17 +203,23 @@
           </form>
           <sense>
             <sense>
-              <def>Nussknacker</def>
-              <usg type="geo">
-                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
-              </usg>
-              <usg type="geo">
-                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
-              </usg>
-              <usg type="geo">
-                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
-              </usg>
-              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c41069"/>
+              <sense>
+                <def>Gerät zum Aufbrechen von Nüssen</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c41069"/>
+              </sense>
+              <sense>
+                <def type="umschreibung">scherzhafte Bezeichnung für die Vorderzähne</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p4.5">Flachg.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42579"/>
+              </sense>
             </sense>
           </sense>
         </re>

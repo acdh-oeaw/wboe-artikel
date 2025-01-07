@@ -2,7 +2,7 @@
     <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
     <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
 <?redaktionstool version="0.8.3" ?>
-<?parser type="lioe" version="0.8.3" ?>
+<?parser type="lioe" version="0.8.4" ?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
@@ -71,7 +71,10 @@
     <revisionDesc>
       <listChange>
         <change status="in progress" when="2024-01-25" who="#KK">Datensatz erstellt</change>
-        <change status="peer correction" when="2024-02-01" who="#KK"></change>
+        <change status="peer correction" when="2024-02-01" who="#KK">xy</change>
+        <change status="internal correction" when="2024-03-21" who="#KK">xy</change>
+        <change status="external correction" when="2024-12-10" who="#KK"></change>
+        <change status="finished" when="2025-01-07" who="#KK"></change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -140,7 +143,7 @@
             <sense>
               <def>Kotballen (besonders am Fell oder an der Haut von Tieren)</def>
               <usg type="geo">
-                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
               </usg>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
@@ -154,7 +157,7 @@
                   <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.1m06">Nauders</placeName>
                 </usg>
               </cit>
-              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c41250 "/>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c41250"/>
             </sense>
             <sense>
               <def>Hautunreinheit; Schmutz der Haut</def>
@@ -191,8 +194,10 @@
             </sense>
           </sense>
           <sense>
-            <lbl>nur</lbl>
-            <ref type="form">Knattlen</ref>
+            <xr type="lemma">
+              <lbl>nur</lbl>
+              <ref>Knattlen</ref>
+            </xr>
             <usg>(Plural)</usg>
             <def>hölzerne Fesseln für die Schafe beim Scheren</def>
             <usg type="geo">
@@ -202,7 +207,16 @@
           </sense>
           <sense>
             <sense>
-              <def type="umschreibung">abwertende Bezeichnung für eine Frau</def>
+              <def type="umschreibung">abwertende Bezeichnung für eine (dicke, unreinliche) Person</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
               </usg>
@@ -215,47 +229,17 @@
               <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c41263"/>
             </sense>
             <sense>
-              <def type="umschreibung">abwertende Bezeichnung für eine dicke Person</def>
-              <usg type="geo">
-                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
-              </usg>
-              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c41258"/>
-            </sense>
-            <sense>
-              <def type="umschreibung">abwertende Bezeichung für eine dicke Frau</def>
-              <usg type="geo">
-                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
-              </usg>
-              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c41319"/>
-            </sense>
-            <sense>
-              <def type="umschreibung">abwertende Bezeichnung für eine unreinliche Frau</def>
-              <usg type="geo">
-                <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
-              </usg>
-              <usg type="geo">
-                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
-              </usg>
-              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c41259"/>
-            </sense>
-            <sense>
-              <def type="umschreibung">abwertende Bezeichnung für einen unreinlichen Mann</def>
-              <usg type="geo">
-                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
-              </usg>
-              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c41260"/>
-            </sense>
-            <sense>
               <def type="umschreibung">Kosename für ein Mädchen</def>
-              <usg>(neue Stadtmundart)</usg>
               <usg type="geo">
                 <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
               </usg>
               <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c41261"/>
             </sense>
             <sense>
-              <lbl>nur</lbl>
-              <ref type="form">Knatterli</ref>
+              <xr type="lemma">
+                <lbl>nur</lbl>
+                <ref>Knatterli</ref>
+              </xr>
               <usg>(Diminutiv)</usg>
               <def>kleiner, ungeschickter Bub</def>
               <usg type="geo">
@@ -273,19 +257,15 @@
             <sense>
               <def type="umschreibung">abwertende Bezeichnung für eine schmutzige Person</def>
               <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
                 <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
               </usg>
               <usg type="geo">
                 <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
               </usg>
               <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c41097"/>
-            </sense>
-            <sense>
-              <def type="umschreibung">abwertende Bezeichnung für eine schmutzige Frau</def>
-              <usg type="geo">
-                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
-              </usg>
-              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c41322"/>
             </sense>
           </sense>
         </re>
