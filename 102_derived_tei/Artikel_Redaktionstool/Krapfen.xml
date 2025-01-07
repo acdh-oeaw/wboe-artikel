@@ -2,7 +2,7 @@
     <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
     <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
 <?redaktionstool version="0.8.3" ?>
-<?parser type="lioe" version="0.8.3" ?>
+<?parser type="lioe" version="0.8.4" ?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
@@ -71,6 +71,10 @@
     <revisionDesc>
       <listChange>
         <change status="in progress" when="2024-01-19" who="#SW">Datensatz erstellt</change>
+        <change status="peer correction" when="2024-03-20" who="#SW">V1</change>
+        <change status="internal correction" when="2024-09-20" who="#SW">V2</change>
+        <change status="external correction" when="2024-12-06" who="#SW">V3</change>
+        <change status="finished" when="2025-01-07" who="#SW">online</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -93,12 +97,6 @@
         </form>
         <form type="variant" subtype="diminutive" xml:id="Krapferl">
           <orth>Krapferl</orth>
-          <gramGrp>
-            <gram type="gender">Neutrum</gram>
-          </gramGrp>
-        </form>
-        <form type="variant" subtype="diminutive" xml:id="Krapfler">
-          <orth>Krapfler</orth>
           <gramGrp>
             <gram type="gender">Neutrum</gram>
           </gramGrp>
@@ -212,7 +210,7 @@
           </sense>
           <sense>
             <sense>
-              <def>runde oder längliche in Schmalz bzw. Fett ausgebackene Mehlspeise, die mit oder ohne Füllung in der Faschings-, Oster- und/oder Erntezeit, an Allerheiligen und zu Hochzeiten gegessen wird</def>
+              <def>runde oder längliche in Schmalz bzw. Fett ausgebackene Mehlspeise, die mit oder ohne Füllung in der Faschings-, Oster- und/oder Erntezeit, zu Allerheiligen und zu Hochzeiten gegessen wird</def>
               <usg type="geo">
                 <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
               </usg>
@@ -303,7 +301,7 @@
             </sense>
           </sense>
           <sense>
-            <def>Teil der Furche, der entsteht, wenn schlecht gepflügt wird und etwas ungewendet bleibt; ungepflügter (Gras-)Streifen im Acker; sichtbare Grasstelle; Unebenheit</def>
+            <def>Teil der Furche, der entsteht, wenn schlecht gepflügt wird und ein Teil der Erde ungewendet bleibt; ungepflügter (Gras-)Streifen im Acker; sichtbare Grasstelle; Unebenheit</def>
             <usg type="geo">
               <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
             </usg>
@@ -342,7 +340,7 @@
               <ref target="#Krapfel">Krapfel</ref>
             </xr>
             <usg>(Diminutiv)</usg>
-            <def>krapfenförmiger Felsvorsprung (auch als Bergname)</def>
+            <def>„krapfenförmiger Felsvorsprung“ (auch als Bergname)</def>
             <usg type="geo">
               <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
             </usg>
@@ -416,7 +414,7 @@
           </form>
           <sense>
             <sense>
-              <def>Krapfen, die nach dem Ende der Heuernte gegessen werden</def>
+              <def>Krapfen, der nach dem Ende der Heuernte gegessen wird</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
               </usg>
@@ -544,7 +542,7 @@
           </form>
           <sense>
             <sense>
-              <def>Krapfen, die die scheidenden Dienstboten zu Lichtmess bekommen</def>
+              <def>Krapfen, den ein scheidender Dienstbote zu Lichtmess bekommt</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
               </usg>
@@ -575,11 +573,25 @@
           </form>
           <sense>
             <sense>
-              <def>Krapfen, die jedem Dienstboten über die Tischkost hinaus zum Mitnehmen zustehen</def>
+              <def>Krapfen, der jedem Dienstboten über die Tischkost hinaus zum Mitnehmen zusteht</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
               </usg>
               <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42059"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Bändelkrapfen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Schnürkrapfen; schaumrollenartiger Krapfen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42529"/>
             </sense>
           </sense>
         </re>
@@ -645,6 +657,23 @@
         </re>
         <re>
           <form subtype="compound" type="lemma">
+            <orth>Blättelkrapfen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>in Schmalz ausgebacker dünner, blätteriger Teigflecken</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42525"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
             <orth>Brandweinkrapfen</orth>
           </form>
           <sense>
@@ -664,9 +693,12 @@
           <form subtype="compound" type="lemma">
             <orth>Brechlerkrapfen</orth>
           </form>
+          <form subtype="compound" type="lemma">
+            <orth>Brechkrapfen</orth>
+          </form>
           <sense>
             <sense>
-              <def>Krapfen, der nach dem Ende des Brechelns gegessen wird</def>
+              <def>Krapfen, der nach dem Ende des Brechelns [Schritt in der Flachsverarbeitung] gegessen wird</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
               </usg>
@@ -689,7 +721,7 @@
           </form>
           <sense>
             <sense>
-              <def>Krapfenart aus aus Mehl, Eiern und klein geschnittenen Brennesseln, die am Ostersonntag gegessen wird</def>
+              <def>Krapfenart aus Mehl, Eiern und klein geschnittenen Brennesseln, die am Ostersonntag gegessen wird</def>
               <usg type="geo">
                 <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
               </usg>
@@ -735,7 +767,7 @@
           </form>
           <sense>
             <sense>
-              <def>Krapfen (aus Roggenmehl), die für den 6. Jänner gebacken werden (für das bäuerliche Festtagsessen bzw. verziert als Geschenk für die Burschen)</def>
+              <def>Krapfen (aus Roggenmehl), der für den 6. Jänner gebacken wird (für das bäuerliche Festtagsessen bzw. verziert als Geschenk für die Burschen)</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.1">wSTir.</placeName>
               </usg>
@@ -752,7 +784,7 @@
           </form>
           <sense>
             <sense>
-              <def>Krapfen (aus Roggenmehl), die zum Abschluss der Dreschzeit gebacken werden</def>
+              <def>Krapfen (aus Roggenmehl), der zum Abschluss der Dreschzeit gebacken wird</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
               </usg>
@@ -853,7 +885,7 @@
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p7.2">MBgl.</placeName>
               </usg>
               <cit type="example">
-                <quote xml:lang="bar-AT">Am Fosching bochama Kropfa Foschingkropfa</quote>
+                <quote xml:lang="bar-AT">Am Fosching bochama Kropfa [,] Foschingkropfa</quote>
                 <usg type="geo">
                   <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3a24">Waldkirchen an der Thaya</placeName>
                 </usg>
@@ -875,7 +907,7 @@
           <sense>
             <sense>
               <sense>
-                <def>mit faschiertem Fleisch gefüllter Mehlspeise</def>
+                <def>mit faschiertem Fleisch gefüllte Mehlspeise</def>
                 <usg type="geo">
                   <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
                 </usg>
@@ -890,7 +922,7 @@
                   <ref>Fleischkrapfel, Fleischkrapferl</ref>
                 </xr>
                 <usg>(Diminutiv, Plural)</usg>
-                <def>faschiertes Laiberl; Fleischklößchen</def>
+                <def>faschierte Laiberl; Fleischklößchen</def>
                 <usg type="geo">
                   <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.2">mNTir.</placeName>
                 </usg>
@@ -984,29 +1016,31 @@
                 <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42334"/>
               </sense>
               <sense>
-                <xr type="variant" subtype="compound">
-                  <lbl>nur</lbl>
-                  <ref>Greißkrapfel</ref>
-                </xr>
-                <usg>(Diminutiv)</usg>
-                <def>Grauer Alpendost; Adenostyles albifrons</def>
-                <usg type="geo">
-                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
-                </usg>
-                <usg type="geo">
-                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
-                </usg>
-                <usg type="geo">
-                  <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
-                </usg>
-                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42335"/>
-              </sense>
-              <sense>
-                <def type="umschreibung">Bezeichnung für die Blätter des Grünen Alpendosts; Adenostyles alpina</def>
-                <usg type="geo">
-                  <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
-                </usg>
-                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42336"/>
+                <sense>
+                  <xr type="variant" subtype="compound">
+                    <lbl>nur</lbl>
+                    <ref>Greißkrapfel</ref>
+                  </xr>
+                  <usg>(Diminutiv)</usg>
+                  <def>Grauer Alpendost; Adenostyles albifrons</def>
+                  <usg type="geo">
+                    <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+                  </usg>
+                  <usg type="geo">
+                    <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+                  </usg>
+                  <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42335"/>
+                </sense>
+                <sense>
+                  <def>Bezeichnung für die Blätter des Grünen Alpendosts; Adenostyles alpina</def>
+                  <usg type="geo">
+                    <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+                  </usg>
+                  <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42336"/>
+                </sense>
               </sense>
             </sense>
           </sense>
@@ -1082,7 +1116,9 @@
                 <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
               </usg>
               <usg type="geo">
-                <?comment + v. Geramb, Sitte u. Brauch i. Oest. (1948)19 ?>
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <usg type="geo">
                 <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
               </usg>
               <cit type="example">
@@ -1101,7 +1137,7 @@
           </form>
           <sense>
             <sense>
-              <def>Krapfen mit dem „Grübchen“ in der Scheibenmitte</def>
+              <def>Krapfen mit einem „Grübchen“ in der Scheibenmitte</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p4.3">Pong.</placeName>
               </usg>
@@ -1115,7 +1151,7 @@
           </form>
           <sense>
             <sense>
-              <def>Krapfen, die zum Haferschnitt gebacken werden</def>
+              <def>Krapfen, der zum Haferschnitt gebacken wird</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
               </usg>
@@ -1165,7 +1201,10 @@
         </re>
         <re>
           <form subtype="compound" type="lemma">
-            <orth>Hochzeit(s)krapfen</orth>
+            <orth>Hochzeitkrapfen</orth>
+          </form>
+          <form subtype="compound" type="lemma">
+            <orth>Hochzeitskrapfen</orth>
           </form>
           <sense>
             <sense>
@@ -1263,7 +1302,7 @@
           </form>
           <sense>
             <sense>
-              <def>mit Honig bestrichener Krapfen, Honiggebäck z. B. für Hochzeiten</def>
+              <def>mit Honig bestrichener Krapfen, Honiggebäck, z. B. für Hochzeiten</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
               </usg>
@@ -1292,6 +1331,9 @@
         <re>
           <form subtype="compound" type="lemma">
             <orth>Husarenkrapferl</orth>
+            <gramGrp>
+              <usg>(Diminutiv)</usg>
+            </gramGrp>
           </form>
           <sense>
             <sense>
@@ -1340,7 +1382,7 @@
           </form>
           <sense>
             <sense>
-              <def>mit Käse (und Schotten) gefüllter Krapfen</def>
+              <def>mit (Schotten-)Käse gefüllter Krapfen</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
               </usg>
@@ -1401,7 +1443,7 @@
               <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c41610"/>
             </sense>
             <sense>
-              <def type="umschreibung">Brauch, die Bäuerin / den Bauern zwischen Stangen/Dreschflegel einzuklemmen, wenn nach dem Dreschen keine Krapfen gebacken waren bzw. bis gutes Essen oder Schnaps versprochen werden</def>
+              <def type="umschreibung">Brauch, die Bäuerin / den Bauern zwischen Stangen/Dreschflegel einzuklemmen, wenn nach dem Dreschen keine Krapfen gebacken sind bzw. bis gutes Essen oder Schnaps versprochen werden</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
               </usg>
@@ -1474,6 +1516,61 @@
                 <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
               </usg>
               <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c41655"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Magenkrapfen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>mit Mohn gefüllter Krapfen</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42524"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Mahderkrapfen</orth>
+          </form>
+          <form subtype="compound" type="lemma">
+            <orth>Mahdkrapfen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>in Schmalz ausgebackener Krapfen für die Heumäher</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42523"/>
             </sense>
           </sense>
         </re>
@@ -1600,7 +1697,7 @@
           </form>
           <sense>
             <sense>
-              <def>Schlutzkrapfen; mit grünem Mus gefüllte und in Schmalz ausgebackene Eierküchlein</def>
+              <def>Schlutzkrapfen; mit grünem Mus gefülltes und in Schmalz ausgebackenes Eierküchlein</def>
               <usg type="geo">
                 <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
               </usg>
@@ -1631,6 +1728,213 @@
                 <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
               </usg>
               <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42056"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Prügelkrapfen</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def>Baumkuchen, der auf einem Holzprügel bzw. einer Rolle über offenem Feuer gebacken wird</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42526"/>
+              </sense>
+              <sense>
+                <def>Festtagsgebäck; feine (längliche) Mehlspeise</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42527"/>
+              </sense>
+            </sense>
+            <sense>
+              <xr type="variant" subtype="compound">
+                <lbl>nur</lbl>
+                <ref>Prügelkrapfen</ref>
+              </xr>
+              <usg>(Plural)</usg>
+              <def>Schläge</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42528"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Riegelkrapfen</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <def>Krapfen, der (zur Faschingszeit) auf einem Holzriegel gebacken wird</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42530"/>
+              </sense>
+              <sense>
+                <def>Baumkuchen aus Biskuitteig</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42531"/>
+              </sense>
+              <sense>
+                <def>Bauernkrapfen; krapfenartiges Gebäck mit gewundener Form; Germspeise</def>
+                <usg type="geo">
+                  <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42532"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Schlickkrapfen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>mit Fleisch oder Spinat gefüllte Teigtasche als Suppeneinlage</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42543"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Schlingkrapfen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>mit Topfen gefüllte Mehlspeise</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42533"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Schlipfkrapfen</orth>
+          </form>
+          <sense>
+            <sense>
+              <sense>
+                <xr type="variant" subtype="compound">
+                  <lbl>nur</lbl>
+                  <ref>Schlipfkrapfen</ref>
+                </xr>
+                <usg>(Plural)</usg>
+                <def>gefüllte Krapfen</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+                </usg>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42534"/>
+              </sense>
+              <sense>
+                <xr type="variant" subtype="compound">
+                  <lbl>nur</lbl>
+                  <ref>Schlipfkrapfen</ref>
+                </xr>
+                <usg>(Plural)</usg>
+                <def>gesottene Krapfen</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42535"/>
+              </sense>
+              <sense>
+                <xr type="variant" subtype="compound">
+                  <lbl>nur</lbl>
+                  <ref>Schlipfkrapflein</ref>
+                </xr>
+                <usg>(Diminutiv)</usg>
+                <def type="umschreibung">eine Suppenspeise</def>
+                <usg type="geo">
+                  <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
+                </usg>
+                <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42536"/>
+              </sense>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Schlutzkrapfen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>in Wasser gekochter Krapfen</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42544"/>
+            </sense>
+            <sense>
+              <def>unreifer Mensch</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1B.0">OTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42545"/>
             </sense>
           </sense>
         </re>
@@ -1672,7 +1976,7 @@
           </form>
           <sense>
             <sense>
-              <def>Krapfenart, bei der der Teig (z. B. Brandteig, Blätterteig) mittels einer Schnur auf einer Metallform befestigt wird und anschließend in Fett herausgebacken und ggf. gefüllt wird</def>
+              <def>Krapfenart, bei der der Teig (z. B. Brandteig, Blätterteig) mittels einer Schnur auf einer Metallform befestigt und anschließend in Fett herausgebacken und ggf. gefüllt wird</def>
               <usg type="geo">
                 <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
               </usg>
@@ -1707,7 +2011,7 @@
           </form>
           <sense>
             <sense>
-              <def>mit Schotten gefüllter Krapfen (in Schmalz ausgebacken)</def>
+              <def>mit Schottenkäse gefüllter Krapfen (in Schmalz ausgebacken)</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
               </usg>
@@ -1721,6 +2025,205 @@
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
               </usg>
               <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c41685"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Sonnwendkrapfen</orth>
+          </form>
+          <form subtype="compound" type="lemma">
+            <orth>Sonnewendkrapfen</orth>
+          </form>
+          <form subtype="compound" type="lemma">
+            <orth>Sonnenwendkrapfen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Krapfen/Festgebäck zur Sonnenwende bzw. zur Erntezeit</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">Sunöwent-Gråpfm u. båchənəʳ Holləʳ węⁱnd ausdǫald</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.3b02">Gmunden</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42551"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Spagatkrapfen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>bogenförmig geformtes Feingebäck, bei dem der Teig auf eine Holzrolle aufgegossen wird; Mehlspeise/Gebäck zur Hochzeit</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42546"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Speckkrapfen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>mit Fleisch und Speck gefüllter (großer) Krapfen</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42548"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Spritzkrapfen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Gebäck, bei dem der Teig aus Milch, Mehl, Fett (Brandteig) mit einer Spritze geformt und gebacken wird; Straube</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">d' Schbrizgråpfn san wia d' Schdrāūᵇm</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2e01">Linz</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42547"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Stängelkrapfen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>in Schmalz gebackener, viereckiger Krapfen aus Germteig mit zwei Kerben</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42550"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Teilkrapfen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>(in der Pfanne gebackenes, halbrundes) Gebäck (aus Roggen), das Dienstboten am Kirchtag bzw. zu Fronleichnam erhalten</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42555"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Tiegelkrapfen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Gebäck aus Schmarrenteig, das in einer Form mit halbkugelförmigen Mulden bei großer Hitze gebacken wird und sich dadurch kugelförmig wölbt</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42554"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Topfenkrapfen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>mit Topfen (und Dörrbirnen) gefüllter Krapfen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p4.2">Pinzg.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42553"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Waffelkrapfen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>dünner, zwischen Eisenblechen ausgebackener Krapfen</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42556"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Zahlkrapfen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>eine Art Faschingskrapfen, der bei Hochzeiten gegessen wird</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c40954"/>
+            </sense>
+          </sense>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
+            <orth>Zottelkrapfen</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>Germkrapfen zu Dreikönig, die in Ei getaucht und in Schmalz gebacken werden</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c41324"/>
             </sense>
           </sense>
         </re>
@@ -1768,7 +2271,7 @@
         </re>
         <re type="redewendung">
           <form subtype="MWE" type="lemma">
-            <orth>Bäuerin, back Krapfen, / die Drescher sind da / sonst dreschen wir dich zusammen mit / deiner Butterpfanne auch!</orth>
+            <orth>Bäuerin, back Krapfen, die Drescher sind da / sonst dreschen wir dich zusammen mit deiner Butterpfanne auch!</orth>
           </form>
           <sense>
             <def type="umschreibung">Dreschspruch</def>
@@ -1855,7 +2358,7 @@
             <orth>das Krapfenbacken</orth>
           </form>
           <sense>
-            <def type="umschreibung">Spiel, bei dem alle Teilnehmer zuerst die linken Hände übereinander legen, dann schlagen sie mit der rechten Hand der Reihe nach darauf und lassen sie liegen, danach ziehen sie der Reihe nach ihre linke Hand heraus, um mit ihr auf die aufgetürmten Hände zu schlagen; das wird beliebig lang fortgesetzt; durch das Schlagen soll der Handrücken anschwellen wie ein Krapfen</def>
+            <def type="umschreibung">Spiel, bei dem alle Teilnehmer zuerst die linken Hände übereinander legen, dann schlagen sie mit der rechten Hand der Reihe nach darauf und lassen die Hände liegen, danach ziehen sie der Reihe nach ihre linke Hand heraus, um mit ihr auf die aufgetürmten Hände zu schlagen; das wird beliebig lang fortgesetzt; durch das Schlagen soll der Handrücken anschwellen wie ein Krapfen</def>
             <usg type="geo">
               <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
             </usg>
@@ -1870,7 +2373,7 @@
         </re>
         <re type="redewendung">
           <form subtype="MWE" type="lemma">
-            <orth>Die Krapfen in der Sonne, / die roten Eier in der Stube</orth>
+            <orth>Die Krapfen in die Sonne, die roten Eier in der Stube</orth>
           </form>
           <sense>
             <def type="umschreibung">Wetterregel: Wenn es im Fasching schön ist, ist das Wetter zu Ostern wild</def>
@@ -1906,7 +2409,7 @@
         </re>
         <re type="redewendung">
           <form subtype="MWE" type="lemma">
-            <orth>drei eckerte Krapfen, teil gekocht, teils gebacken</orth>
+            <orth>drei eckige Krapfen, teils gekocht, teils gebacken</orth>
           </form>
           <sense>
             <def type="umschreibung">Dreschspruch</def>
@@ -1924,7 +2427,7 @@
         </re>
         <re type="redewendung">
           <form subtype="MWE" type="lemma">
-            <orth>drei Lippen drei Lappen / drei zipferte Krapfen</orth>
+            <orth>drei Lippen drei Lappen drei zipferte Krapfen</orth>
           </form>
           <sense>
             <def type="umschreibung">Dreschspruch</def>
@@ -1960,7 +2463,7 @@
         </re>
         <re type="redewendung">
           <form subtype="MWE" type="lemma">
-            <orth>ein Gesicht (als) wie ein Krapfen</orth>
+            <orth>(ein) Gesicht (als) wie (ein) Krapfen</orth>
           </form>
           <sense>
             <def>aufgedunsenes Gesicht</def>
@@ -2029,8 +2532,7 @@
         </re>
         <re type="redewendung">
           <form subtype="MWE" type="lemma">
-            <?comment Ansatz? ?>
-            <orth>Heim aso der Mutter / Krapfen aufzählen / tutteln und teinen / Arschloch auskreinen</orth>
+            <orth>Heim aso der Mutter / Krapfen aufzählen / tutteln und dein / Arschloch auskreinen</orth>
           </form>
           <sense>
             <def type="umschreibung">Scherzspruch, meist zu Personen, die es immer nach Hause zieht</def>
@@ -2038,7 +2540,7 @@
               <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
             </usg>
             <cit type="example">
-              <quote xml:lang="bar-AT">hǭ̃ɒ̃m Asɒ dɒ mǭ̃ɒ̃m / kχrǫpfn aufdßǫ̃ɒ̃n / tuttln ũnd taįn / ǭšlox auskχraįn</quote>
+              <quote xml:lang="bar-AT">hǭ̃ɒ̃m ɒsɒ dɒ mǭ̃ɒ̃m / kχrǫpfn aufdßǫ̃ɒ̃n / tuttln ũnd taįn / ǭšlox auskχraįn</quote>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p4.1">Lung.</placeName>
               </usg>
@@ -2085,7 +2587,7 @@
                 <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.2c02">Berndorf</placeName>
               </usg>
             </cit>
-            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c"/>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c41274"/>
           </sense>
         </re>
         <re type="redewendung">
@@ -2109,7 +2611,7 @@
             <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c41284"/>
           </sense>
           <sense>
-            <def>zur Not das Weinen zurückhalten (von Kindern)</def>
+            <def>notfalls das Weinen zurückhalten (von Kindern)</def>
             <usg type="geo">
               <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
             </usg>
@@ -2151,8 +2653,7 @@
               <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
             </usg>
             <cit type="example">
-              <?comment check ?>
-              <quote xml:lang="bar-AT">kχiə giən iwər an aisra albl, iwərnwerts wais, iwrawerts roət^</quote>
+              <quote xml:lang="bar-AT">kχiə giən iwər an aisra albl, iwərnwerts wais, iwrawerts roət</quote>
               <usg type="geo">
                 <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.4c01">Lüsen</placeName>
               </usg>
@@ -2315,7 +2816,7 @@
               <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
             </usg>
             <cit type="example">
-              <quote xml:lang="bar-AT">τσwipo̩χA κro̩pfm</quote>
+              <quote xml:lang="bar-AT">τσwipo̩χɒ κro̩pfm</quote>
               <usg type="geo">
                 <placeName type="gemeinde" ref="/geodata-wboe.xml#p5.2b46">Weibern</placeName>
               </usg>
@@ -2328,7 +2829,7 @@
             <ref>Butterkrapfen</ref>
           </xr>
           <form subtype="MWE" type="lemma">
-            <orth>Zipfel Zapfel, / Butterkrapfel, / Fang, Alte, fang!</orth>
+            <orth>Zipfel Zapfel, Butterkrapfel, Fang, Alte, fang!</orth>
           </form>
           <sense>
             <def type="umschreibung">Kinderauszählreim</def>
@@ -2358,10 +2859,10 @@
             <orth>Faschingskrapfen in der Sonne / Ostereier in der Stube</orth>
           </form>
           <form subtype="MWE" type="lemma">
-            <orth>Die Faschingskrapfen in / zu Ostern die Eier in der Stube</orth>
+            <orth>Die Faschingskrapfen in der Sonne / zu Ostern die Eier in der Stube</orth>
           </form>
           <sense>
-            <def type="umschreibung">Wetterregel für kalte Ostern</def>
+            <def type="umschreibung">Wetterregel: Wenn es im Fasching schön ist, ist das Wetter zu Ostern kalt</def>
             <usg type="geo">
               <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
             </usg>
@@ -2414,6 +2915,27 @@
               </usg>
             </cit>
             <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c41363"/>
+          </sense>
+        </re>
+        <re type="redewendung">
+          <xr type="variant" subtype="compound">
+            <ref>Schlipfkrapfen</ref>
+          </xr>
+          <form subtype="MWE" type="lemma">
+            <orth>Schlipfkrapfel kriegen</orth>
+          </form>
+          <sense>
+            <def type="umschreibung">spottender Ausdruck, wenn etwas für eine Person nicht günstig ausgegangen ist</def>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+            </usg>
+            <cit type="example">
+              <quote xml:lang="bar-AT">Schlipfkrapfɫ kriən</quote>
+              <usg type="geo">
+                <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3b03">Thiersee</placeName>
+              </usg>
+            </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c42537"/>
           </sense>
         </re>
       </entry>

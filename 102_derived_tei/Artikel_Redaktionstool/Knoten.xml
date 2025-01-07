@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
     <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
-<?redaktionstool version="0.8.2" ?>
-<?parser type="lioe" version="0.8.2" ?>
+<?redaktionstool version="0.8.3" ?>
+<?parser type="lioe" version="0.8.4" ?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
@@ -71,6 +71,9 @@
       <listChange>
         <change status="in progress" when="2023-06-19" who="#SW">Datensatz erstellt</change>
         <change status="peer correction" when="2023-06-20" who="#SW">V1</change>
+        <change status="internal correction" when="2024-03-28" who="#SW">V2</change>
+        <change status="external correction" when="2024-11-28" who="#SW">V3</change>
+        <change status="finished" when="2025-01-07" who="#SW">online</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -78,7 +81,6 @@
     <body>
       <entry>
         <form type="lemma" xml:id="Knoten">
-          <?comment Knote, Knoden, Knode, Knott, Knotte, Knotten, Knottel ?>
           <orth>Knoten</orth>
           <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c37049"/>
         </form>
@@ -91,6 +93,7 @@
           <orth>Knötel</orth>
           <gramGrp>
             <gram type="gender">Neutrum</gram>
+            <gram type="gender">Femininum</gram>
           </gramGrp>
         </form>
         <form type="variant" subtype="diminutive" xml:id="Knoetlein">
@@ -133,12 +136,13 @@
         <usg type="geo">
           <placeName type="grossregion" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
         </usg>
-        <note type="kommentar"></note>
         <etym>
           <cit type="etymon">
             <lang>ahd.</lang>
             <form>
               <orth>knodo</orth>
+            </form>
+            <form>
               <orth>knoto</orth>
             </form>
             <def>(geknoteter) Riemen; natürlicher Knoten, Verdickung (an Pflanzen, beim Menschen: (Finger-)Knöchel)</def>
@@ -147,6 +151,8 @@
             <lang>mhd.</lang>
             <form>
               <orth>knode</orth>
+            </form>
+            <form>
               <orth>knote</orth>
             </form>
             <def>natürlicher Knoten am menschlichen Körper; Fussknöchel; natürlicher Knoten an Pflanzen; Keim; Trieb; Holzbirne; künstlicher Knoten an einem Faden, einer Schnur etc.; Schlinge</def>
@@ -155,6 +161,8 @@
             <lang>frnhd.</lang>
             <form>
               <orth>knode</orth>
+            </form>
+            <form>
               <orth>knote</orth>
             </form>
             <def>rundliche (evtl. krankhafte) Verdickung von Gewebe; Hoden; Knöchel; Gelenk an der Hand, am Fuß; metonymisch: Hand; rundliche Verdickung an Pflanzenteilen; Astknoten; Samenbehälter; Kapsel; Schlinge; Bandknoten; Docht; durch Knoten an einer Schnur bezeichneter Anteil an Schreinsgebühren, Halmknoten bei Verlosung von Anteilen (in Rechtstexten); Band; Fessel; schwierige Frage; Problem</def>
@@ -163,6 +171,8 @@
           <cit type="etymon">
             <form>
               <orth>Knote</orth>
+            </form>
+            <form>
               <orth>Knoten</orth>
             </form>
           </cit>
@@ -170,6 +180,8 @@
           <cit type="etymon">
             <form>
               <orth>Knode</orth>
+            </form>
+            <form>
               <orth>Knoden</orth>
             </form>
           </cit>
@@ -193,7 +205,7 @@
             <ref type="bibl" subtype="online">
               <lbl>vgl.</lbl>Lexer online
               <xr type="lemma">
-                <ref>knode, knote</ref>
+                <ref>knode, knote; knotte, knottel</ref>
                 <date type="accessed">19.06.2023</date>
               </xr>
             </ref>
@@ -239,13 +251,6 @@
               <usg type="geo">
                 <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
               </usg>
-              <cit type="example">
-                <?comment Tirol. Heimatbl., Wiessner5,25 ?>
-                <quote xml:lang="bar-AT">Knoden wia Pfundstute und Wade glei gar kue oder Wade wia verheireter Spatz</quote>
-                <usg type="geo">
-                  <placeName type="kleinregion" ref="/geodata-wboe.xml#p1C.1b">Tannheimert.</placeName>
-                </usg>
-              </cit>
               <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c37115"/>
             </sense>
             <sense>
@@ -376,7 +381,7 @@
               <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c37224"/>
             </sense>
             <sense>
-              <def>Knöllchen im Haar bzw. Fell von Tieren durch Verfilzung, Kot oder Schmutz</def>
+              <def>Knöllchen im Haar bzw. Fell durch Verfilzung, Kot oder Schmutz</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
               </usg>
@@ -442,6 +447,7 @@
                 <lbl>nur</lbl>
                 <ref target="#Knoeterlein">Knöterlein</ref>
               </xr>
+              <usg>(Diminutiv)</usg>
               <def>kleiner Bub</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.4">öSTir.</placeName>
@@ -449,18 +455,19 @@
               <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c37128"/>
             </sense>
             <sense>
-              <def>Dummtrotzköpfiger</def>
+              <def>Trotzkopf; Dummkopf</def>
               <usg type="geo">
                 <placeName type="bundesland" ref="/geodata-wboe.xml#p6">NÖ</placeName>
               </usg>
               <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c37126"/>
             </sense>
             <sense>
-              <xr type="lemma">
+              <xr type="lemma" subtype="diminutive">
                 <lbl>nur</lbl>
-                <ref target="#Knoetel">Knottel</ref>
+                <ref target="#Knoetel">Knötel</ref>
               </xr>
-              <def>daherknatzende, alte Frau</def>
+              <usg>(Diminutiv)</usg>
+              <def>alte Frau</def>
               <usg type="geo">
                 <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
               </usg>
@@ -475,7 +482,7 @@
             <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c37134"/>
           </sense>
           <sense>
-            <def>Herbstzeitlose</def>
+            <def>Herbstzeitlose; Colchicum autumnale</def>
             <usg type="geo">
               <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
             </usg>
@@ -613,7 +620,7 @@
           </form>
           <sense>
             <sense>
-              <def>durch Gicht hervorgerufene krankhafte Verdickung z. B. an den Händen</def>
+              <def>durch Gicht hervorgerufene krankhafte Verdickung, z. B. an den Händen</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
               </usg>
@@ -623,7 +630,7 @@
         </re>
         <re>
           <form subtype="compound" type="lemma">
-            <orth>Grammelknödel</orth>
+            <orth>Grammelknoten</orth>
           </form>
           <sense>
             <sense>
@@ -641,7 +648,7 @@
           </form>
           <sense>
             <sense>
-              <def type="umschreibung">weibliche Haartracht, bei der die Zöpfe knödelartig zusammengedreht sind</def>
+              <def>weibliche Haartracht, bei der die Zöpfe knödelartig zusammengedreht sind</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
               </usg>
@@ -728,18 +735,12 @@
           </form>
           <sense>
             <sense>
-              <def>
-                <?comment Formulierung ?>
-                Nachgeburt
-              </def>
+              <def>unechte Nabelschnurknoten, die durch ein Abknicken der Blutgefäße hervorgerufen werden und bei der ersten Geburt angeblich auf die Anzahl der nachfolgenden Geburten schließen lassen sollen</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
               </usg>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
-              </usg>
-              <usg type="geo">
-                <placeName type="grossregion" ref="/geodata-wboe.xml#p6.3">Waldv.</placeName>
               </usg>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p6.4">Weinv.</placeName>
@@ -750,7 +751,24 @@
         </re>
         <re>
           <form subtype="compound" type="lemma">
+            <orth>Öhrlknoten</orth>
+          </form>
+          <sense>
+            <sense>
+              <def>weibliche Haartracht, bei der die zu einem Zopf geflochtenen Haare über jedem Ohr zu einem Knödel geformt sind</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
+              </usg>
+            </sense>
+          </sense>
+          <ptr type="collection" subtype="wortbildung" target="/collections-wboe.xml#c37274"/>
+        </re>
+        <re>
+          <form subtype="compound" type="lemma">
             <orth>Patschknötlein</orth>
+            <gramGrp>
+              <usg>(Diminutiv)</usg>
+            </gramGrp>
           </form>
           <sense>
             <sense>
@@ -768,7 +786,7 @@
           </form>
           <sense>
             <sense>
-              <def>Knödel, die in einer Rein zubereitet werden</def>
+              <def>Knödel, der in einer flachen Backform zubereitet wird</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p5.4">Mühlv.</placeName>
               </usg>
@@ -846,20 +864,6 @@
             </sense>
           </sense>
         </re>
-        <re>
-          <form subtype="compound" type="lemma">
-            <orth>Öhrlknoten</orth>
-          </form>
-          <sense>
-            <sense>
-              <def type="umschreibung">weibliche Haartracht, bei der die zu einem Zopf geflochtenen Haare über jedem Ohr zu einem Knödel geformt sind</def>
-              <usg type="geo">
-                <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
-              </usg>
-            </sense>
-          </sense>
-          <ptr type="collection" subtype="wortbildung" target="/collections-wboe.xml#c37274"/>
-        </re>
         <re type="redewendung">
           <xr type="lemma">
             <ref target="#Knoten">Knoten</ref>
@@ -868,7 +872,7 @@
             <orth>barfüßige Knoten</orth>
           </form>
           <sense>
-            <def>kleine Mehlknödel als Beilage zu jeder Fleischspeise</def>
+            <def>kleine Mehlknödel als Beilage zu einer Fleischspeise</def>
             <usg type="geo">
               <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
             </usg>
@@ -892,7 +896,7 @@
             <def>Küchel (tellergroße, in Schmalz gebackene flache Krapfen)</def>
             <usg>(scherzhaft)</usg>
             <usg type="geo">
-              <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p5">OÖ</placeName>
             </usg>
             <cit type="example">
               <quote xml:lang="bar-AT">braunė gnūn</quote>
@@ -924,6 +928,7 @@
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p5.1">Innv.</placeName>
               </usg>
             </cit>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c37119"/>
           </sense>
         </re>
         <re type="redewendung">
