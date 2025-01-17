@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
     <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
-<?redaktionstool version="0.8.2" ?>
-<?parser type="lioe" version="0.8.2" ?>
+<?redaktionstool version="0.8.3" ?>
+<?parser type="lioe" version="0.8.4" ?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
@@ -71,6 +71,9 @@
       <listChange>
         <change status="peer correction" when="2023-02-14" who="#AK">Datensatz erstellt</change>
         <change status="peer correction" when="2023-03-30" who="#AK">Peer review von EW eingearbeitet</change>
+        <change status="internal correction" when="2024-11-07" who="#AK">Belege entfernt > Krutz, Grutz, weiter in interne Korrektur</change>
+        <change status="external correction" when="2024-12-11" who="#AK">Kommentare von MG eingearbeitet</change>
+        <change status="finished" when="2025-01-13" who="#AK">keine Kommentare JE</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -79,12 +82,11 @@
       <entry>
         <form type="lemma" xml:id="Grutze">
           <orth>Grutze</orth>
-          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c32710 "/>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c32710"/>
         </form>
         <gramGrp>
           <gram type="pos">Substantiv</gram>
           <gram type="gender">Femininum</gram>
-          <gram type="gender">Maskulinum</gram>
         </gramGrp>
         <form type="variant" subtype="diminutive" xml:id="Gruetzel">
           <orth>Grützel</orth>
@@ -168,7 +170,10 @@
               <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
             </usg>
             <usg type="geo">
-              <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
             </usg>
             <cit type="example">
               <quote xml:lang="bar-AT">Ter hot a sou a Grützl</quote>
@@ -182,36 +187,20 @@
                 <placeName type="gemeinde" ref="/geodata-wboe.xml#p1A.1a02">Mals</placeName>
               </usg>
             </cit>
-            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c32715 "/>
-          </sense>
-          <sense>
-            <def>magerer Acker; Feld mit steinigem Boden</def>
-            <usg type="geo">
-              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
-            </usg>
-            <usg type="geo">
-              <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
-            </usg>
-            <usg type="geo">
-              <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
-            </usg>
-            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c32716"/>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c32715"/>
           </sense>
         </sense>
         <re>
           <form subtype="compound" type="lemma">
             <orth>Kuhgrutze</orth>
           </form>
-          <form subtype="compound" type="lemma">
-            <orth>Kuhgrützel</orth>
-          </form>
           <sense>
             <sense>
-              <def>Hof eines Kuhbauers</def>
+              <def>Hof eines Kuhbauern</def>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.2">mSTir.</placeName>
               </usg>
-              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c32717 "/>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c32717"/>
             </sense>
           </sense>
         </re>

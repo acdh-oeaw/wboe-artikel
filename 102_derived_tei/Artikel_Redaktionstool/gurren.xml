@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
     <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
-<?redaktionstool version="0.8.2" ?>
-<?parser type="lioe" version="0.8.2" ?>
+<?redaktionstool version="0.8.3" ?>
+<?parser type="lioe" version="0.8.4" ?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
@@ -70,6 +70,10 @@
     <revisionDesc>
       <listChange>
         <change status="peer correction" when="2023-04-14" who="#AK">Datensatz erstellt</change>
+        <change status="peer correction" when="2024-11-08" who="#AK">Weitere Belege eingebaut und nochmals in Peer-Correction</change>
+        <change status="internal correction" when="2024-11-12" who="#AK">keine Anm. AG</change>
+        <change status="external correction" when="2024-12-12" who="#AK">keine Anm. MG</change>
+        <change status="finished" when="2025-01-13" who="#AK">keine Anm. JE</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -78,17 +82,41 @@
       <entry>
         <form type="lemma" xml:id="gurren">
           <orth>gurren</orth>
-          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c34896 "/>
+        </form>
+        <form type="lemma" xml:id="girren">
+          <orth>girren</orth>
+        </form>
+        <form type="lemma" xml:id="kurren">
+          <orth>kurren</orth>
+        </form>
+        <form type="lemma" xml:id="kirren">
+          <orth>kirren</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c34896"/>
         </form>
         <gramGrp>
           <gram type="pos">Verb</gram>
           <iType>schwach</iType>
         </gramGrp>
         <usg type="geo">
-          <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
         </usg>
         <usg type="geo">
           <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
         </usg>
         <usg type="geo">
           <placeName type="bundesland" ref="/geodata-wboe.xml#p4">Sbg.</placeName>
@@ -146,9 +174,15 @@
         <sense>
           <sense>
             <sense>
-              <def>ein charakteristisches Taubengeräusch von sich geben; girren</def>
+              <def>ein charakteristisches Taubengeräusch von sich geben</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.3">öNTir.</placeName>
+              </usg>
               <usg type="geo">
                 <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
               </usg>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
@@ -166,28 +200,79 @@
                 <placeName type="bundesland" ref="/geodata-wboe.xml#p6.5">Wien</placeName>
               </usg>
               <cit type="example">
+                <quote xml:lang="bar-AT">dǫ̈ Tauᵇm girrn</quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e06">Kufstein</placeName>
+                </usg>
+              </cit>
+              <cit type="example">
                 <quote xml:lang="bar-AT">Dė Daum gu͜aʳn</quote>
                 <usg type="geo">
                   <placeName type="gemeinde" ref="/geodata-wboe.xml#p6.1n02">Dunkelsteinerwald</placeName>
                 </usg>
               </cit>
-              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c34913 "/>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c34913"/>
             </sense>
             <sense>
-              <def>ein knurrendes Tiergeräusch von sich geben; beim Balzen knurren</def>
+              <def>ein knurrendes Tiergeräusch von sich geben; knurren; fauchen</def>
               <usg type="geo">
-                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
               </usg>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p2.3">MKtn.</placeName>
               </usg>
-              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c34914 "/>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c34914"/>
             </sense>
           </sense>
           <sense>
-            <def>rülpsen</def>
+            <sense>
+              <def>laut schreien (von Tieren oder Menschen)</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.3">WStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p3.5">OStmk.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <cit type="example">
+                <quote xml:lang="bar-AT">'s Kinn
+                  <cit type="translation">
+                    <quote xml:lang="de">Kind</quote>
+                  </cit>kiat im̄a
+                </quote>
+                <usg type="geo">
+                  <placeName type="gemeinde" ref="/geodata-wboe.xml#p3.3c08">Stainz</placeName>
+                </usg>
+              </cit>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c43493"/>
+            </sense>
+            <sense>
+              <def>reden; jemanden scharf ansprechen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p1C.1">wNTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c43495"/>
+            </sense>
+            <sense>
+              <def>laut lachen</def>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p5.2">Hausrv.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c43494"/>
+            </sense>
+          </sense>
+          <sense>
+            <def>ein Glucksgeräusch machen (vom Bauch); rülpsen</def>
             <usg type="geo">
               <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p3.2">mbair.ObStmk.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="grossregion" ref="/geodata-wboe.xml#p6.1">Mostv.</placeName>
             </usg>
             <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c34915"/>
           </sense>
