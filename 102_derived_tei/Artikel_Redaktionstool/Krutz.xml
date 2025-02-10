@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
     <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
-<?redaktionstool version="0.8.2" ?>
-<?parser type="lioe" version="0.8.2" ?>
+<?redaktionstool version="0.8.3" ?>
+<?parser type="lioe" version="0.8.4" ?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
@@ -71,6 +71,10 @@
       <listChange>
         <change status="peer correction" when="2023-04-24" who="#EW">Datensatz erstellt</change>
         <change status="internal correction" when="2023-06-13" who="#EW">Anm. AG eingearbeitet, warten auf LK</change>
+        <change status="internal correction" when="2024-03-18" who="#EW">ohne LK weiter zu Manzi</change>
+        <change status="internal correction" when="2024-11-07" who="#AK">Belege von Grutze hinzugefügt</change>
+        <change status="external correction" when="2025-01-20" who="#AK">keine Anm. MG</change>
+        <change status="finished" when="2025-02-10" who="#AG">finished</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -79,11 +83,15 @@
       <entry>
         <form type="lemma" xml:id="Krutz">
           <orth>Krutz</orth>
+        </form>
+        <form type="lemma" xml:id="Grutz">
+          <orth>Grutz</orth>
           <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c35247"/>
         </form>
         <gramGrp>
           <gram type="pos">Substantiv</gram>
           <gram type="gender">Maskulinum</gram>
+          <gram type="gender">Femininum</gram>
         </gramGrp>
         <form type="variant" subtype="diminutive" xml:id="Kruetzelein">
           <orth>Krützelein</orth>
@@ -91,6 +99,15 @@
             <gram type="gender">Neutrum</gram>
           </gramGrp>
         </form>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+        </usg>
+        <usg type="geo">
+          <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+        </usg>
         <usg type="geo">
           <placeName type="bundesland" ref="/geodata-wboe.xml#p2">Ktn.</placeName>
         </usg>
@@ -120,7 +137,7 @@
             <form>
               <orth>grûʒ</orth>
             </form>
-            <def>Korn (Sand- oder Getreidekorn</def>
+            <def>Korn (Sand- oder Getreidekorn)</def>
           </cit>
           <seg type="desc">oder bildlich, figürlich</seg>
           <cit type="etymon">
@@ -146,6 +163,41 @@
           </ref>
         </etym>
         <sense>
+          <sense>
+            <sense>
+              <def>feiner Sand; sandiger Boden</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c43488"/>
+            </sense>
+            <sense>
+              <def>magerer, unfruchtbarer Acker; Feld mit steinigem Boden</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c32716"/>
+            </sense>
+            <sense>
+              <def type="umschreibung">Flurname; Bezeichnung eines Feldes</def>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+              </usg>
+              <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c43486"/>
+            </sense>
+          </sense>
           <sense>
             <sense>
               <def>Tier, das nicht wächst</def>
