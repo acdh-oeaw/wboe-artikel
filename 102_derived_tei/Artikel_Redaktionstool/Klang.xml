@@ -2,7 +2,7 @@
     <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
     <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
 <?redaktionstool version="0.8.3" ?>
-<?parser type="lioe" version="0.8.3" ?>
+<?parser type="lioe" version="0.8.4" ?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
@@ -72,6 +72,8 @@
         <change status="peer correction" when="2023-04-21" who="#AK">Datensatz erstellt</change>
         <change status="peer correction" when="2023-04-25" who="#AK">weiterer Beleg eingefügt (Waldviertel)</change>
         <change status="internal correction" when="2024-03-07" who="#AK">in die interne Korrektur gelegt</change>
+        <change status="external correction" when="2024-12-17" who="#AK">Keine Anmerkungen von MG, Etymologie ergänzt</change>
+        <change status="finished" when="2025-02-17" who="#AK">keine Anmerkungen JE</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -80,7 +82,7 @@
       <entry>
         <form type="lemma" xml:id="Klang">
           <orth>Klang</orth>
-          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c35151 "/>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c35151"/>
         </form>
         <gramGrp>
           <gram type="pos">Substantiv</gram>
@@ -133,7 +135,47 @@
         </usg>
         <note type="kommentar"></note>
         <etym>
-          <seg type="desc">Ableitung von</seg>
+          <cit type="etymon">
+            <lang>ahd.</lang>
+            <form>
+              <orth>klang</orth>
+            </form>
+            <def>Ton</def>
+          </cit>
+          <cit type="etymon">
+            <lang>mhd.</lang>
+            <form>
+              <orth>klanc</orth>
+            </form>
+            <def>Schall; Ton</def>
+          </cit>
+          <cit type="etymon">
+            <lang>frnhd.</lang>
+            <form>
+              <orth>klang</orth>
+            </form>
+            <def>Laut; Ton einer Stimme, eines Instruments</def>
+          </cit>
+          <ref type="bibl" subtype="online">
+            <lbl>vgl.</lbl>AWb online
+            <xr type="lemma">
+              <ref>klang</ref>
+              <date type="accessed">17.12.2024</date>
+            </xr>
+          </ref>
+          <ref type="bibl" subtype="online">MWB online
+            <xr type="lemma">
+              <ref>²klanc</ref>
+              <date type="accessed">17.12.2024</date>
+            </xr>
+          </ref>
+          <ref type="bibl" subtype="online">Frnhd. Wb. online
+            <xr type="lemma">
+              <ref>¹klang</ref>
+              <date type="accessed">17.12.2024</date>
+            </xr>
+          </ref>
+          <seg type="desc">; zur Etymologie der Wurzel vgl.</seg>
           <cit type="etymon">
             <xr type="lemma">
               <ref target="klingen.xml#klingen">klingen</ref>
@@ -204,7 +246,7 @@
                 <placeName type="gemeinde" ref="/geodata-wboe.xml#p4.2a10">Wald im Pinzgau</placeName>
               </usg>
             </cit>
-            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35178 "/>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35178"/>
           </sense>
         </sense>
         <re type="redewendung">
@@ -223,7 +265,7 @@
               <placeName type="gemeinde" ref="/geodata-wboe.xml#p2.2d02">Reichenau</placeName>
             </usg>
           </cit>
-          <ptr type="collection" subtype="MWE" target="/collections-wboe.xml#c35179 "/>
+          <ptr type="collection" subtype="MWE" target="/collections-wboe.xml#c35179"/>
         </re>
         <re type="redewendung">
           <form subtype="MWE" type="lemma">
@@ -240,7 +282,7 @@
                 <placeName type="gemeinde" ref="/geodata-wboe.xml#p1C.3e06">Kufstein</placeName>
               </usg>
             </cit>
-            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35180 "/>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c35180"/>
           </sense>
         </re>
       </entry>
