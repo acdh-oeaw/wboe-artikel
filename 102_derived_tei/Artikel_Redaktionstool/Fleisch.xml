@@ -2,7 +2,7 @@
     <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
     <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
 <?redaktionstool version="0.8.3" ?>
-<?parser type="lioe" version="0.8.3" ?>
+<?parser type="lioe" version="0.8.4" ?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
@@ -78,6 +78,7 @@
         <change status="internal correction" when="2023-01-05" who="#PhS">Anmerkungen peer correction berücksichtigt</change>
         <change status="external correction" when="2024-03-012" who="#PhS">Anmerkungen internal correction berücksichtigt</change>
         <change status="finished" when="2024-05-07" who="#PhS">Anmerkungen external correction berücksichtigt</change>
+        <change status="finished" when="2025-03-28" who="#PhS">fehlende Verknüpfungen hinzugefügt</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -86,6 +87,7 @@
       <entry>
         <form type="lemma" xml:id="Fleisch">
           <orth>Fleisch</orth>
+          <ptr type="collection" subtype="lemma" target="/collections-wboe.xml#c5498"/>
         </form>
         <gramGrp>
           <gram type="pos">Substantiv</gram>
@@ -326,6 +328,7 @@
           <usg type="geo">
             <placeName type="gemeinde" ref="/geodata-wboe.xml#p7.3i03">Moschendorf</placeName>
           </usg>
+          <ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c18398"/>
         </form>
         <etym>
           <cit type="etymon">
@@ -815,6 +818,9 @@
               </usg>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p2.1">ObKtn.</placeName>
+              </usg>
+              <usg type="geo">
+                <placeName type="grossregion" ref="/geodata-wboe.xml#p2.2">MKtn.</placeName>
               </usg>
               <usg type="geo">
                 <placeName type="grossregion" ref="/geodata-wboe.xml#p3.1">sbair.ObStmk.</placeName>
