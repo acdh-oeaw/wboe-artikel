@@ -23,7 +23,12 @@ filter-job:
     rm -rf 082_scripts_xsl
     rm -rf Datenlisten
     rm -rf 102_derived_tei/sample-TEI-ProtoArticles
+<<<<<<< HEAD
+    rm -rf 102_derived_tei/retro/lieferung1?-*.xml
+    rm -rf 102_derived_tei/retro/lieferung9-*.xml
+=======
     rm -rf 102_derived_tei/retro/lieferung3[3456789]-*.xml
+>>>>>>> 62064d8ef0b931b0b77d8fc33e82447e8295963c
     pushd 102_derived_tei/Artikel_Redaktionstool
     rm -f $(xmlstarlet sel -T -N t=http://www.tei-c.org/ns/1.0 -t -m '//t:listChange/t:change[last()][not(@status="proofed" or @status="finished")]' -f *.xml 2>/dev/null | sed 's~.xml~.xml ~g')
     popd
@@ -43,7 +48,12 @@ filter-job:
     rm -rf 082_scripts_xsl
     rm -rf Datenlisten
     rm -rf 102_derived_tei/sample-TEI-ProtoArticles
+<<<<<<< HEAD
+    rm -rf 102_derived_tei/retro/lieferung1?-*.xml
+    rm -rf 102_derived_tei/retro/lieferung9-*.xml
+=======
     rm -rf 102_derived_tei/retro/lieferung3[3456789]-*.xml
+>>>>>>> 62064d8ef0b931b0b77d8fc33e82447e8295963c
     pushd 102_derived_tei/Artikel_Redaktionstool
     rm -f $(xmlstarlet sel -T -N t=http://www.tei-c.org/ns/1.0 -t -m '//t:listChange/t:change[last()][not(@status="proofed" or @status="finished")]' -f *.xml 2>/dev/null | sed 's~.xml~.xml ~g')
     popd
