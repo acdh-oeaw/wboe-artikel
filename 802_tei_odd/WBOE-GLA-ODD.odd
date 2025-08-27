@@ -1,0 +1,1576 @@
+<?xml version="1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>TEI ODD for WBOE GLA Basic Dictionary Entry</title>
+				<author>Jack Bowers</author>
+				<author>Markus Kunzmann</author>
+			</titleStmt>
+			<publicationStmt>
+				<p>for use by whoever wants it</p>
+			</publicationStmt>
+			<notesStmt>
+				<note>The TEI ODD for WBOE by Jack Bowers serves as the template for the TEI ODD for WBOE GLA (Grundlagenartikel)<ptr target="https://github.com/acdh-oeaw/wboe-artikel/blob/d676d9e3b41602701fad8e68b3fb4a71b7b2724b/802_tei_odd/WBOE-ODD.odd"/></note>
+				<note type="ns">http://www.example.org/ns/nonTEI</note>
+				<note>The guidelines document <ptr target="https://docs.google.com/document/d/1MwO6K4bRGplDYEYn5Z9PTzK9EKL1uBPl3O-FCc999_M/edit"/></note>
+			</notesStmt>
+			<sourceDesc>
+				<p>created on Friday 2025-08-08</p>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+
+	<text>
+
+		<front>
+			<divGen type="toc"/>
+		</front>
+
+		<body>
+			<schemaSpec ident="WBOE-ODD-GLA" docLang="en" prefix="tei_" xml:lang="en">
+				<moduleRef key="core"
+					except="add abbr addrLine address analytic author bibl biblScope biblStruct binaryObject cb choice corr del desc distinct divGen editor email emph expan foreign gap gb gloss graphic head
+					headItem headLabel hi imprint index item l label lb lg list listBibl measure measureGrp media meeting mentioned milestone monogr num orig p pb postBox postCode 
+					pubPlace q reg relatedItem rs said series sic soCalled sp speaker stage street teiCorpus term textLang time unclear"/>
+				<moduleRef key="tei" except=""/>
+				<moduleRef key="header" except="abstract appInfo author biblFull cRefPattern calendar calendarDesc catDesc catRef category classCode classDecl correction correspAction correspContext correspDesc
+					creation editorialDecl extent funder geoDecl handNote hyphenation idno interpretation keywords listPrefixDef namespace normalization notesStmt prefixDef principal punctuation quotation refsDecl refState rendition
+					 samplingDecl schemaRef scriptNote segmentation seriesStmt sponsor stdVals styleDefDecl tagUsage tagsDecl taxonomy textClass xenoData"/>
+				<moduleRef key="textstructure"
+					except="argument back byline closer dateline div div1 div2 div3 div4 div5 div6 div7 docAuthor docDate docEdition docImprint docTitle epigraph floatingText front group imprimatur opener postscript salute signed titlePage titlePart trailer"/>
+				<moduleRef key="namesdates" except="addName affiliation age birth bloc block climate death district education event faith floruit forename genName geo geogFeat geogName langKnowledge langKnown
+					listEvent listNym listOrg listPerson listPlace listRelation nameLink nationality nym occupation offset org orgName personGrp persona place population relation residence roleName settlement sex socecStatus state surname
+					terrain trait"/>
+				<moduleRef key="dictionaries"
+					except="case dictScrap entryFree mood  tns hom hyph oRef pRef oVar pVar stress subc superEntry syll"/>
+				<moduleRef key="linking" except="ab alt altGrp anchor join joinGrp link linkGrp timeline when"/>
+
+
+				<elementSpec ident="cit" mode="change" module="core">
+
+					<content>
+						<alternate minOccurs="1" maxOccurs="unbounded">
+							<!-- possible classes of content -->
+							<classRef key="model.qLike"/>	// Zitat
+							<classRef key="model.egLike"/>	// Beispiel
+							<classRef key="model.biblLike"/>	// Bibliographie	
+							<classRef key="model.ptrLike"/>	// Verweis
+							<classRef key="model.global"/>	// Global
+							<classRef key="model.entryPart"/>	// Wörterbucheintrag
+							<classRef key="model.ptrLike.form"/>	// Formverweis
+						</alternate>
+					</content>
+
+					<attList>
+						<attDef ident="type" mode="change" usage="req">
+							<valList type="closed" mode="change">
+								<valItem ident="example">
+									<desc>For where an example of a dialect form is given for a specific location.</desc>
+								</valItem>
+								<valItem ident="translation">
+									<desc>For translations of an example of a dialect form is given for a specific location.</desc>
+								</valItem>
+								<valItem ident="etymon">
+									<desc>For encoding of etymons in etymology.</desc>
+								</valItem>
+							</valList>
+						</attDef>
+					</attList>
+
+					<!-- examples of citations -->
+					<exemplum>
+						<ab><desc>A proto-typical example of an <tag>cit</tag> containing an example:</desc></ab>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<cit type="example">
+								<quote xml:lang="bar-AT">s ma faktisch z'dumm</quote>
+								<usg type="geo"><placeName>Gnas u. Kirchberg an der Raab</placeName><placeName type="grossregion">OStmk.</placeName></usg>
+							</cit>	
+						</egXML>
+					</exemplum>
+
+					<exemplum>
+						<ab><desc>An example of where a translation of an example is given:</desc></ab>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<cit type="example">
+								<quote xml:lang="bar-AT">Jetz muᵃscht mir afórt dazö́hln von Bǫ͡in und von Fasȫln</quote> 
+								<cit type="translation">
+									<quote xml:lang="de">Jetzt musst du mir einmal den Unterschied zwischen Bohnen und Fisolen</quote>
+								</cit>
+								........
+								<usg type="geo">
+									<placeName>Obertilliach</placeName>
+									<placeName type="grossregion">OTir.</placeName>
+								</usg>
+							</cit>	
+						</egXML>
+					</exemplum>
+
+					<exemplum>
+						<ab><desc>An example of <tag>cit</tag> encoding an etymon, which only occurs within <tag>etym</tag> (etymology):</desc></ab>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<etym>
+								<date>im 17. Jh.</date>
+								<seg type="desc">entlehnt aus</seg>
+								<cit type="etymon">
+									<lang>frz.</lang>
+									<form>
+										<orth>fabrique</orth>
+									</form>
+									<def>Herstellungsgebäude; Herstellung</def>
+								</cit>
+								<ref type="bibl"><lbl>vgl.</lbl> Kluge 2011 <citedRange>270</citedRange></ref>
+							</etym>
+						</egXML>
+					</exemplum>
+
+					<exemplum>
+						<ab><desc>An example of a sequence of etymons:</desc></ab>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<etym>
+								<cit type="etymon">
+									<lang>ahd.</lang>
+									<form>
+										<orth>fratôn</orth>
+									</form>
+								</cit>
+								<cit type="etymon">
+									<lang>mhd.</lang>
+									<form>
+										<orth>vreten</orth>
+									</form>
+									<form>
+										<orth>vraten</orth>
+									</form>
+									<form>
+										<orth>vretten</orth>
+									</form>
+									<def>entzünden; wund reiben</def>
+								</cit>
+							</etym>
+						</egXML>
+					</exemplum>
+
+					<exemplum>
+						<ab><desc>In some cases the etymon may have multiple grammatical senses, these can be encoded as follows:</desc></ab>
+						<!-- 
+							see issue: https://gitlab.com/acdh-oeaw/wboe/redaktionstool/-/issues/109
+							(rendering rule) if there is two consecutive <gramGrp> in <cit type="etymon">, insert comma ","
+						-->
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<etym>
+								<cit type="etymon">
+									<lang>ahd.</lang>
+									<form>
+										<orth>fora</orth>
+									</form>
+									<gramGrp>
+										<gram type="pos">Präposition</gram>
+									</gramGrp>
+									<gramGrp>
+										<gram type="pos">Adverb</gram>
+									</gramGrp>
+								</cit>
+								....
+							</etym>
+						</egXML>
+					</exemplum>
+				</elementSpec>
+
+
+				<elementSpec ident="form" mode="change" module="dictionaries">
+
+					<attList>
+						<attDef ident="type" mode="change" usage="req">
+							<valList type="closed" mode="change">
+								<valItem ident="lemma" mode="replace"><desc>the headword of the article</desc></valItem>
+								<valItem ident="variant" mode="replace"><desc>a variant form of the headword, can have subtypes</desc></valItem>
+								<valItem ident="dialect" mode="replace"><desc>instance of a dialect form for a given location</desc></valItem>
+								<valItem ident="compound" mode="delete"/>
+								<valItem ident="derivative" mode="delete"/>
+								<valItem ident="simple" mode="delete"/>
+								<valItem ident="phrase" mode="delete"/>
+							</valList>
+						</attDef>
+						<attDef ident="subtype" mode="change" usage="opt">
+							<valList type="closed" mode="change">
+								<valItem ident="diminutive"/>
+								<valItem ident="kurzwort"/>
+								<valItem ident="diminuiertes kurzwort"/>
+								<valItem ident="diminuierte kurzform"/>
+								<valItem ident="nebenform"/>
+								<valItem ident="movierung">
+									<desc>Movierung is a derivation to define the specific gender of a person. e.g. mister -> mistress</desc>
+								</valItem>
+								<valItem ident="inflected"/>
+								<valItem ident="compound"/>
+								<valItem ident="MWE"/>
+							</valList>
+						</attDef>
+					</attList>
+					<exemplum>
+						<ab><desc>an example of a proto-typical lemma:</desc></ab>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<form type="lemma">
+								<orth>faktisch</orth>
+							</form>
+						</egXML>
+					</exemplum>
+					<exemplum>
+						<ab><desc>an example of a lemma with variants:</desc></ab>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<form type="lemma">
+								<orth>Farfel</orth>
+							</form>
+							<gramGrp>
+								<gram type="pos">Substantiv</gram>
+								<gram type="gender">Femininum</gram>
+								<gram type="gender">Maskulinum</gram>
+								<gram type="gender">Neutrum</gram>
+							</gramGrp>
+							
+							<form type="variant" subtype="diminutive">
+								<orth>Farferl</orth>
+								<gramGrp>
+									<gram type="gender">Neutrum</gram>
+								</gramGrp>
+							</form>
+							<form type="variant" subtype="diminutive">
+								<orth>Färferl</orth>
+								<gramGrp>
+									<gram type="gender">Neutrum</gram>
+								</gramGrp>
+							</form>
+							<form type="variant" subtype="diminutive">
+								<orth>Ferfellein</orth>
+								<gramGrp>
+									<gram type="gender">Neutrum</gram>
+								</gramGrp>
+							</form>
+							<form type="variant" subtype="diminutive">
+								<orth>Färfellein</orth>
+								<gramGrp>
+									<gram type="gender">Neutrum</gram>
+								</gramGrp>
+							</form>
+							<form type="variant" subtype="diminutive">
+								<orth>Fürfellein</orth>
+								<gramGrp>
+									<gram type="gender">Neutrum</gram>
+								</gramGrp>
+							</form>
+							
+						</egXML>
+					</exemplum>
+					<exemplum>
+						<ab><desc>an example of typical dialect forms:</desc></ab>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<form type="dialect">
+								<pron xml:lang="bar-AT">fákktišš</pron>
+								<usg type="geo">
+									<placeName>Herzogenburg</placeName>
+									<placeName type="grossregion">Mostv.</placeName>
+								</usg>
+							</form>
+							
+							<form type="dialect">
+								<pron xml:lang="bar-AT">fáktiš</pron>
+								<usg type="geo">
+									<placeName type="grossregion">Wien</placeName>
+								</usg>
+							</form>
+						</egXML>
+					</exemplum> 
+					<exemplum>
+						<ab><desc>an example of a multi-word expression typically occuring in Redewendungen section:</desc></ab>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<re>
+								<form type="MWE">
+									<orth xml:lang="bar-AT">Äugel wie ein Fack</orth>
+								</form>
+								...
+							</re>
+						</egXML>
+					</exemplum>
+					<exemplum>
+						<ab><desc>an example of a compound as occuring within the <hi rend="bold">Wortbildung</hi> section of an article, within a related entry:</desc></ab>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<re>
+								<form type="lemma" subtype="compound">
+									<orth>Augen­gläser­fabrik</orth>
+								</form>
+								...		
+							</re>
+						</egXML>
+					</exemplum>
+					<exemplum>
+						<ab><desc>an example of an entry with: nebenforms:</desc></ab>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<form type="lemma">
+								<orth>Fasser</orth>
+							</form>
+							<gramGrp>
+								<gram type="pos">Substantiv</gram>
+								<gram type="gender">Maskulinum</gram>
+								<gram type="gender">Femininum</gram>
+								<gram type="gender">Neutrum</gram>
+							</gramGrp>
+							
+							<form type="variant" subtype="diminutiv">
+								<orth>Fasserl</orth>
+								<gramGrp>
+									<gram type="gender">Neutrum</gram>
+								</gramGrp>
+							</form>
+							
+							<form type="variant" subtype="movierung">
+								<orth>Fasserin</orth>
+								<gramGrp>
+									<gram type="gender">Femininum</gram>
+								</gramGrp>
+							</form>
+							
+							<form type="variant" subtype="kurzwort">
+								<orth>Fa</orth>
+								<gramGrp>
+									<gram type="gender">Maskulinum</gram>
+									<gram type="gender">Femininum</gram>
+									<gram type="gender">Neutrum</gram>
+								</gramGrp>
+							</form>
+							<form type="variant" subtype="nebenform">
+								<orth>Beinenfalter</orth>
+								<gramGrp>
+									<gram type="gender">Maskulinum</gram>
+								</gramGrp>
+							</form>
+						</egXML>
+						
+					</exemplum> 
+					<exemplum>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<form type="variant" subtype="kurzform">
+								<orth>Fabs</orth>
+								...
+							</form>
+							
+							<form type="variant" subtype="diminuiertes kurzwort">
+								<orth>Falein</orth>
+								...
+							</form>
+							
+							<form type="variant" subtype="diminuierte kurzform">
+								<orth>Fabsi</orth>
+								...
+							</form>
+						</egXML>
+					</exemplum>
+					<exemplum>
+						<ab><desc>An example of a sequence of etymons:</desc></ab>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<etym>
+								<cit type="etymon">
+									<lang>ahd.</lang>
+									<form>
+										<orth>fratôn</orth>
+									</form>
+								</cit>
+								<cit type="etymon">
+									<lang>mhd.</lang>
+									<form>
+										<orth>vreten</orth>
+									</form>
+									<form>
+										<orth>vraten</orth>
+									</form>
+									<form>
+										<orth>vretten</orth>
+									</form>
+									<def>entzünden; wund reiben</def>
+								</cit>
+							</etym>
+						</egXML>
+					</exemplum>
+				</elementSpec>
+
+
+				<elementSpec ident="note" module="core" mode="change">
+
+					<attList>
+						<attDef ident="type" mode="replace" usage="req">
+							<valList type="closed" mode="change">
+								<valItem ident="kommentar"/>
+							</valList>
+						</attDef>
+						<attDef ident="anchored" mode="delete"/>
+						<attDef ident="targetEnd" mode="delete"/>
+					</attList>
+
+
+					<exemplum>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<note type="kommentar">Wie bei allen Wörtern mit auf mhd. <c>iu</c> zurückgehenden Stammvokal zeigt sich hohe areale Variation, die nur teilweise auch diachrone Zustände
+								widerspiegelt. So finden sich noch konservative <c>eo</c>-Dipthonge im Mbair. (<c>ϕēȯrɒtßn̥</c>), ansonsten dominieren (auch im Mbair.) <c>ui</c>-Diphthonge 
+								(<c>ϕuirėtßn</c>) und daraus entstandene jüngere Formen wie Diphthonge mit gesenktem Onset (<c>ϕōɩ̨̮rėtßn</c>), Diphthonge mit entrundetem Onset (<c>ϕä́̄įrḙτσn̥</c>)
+								und sogar <c>a</c>-Monophthonge (<c>fɒrǝtsn̥</c>). Das Intensivierungssuffix -etzen erscheint teilweise mit <c>a</c>-haltigem Anlaut, manchmal ist mit dem Suffix 
+								ein <c>l</c>-Einschub bei gleichzeitigem Schwund von <c>r</c> verbunden ( <c>foiladsn</c>.) Anlautendes <c>f</c> tritt teilweise lenisiert 
+								auf (<c>ϕuirėtßn</c>).
+							</note>	
+						</egXML>
+					</exemplum>
+
+					<exemplum>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<note type="kommentar">Dieses Lemma ist nur in Wortbildungen belegt.</note>
+						</egXML>
+					</exemplum>
+				</elementSpec>
+
+
+				<elementSpec ident="lang" mode="change" module="dictionaries">
+					<classes mode="change">
+						<memberOf key="model.entryPart"/>
+					</classes>
+
+					<exemplum>
+						<ab>
+							<desc>
+								Where assigned to a specific etymon, <tag>lang</tag> should be embedded within the etymon:
+							</desc>
+						</ab>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<etym>
+								<date>im 17. Jh.</date>
+								<seg type="desc">entlehnt aus</seg>
+								<cit type="etymon">
+									<lang>frz.</lang>
+									<form>
+										<orth>fabrique</orth>
+									</form>
+									<def>Herstellungsgebäude; Herstellung</def>
+								</cit>
+								...
+							</etym>
+						</egXML>
+					</exemplum>
+
+					<exemplum>
+						<ab><desc><tag>lang</tag> can also occur within a running prose, it can occur within a <tag>seg</tag>:</desc></ab>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<etym>
+								<seg type="desc">;
+									<lang>deutsche</lang> Formen ohne sekundären Nasaleinschub (-n-) oder erster Lautverschiebung (-ch- statt -k-) stehen der
+								</seg>
+								<seg type="desc">
+									<lang>lateinischen</lang> Ausgangsform näher
+								</seg>
+								...
+							</etym>
+						</egXML>
+					</exemplum>
+				</elementSpec>
+
+				<elementSpec ident="sense" mode="change" module="dictionaries">
+					<content>
+						<alternate minOccurs="0"
+							maxOccurs="unbounded">
+							<textNode/>
+							<classRef key="model.gLike"/>
+							<elementRef key="sense"/>
+							<classRef key="model.entryPart.top"/>
+							<classRef key="model.phrase"/>
+							<classRef key="model.global"/>
+							<classRef key="model.biblLike"/>
+						</alternate>
+					</content>
+
+					<exemplum>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<sense>
+								<sense>
+									<def>Herstellungs­be­trieb, ‑ge­bäude</def>
+								</sense>
+							</sense>
+						</egXML>
+					</exemplum>
+				</elementSpec>
+
+
+				<elementSpec ident="xr" mode="change" module="dictionaries">
+
+					<classes mode="change">
+						<memberOf key="model.sensePart" mode="add"/>
+						<memberOf key="model.phrase" mode="add"/>
+					</classes>
+					<content>	
+						<alternate minOccurs="0" maxOccurs="unbounded">
+							<classRef key="model.gLike"/>
+							<classRef key="model.phrase"/>
+							<classRef key="model.inter"/>
+							<elementRef key="usg"/>
+							<elementRef key="lbl"/>
+							<classRef key="model.global"/>
+						</alternate>
+						
+					</content>
+					<attList>
+						<attDef ident="type" mode="replace" usage="opt">
+							<valList type="closed" mode="change">
+								<valItem ident="lemma"/>
+								<valItem ident="variant"/>
+								<valItem ident="cf"/>
+								<valItem ident="external">
+									<desc>Used for when the reference points to a form in an external source</desc>
+								</valItem>
+							</valList>
+						</attDef>
+						<attDef ident="subtype" mode="replace" usage="opt">
+							<datatype>
+								<dataRef key="teidata.enumerated"/>
+							</datatype>
+							<valList type="closed" mode="change">
+								<valItem ident="online">
+									<desc>Used for when the referenced form is from an online source. This will be accompanied by a <tag>ref</tag> with a pointer to the url in <att>target</att>.</desc>
+								</valItem>
+								<valItem ident="diminutive"/>
+								<valItem ident="kurzwort"/>
+								<valItem ident="nebenform"/>
+								<valItem ident="movierung">
+									<desc>Movierung is a derivation to define the specific gender of a person. e.g. mister -> mistress</desc>
+								</valItem>
+								<valItem ident="inflected"/>
+								<valItem ident="compound"/>
+								<valItem ident="MWE"/>
+								
+							</valList>
+						</attDef>
+					</attList>
+					<exemplum>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<sense> 
+								<sense>
+									<lbl>auch</lbl>
+									<xr type="variant"><ref>Farferl</ref></xr>
+									<xr type="variant"><ref>Färferl</ref></xr>
+									<xr type="variant"><ref>Färfellein</ref></xr>
+								</sense>
+							</sense>
+						</egXML>
+					</exemplum>
+					<exemplum>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<re type="redewendung">
+								<xr type="variant"><ref>Fäckel</ref></xr>
+								<re>
+									<form type="MWE">
+										<orth xml:lang="bar-AT">Kinder und Fäckel haben alleweil leere Säckel</orth>
+									</form>
+								.....
+								</re>
+								<!-- rest of <re> for "Fäckel" here -->
+							</re>	
+						</egXML>
+					</exemplum>
+					<exemplum>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							
+						</egXML>
+					</exemplum>
+					<exemplum>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							
+						</egXML>
+					</exemplum>
+				</elementSpec>
+
+
+				<elementSpec ident="ref" mode="change" module="dictionaries">
+					
+					<content>
+						<alternate minOccurs="0" maxOccurs="unbounded">
+							<macroRef key="macro.paraContent"/>
+							<classRef key="model.ptrLike"/>
+							<elementRef key="lbl"/>
+						</alternate>				
+					</content>
+					<attList>
+						<attDef ident="type" mode="change" usage="rec"><!-- change once finalized -->
+							<valList type="closed" mode="change">
+								<valItem ident="bibl">
+									<desc>For citations of bibliographic sources in articles</desc>
+								</valItem>
+								<valItem ident="normalized">
+									<desc>For cross references to normalized dialect forms</desc>
+								</valItem>
+							</valList>
+							<exemplum>
+									<egXML xmlns="http://www.tei-c.org/ns/Examples">
+										...zu finden sind (<xr><ref type="normalized">fabrikla</ref></xr>)
+									</egXML>
+								
+							</exemplum>
+						</attDef>
+						<attDef ident="subtype" mode="change" usage="rec">				
+							<valList type="closed" mode="change">	
+								<valItem ident="online">
+									<desc>For where the bibliographic reference is a citation of an online source. </desc>
+								</valItem>
+								<valItem ident="personal"><!-- need final confirmation of this structure -->
+									<desc>For where the bibliographic reference is a citation of a source via personal communication directly. </desc>
+								</valItem>
+							</valList>
+						</attDef>
+					</attList>
+					<exemplum>
+						<ab><desc>The first of the two functions of <tag>ref</tag> is within <tag>xr</tag> in cross-referencing a form:</desc></ab>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							
+						</egXML>
+					</exemplum>
+					<exemplum>
+						<ab><desc>An prototypical example of <tag>ref</tag> with <att>type</att>="<val>bibl</val>"</desc>:</ab>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<ref type="bibl"><lbl>vgl.</lbl> Kluge 2011 <citedRange>270</citedRange></ref>	
+						</egXML>
+					</exemplum>
+					<exemplum>
+						<ab><desc>An example of where </desc></ab>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<ref type="bibl" subtype="personal"><persName>Jakob Ebner</persName> <lbl>persönlich</lbl> <date type="accessed">18.02.2019</date></ref>	
+						</egXML>
+					</exemplum>
+					<exemplum>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">	
+							<ref type="bibl" subtype="online">KÖBBLER 2010 online <xr type="lemma"><ref>vitreolum</ref><date type="accessed">[20.1.2020]</date></xr></ref>	
+						</egXML>
+					</exemplum>
+					<exemplum>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">	
+							<ref type="bibl" subtype="inline"><lbl>vgl.</lbl> <!-- AUTHOR -->(<!-- YYYY -->:<citedRange>315</citedRange>)</ref>
+						</egXML>
+					</exemplum>
+				</elementSpec>
+
+
+				<elementSpec ident="citedRange" mode="change">
+
+					<classes mode="change">
+						<memberOf mode="add" key="model.emphLike"/>
+					</classes>
+					<exemplum>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<ref type="bibl"><lbl>vgl.</lbl> Kluge 2011 <citedRange>270</citedRange></ref>	
+						</egXML>
+					</exemplum>
+				</elementSpec>
+
+
+				<elementSpec ident="def" mode="change" module="dictionaries">
+
+					<classes mode="change">
+						<memberOf mode="add" key="att.typed"/>
+					</classes>
+					<attList>
+						<attDef ident="type" mode="change" usage="opt">
+							<desc></desc>
+							<valList mode="change" type="closed">
+								<valItem ident="umschreibung">
+									<desc>For where there is not a sufficient way to define meaning, so meaning is paraphrased.</desc>
+								</valItem>
+							</valList>
+						</attDef>
+					</attList>
+					<exemplum>
+						<ab><desc>An example of a typical definition:</desc></ab>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<sense><def>negative Bezeichnung für Gescmack</def> ....</sense>	
+						</egXML>
+					</exemplum>
+					<exemplum>
+						<ab><desc>An example of a typed "umschreibung" definition:</desc></ab>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<sense><def type="umschreibung">Beschreibung für ein Schaf, dessen Nieren sich durch einen Fall oder Stoß gelöst haben</def> ....</sense>	
+						</egXML>
+					</exemplum>
+				</elementSpec>
+
+
+				<elementSpec ident="date" mode="change">
+
+					<attList>
+						<attDef ident="type" mode="change" usage="opt">
+							<valList type="closed" mode="change">
+								<valItem ident="accessed">
+									<desc>For specifying the full or partial date that the information was obtained, applies to both sources obtained <hi rend="italic">online</hi> and through <hi rend="italic">personal communication</hi>. </desc>
+								</valItem>
+							</valList>
+						</attDef>
+					</attList>
+					<exemplum>
+						<ab><desc>In the context of a citation of a <hi rend="italic">form</hi> obtained via <hi rend="bold">personal communication</hi>:</desc></ab>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<ref type="bibl" subtype="online"><!-- AUTHOR DATE --><!-- Print "ONLINE" --><xr><ref>form</ref><date type="accessed">18.02.2019</date></xr></ref>	
+						</egXML>
+					</exemplum>
+					<exemplum>
+						<ab><desc>In the context of a citation obtained <hi rend="bold">online</hi>:</desc></ab>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<ref type="bibl" subtype="personal"><persName>Jakob Ebner</persName> <lbl>persönlich</lbl> <date type="accessed">18.02.2019</date></ref>	
+						</egXML>
+					</exemplum>
+				</elementSpec>
+
+
+				<elementSpec ident="ptr" mode="change" module="core">
+
+					<attList>
+						<attDef ident="type" mode="change" usage="req">
+							<valList mode="replace">
+								<!-- add definition later! -->
+								<valItem ident="collection"/>
+							</valList>
+						</attDef>
+						<attDef ident="subtype" mode="change" usage="req">
+							<!-- add desc  -->
+							<valList mode="replace">
+								<valItem ident="lemma"/>
+								<valItem ident="lautung"/>
+								<valItem ident="bedeutung"/>
+								<valItem ident="wortbildung"/>
+								<valItem ident="MWE"/>
+							</valList>
+						</attDef>
+						<attDef ident="target" mode="change" usage="req"/>
+						<!-- add desc  -->
+					</attList>
+								
+					<exemplum>
+						<ab><desc>only used to point to extracted collection of instances of a given content, e.g. the following example shows it for a</desc></ab>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<form type="dialect">
+								<pron xml:lang="bar-AT">fāwrι̨k</pron>
+								<usg type="geo">
+									<placeName type="kleinregion" ref="/geodata-wboe.xml#p7.3e">Rechnitz.Hügelld.</placeName>
+								</usg>
+								<ptr type="collection" subtype="lautung" target="/collections-wboe.xml#c633"/>
+							</form>
+						</egXML>
+					</exemplum>
+				</elementSpec>
+
+
+				<elementSpec ident="gram" mode="change" module="dictionaries">
+
+					<attList>
+						<attDef ident="type" mode="change" usage="req">
+							<valList mode="replace">
+								<valItem ident="pos">
+									<desc>can be one of the following:
+									<list>
+										<item>Substantiv</item>
+										<item>Verb</item>
+										<item>Adjektiv</item>
+										<item>Adverb</item>
+										<item>Präposition</item>
+										<item>Partikel</item>
+										<item>Artikel</item>
+										<item>Pronomen</item>
+										<item>Konjunktion</item>
+										<item>Interjektion</item>
+									</list>
+									</desc>
+									
+								</valItem>
+								<valItem ident="gender">
+									<desc>can be one of the following:
+									<list>
+										<item>Maskulinum</item>
+										<item>Femininum</item>
+										<item>Neutrum</item>
+									</list></desc>
+								</valItem>
+								
+								<valItem ident="gramNumber">
+									<desc>only used for plural (singular is inferred):
+										<list>
+											<item>Pluralwort</item>
+										</list></desc>
+								</valItem>								
+							</valList>
+						</attDef>
+					</attList>
+					<exemplum>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<form type="lemma" xml:id="Falb">
+								<orth>Falb</orth>
+							</form>
+							<form type="variant" xml:id="Faelb">
+								<orth>Fälb</orth>
+							</form>
+							<gramGrp>
+								<gram type="pos">Substantiv</gram>
+								<gram type="gender">Maskulinum</gram>
+							</gramGrp>
+						</egXML>
+					</exemplum>
+				</elementSpec>
+
+
+				<elementSpec ident="gramGrp" mode="change" module="dictionaries">
+					<exemplum>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<gramGrp>
+								<gram type="pos">Substantiv</gram>
+								<gram type="gender">Maskulinum</gram>
+							</gramGrp>
+						</egXML>
+					</exemplum>
+				</elementSpec>
+
+
+				<elementSpec ident="iType" module="dictionaries" mode="change">
+					<valList>
+						<valItem ident="stark">
+							<desc>strong verbs</desc>
+						</valItem>
+						<valItem ident="schwach">
+							<desc>weak verbs</desc>
+						</valItem>
+						<valItem ident="gemischt">
+							<desc>mixed inflection type verbs</desc>
+						</valItem>
+					</valList>
+					<attList>
+					<attDef ident="type" mode="delete"/>
+					</attList>
+					
+					<exemplum>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<form type="lemma" xml:id="fasten">
+								<orth>fasten</orth>
+							</form>
+							<gramGrp>
+								<gram type="pos">Verb</gram>
+								<iType>schwach</iType>
+							</gramGrp>
+						</egXML>
+					</exemplum>
+				</elementSpec>
+
+
+				<elementSpec ident="pron" mode="change" module="dictionaries">
+					<attList>
+						<attDef ident="xml:lang" mode="change" usage="req">
+							<desc>must be used on all dialect forms with the ISO 639 value 'bar' (Bavarian) with the BCP47 + ISO 3166-2 country code modifier:
+								<list>
+									<item>"AT" (Austria)</item>
+									<item>"IT" (Italy)</item>
+								</list>
+							</desc>
+							<valList mode="change">
+								<valItem ident="bar-AT"><desc>(Bavarian in Austria)</desc></valItem>
+								<valItem ident="bar-IT"><desc>(Bavarian in Italy (South Tyrol))</desc></valItem>
+							</valList>
+						</attDef>
+					</attList>
+					<exemplum>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<form type="dialect">
+								<pron xml:lang="bar-AT">fawríkx</pron>
+								<usg type="geo">
+									<placeName type="kleinregion" ref="/geodata-wboe.xml#p2.3g">Glant.</placeName>
+								</usg>
+							</form>
+						</egXML>
+					</exemplum>
+				</elementSpec>
+
+
+				<elementSpec ident="quote" mode="change" module="core">
+					<attList>
+						<attDef ident="xml:lang" mode="change" usage="req">
+							<desc>must be used on all dialect forms with the ISO 639 value 'bar' (Bavarian) with the BCP47 + ISO 3166-2 country code modifier:
+								<list>
+									<item>"AT" (Austria)</item>
+									<item>"IT" (Italy)</item>
+								</list>
+							</desc>
+							<valList mode="change">
+								<valItem ident="bar-AT"><desc>(Bavarian in Austria)</desc></valItem>
+								<valItem ident="bar-IT"><desc>(Bavarian in Italy (South Tyrol))</desc></valItem>
+							</valList>
+						</attDef>
+					</attList>
+					<exemplum>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<cit type="example">
+								<quote xml:lang="bar-AT">waoun i nigs hob muis i e fostn</quote>
+								<usg type="geo">
+									<placeName type="gemeinde" ref="/geodata-wboe.xml#p6.3a15">Kautzen</placeName>
+								</usg>
+							</cit>
+						</egXML>
+					</exemplum>
+				</elementSpec>
+
+
+				<elementSpec ident="usg" mode="change" module="dictionaries">
+					<attList>
+						<attDef ident="type" mode="replace" usage="opt">
+							<valList type="closed">
+								<valItem ident="geo">
+									<desc>(geographic) geographic area</desc>
+								</valItem>
+								<valItem ident="verbreitung">
+									<desc>a block element used to list all <foreign xml:lang="de">Grossregionen</foreign> a form of the lemma is found</desc>
+								</valItem>
+							</valList>
+						</attDef>
+					</attList>
+					<exemplum>
+						<ab><desc>A typical instance of <tag>usg</tag> in specifying the geographic source of a dialect form (in <tag corresp="#TEI.placeName">placeName</tag>) is as follows:</desc></ab>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<form type="dialect">
+								<pron xml:lang="bar-AT">-făbríkch</pron>
+								<usg type="geo">
+									<placeName type="gemeinde" ref="/geodata-wboe.xml#p3.1d03">Lobmingtal</placeName>
+								</usg>
+							</form>	
+						</egXML>
+					</exemplum>
+					<exemplum>
+						<ab><desc>an example of <foreign xml:lang="de">Verbreitung</foreign> is as follows. (Note that all specific <foreign xml:lang="de">Grossregionen</foreign> are encoded in <tag corresp="#TEI.placeName">placeName</tag>)</desc></ab>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<usg type="verbreitung">
+								<placeName type="grossregion">STir.</placeName>
+								<placeName type="grossregion">Tir.</placeName>
+								<placeName type="grossregion">Ktn.</placeName>
+								<placeName type="grossregion">Stmk.</placeName>
+								<placeName type="grossregion">Sbg.</placeName>
+								<placeName type="grossregion">OÖ</placeName>
+								<placeName type="grossregion">NÖ</placeName>
+								<placeName type="grossregion">Wien</placeName>
+								<placeName type="grossregion">Bgl.</placeName>
+							</usg>	
+						</egXML>
+					</exemplum>
+				</elementSpec>
+
+
+				<elementSpec ident="etym" mode="change" module="dictionaries">
+					<exemplum>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<etym>
+								<date>im 17. Jh.</date>
+								<seg type="desc">entlehnt aus</seg>
+								<cit type="etymon">
+									<lang>frz.</lang>
+									<form>
+										<orth>fabrique</orth>
+									</form>
+									<def>Herstellungsgebäude; Herstellung</def>
+								</cit>
+								<ref type="bibl">
+									<lbl>vgl.</lbl>Kluge 2011
+									<citedRange>270</citedRange>
+								</ref>
+							</etym>
+						</egXML>
+					</exemplum>
+
+					<exemplum>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							
+						</egXML>
+					</exemplum>
+				</elementSpec>
+
+
+				<elementSpec ident="seg" module="linking" mode="change">
+					<attList>
+						<attDef ident="type" mode="change" usage="req">
+							<valList mode="replace">
+								<valItem ident="desc">
+									<desc>used for inserting prose texts in etymological descriptions</desc>
+								</valItem>
+							</valList>
+						<!-- should be able to appear in other places:
+						pertains how meaning of item/sense arose 
+						formatting rule: wrap <seg type="desc"> in round brackets
+						-->
+						</attDef>
+						<attDef ident="part" mode="change" usage="opt">
+							<valList mode="change">
+								<valItem ident="I">
+									<desc>this is the initial part of a fragmented description</desc>
+								</valItem>
+								<valItem ident="M">
+									<desc>this is a medial part of a fragmented description</desc>
+								</valItem>
+								<valItem ident="F">
+									<desc>this is the final part of a fragmented description</desc>
+								</valItem>
+								<valItem ident="Y" mode="delete"/>
+								<valItem ident="N" mode="delete"/>
+							</valList>
+						</attDef>
+					</attList>
+					<exemplum>
+						<ab><desc>The most basic usage can be seen in this example:</desc></ab>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<etym>
+								<date>im 17. Jh.</date>
+								<seg type="desc">entlehnt aus</seg>
+								<cit type="etymon">
+									<lang>frz.</lang>
+									<form>
+										<orth>fabrique</orth>
+									</form>
+									<def>Herstellungsgebäude; Herstellung</def>
+								</cit>
+								<ref type="bibl">
+									<lbl>vgl.</lbl> Kluge 2011
+									<citedRange>270</citedRange>
+								</ref>
+							</etym>	
+						</egXML>
+					</exemplum>
+					<exemplum>
+						<ab><desc>The more complex usage can be seen in this example:</desc></ab>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<etym>
+								<seg type="desc" part="I">Ableitung vom</seg>   
+								<cit type="etymon">
+									<gramGrp>
+										<gram type="pos">Substantiv</gram>
+									</gramGrp>
+									<form>
+										<orth>Faktum</orth>
+									</form>
+									<def>Tatsache</def>
+								</cit>
+								<seg type="desc" part="M">das im <date>16. Jh</date> aus</seg>
+								<cit type="etymon">
+									<lang>lat.</lang>
+									<form>
+										<orth xml:lang="la">factum</orth>
+									</form>
+									<def>das Gemachte</def>
+								</cit>
+								<seg type="desc" part="F">entlehnt wurde</seg>
+								<ref type="bibl" target="#Kluge2011"><lbl>vgl.</lbl> Kluge 2011 <citedRange>273</citedRange></ref>
+							</etym>
+						</egXML>
+					</exemplum>
+				</elementSpec>
+
+
+				<elementSpec ident="lbl" mode="change" module="dictionaries">
+					<exemplum>
+						<ab><desc>Function words in bibliographic references:</desc></ab>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<ref type="bibl" subtype="personal"><persName>Jakob Ebner</persName> <lbl>persönlich</lbl> <date type="accessed">18.02.2019</date></ref>
+						</egXML>
+					</exemplum>
+					<exemplum>
+						<ab><desc>Functional phrases in context of other functions such as definitions:</desc></ab>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+								<def>d. h. Bohnen, erklären</def>
+								<lbl>im Sinne von</lbl>
+								<note>Der feine Unterschied lässt sich im Leben manchmal gar nicht so leicht ausdrücken</note>
+						                  	<!-- FINAL FORMAT OF <note> PENDING CHANGE IF NEEDED! -->	
+								<ref type="bibl" subtype="personal"><lbl>Auskunft</lbl> <persName>Br. Martin Bichler</persName>, <placeName>Franziskanerkloster Lienz</placeName>, <date>15.2.2019</date></ref>
+								
+						</egXML>		
+					</exemplum>
+				</elementSpec>
+
+
+				<elementSpec ident="orth" module="dictionaries" mode="change">
+					<exemplum>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<form type="lemma">
+								<orth>faktisch</orth>
+							</form>
+							<gramGrp>
+								<gram type="pos">Adjecktiv</gram>
+							</gramGrp>
+						</egXML>
+					</exemplum>
+					<exemplum>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<cit type="etymon">
+								<lang>ahd.</lang>
+								<form>
+									<orth>varvel</orth>
+								</form>
+								<def>gekrümelter Teig aus Eiern und Mehl in Suppe, Wasser oder Milch gekocht</def>
+							</cit>
+							
+							<cit type="etymon">
+								<lang>mhd.</lang>
+								<form>
+									<orth>varvel</orth>
+								</form>
+								<def>Mehlbrei; Suppe mit geriebenem Teig oder gequirlten Eiern</def>
+							</cit>
+						</egXML>
+					</exemplum>
+				</elementSpec>
+
+
+				<elementSpec ident="placeName" mode="change" module="namesdates">
+					<!-- add att vals for @type  -->
+					<attList>
+						<attDef ident="type" mode="change">
+							<valList mode="replace">
+								<valItem ident="bundesland"/>
+								<valItem ident="grossregion"/>
+								<valItem ident="gemeinde"/>
+								<valItem ident="kleinregion"/>	
+							</valList>
+						</attDef>
+					</attList>
+					<exemplum>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<cit type="example">
+								<quote xml:lang="bar-AT">s ma faktisch z'dumm</quote>
+								<usg type="geo"><placeName>Gnas u. Kirchberg an der Raab</placeName><placeName type="grossregion">OStmk.</placeName></usg>
+							</cit>
+						</egXML>
+					</exemplum>	
+				</elementSpec>
+
+
+				<elementSpec ident="persName" mode="change" module="namesdates">
+					<exemplum>
+						<ab><desc>may occur in the context of bibliographic references obtained directly from an individual:</desc></ab>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<ref type="bibl" subtype="personal"><persName>Jakob Ebner</persName> <lbl>persönlich</lbl> <date type="accessed">18.02.2019</date></ref>	
+						</egXML>
+					</exemplum>
+				</elementSpec>
+
+
+				<elementSpec ident="change" mode="change" module="header">
+					<attList>
+						<attDef ident="status" mode="replace" usage="req">
+							<valList mode="replace" type="closed">
+								<valItem ident="in_progress">
+									<desc>editor still working on article</desc>
+								</valItem>
+								<valItem ident="peer_correction">
+									<desc>Another lexicographer/team member should read article</desc>
+								</valItem>
+								<valItem ident="internal_correction">
+									<desc>A professional of the department (e.g. Manzi) can read it</desc>
+								</valItem>
+								<valItem ident="external_correction">
+									<desc>A professional outside of the department (e.g. Frau Geyer) can read it</desc>
+								</valItem>
+								<valItem ident="finished">
+									<desc>Article can go online</desc>
+								</valItem>
+							</valList>
+						</attDef>
+					</attList>
+
+					<exemplum>
+						<egXML xmlns="http://www.tei-c.org/ns/Examples">
+							<revisionDesc>
+								<listChange>
+									<change status="in_progress" when="2020-01-23" who="#DG">Datensatz erstellt</change>
+								</listChange>
+							</revisionDesc>
+						</egXML>
+					</exemplum>
+				</elementSpec>
+			</schemaSpec>
+
+
+			<div>
+				<head>
+					<label xml:lang="de">Lemma-Informationen</label>
+				</head>
+
+				<div>
+					<label>Basic lemma forms and grammatical information</label>
+					<lb/>
+					<lb/>
+					<desc>The top of every article is the lemma, which is followed on the next line by its grammatical information:</desc>
+					<eg>
+						<hi rend="bold">feiern</hi>
+						<lb/>verb (schwach)
+					</eg>desc>Sample TEI encoding of a verb as follows:
+				</desc>
+					<!-- add explicit listing of potential values and TEI tags to use -->
+				
+				<figure><egXML xmlns="http://www.tei-c.org/ns/Examples">
+						
+						<form type="lemma">
+							<orth>feiern</orth>
+						</form>
+						<gramGrp>
+							<gram type="pos">Verb</gram>
+							<iType>schwach</iType>
+						</gramGrp>
+						
+					</egXML></figure>
+
+					<list>
+						<head>Formatting Rules:</head>
+						<item>Where 2 instances of <code>//gramGrp/gram[@type='pos']</code>; print comma  "," and "auch" after</item>
+						<item>For lemma variants; where 2 instances of any category of <code>//gramGrp/gram[@type]</code>;
+							<list><head><hi rend="italic">print</hi>:</head> 
+								<item>UNIQUE VALUES separated by comma  ","</item>
+								<item>"und" before final instance (All should be in round brackets as per other pre-established rules)</item><lb/>
+							</list>
+						</item>
+						<item>The lemma will be rendered in bold. The grammatical info in normal text on the next line.</item>
+					</list>
+					<lb/>
+								
+					<note>
+						Editors need not tag grammatical content that will not be printed in the text; 
+						e.g. if generally nouns are only implicitly specified by the explicit inclusion of the gender, 
+						thus tagging the gender as in the following example is enough (as we can actually automatically add it later in an attribute):
+						<figure>
+							<egXML xmlns="http://www.tei-c.org/ns/Examples">
+								<gramGrp>
+									<gram type="gender">Fem.</gram>
+								</gramGrp>
+							</egXML>
+						</figure>
+					</note>
+				</div>
+				
+				
+				<div>
+					<head>
+						<label>Variant lemma forms</label><lb/>
+						<label xml:lang="de">Lemmavarianten</label>
+					</head><lb/>
+					
+					<desc>For as many variant forms of a lemma there are, they can be listed immediately following the main lemma:</desc>
+					
+					<eg>
+						<hi rend="bold">feiern</hi>, <hi rend="bold">gefeiern</hi><lb/>
+						Verb (schwach)
+					</eg>
+					
+					<desc>This is encoded in TEI identically as the main lemma in sequence as follows:</desc>
+					
+					<figure><egXML xmlns="http://www.tei-c.org/ns/Examples">
+						<form type="lemma">
+							<orth>feiern</orth>
+						</form>
+						<form type="lemma">
+							<orth>gefeiern</orth>
+						</form>
+						<gramGrp>
+							<gram type="pos">Verb</gram>
+							<iType>schwach</iType>
+						</gramGrp>
+					</egXML>
+					</figure>
+					<list>
+						<head>Formatting Rules:</head>
+						<item>These will be separated in redition schema by commas.</item>
+						<item>Where form @type + gram printed, e.g. "(kurzform, Neutrum)" do not print the value of @subtype when is is "movierung"</item>
+					</list>
+				</div>
+				
+			</div>
+				
+			<lb/>
+
+			<div>
+				<label>Etymologie</label>
+				<desc>
+					Typically an etymology section has: one or more etymons, labels for the language of the etymon, possibly labels relating to the process, a definition of the etymon and a bibliographic reference.
+				</desc>
+				<eg></eg>
+				
+				<desc>
+					The tags and contents are as follows:
+					<list>
+						<item><tag>etym</tag>(etymology) highest level element in which all etymological descriptions must occur. Automatically part of article template.
+							Contains as children:
+							<list>
+								<item><tag>cit</tag> <att>type</att>="<val>etymon</val>"</item>
+								<item><tag>desc</tag> (description): contains prose description of etymon or general information about the etymology.</item>
+								<item><tag>lbl</tag> (label): contains a label pertaining to the etymon or its process that is systematically re-used throughout the data.</item>
+								<item><tag>bibl</tag> (bibliography): contains bibliographic information pertaining to the etymology in general (all forms). If bibliography is for only a single etymon, then it should be placed in <tag>cit</tag> <att>type</att>="<val>etymon</val>"  </item>
+							</list>
+						</item>
+						
+						<item><tag>cit</tag> <att>type</att>="<val>etymon</val>" (etymon) contains everything pertaining to the etymon specifically: <tag>lang</tag>, <tag>lang</tag>, <tag>date</tag>, <tag>form</tag>, <tag>def</tag>
+							Contains as children:
+						<list>
+							<item><tag>lang</tag> contains the language of the etymon</item>
+							<item><tag>date</tag> contains the date (specific or general) of the etymon's first observed or typical timeframe of usage</item>
+							<item><tag>form</tag> contains the form of the etymon, generally <tag>orth</tag></item>
+							<item><tag>gramGrp</tag> (including children grammatical tags): <tag>gram</tag>, <tag>iType</tag>) contains grammatical information pertaining to the etymon form.</item>
+							<item><tag>def</tag> contains the definition of an etymon (if more than one, can occur in sequence, need rule to add numbering)</item>
+
+						</list>
+						</item>
+				
+					</list>
+				
+				</desc>
+
+				<desc>Below is an example of a typical etymon encoded in TEI:</desc>
+				
+				<figure><egXML xmlns="http://www.tei-c.org/ns/Examples">
+					
+					<cit type="etymon">
+						<lang>fnhd.</lang>
+						<form>
+							<orth>fatzen</orth>
+						</form>
+						<def>spotten, Zum Narren halten</def>
+					</cit>
+					
+				</egXML>
+				</figure>
+				
+				<desc>Below is an example of two etymons from different language stages (Althochdeutsch and Mittelhochdeutsch), and the second one has variants:</desc>
+				<figure>
+					<egXML xmlns="http://www.tei-c.org/ns/Examples">
+						<etym>
+							<cit type="etymon">
+								<lang>ahd.</lang>
+								<form>
+									<orth>fratôn</orth>
+								</form>
+							</cit>
+							<cit type="etymon">
+								<lang>mhd.</lang>
+								<form>
+									<orth>vreten</orth>
+								</form>
+								<form>
+									<orth>vraten</orth>
+								</form>
+								<form>
+									<orth>vretten</orth>
+								</form>
+								<def>entzünden; wund reiben</def>
+							</cit>
+						</etym>
+					</egXML>
+				</figure>
+				
+				<desc>This should be rendered as follows:</desc>
+				
+				<figure>
+					<eg>
+						ahd. <hi rend="italic">fratôn</hi>; mhd. <hi rend="italic">vreten</hi>, <hi rend="italic">vraten</hi>, <hi rend="italic">vretten</hi> 'entzünden; wund reiben'
+					</eg>
+				</figure>
+				
+				<list>
+					<head>Formatting Rules</head>
+					<item>print "Etymologie" before etym</item>
+					<item>enter comma after cit where <code>//cit</code> followed by <code>//seg[@type="desc"]</code></item>
+					<item>value of (etymon form) : <code>//cit[@type="etymon]/form/orth</code> in italics</item>
+					<item>add semi-colon between two consecutive instances of <code>//cit[@type="etymon]</code></item>
+					<item>surround: contents of <code>//def[not(@type)]</code> with single quotes (both in sense and in etymology)</item>
+					<item>surround: <code>//ref[@type='bibl']</code> contents with brackets "(" ")"</item>
+					<item>add colon betweeen: <code>//etym/bibl/date</code>  (or /edition) and <code>//etym/bibl/citedRange</code> </item>
+					<item>add semi-colon after <code>//seg[@type='desc' and @part='F']</code>: </item>
+					<item>add comma between two consective instance of <code>//form/orth</code> in a single <code>//cit[@type="etymon]</code></item>
+
+				</list>
+
+				
+				<note><tag>bibl</tag> goes as child of <tag>etym</tag> (unless the <tag>bibl</tag> is specifically for the etymon)</note>
+				
+				<figure><egXML xmlns="http://www.tei-c.org/ns/Examples">
+					<etym>
+						<cit type="etymon">
+							<lang>mhd.</lang>
+							<form type="variant">
+								<orth>vreten</orth><!-- might consider changing etymon structure according to eventual TEI Lex-0 recommendations -->
+							</form>
+							<form type="variant">
+								<orth>vretten</orth>
+							</form>
+							<form type="variant">
+								<orth>vraten</orth>
+							</form>
+							<def>entzünden; wundreiben; herumziehen; quälen; plagen</def>    
+						</cit>
+						<ref type="bibl">vgl. <title>LEXER</title> <date>1878</date> <edition>III</edition> <citedRange>502</citedRange></ref>
+					</etym>
+					
+					
+				</egXML></figure>
+				
+				
+				<div>
+					<head>Discontinuous description text</head>
+					
+					<desc>In certain cases an etymology may start a prose description and within the text include an etymon form creating a fragmented description.
+						In these cases use the <tag>seg</tag> element with the attribute <att>part</att>, the values of which may be one of the following:
+						
+						<list>
+							<item>"<val>I</val>"(capital "i") for  (initial) this is the initial part of a fragmented element;</item>
+							<item>"<val>M</val>(medial) this is a medial part of a fragmented element;</item>
+							<item>"<val>F</val>(final) this is the final part of a fragmented element;</item>
+						</list>
+					</desc>
+					
+					<eg>seit dem 18.  Jh. belegt, auf fickfacken 'hin- und herlaufen' zurückgeführt; evtl. auch auf fnhd. fatzen 'spotten, zum Narren halten' zurückführbar (vgl. PFEIFER 2014: 329)</eg>
+					
+					<figure><egXML xmlns="http://www.tei-c.org/ns/Examples">
+						
+						<etym>
+							<date>seit dem 18. Jh.</date>
+							<seg type="desc" part="I">belegt, auf</seg>
+							
+							<cit type="etymon">
+								<form><orth>fickfacken</orth></form>
+								<def>hin- und herlaufen</def>
+							</cit>
+							
+							<seg type="desc" part="M">zurückgeführ evtl. auch auf</seg>
+							
+							<cit type="etymon">
+								<lang>fnhd.</lang>
+								<form><orth>fatzen</orth></form>
+								<def>spotten, Zum Narren halten</def>
+							</cit>
+							
+							<seg type="desc" part="F">zurückführbar</seg>
+							
+							<ref type="bibl">
+								<title>Pfeifer</title>
+								<date>2014</date>
+								<citedRange>329</citedRange>
+							</ref>
+						</etym>
+						
+					</egXML></figure>
+					<note>could enhance with attribute-value @notBefore="1800"</note>
+					<note><tag>bibl</tag> goes as child of <tag>etym</tag> (unless the  bibl is specifically for the etymon)</note>
+				</div>
+				
+			</div>
+			<lb/>
+
+
+			<div>
+				<desc>Bedeutung</desc>
+				<eg></eg>
+				
+				<list>
+					<head>Formatting Rules:</head>
+					<item>Print the <code>//sense</code> under the grammatical information of the lemma.</item>
+					<item>If there is more than one <code>//sense</code> seperate each of them by using a semicolon.</item>
+					<item>letter spacing within def should be 1 pt </item>
+				</list>
+				
+				<desc>An example of a typed "umschreibung" definition:</desc>
+				<figure>
+					<egXML xmlns="http://www.tei-c.org/ns/Examples">
+						<sense>
+							<def type="umschreibung">Beschreibung für ein Schaf, dessen Nieren sich durch einen Fall oder Stoß gelöst haben</def> ....
+						</sense>	
+					</egXML>
+				</figure>
+		</div>
+
+			<lb/>
+
+			<div>
+				<head>Bibliographies</head>
+				
+				<desc>
+					Bibliographic information can be placed within the <tag>sense</tag> or <tag>etym</tag> sections.
+					The formatting of bibliographic citations throughout articles which are most basically encoded as <tag>ref</tag> elements with the attribute-value: <att>type</att>="<val>bibl</val>".
+					Within this element, the child elements <tag>lbl</tag>, <tag>citedRange</tag> and <tag>date</tag> may occur.
+					....
+				</desc>
+					
+				<figure>
+					<egXML xmlns="http://www.tei-c.org/ns/Examples">
+						<ref type="bibl"><lbl>vgl.</lbl>
+							<!-- AUTHOR -->(<!-- YYYY -->:
+							<citedRange>315</citedRange>)
+						</ref>	
+					</egXML>	
+				</figure>
+
+
+				<desc>
+					Non-literary citations such as: personal communications, and online sources can also be made. These are expressed in the TEI as different values of <att>subtype</att>; e.g. either "<val>personal</val>" or "<val>online</val>"
+				</desc>
+
+				<figure>
+					<egXML xmlns="http://www.tei-c.org/ns/Examples">
+						<ref type="bibl" subtype="personal"><persName>Jakob Ebner</persName> <lbl>persönlich</lbl> <date type="accessed">18.02.2019</date></ref>	
+					</egXML>
+					<ab>or</ab>
+					<egXML xmlns="http://www.tei-c.org/ns/Examples">
+						<ref type="bibl" subtype="online"><!-- AUTHOR DATE --><!-- ONLINE? --><xr><ref target="http://www.urlhere.org/Example">form</ref><date type="accessed"></date></xr></ref>	
+					</egXML>
+				</figure>
+				
+				
+				<desc>Where TEI structure is the following:</desc>
+				<figure><egXML xmlns="http://www.tei-c.org/ns/Examples">
+					<ref type="bibl" subtype="personal"><persName>Jakob Ebner</persName> <lbl>persönlich</lbl> <date type="accessed">18.02.2019</date></ref>
+				</egXML></figure>
+				
+				<desc>The date portion should be rendered as follows:</desc>
+				<eg>
+					[19.02.2019]
+				</eg>
+				
+				<desc>Where there are multiple bibliographic citations, </desc>
+				<figure><egXML xmlns="http://www.tei-c.org/ns/Examples">
+					<ref type="bibl"><!-- AUTHOR INSERTED HERE --><date><!-- DATE INSERTED HERE --></date></ref>
+					<ref type="bibl"><!-- AUTHOR INSERTED HERE --><date><!-- DATE INSERTED HERE --></date></ref>
+					<ref type="bibl"><!-- AUTHOR INSERTED HERE --><date><!-- DATE INSERTED HERE --></date></ref>
+				</egXML></figure>
+				
+				<desc>Thus the output should be rendered as follows:</desc>
+				
+				<eg>
+					[AUTHOR YYYY; AUTHOR YYYY; AUTHOR YYYY]
+				</eg>
+				
+				
+				<desc>Thus what is in the source TEI as:</desc>
+				<figure><egXML xmlns="http://www.tei-c.org/ns/Examples">
+					<ref type="bibl">AUTHOR <date>2001</date></ref><ref type="bibl">LEXER <date>2000</date></ref><ref type="bibl">LEXER <date>2001</date></ref>
+				</egXML></figure>
+				
+				<desc>Should be printed as:</desc>
+				<eg>
+					[AUTHOR 2001; LEXER 2000, 2001]
+				</eg>
+				
+				
+				<desc>In cases in the Bedeutung (TEI <tag>sense</tag>) which contain an example sentence which is cited from a source, the citation may also include </desc>
+				
+				
+
+
+				<list>
+					<head>Formatting Rules:</head>
+					<item>If more than 1 <code>//ref[@type="bibl"]</code> occur in sequence, wrap all in square brackets, e.g. "[" preceeding the first, "]" following the last.</item>
+					<item>If more than 1 <code>//ref[@type="bibl"]</code> occur in sequence, separate each with semicolon, e.g. ";"</item>
+					<item>Insert comma after last content before <code>//date</code> in <code>//ref[@type='bibl']</code></item>
+					<item>Print: square brackets "[" "]" around <code>//date[@type="accessed"]</code></item>
+					<item>If in more than 1 <code>//ref[@type="bibl"]</code> occur in sequence, one author is cited for multiple works, only print name once and separate date by comma</item>
+					<item></item>
+					<item></item>
+					
+				</list>
+			</div>
+		</body>
+	</text>
+</TEI>
