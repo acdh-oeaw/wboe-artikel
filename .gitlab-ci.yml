@@ -6,7 +6,7 @@ filter-job:
   image: bitnami/git
   script: |
     set -eo pipefail
-    apt-get update && apt-get install -y xmlstarlet
+    tdnf -y update && tdnf -y install xmlstarlet
     git config --global user.email "acdh-ch-filter-bot@oeaw.ac.at"
     git config --global user.name "ACDH-CH filter bot"
     git fetch --unshallow origin

@@ -2,7 +2,7 @@
     <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
     <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
 <?redaktionstool version="0.8.3" ?>
-<?parser type="lioe" version="0.8.3" ?>
+<?parser type="lioe" version="0.8.4" ?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
@@ -71,6 +71,8 @@
     <revisionDesc>
       <listChange>
         <change status="in progress" when="2023-07-25" who="#MK">Datensatz erstellt</change>
+        <change status="in progress" when="2025-01-09" who="#AG">Literaturfeld in Etymologie eingefügt</change>
+        <change status="peer correction" when="2025-01-09" who="#MK"></change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -112,44 +114,100 @@
         <note type="kommentar"></note>
         <etym>
           <cit type="etymon">
-            <lang>mlat.</lang>
-          </cit>
-          <cit type="etymon">
-            <oRef></oRef>
-            <ref type="bibl"></ref>
             <lang>mhd.</lang>
             <form>
               <orth>galvei</orth>
             </form>
             <gramGrp>
+              <gram type="pos">Substantiv</gram>
               <gram type="gender">Femininum</gram>
               <gram type="gender">Neutrum</gram>
             </gramGrp>
+            <def>ein Trockenmaß</def>
           </cit>
           <cit type="etymon">
+            <lang>fnhd.</lang>
             <form>
-              <orth>galvai</orth>
-            </form>
-            <form>
-              <orth>galvay</orth>
-            </form>
-            <form>
-              <orth>caluaî</orth>
+              <orth>galvei</orth>
             </form>
             <gramGrp>
-              <gram type="gender">Femininum</gram>
+              <gram type="pos">Substantiv</gram>
+              <gram type="gender">Neutrum</gram>
             </gramGrp>
-            <def>ein Hohlmaß für trockenes Schüttgut</def>
+            <def>ein Trockenmaß</def>
           </cit>
-          <ref type="bibl" target="#MWB_online">
-            <lbl>vgl.</lbl>MWB online
-          </ref>
+          <cit type="etymon"></cit>
+          <seg type="desc">vermutlich liegt dem Wort das</seg>
           <cit type="etymon">
-            <lang>galvei</lang>
+            <lang>lad.</lang>
+            <form>
+              <orth>çalvía</orth>
+            </form>
+            <def>ein Getreidemaß</def>
           </cit>
+          <seg type="desc">zugrunde, das für die ladnischen Varietäten
+            <lang>Ampezzanisch (Anpenzan)</lang>
+          </seg>
+          <seg type="desc">und
+            <lang>Buchensteinisch (Fodom)</lang>
+          </seg>
+          <seg type="desc">bezeugt ist. Als Grundlage wird eine reduzierte Form eines</seg>
+          <cit type="etymon">
+            <lang>lat.</lang>
+            <form>
+              <orth>cupa</orth>
+            </form>
+            <def>Kufe, Kübel</def>
+          </cit>
+          <seg type="desc">angenommen
+            <ref type="bibl" target="#Schneller 1870">
+              <lbl>vgl.</lbl>Schneller 1870
+              <citedRange>226</citedRange>
+            </ref>
+          </seg>
+          <seg type="desc">.</seg>
+          <ref type="bibl" subtype="online">
+            <lbl>vgl.</lbl>Lexer online
+            <xr type="lemma">
+              <ref>galvei</ref>
+              <date type="accessed">09.01.2025</date>
+            </xr>
+          </ref>
+          <ref type="bibl" subtype="online">
+            <lbl></lbl>MWB online
+            <xr type="lemma">
+              <ref>galvei</ref>
+              <date type="accessed">09.01.2025</date>
+            </xr>
+          </ref>
         </etym>
         <sense>
-          <sense></sense>
+          <sense>
+            <def>Trockenmaß, Hohlmaß</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1C">NTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c25399"/>
+          </sense>
+          <sense>
+            <def>Getreidemaß</def>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1B">OTir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p1A">STir.</placeName>
+            </usg>
+            <usg type="geo">
+              <placeName type="bundesland" ref="/geodata-wboe.xml#p3">Stmk.</placeName>
+            </usg>
+            <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c43964 "/>
+          </sense>
         </sense>
       </entry>
     </body>

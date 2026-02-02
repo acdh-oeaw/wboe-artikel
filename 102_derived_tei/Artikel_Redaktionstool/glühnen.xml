@@ -2,7 +2,7 @@
     <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
     <?xml-model href="../../803_RNG-schematron/WBOE-ODD.rnc" type="application/relax-ng-compact-syntax"?>
 <?redaktionstool version="0.8.3" ?>
-<?parser type="lioe" version="0.8.3" ?>
+<?parser type="lioe" version="0.8.4" ?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
@@ -72,6 +72,7 @@
       <listChange>
         <change status="in progress" when="2024-02-02" who="#PhS">Datensatz erstellt</change>
         <change status="peer correction" when="2024-02-05" who="#PhS">V1 fertig</change>
+        <change status="internal correction" when="2025-01-17" who="#PhS">peer correction berücksichtigt</change>
       </listChange>
     </revisionDesc>
   </teiHeader>
@@ -142,8 +143,13 @@
             </cit>
             <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c41350"/>
           </sense>
+        </sense>
+        <re type="redewendung">
+          <form subtype="MWE" type="lemma">
+            <orth>vor Zorn glühnen</orth>
+          </form>
           <sense>
-            <def>eine leidenschaftliche Gemütsbewegung zeigen</def>
+            <def>sehr wütend oder zornig sein</def>
             <usg type="geo">
               <placeName type="grossregion" ref="/geodata-wboe.xml#p1A.1">wSTir.</placeName>
             </usg>
@@ -164,7 +170,7 @@
             </cit>
             <ptr type="collection" subtype="bedeutung" target="/collections-wboe.xml#c41352"/>
           </sense>
-        </sense>
+        </re>
       </entry>
     </body>
   </text>
