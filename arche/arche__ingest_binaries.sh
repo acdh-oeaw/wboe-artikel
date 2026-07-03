@@ -1,7 +1,7 @@
 #/bin/bash
 
 echo "ingest binaries for ${TOPCOLID} into ${ARCHE}"
-cp ./arche/title-image.jpg ./to_ingest/title-image.jpg
+# cp ./arche/title-image.jpg ./to_ingest/title-image.jpg
 docker run --rm \
   -v ${PWD}/to_ingest:/data \
   --network="host" \

@@ -15,9 +15,14 @@ arche_constants = Graph().parse("arche/arche_constants.ttl")
 TOP_COL = os.environ.get("TOPCOLID", "https://id.acdh.oeaw.ac.at/dboe-tei-xml")
 TOP_COL_URI = URIRef(TOP_COL)
 ACDH = Namespace("https://vocabs.acdh.oeaw.ac.at/schema#")
+LIMIT = os.environ.get("LIMIT", False)
+SCHEMA_NAME = "WBOE-ODD.rnc"
 
 print("process Vollartikel")
 files = sorted(glob.glob("./102_derived_tei/Artikel_Redaktionstool/*.xml"))
+
+if LIMIT:
+    files = files[:3]
 
 for x in files:
     try:
@@ -25,13 +30,16 @@ for x in files:
     except Exception as e:
         print(x, e)
         continue
-    f_name = os.path.basename(x)
-    title = slugify(doc.any_xpath(".//tei:titleStmt/tei:title")[0].text)
+    f_name = f"{slugify(os.path.basename(x.replace('.xml', '')))}.xml"
+    title = doc.any_xpath(".//tei:titleStmt/tei:title")[0].text
     subj = URIRef(f"{TOP_COL_URI}/{f_name}")
     g.add((subj, RDF.type, ACDH["Resource"]))
+    if title:
+        g.add((subj, ACDH["hasTitle"], Literal(title, lang="de")))
+    else:
+        g.add((subj, ACDH["hasTitle"], Literal(f"TITLE-ISSUE with {x}", lang="de")))
     for p, o in arche_constants.predicate_objects():
         g.add((subj, p, o))
-
     g.add(
         (
             subj,
@@ -43,12 +51,76 @@ for x in files:
         (
             subj,
             ACDH["isPartOf"],
-            TOP_COL_URI,
+            URIRef(f"{TOP_COL_URI}/articles"),
         )
     )
+    shutil.copy2(x, os.path.join(to_ingest, f_name))
+
+
+print("process Retro Artikel")
+files = sorted(glob.glob("./102_derived_tei/retro/*.xml"))
+if LIMIT:
+    files = files[:3]
+
+for x in files:
     try:
-        g.add((subj, ACDH["hasTitle"], Literal(slugify(title), lang="de")))
+        doc = TeiReader(x)
     except Exception as e:
-        print(f"TITLE-ISSUE in {x}: {e}")
+        print(x, e)
         continue
+    f_name = f"{slugify(os.path.basename(x.replace('.xml', '')))}.xml"
+    subj = URIRef(f"{TOP_COL_URI}/{f_name}")
+    g.add((subj, RDF.type, ACDH["Resource"]))
+    for p, o in arche_constants.predicate_objects():
+        g.add((subj, p, o))
+    g.add(
+        (
+            subj,
+            ACDH["isPartOf"],
+            URIRef(f"{TOP_COL_URI}/retro-articles"),
+        )
+    )
+    g.add(
+        (
+            subj,
+            ACDH["hasCategory"],
+            URIRef("https://vocabs.acdh.oeaw.ac.at/archecategory/text/tei"),
+        )
+    )
+    entries = doc.any_xpath(".//tei:orth[@norm]/@norm")
+    file_title = doc.any_xpath(".//tei:title")[0].text
+    title = f"{file_title}: {entries[0]} - {entries[-1]}"
+    g.add((subj, ACDH["hasTitle"], Literal(title, lang="de")))
+    shutil.copy2(x, os.path.join(to_ingest, f_name))
+
+shutil.copy2(
+    os.path.join("803_RNG-schematron", SCHEMA_NAME),
+    os.path.join(to_ingest, SCHEMA_NAME),
+)
+
+print("replace schema location")
+
+for path in glob.glob(f"{to_ingest}/*.xml"):
+    with open(path, "r", encoding="utf-8") as fp:
+        x = fp.read().replace(
+            "../../803_RNG-schematron/WBOE-ODD.rnc",
+            "https://raw.githubusercontent.com/acdh-oeaw/wboe-artikel/refs/heads/main/803_RNG-schematron/WBOE-ODD.rnc",
+        )
+        x = x.replace(
+            '<?xml-stylesheet href="wboe-view.xsl" type="text/xsl"?><!DOCTYPE TEI SYSTEM "tei_all.dtd">',
+            "",
+        )
+        if "lieferung" in path:
+            x = x.replace(
+                '<?xml version="1.0" encoding="UTF-8"?>',
+                """<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+""",
+            )
+    with open(path, "w", encoding="utf-8") as fp:
+        fp.write(x)
+
+
 g.serialize(out_file)
