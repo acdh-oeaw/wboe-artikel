@@ -1,3 +1,4 @@
+import csv
 import glob
 import os
 import shutil
@@ -6,6 +7,7 @@ from acdh_tei_pyutils.tei import TeiReader
 from rdflib import RDF, Graph, Literal, Namespace, URIRef
 from slugify import slugify
 
+entities = os.path.join("arche", "entities.csv")
 to_ingest = "to_ingest"
 out_file = os.path.join(to_ingest, "arche.ttl")
 shutil.rmtree(to_ingest, ignore_errors=True)
@@ -20,6 +22,19 @@ SCHEMA_NAME = "WBOE-ODD.rnc"
 
 print("process Vollartikel")
 files = sorted(glob.glob("./102_derived_tei/Artikel_Redaktionstool/*.xml"))
+
+print("generate persons")
+person_lookup = {}
+with open(entities, "r", encoding="utf-8", newline="") as csvfile:
+    reader = csv.DictReader(csvfile, delimiter=",")
+
+    for row in reader:
+        if row["uri"]:
+            person_lookup[row["name"]] = row["uri"]
+            subj = URIRef(row["uri"])
+            g.add((subj, RDF.type, ACDH["Person"]))
+            g.add((subj, ACDH["hasFirstName"], Literal(row["first_name"], lang="de")))
+            g.add((subj, ACDH["hasLastName"], Literal(row["last_name"], lang="de")))
 
 if LIMIT:
     files = files[:3]
@@ -124,3 +139,4 @@ for path in glob.glob(f"{to_ingest}/*.xml"):
 
 
 g.serialize(out_file)
+print(person_lookup)
