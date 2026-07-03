@@ -69,6 +69,28 @@ for x in files:
             URIRef(f"{TOP_COL_URI}/articles"),
         )
     )
+    # acdh:hasCreator
+    for n in doc.any_xpath(".//tei:respStmt[1]/tei:name"):
+        try:
+            name = " ".join(n.text.split())
+            try:
+                ent_uri = person_lookup[name]
+            except KeyError:
+                pass
+        except AttributeError:
+            pass
+
+    # acdh:hasContributor
+    for n in doc.any_xpath(".//tei:respStmt/tei:name"):
+        try:
+            name = " ".join(n.text.split())
+            try:
+                ent_uri = person_lookup[name]
+            except KeyError:
+                pass
+        except AttributeError:
+            pass
+
     shutil.copy2(x, os.path.join(to_ingest, f_name))
 
 
@@ -137,6 +159,5 @@ for path in glob.glob(f"{to_ingest}/*.xml"):
     with open(path, "w", encoding="utf-8") as fp:
         fp.write(x)
 
-
+print(f"saving graph {out_file}")
 g.serialize(out_file)
-print(person_lookup)
