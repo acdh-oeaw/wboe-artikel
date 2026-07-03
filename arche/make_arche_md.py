@@ -104,7 +104,7 @@ for path in glob.glob(f"{to_ingest}/*.xml"):
     with open(path, "r", encoding="utf-8") as fp:
         x = fp.read().replace(
             "../../803_RNG-schematron/WBOE-ODD.rnc",
-            "https://raw.githubusercontent.com/acdh-oeaw/wboe-artikel/refs/heads/main/803_RNG-schematron/WBOE-ODD.rnc",
+            "https://id.acdh.oeaw.ac.at/wboe-tei/WBOE-ODD.rnc",
         )
         x = x.replace(
             '<?xml-stylesheet href="wboe-view.xsl" type="text/xsl"?><!DOCTYPE TEI SYSTEM "tei_all.dtd">',
