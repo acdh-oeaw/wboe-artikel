@@ -20,6 +20,17 @@ ACDH = Namespace("https://vocabs.acdh.oeaw.ac.at/schema#")
 LIMIT = os.environ.get("LIMIT", False)
 SCHEMA_NAME = "WBOE-ODD.rnc"
 
+
+def make_unique_xml_name(path, used_names):
+    base_name = os.path.splitext(os.path.basename(path))[0]
+    slug_base = slugify(base_name) or "file"
+    canonical_name = f"{slug_base}.xml"
+    used_names[canonical_name] = used_names.get(canonical_name, 0) + 1
+    if used_names[canonical_name] > 1:
+        return f"{slug_base}-{used_names[canonical_name]}.xml"
+    return canonical_name
+
+
 print("process Vollartikel")
 files = sorted(glob.glob("./102_derived_tei/Artikel_Redaktionstool/*.xml"))
 
@@ -39,13 +50,15 @@ with open(entities, "r", encoding="utf-8", newline="") as csvfile:
 if LIMIT:
     files = files[:3]
 
+unique_names = {}
+
 for x in files:
     try:
         doc = TeiReader(x)
     except Exception as e:
         print(x, e)
         continue
-    f_name = f"{slugify(os.path.basename(x.replace('.xml', '')))}.xml"
+    f_name = make_unique_xml_name(x, unique_names)
     title = doc.any_xpath(".//tei:titleStmt/tei:title")[0].text
     subj = URIRef(f"{TOP_COL_URI}/{f_name}")
     g.add((subj, RDF.type, ACDH["Resource"]))
@@ -105,7 +118,7 @@ for x in files:
     except Exception as e:
         print(x, e)
         continue
-    f_name = f"{slugify(os.path.basename(x.replace('.xml', '')))}.xml"
+    f_name = make_unique_xml_name(x, unique_names)
     subj = URIRef(f"{TOP_COL_URI}/{f_name}")
     g.add((subj, RDF.type, ACDH["Resource"]))
     for p, o in arche_constants.predicate_objects():
